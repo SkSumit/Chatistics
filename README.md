@@ -13,3 +13,6 @@ A WhatsApp Chat analyzer and statistics.
 8) No of texts per Day, Week, Month
 9) No of texts per Hour
 10) Most texted Hour, Day 
+11) Activity by time of Day
+12) Most active day, week ever.
+
