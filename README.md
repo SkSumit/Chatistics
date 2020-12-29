@@ -15,4 +15,3 @@ A WhatsApp Chat analyzer and statistics.
 10) Most texted Hour, Day 
 11) Activity by time of Day
 12) Most active day, week ever.
-
