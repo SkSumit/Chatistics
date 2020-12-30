@@ -3,6 +3,8 @@ body{
 }
 
 $family-sans-serif: 'Roboto', sans-serif ;
+$card-header-shadow:0;
+$card-footer-border-top:0;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import '../../node_modules/bulma/bulma.sass';

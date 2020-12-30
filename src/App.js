@@ -1,15 +1,35 @@
-import './styles/index.scss'
-
+import React, { useState } from "react";
+import "./styles/index.scss";
+import Hero from "./components/Hero";
+import Summary from "./components/Summary";
+import {data} from './mockAPI'
 function App() {
+  const [file, setFile] = useState(null);
+
+  const onFileChange = (event) => {
+    // console.log(event.target.files[0]);
+    // setFile(event.target.files[0]);
+  };
+
+  const onSubmitFile = (event) => {
+    event.preventDefault();
+    setFile(data);
+    // readFile(file);
+  };
+
+  const readFile = (file) => {
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      // console.log(event.target.result)
+    };
+    reader.readAsText(file);
+  };
+
   return (
-    <section className="hero is-large is-light is-bold">
-      <div className="hero-body">
-        <div className="container">
-          <h1 className="title is-1">Chatistics</h1>
-          <h1 className="subtitle is-3">WhatsApp chat analytics and insights</h1>
-        </div>
-      </div>
-    </section>
+    <>
+    <Hero file={file} onSubmitFile={onSubmitFile} onFileChange={onFileChange} />
+    <Summary file={file}/>
+    </>
   );
 }
 
