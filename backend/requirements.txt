@@ -1,0 +1,10 @@
+click==7.1.2
+joblib==1.0.0
+nltk==3.5
+numpy==1.19.4
+pandas==1.2.0
+python-dateutil==2.8.1
+pytz==2020.5
+regex==2020.11.13
+six==1.15.0
+tqdm==4.55.0
