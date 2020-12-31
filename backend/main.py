@@ -4,14 +4,17 @@ from dummy.test import tempory
 
 import pandas as pd
 from flask import Flask, jsonify, request, redirect, flash, url_for, session, g, Response, send_file, make_response
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
+#Add bearer token for authentication
+cors = CORS(app, resources={r"*": {"origins": "*"}})
 
-@app.route('/', methods=['GET'])
+@app.route('/ping', methods=['GET'])
 def index():
-    return "<h1>building Something Cool</h1><p> Dorime </p>"
+    return "pong"
 
 @app.route('/api/v1/dummy', methods=['GET'])
 def api():
