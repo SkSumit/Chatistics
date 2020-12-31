@@ -4,6 +4,7 @@ import StatsBox from "./StatsBox";
 export default function Summary({file}) {
   console.log(file)  
   return (
+   
     <section className="hero ">
       <div className="hero-body">
         <div className="container">
@@ -12,7 +13,8 @@ export default function Summary({file}) {
           </h1>
           <div className="tile is-ancestor">
             <div className="tile is-parent">
-              <StatsBox title={"Total Days"} stats={496} />
+            { file &&
+              <StatsBox title={"Total Days"} stats={file.stats.summary.total_days} />}
             </div>
             <div className="tile is-parent">
               <StatsBox title={"Total Message Exchanged"} stats={35985} />
@@ -27,5 +29,6 @@ export default function Summary({file}) {
         </div>
       </div>
     </section>
+   
   );
 }
