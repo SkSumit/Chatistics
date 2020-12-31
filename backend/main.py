@@ -1,21 +1,38 @@
 from upload.upload import parsefile
 from dataframe.token import tokenCreation,corpus
-import pandas as pd
+from dummy.test import tempory
 
-path="C:/Users/yashd/Downloads/WhatsApp Chat with Lubna.txt"
-content=parsefile(path)
+import pandas as pd
+from flask import Flask, jsonify, request, redirect, flash, url_for, session, g, Response, send_file, make_response
+
+app = Flask(__name__)
+app.config["DEBUG"] = True
+
+
+@app.route('/', methods=['GET'])
+def index():
+    return "<h1>building Something Cool</h1><p> Dorime </p>"
+
+@app.route('/api/v1/dummy', methods=['GET'])
+def api():
+    # path="C:/Users/yashd/Downloads/WhatsApp Chat with Lubna.txt"
+    # content=parsefile(path)
+    books = tempory()
+    return jsonify(books)
+
+
 # print(content)
 # print(len(content))
 
-content = tokenCreation(content)
+#content = tokenCreation(content)
 # print(content)
 
 
-with open("demofile2.txt", "w", encoding="utf-8") as f:
-    for i in range(len(content)):
-        f.write(content[i])
-        f.write("\n")
-    f.close()
+# with open("demofile2.txt", "w", encoding="utf-8") as f:
+#     for i in range(len(content)):
+#         f.write(content[i])
+#         f.write("\n")
+#     f.close()
 
 # x=corpus(content)
 # print(x[3])
@@ -33,3 +50,7 @@ with open("demofile2.txt", "w", encoding="utf-8") as f:
 
     
 # input()
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
