@@ -1,5 +1,6 @@
 def parsefile(path):
-    myfile = open(path, "r",encoding="utf8")         # open path file for reading text
-    contents = myfile.read()                         # read the entire file to string
-    myfile.close()                                   # close the file
-    return contents        
+    with open(path,encoding="utf8") as f:
+        Content = f.readlines()
+    Content = [x.strip() for x in Content]     
+    return Content 
+

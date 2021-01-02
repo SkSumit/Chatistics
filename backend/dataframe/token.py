@@ -6,17 +6,15 @@ from nltk.stem import WordNetLemmatizer
 
 nltk.download('punkt')
 
+#NO USE (Will remove later)
 def tokenCreation(content):
     tokenContent = nltk.sent_tokenize(content)
-    # for i in range(len(tokenContent)):
-    #     words = nltk.word_tokenize(tokenContent[i])
-    #     tokenContent[i] = ''.join(words)
     return tokenContent
 
 def corpus(tokenConent):
     CORPUS = []
     for i in range(len(tokenConent)):
-        review = re.sub('','',tokenConent[i])
+        review = re.sub('\n',' ',str(tokenConent[i]))
         review = review.lower()
         review = review.split()
         review = ' '.join(review)
