@@ -19,8 +19,9 @@ cors = CORS(app, resources={r"*": {"origins": "*"}})
 @app.route('/', methods=['GET'])
 def index():
     CORPUS = []
-    path="C:/Users/yashd/Downloads/WhatsApp Chat with Lubna.txt"
+    path="C:/Users/yashd/Downloads/WhatsApp Chat with Kulkarni New.txt"
     content=parsefile(path)
+    # print(content[6])
     content=corpus(content)
     
     """     SAVING DATA IN content VARIABLE      """
@@ -28,9 +29,19 @@ def index():
     
     """IMPORTANT LINES FOR TESTING"""
     # print(len(content))
-    # print(content[32])
-    for i in range(len(content)):
-        print((content[i][:8]))
+    if(len(content[3016])==0):
+        print("Line 3016 is blank")
+    if(len(content[3015])==0):
+        print("Line 3015 is blank")  
+    else:  
+        print("Line 3015 is NOT blank")
+        # print(len(content[3016])
+        # print(content[3015])
+        
+        # print(content[3017])
+        # print(content[3018])
+    # for i in range(len(content)):
+    #     print((content[i]))
     # df = dataframe(content)
     # print(df.head())
     return "ping"
