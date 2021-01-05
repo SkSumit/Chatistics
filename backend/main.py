@@ -26,7 +26,6 @@ def hello():
 def index():
     CORPUS = []
     df = pd.DataFrame()
-    #change
     path="C:/Users/yashd/Downloads/WhatsApp Chat with Scaler Achiever Club.txt"
     content=parsefile(path)
     # print(content[6])
@@ -42,8 +41,8 @@ def index():
     #for i in range(len(content)):
     #print(content[1])
     df = dataframe(content)
-    #print(df)
-    df.to_csv('file1.csv')
+    print(df)
+    df.to_csv('dummy.csv')
     return "ping"
 
 #API Route
