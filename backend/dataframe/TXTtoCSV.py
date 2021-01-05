@@ -9,12 +9,13 @@ def dataframe(content):
         date.append(str(content[i].split(",")[0]))
         time.append(str((content[i].split(",")[1].split("-"))[0]))
         username.append(str((content[i].split(",")[1].split("-")[1].split(":")[0])))
-        if len(content[i].split(",")[1].split("-")[1].split(":")[1:]) > 1:
-            messages.append(" ".join(content[i].split(",")[1].split("-")[1].split(":")[1:]))
+        if len(content[i].split(":")[2:]) > 1:
+            messages.append(" ".join(content[i].split(":")[2:]))
         else:
-            messages.append(" ".join(content[i].split(",")[1].split("-")[1].split(":")[1:]))   
+            messages.append("^".join(content[i].split(":")[2:]))   
     df["DATE"] = date
     df["TIME"] = time
     df["USERNAME"] = username
-    df["MESSAGE"] = messages 
+    df["MESSAGE"] = messages
+    print(messages) 
     return df

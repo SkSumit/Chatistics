@@ -22,7 +22,7 @@ cors = CORS(app, resources={r"*": {"origins": "*"}})
 def index():
     CORPUS = []
     df = pd.DataFrame()
-    path="F:/Downloads/WhatsApp Chat with Kulkarni New.txt"
+    path="F:/Downloads/WhatsApp Chat with Scaler Achiever Club.txt"
     content=parsefile(path)
     content=corpus(content)
     content=preProcess(content)
@@ -36,7 +36,7 @@ def index():
     #for i in range(len(content)):
     #print(content[1])
     df = dataframe(content)
-    #print(df)
+    print(df)
     df.to_csv('file1.csv')
     return "ping"
 
