@@ -6,11 +6,6 @@ from nltk.stem import WordNetLemmatizer
 
 nltk.download('punkt')
 
-#NO USE (Will remove later)
-#def tokenCreation(content):
-    #tokenContent = nltk.sent_tokenize(content)
-    #return tokenContent
-
 def corpus(tokenConent):
     CORPUS = []
     for i in range(len(tokenConent)):
