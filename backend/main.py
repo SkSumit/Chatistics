@@ -1,8 +1,13 @@
+#Customize Created Functions
 from upload.upload import parsefile
-from dataframe.token import tokenCreation,corpus
+from dataframe.token import corpus
+from dataframe.TXTtoCSV import dataframe
+from dataframe.preprocessing import preProcess
 from dummy.test import tempory
-
 import pandas as pd
+
+
+
 from flask import Flask, jsonify, request, redirect, flash, url_for, session, g, Response, send_file, make_response
 from flask_cors import CORS
 
@@ -12,34 +17,38 @@ app.config["DEBUG"] = True
 #Add bearer token for authentication
 cors = CORS(app, resources={r"*": {"origins": "*"}})
 
-@app.route('/ping', methods=['GET'])
+#Testing Route
+@app.route('/', methods=['GET'])
 def index():
+    CORPUS = []
+    df = pd.DataFrame()
+    path="F:/Downloads/WhatsApp Chat with Kulkarni New.txt"
+    content=parsefile(path)
+    content=corpus(content)
+    content=preProcess(content)
+    
+    """     SAVING DATA IN content VARIABLE      """
+
+    
+    """IMPORTANT LINES FOR TESTING"""
+    # print(len(content))
+    # print(content[32])
+    #for i in range(len(content)):
+    #print(content[1])
+    df = dataframe(content)
+    #print(df)
+    df.to_csv('file1.csv')
+    return "ping"
+
+@app.route('/ping', methods=['GET'])
+def pong():
     return "pong"
 
+#API Route
 @app.route('/api/v1/dummy', methods=['GET'])
 def api():
-    # path="C:/Users/yashd/Downloads/WhatsApp Chat with Lubna.txt"
-    # content=parsefile(path)
     books = tempory()
     return jsonify(books)
-
-
-# print(content)
-# print(len(content))
-
-#content = tokenCreation(content)
-# print(content)
-
-
-# with open("demofile2.txt", "w", encoding="utf-8") as f:
-#     for i in range(len(content)):
-#         f.write(content[i])
-#         f.write("\n")
-#     f.close()
-
-# x=corpus(content)
-# print(x[3])
-
 
 
 # def input():
