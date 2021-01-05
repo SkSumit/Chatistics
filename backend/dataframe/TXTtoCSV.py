@@ -17,5 +17,4 @@ def dataframe(content):
     df["TIME"] = time
     df["USERNAME"] = username
     df["MESSAGE"] = messages
-    print(messages) 
     return df
