@@ -1,12 +1,20 @@
 import pandas as pd
 
-
 def dataframe(content):
-    column_names = ["DATE","TIME","USER NAME","MESSAGE"]
+    column_names = ["DATE","TIME","USERNAME","MESSAGE"]
+    date, time, username, messages = ([] for i in range(4))
     df = pd.DataFrame(columns = column_names)
-    for i in range(len(content)):
-        df['DATE'][i] = str(content[i].split(","))
-        # df['TIME'][i] = content[i][8:16]
-        # df['NAME'][i] = content[i][20:":"]
-        # df['MESSAGE'][i] = content[i][":":]
+    CORPUS=list(content)
+    for i in range(len(CORPUS)):
+        date.append(str(content[i].split(",")[0]))
+        time.append(str((content[i].split(",")[1].split("-"))[0]))
+        username.append(str((content[i].split(",")[1].split("-")[1].split(":")[0])))
+        if len(content[i].split(",")[1].split("-")[1].split(":")[1:]) > 1:
+            messages.append(" ".join(content[i].split(",")[1].split("-")[1].split(":")[1:]))
+        else:
+            messages.append(" ".join(content[i].split(",")[1].split("-")[1].split(":")[1:]))   
+    df["DATE"] = date
+    df["TIME"] = time
+    df["USERNAME"] = username
+    df["MESSAGE"] = messages 
     return df
