@@ -1,7 +1,7 @@
 
 
 export const data = {
-    filename: 'WhatsApp Chat with Sumit Skn',
+    
     user1 : 'Sumit',
     user2 : 'Yash',
     stats : {
