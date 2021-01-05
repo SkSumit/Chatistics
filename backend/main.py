@@ -1,8 +1,10 @@
 #Customize Created Functions
 from upload.upload import parsefile
-from dataframe.token import tokenCreation,corpus
+from dataframe.token import corpus
 from dataframe.TXTtoCSV import dataframe
+from dataframe.preprocessing import preProcess
 from dummy.test import tempory
+import pandas as pd
 
 
 
@@ -19,9 +21,11 @@ cors = CORS(app, resources={r"*": {"origins": "*"}})
 @app.route('/', methods=['GET'])
 def index():
     CORPUS = []
-    path="C:/Users/yashd/Downloads/WhatsApp Chat with Lubna.txt"
+    df = pd.DataFrame()
+    path="F:/Downloads/WhatsApp Chat with Kulkarni New.txt"
     content=parsefile(path)
     content=corpus(content)
+    content=preProcess(content)
     
     """     SAVING DATA IN content VARIABLE      """
 
@@ -29,10 +33,11 @@ def index():
     """IMPORTANT LINES FOR TESTING"""
     # print(len(content))
     # print(content[32])
-    for i in range(len(content)):
-        print((content[i][:8]))
-    # df = dataframe(content)
-    # print(df.head())
+    #for i in range(len(content)):
+    #print(content[1])
+    df = dataframe(content)
+    #print(df)
+    df.to_csv('file1.csv')
     return "ping"
 
 @app.route('/ping', methods=['GET'])
