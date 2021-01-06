@@ -64,7 +64,7 @@ def verify(username, password):
 
 #API Route
 @app.route('/api/v1/dummy', methods=['GET'])
-# @auth.login_required
+@auth.login_required
 def api():
     books = tempory()
     return jsonify(books)
