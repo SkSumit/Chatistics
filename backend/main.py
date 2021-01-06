@@ -7,10 +7,14 @@ from dummy.test import tempory
 
 
 import pandas as pd
-from flask import Flask, jsonify, request, redirect, flash, url_for, session, g, Response, send_file, make_response
+from flask import Flask, jsonify
 from flask_cors import CORS
+from flask_restful import Resource, Api
+from flask_httpauth import HTTPBasicAuth
 
 app = Flask(__name__)
+api = Api(app, prefix="/api/v1/dummy")
+auth = HTTPBasicAuth()
 app.config["DEBUG"] = True
 
 #Add bearer token for authentication
@@ -45,8 +49,22 @@ def index():
     df.to_csv('dummy.csv')
     return "ping"
 
+USER_DATA = {
+    "admin":"SuperSecretPwd"
+}
+
+
+
+@auth.verify_password
+def verify(username, password):
+    if not (username and password):
+        return False
+    return USER_DATA.get(username) == password
+
+
 #API Route
 @app.route('/api/v1/dummy', methods=['GET'])
+# @auth.login_required
 def api():
     books = tempory()
     return jsonify(books)
