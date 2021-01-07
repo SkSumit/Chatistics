@@ -27,6 +27,7 @@ def index():
     CORPUS = []
     df = pd.DataFrame()
     path="C:/Users/yashd/Downloads/WhatsApp Chat with Scaler Achiever Club.txt"
+
     content=parsefile(path)
     # print(content[6])
     content=corpus(content)

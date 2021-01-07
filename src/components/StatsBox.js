@@ -1,14 +1,12 @@
 import React from "react";
 
-export default function StatsBox({ title, stats }) {
+export default function StatsBox({ title, stats, icon,bgClass = 'bg-light-green' }) {
   return (
-    <div className="tile card box is-child">
-      <div className="card-header">
-        <p className="card-header-title">{title}</p>
-      </div>
-      <footer className="card-footer">
-        <p className="card-footer-item subtitle">{stats}</p>
-      </footer>
+    <div className={`tile ${bgClass} box is-child`}>
+      {icon}
+      <p className="title is-3 py-5">{stats}</p>
+      <p className="subtitle is-6">{title}</p>
     </div>
   );
 }
+
