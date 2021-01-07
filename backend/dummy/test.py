@@ -1,14 +1,14 @@
 def tempory():
     books = [{
         'filename':'WhatsApp Chat with Sumit Skn',
-        'user1': 'Sumit',
-        'user2': 'Yash',
+        'user1': 'LUBNA',
+        'user2': 'KULKARNI',
         'stats': {
             'summary': {
-                'total_days': 6969696,
-                'total_message': 35985,
-                'total_words': 168265,
-                'total_letters': 697235
+                'total_days': 0000,
+                'total_message': 0000,
+                'total_words': 0000,
+                'total_letters': 0000
 
             }
         }
