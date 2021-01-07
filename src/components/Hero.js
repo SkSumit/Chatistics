@@ -1,14 +1,12 @@
 import React from "react";
-import herologo from "../img/logo.png";
 
 export default function Hero({ onSubmitFile, onFileChange, file }) {
-  console.log(file);
   return (
     <section className="hero is-medium is-primary ">
       <div className="hero-body">
         <div className="container">
           <h1 className="title is-1">
-            <i className="fab fa-whatsapp" /> Chatistics
+            <i className="fab fa-whatsapp fa-spin" /> Chatistics
           </h1>
           <h1 className="subtitle is-3">
             WhatsApp chat analytics and insights
@@ -55,7 +53,6 @@ export default function Hero({ onSubmitFile, onFileChange, file }) {
             </div>
           </div>
 
-          <div className="is-flex-direction-row"></div>
         </div>
       </div>
     </section>

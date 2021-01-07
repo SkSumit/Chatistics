@@ -22,7 +22,7 @@ cors = CORS(app, resources={r"*": {"origins": "*"}})
 def index():
     CORPUS = []
     df = pd.DataFrame()
-    path="F:/Downloads/WhatsApp Chat with Kulkarni New.txt"
+    path="C:/Users/kolsu/Downloads/WhatsApp Chat with Sumit Skn.txt"
     content=parsefile(path)
     content=corpus(content)
     content=preProcess(content)
