@@ -3,6 +3,7 @@ from upload.upload import parsefile
 from dataframe.token import corpus
 from dataframe.TXTtoCSV import dataframe
 from dataframe.preprocessing import preProcess
+from dataframe.insights import insights
 from dummy.test import tempory
 from JSON.wordcloud import WordCloudfun
  
@@ -45,27 +46,13 @@ def index():
     #for i in range(len(content)):
     #print(content[1])
     df = dataframe(content)
+    insights(df)
     #print(df)
-    WordCloudfun(df)
-    #df.to_csv('dummy.csv')
+    df.to_csv('dummy.csv')
     return "ping"
-
-USER_DATA = {
-    "admin":"SuperSecretPwd1"
-}
-
-
-
-@auth.verify_password
-def verify(username, password):
-    if not (username and password):
-        return False
-    return USER_DATA.get(username) == password
-
 
 #API Route
 @app.route('/api/v1/dummy', methods=['GET'])
-@auth.login_required
 def api():
     books = tempory()
     return jsonify(books)
