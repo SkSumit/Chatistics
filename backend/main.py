@@ -3,6 +3,7 @@ from upload.upload import parsefile
 from dataframe.token import corpus
 from dataframe.TXTtoCSV import dataframe
 from dataframe.preprocessing import preProcess
+from dataframe.insights import insights
 from dummy.test import tempory
 
 
@@ -26,8 +27,7 @@ def hello():
 def index():
     CORPUS = []
     df = pd.DataFrame()
-    path="C:/Users/yashd/Downloads/WhatsApp Chat with Scaler Achiever Club.txt"
-
+    path="F:/Downloads/WhatsApp Chat with Yash Dewangan.txt"
     content=parsefile(path)
     # print(content[6])
     content=corpus(content)
@@ -42,7 +42,8 @@ def index():
     #for i in range(len(content)):
     #print(content[1])
     df = dataframe(content)
-    print(df)
+    insights(df)
+    #print(df)
     df.to_csv('dummy.csv')
     return "ping"
 
