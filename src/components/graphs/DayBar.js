@@ -12,7 +12,7 @@ import {
 export default function DayBar() {
   const context = useContext(FileContext);
   return (
-    <ResponsiveContainer width="100%" height={400}>
+    <ResponsiveContainer width='100%' height={400}>
       <BarChart
         width="100%"
         height={400}
