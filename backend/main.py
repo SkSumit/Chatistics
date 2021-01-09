@@ -8,10 +8,12 @@ from dummy.test import tempory
 from JSON.wordcloud import WordCloudfun
  
 import pandas as pd
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 from flask_restful import Resource, Api
 from flask_httpauth import HTTPBasicAuth
+from werkzeug.utils import secure_filename
+import os
 
 app = Flask(__name__)
 api = Api(app, prefix="/api/v1/dummy")
@@ -27,17 +29,23 @@ def hello():
     return "pong"
 
 #Testing Route
-@app.route('/testing', methods=['GET'])
+@app.route('/testing', methods = ['POST'])
 def index():
-    CORPUS = []
-    df = pd.DataFrame()
-    path="F:/Downloads/WhatsApp Chat with 3 Bois.txt"
-    content=parsefile(path)
-    content=corpus(content)
-    content=preProcess(content)
-    df = dataframe(content)
-    new_insights=insights(df)
-    return jsonify(new_insights)
+    if request.method == 'POST': 
+        file = request.files['file']
+        if file.filename != '':
+            file.save(file.filename)
+            content=parsefile(file.filename)
+            os.remove(file.filename)
+            content=corpus(content)
+            content=preProcess(content)
+            df = dataframe(content)
+            new_insights=insights(df)
+            return jsonify(new_insights)
+    else:
+        print("Something went wrong")
+        return "wrong"
+
 
 #API Route
 @app.route('/api/v1/dummy', methods=['GET'])
