@@ -31,29 +31,18 @@ def hello():
 def index():
     CORPUS = []
     df = pd.DataFrame()
-    path="C:/Users/yashd/Downloads/WhatsApp Chat with Sumit Skn.txt"
+    path="F:/Downloads/WhatsApp Chat with 3 Bois.txt"
     content=parsefile(path)
-    # print(content[6])
     content=corpus(content)
     content=preProcess(content)
-    
-    """     SAVING DATA IN content VARIABLE      """
-
-    
-    """IMPORTANT LINES FOR TESTING"""
-    # print(len(content))
-    # print(content[32])
-    #for i in range(len(content)):
-    #print(content[1])
     df = dataframe(content)
-    insights(df)
-    #print(df)
-    df.to_csv('dummy.csv')
-    return "ping"
+    new_insights=insights(df)
+    return jsonify(new_insights)
 
 #API Route
 @app.route('/api/v1/dummy', methods=['GET'])
 def api():
+    
     books = tempory()
     return jsonify(books)
 
