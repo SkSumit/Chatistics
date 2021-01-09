@@ -8,10 +8,12 @@ from dummy.test import tempory
 from JSON.wordcloud import WordCloudfun
  
 import pandas as pd
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 from flask_restful import Resource, Api
 from flask_httpauth import HTTPBasicAuth
+from werkzeug.utils import secure_filename
+import os
 
 app = Flask(__name__)
 api = Api(app, prefix="/api/v1/dummy")
@@ -27,28 +29,23 @@ def hello():
     return "pong"
 
 #Testing Route
-@app.route('/testing', methods=['GET'])
+@app.route('/testing', methods = ['POST'])
 def index():
-    CORPUS = []
-    df = pd.DataFrame()
-    path="C:/Users/yashd/Downloads/WhatsApp Chat with Sumit Skn.txt"
-    content=parsefile(path)
-    # print(content[6])
-    content=corpus(content)
-    content=preProcess(content)
-    
-    """     SAVING DATA IN content VARIABLE      """
-
-    
-    """IMPORTANT LINES FOR TESTING"""
-    # print(len(content))
-    # print(content[32])
-    #for i in range(len(content)):
-    #print(content[1])
-    df = dataframe(content)
-    insights(df)
-    #print(df)
-    df.to_csv('dummy.csv')
+    if request.method == 'POST': 
+        file = request.files['file']
+        if file.filename != '':
+            file.save(file.filename)
+            print(file.filename)
+            content=parsefile(file.filename)
+            os.remove(file.filename)
+            print(file.filename)
+            content=corpus(content)
+            content=preProcess(content)
+            df = dataframe(content)
+            print("ho gaya bhai")
+            insights(df)
+        else:
+            print("Something went wrong")
     return "ping"
 
 #API Route
