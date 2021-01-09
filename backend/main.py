@@ -46,6 +46,7 @@ def index():
         print("Something went wrong")
         return "wrong"
 
+
 #API Route
 @app.route('/api/v1/dummy', methods=['GET'])
 def api():
