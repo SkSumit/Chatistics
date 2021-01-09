@@ -1,10 +1,37 @@
-body{
-    font-family: 'Roboto', sans-serif !important;
+body {
+  font-family: "Roboto", sans-serif !important;
 }
 
-$family-sans-serif: 'Roboto', sans-serif ;
-$card-header-shadow:0;
-$card-footer-border-top:0;
+$family-sans-serif: "Roboto", sans-serif;
+$card-header-shadow: 0;
+$card-footer-border-top: 0;
+$primary: #25d366;
+$primary-light: #075e54;
+$text-light: white;
+$title-color: #000;
+$subtitle-color:#000;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@import '../../node_modules/bulma/bulma.sass';
+$box-shadow:0;
+// $box-background-color:#DCF8C6;
+
+$dimensions: 16 24 32 48 64 96 128 256;
+
+.underline {
+  text-decoration: underline !important;
+  text-decoration-style: wavy !important;
+  text-decoration-color: $primary !important;
+  text-underline-offset: 5px;
+}
+.box .image{
+  background-color: #25d366 !important;
+}
+.bg-light-green{
+  background-color: #DCF8C6 !important;
+}
+.bg-dark-green{
+  background-color:$primary !important;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import "../../node_modules/bulma/bulma.sass";
