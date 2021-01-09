@@ -1,6 +1,6 @@
 import React from "react";
-import Timeline from "./Timeline";
-import StatsBox from "./StatsBox";
+import Timeline from "../graphs/Timeline";
+import StatsBox from "../StatsBox";
 
 export default function TimelineSection({ data }) {
   const highestValue = data.find(
