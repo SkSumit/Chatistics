@@ -35,22 +35,21 @@ def index():
         file = request.files['file']
         if file.filename != '':
             file.save(file.filename)
-            print(file.filename)
             content=parsefile(file.filename)
             os.remove(file.filename)
-            print(file.filename)
             content=corpus(content)
             content=preProcess(content)
             df = dataframe(content)
-            print("ho gaya bhai")
-            insights(df)
-        else:
-            print("Something went wrong")
-    return "ping"
+            new_insights=insights(df)
+            return jsonify(new_insights)
+    else:
+        print("Something went wrong")
+        return "wrong"
 
 #API Route
 @app.route('/api/v1/dummy', methods=['GET'])
 def api():
+    
     books = tempory()
     return jsonify(books)
 
