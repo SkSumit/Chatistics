@@ -6,15 +6,15 @@ import StatsBox from "../StatsBox";
 export default function DaySection() {
   const context = useContext(FileContext);
   // const {stats: analysis } = context
-  console.log(context.stats.mock[0]);
+  // console.log(context.stats.mock[0]);
   return (
     <section className="hero  ">
       <div className="hero-body">
         <div className="container">
           <div className="columns is-vcentered">
             <div className="column is-4">
-              <div class="tile is-ancestor">
-                <div class="tile is-vertical is-12">
+              <div className="tile is-ancestor">
+                <div className="tile is-vertical is-12">
                   <div className="tile">
                     <div className="tile is-parent is-vertical">
                       <StatsBox
