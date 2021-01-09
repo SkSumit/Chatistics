@@ -1,36 +1,37 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext } from "react";
 import "./styles/index.scss";
-import Hero from "./components/Hero";
-import Summary from "./components/Summary";
+import Hero from "./components/sections/Hero";
+import Summary from "./components/sections/Summary";
 import { mockData } from "./mockAPI";
-import TimelineSection from './components/TimelineSection'
+import TimelineSection from "./components/sections/TimelineSection";
+import DaySection from "./components/sections/DaySection";
 import axios from "axios";
+import Loader from './components/Loader'
 
-
+export const FileContext = createContext(null);
 
 function App() {
   const [file, setFile] = useState(null);
   useEffect(() => {
-    // if (process.env.NODE_ENV === "production") {
-    //   axios
-    //     .get(process.env.REACT_APP_API_URL)
-    //     .then(({ data }) => {
-    //       console.log("data", data);
-    //       setFile(data[0]);
-    //     });
-    // } else {
-    //   console.log(mockData);
-    //   setFile(mockData);
-    // }
-    setFile(mockData)
+    setInterval(() => {
+      setFile(mockData);
+      
+    }, 3000);
   }, []);
 
   return (
-    <>
-      <Hero file={file} />
-      <Summary file={file} />
-      <TimelineSection data={mockData.stats.timelineByMonth}/>
-    </>
+    <FileContext.Provider value={file}>
+      {!file ? (
+        < Loader/>
+      ) : (
+        <>
+          <Hero file={file} />
+          <Summary file={file} />
+          <TimelineSection data={mockData.stats.timelineByMonth} />
+          <DaySection />
+        </>
+      )}
+    </FileContext.Provider>
   );
 }
 
