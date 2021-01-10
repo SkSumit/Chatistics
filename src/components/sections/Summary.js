@@ -1,5 +1,5 @@
 import React from "react";
-import StatsBox from "./StatsBox";
+import StatsBox from "../StatsBox";
 
 export default function Summary({ file }) {
   return (

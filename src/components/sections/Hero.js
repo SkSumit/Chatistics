@@ -1,6 +1,58 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import html2pdf from "html2pdf.js";
+import { FileContext } from "../../App";
+import axios from "axios";
 
-export default function Hero({ onSubmitFile, onFileChange, file }) {
+export default function Hero({ onSubmitFile}) {
+  const context = useContext(FileContext);
+
+  const [file, setFile] = useState(null);
+
+  // const onSubmitFile = (event) => {
+  //   event.preventDefault();
+  //   setFile(data);
+  //   // readFile(file);
+  // };
+
+
+  const onFileChange = async(e) => {
+    e.preventDefault();
+    console.log(e.target.files[0]);
+    const dataFile = e.target.files[0];
+    const result = await axios.post('http://localhost:5000/post',dataFile)
+    console.log(result)
+
+  };
+  const sendFile = (e) => {
+    e.preventDefault();
+    console.log(e.target.files[0]);
+  };
+
+
+  const download = async () => {
+    console.log("download");
+
+    var element = document.getElementById("root");
+    const getOptions = (filename, element) => {
+      let opt = {
+        margin: 0,
+        filename: filename + ".pdf",
+        image: { type: "jpeg", quality: 0.7 },
+        html2canvas: { scale: 2, foreignObjectRendering: true },
+        jsPDF: {
+          unit: "px",
+          format: [
+            element.getBoundingClientRect().height,
+            element.getBoundingClientRect().width,
+          ],
+          orientation: "portrait",
+          hotfixes: ["px_scaling"],
+        },
+      };
+      return opt;
+    };
+    await html2pdf().from(element).set(getOptions("filename", element)).save();
+  };
   return (
     <section className="hero is-medium is-primary ">
       <div className="hero-body">
@@ -27,7 +79,9 @@ export default function Hero({ onSubmitFile, onFileChange, file }) {
                       </span>
                     </span>
                     <span className="file-name">
-                      {file && file.filename? file.filename : "Upload Exported Text File"}
+                      {file && file.filename
+                        ? file.filename
+                        : "Upload Exported Text File"}
                     </span>
                   </label>
                 </p>
@@ -37,6 +91,7 @@ export default function Hero({ onSubmitFile, onFileChange, file }) {
                   <button
                     type="submit"
                     className=" button has-text-primary has-text-weight-semibold "
+                    onClick={sendFile}
                   >
                     Upload
                   </button>
@@ -45,6 +100,7 @@ export default function Hero({ onSubmitFile, onFileChange, file }) {
                   <button
                     type="submit"
                     className=" button is-primary is-inverted is-outlined has-text-weight-semibold "
+                    onClick={download}
                   >
                     Know More
                   </button>
@@ -52,7 +108,6 @@ export default function Hero({ onSubmitFile, onFileChange, file }) {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

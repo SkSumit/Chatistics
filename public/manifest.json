@@ -2,20 +2,36 @@
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
+    
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
+      "src": "android-icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "apple-icon-72x72.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "72x72"
+    },
+    {
+      "src": "apple-icon-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "favicon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
     }
   ],
   "start_url": ".",
@@ -23,3 +39,4 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
+
