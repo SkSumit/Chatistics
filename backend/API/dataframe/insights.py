@@ -41,3 +41,11 @@ def insights(data):
     data=pd.DataFrame(data)
     insights={'general_stats':generalstats(data),'activity_by_day':activity_by_day(data),'activity_by_year':activity_by_year(data)}
     return insights
+
+def numOfText(data):
+    for X in data[data['MESSAGE'] != '']['USERNAME'].unique():
+        count=0
+        for i in range(len(data)):
+            if(X==data['USERNAME'][i] and  data['MESSAGE'][i] != ''):
+                count=count+1
+        print(X,"->",count)
