@@ -1,8 +1,8 @@
 import pandas as pd
-import datetime
+from datetime import datetime
 
 def dataframe(content):
-    column_names = ["DATE","TIME","USERNAME","MESSAGE","DAY"]
+    column_names = ["DATE","TIME","USERNAME","MESSAGE","DAY","YEAR"]
     date, time, username, messages = ([] for i in range(4))
     df = pd.DataFrame(columns = column_names)
     CORPUS=list(content)
@@ -20,15 +20,16 @@ def dataframe(content):
     df["MESSAGE"] = messages            
     try:
         days=[]
+        years=[]
         for i in df['DATE']:
-            day , month , year = i.split("/")        
-            ans = datetime.date(int(year), int(month), int(day))
-            days.append(ans.strftime("%A"))
+            days.append(datetime.strptime(i, "%d/%m/%y").strftime("%A"))
+            years.append(datetime.strptime(i, "%d/%m/%y").year)
     except :
         days=[]
+        years=[]
         for i in df['DATE']:
-            month , day , year = i.split("/")
-            ans = datetime.date(int(year), int(month), int(day))
-            days.append(ans.strftime("%A"))
-    df['DAY'] = days               
+            days.append(datetime.strptime(i, "%m/%d/%y").strftime("%A"))
+            years.append(datetime.strptime(i, "%m/%d/%y").year)
+    df['DAY'] = days
+    df['YEAR']=years               
     return df
