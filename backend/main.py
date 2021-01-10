@@ -5,17 +5,13 @@ from dataframe.TXTtoCSV import dataframe
 from dataframe.preprocessing import preProcess
 from dataframe.insights import insights
 from dummy.test import tempory
-from JSON.wordcloud import WordCloudfun
- 
+
+
 import pandas as pd
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request, redirect, flash, url_for, session, g, Response, send_file, make_response
 from flask_cors import CORS
-from flask_restful import Resource, Api
-from flask_httpauth import HTTPBasicAuth
 
 app = Flask(__name__)
-api = Api(app, prefix="/api/v1/dummy")
-auth = HTTPBasicAuth()
 app.config["DEBUG"] = True
 
 #Add bearer token for authentication
@@ -31,7 +27,7 @@ def hello():
 def index():
     CORPUS = []
     df = pd.DataFrame()
-    path="F:/Downloads/WhatsApp Chat with 3 Bois.txt"
+    path="F:/Downloads/WhatsApp Chat with 3 Boisyash.txt"
     content=parsefile(path)
     content=corpus(content)
     content=preProcess(content)
