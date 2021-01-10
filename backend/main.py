@@ -26,15 +26,14 @@ def hello():
     return "pong"
 
 #Testing Route
-@app.route('/testing', methods = ['POST','GET'])
+@app.route('/testing', methods = ['POST'])
 def index():
-<<<<<<< HEAD
     if request.method == 'POST': 
         file = request.files['file']
         if file.filename != '':
             file.save(file.filename)                #Save File in Root
-            file = check(file.filename)             #check file extension
-            content=parsefile(file.filename)        #Readfile
+            filepath = check(file.filename)         #check file extension
+            content=parsefile(filepath)             #Readfile
             os.remove(file.filename)                #Remove file from root
             content=corpus(content)                 #Filter the words
             content=preProcess(content)             #Preprocess the data
@@ -44,31 +43,6 @@ def index():
     else:
         print("Something went wrong")
         return "wrong"
-=======
-    CORPUS = []
-    df = pd.DataFrame()
-    path="F:/Downloads/WhatsApp Chat with 3 Bois.txt"
-    content=parsefile(path)
-    content=corpus(content)
-    content=preProcess(content)
-    df = dataframe(content)
-    new_insights=insights(df)
-    return jsonify(new_insights)
-    # if request.method == 'POST': 
-    #     file = request.files['file']
-    #     if file.filename != '':
-    #         file.save(file.filename)
-    #         content=parsefile(file.filename)
-    #         os.remove(file.filename)
-    #         content=corpus(content)
-    #         content=preProcess(content)
-    #         df = dataframe(content)
-    #         new_insights=insights(df)
-    #         return jsonify(new_insights)
-    # else:
-    #     print("Something went wrong")
-    #     return "wrong"
->>>>>>> 2e7294f2708492450fe550d54b4a78b8aca57a9f
 
 
 #API Route
@@ -78,10 +52,5 @@ def api():
     books = tempory()
     return jsonify(books)
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 2e7294f2708492450fe550d54b4a78b8aca57a9f
 if __name__ == '__main__':
     app.run(debug=True)
