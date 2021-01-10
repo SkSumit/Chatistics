@@ -1,17 +1,23 @@
-import React, { useContext,useState } from "react";
+import React, { useContext, useState } from "react";
 import { FileContext } from "../../App";
-import DayBar from "../graphs/DayBar";
+import TimeRadarChart from "../graphs/TimeRadarChart";
 import StatsBox from "../StatsBox";
 
-export default function DaySection() {
+export default function TimeRadarSection() {
   const context = useContext(FileContext);
-  const [selectedOption, setSelectedOption] = useState({value:'all',label:'All'});
-  console.log(context)
+  const [selectedOption, setSelectedOption] = useState({
+    value: "all",
+    label: "All",
+  });
+
   return (
     <section className="hero  ">
       <div className="hero-body">
         <div className="container">
           <div className="columns is-vcentered">
+            <div className="column ">
+              <TimeRadarChart />
+            </div>
             <div className="column is-4">
               <div className="tile is-ancestor">
                 <div className="tile is-vertical is-12">
@@ -19,7 +25,11 @@ export default function DaySection() {
                     <div className="tile is-parent is-vertical">
                       <StatsBox
                         title={"Average Texts Per Day"}
-                        stats={context.file.stats.analysis.basedOnDays[selectedOption.value].averageTexts}
+                        stats={
+                          context.file.stats.analysis.basedOnDays[
+                            selectedOption.value
+                          ].averageTexts
+                        }
                         icon={
                           <i
                             className="fas fa-comment-dots fa-2x"
@@ -29,7 +39,11 @@ export default function DaySection() {
                       />
                       <StatsBox
                         title={"Most Texted Day"}
-                        stats={context.file.stats.analysis.basedOnDays[selectedOption.value].mostActiveDay}
+                        stats={
+                          context.file.stats.analysis.basedOnDays[
+                            selectedOption.value
+                          ].mostActiveDay
+                        }
                         icon={
                           <i
                             className="fas fa-calendar-week fa-2x"
@@ -40,7 +54,9 @@ export default function DaySection() {
                       <StatsBox
                         title={"Most Frequently texted Day"}
                         stats={
-                          context.file.stats.analysis.basedOnDays[selectedOption.value].mostFrequentDay
+                          context.file.stats.analysis.basedOnDays[
+                            selectedOption.value
+                          ].mostFrequentDay
                         }
                         icon={
                           <i
@@ -53,9 +69,6 @@ export default function DaySection() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="column">
-              <DayBar selectedOption={selectedOption} setSelectedOption={setSelectedOption}/>
             </div>
           </div>
         </div>
