@@ -32,6 +32,17 @@ $dimensions: 16 24 32 48 64 96 128 256;
   background-color:$primary !important;
 }
 
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import "../../node_modules/bulma/bulma.sass";
