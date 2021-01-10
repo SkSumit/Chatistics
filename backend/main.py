@@ -32,22 +32,31 @@ def hello():
     return "pong"
 
 #Testing Route
-@app.route('/testing', methods = ['POST'])
+@app.route('/testing', methods = ['POST','GET'])
 def index():
-    if request.method == 'POST': 
-        file = request.files['file']
-        if file.filename != '':
-            file.save(file.filename)
-            content=parsefile(file.filename)
-            os.remove(file.filename)
-            content=corpus(content)
-            content=preProcess(content)
-            df = dataframe(content)
-            new_insights=insights(df)
-            return jsonify(new_insights)
-    else:
-        print("Something went wrong")
-        return "wrong"
+    CORPUS = []
+    df = pd.DataFrame()
+    path="F:/Downloads/WhatsApp Chat with 3 Bois.txt"
+    content=parsefile(path)
+    content=corpus(content)
+    content=preProcess(content)
+    df = dataframe(content)
+    new_insights=insights(df)
+    return jsonify(new_insights)
+    # if request.method == 'POST': 
+    #     file = request.files['file']
+    #     if file.filename != '':
+    #         file.save(file.filename)
+    #         content=parsefile(file.filename)
+    #         os.remove(file.filename)
+    #         content=corpus(content)
+    #         content=preProcess(content)
+    #         df = dataframe(content)
+    #         new_insights=insights(df)
+    #         return jsonify(new_insights)
+    # else:
+    #     print("Something went wrong")
+    #     return "wrong"
 
 
 #API Route
@@ -56,50 +65,6 @@ def api():
     
     books = tempory()
     return jsonify(books)
-
-#Testing Route
-# @cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
-@app.route('/post', methods = ['POST'])
-def postfile():
-    uploaded_file = request.files['file']
-    if uploaded_file.filename != '':
-        # uploaded_file.save(uploaded_file.filename)
-        # mystring = TextIOWrapper(uploaded_file)
-        print(uploaded_file)
-        content=parsefile(uploaded_file.filename)
-        print(content)
-
-    # print(file)
-    # content=parsefile(file)
-    # # print(content)
-    # f = open("demofile3.txt", "w")
-    # f.write(content)
-    # f.close()
-
-    # filename = secure_filename(file.filename)
-    # print(parsefile(filename))
-    # df = pd.DataFrame()
-    # path="C:/Users/yashd/Downloads/WhatsApp Chat with Sumit Skn.txt"
-    # content=parsefile(file)
-    # # print(content[6])
-    # content=corpus(content)
-    # content=preProcess(content)
-    
-    """     SAVING DATA IN content VARIABLE      """
-
-    
-    """IMPORTANT LINES FOR TESTING"""
-    # print(len(content))
-    # print(content[32])
-    #for i in range(len(content)):
-    #print(content[1])
-    # df = dataframe(content)
-    # insights(df)
-    #print(df)
-    #df.to_csv('dummy.csv')
-    return "ping"
-
-
 
 
 
