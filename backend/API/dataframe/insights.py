@@ -23,8 +23,9 @@ def activity_by_day(data):
     act_by_day=pd.DataFrame(columns=['DAY','NO_OF_MSGS'])
     days=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
     msgs=[]
+    res=data[data['MESSAGE'] != '']['DAY'].value_counts()
     for i in days:
-        msgs.append(len(data[(data['DAY'] == i) & (data['MESSAGE']!="")]))
+        msgs.append(res[i])
     act_by_day['DAY']=days
     act_by_day['NO_OF_MSGS']=msgs
     return act_by_day.to_dict(orient="records")
@@ -32,12 +33,13 @@ def activity_by_day(data):
 def activity_by_year(data):
     act_by_year=pd.DataFrame(columns=['YEAR','NO_OF_MSGS'])
     year,msgs=[],[]
+    res=data[data['MESSAGE'] != '']['YEAR'].value_counts()
     for i in data['YEAR'].unique():
         year.append(i)
-        msgs.append(len(data[data['YEAR']==i]))
+        msgs.append(res[i])
     act_by_year['YEAR']=year
     act_by_year['NO_OF_MSGS']=msgs
-    return act_by_year.to_dict(orient='records')        
+    return act_by_year.to_dict(orient='records')     
 
 def numOfText(data):
     user_info = pd.DataFrame(columns=['USER_NAME','NO_OF_MSGS'])
