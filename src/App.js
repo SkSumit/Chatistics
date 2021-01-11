@@ -6,29 +6,41 @@ import { mockData } from "./mockAPI";
 import TimelineSection from "./components/sections/TimelineSection";
 import DaySection from "./components/sections/DaySection";
 import axios from "axios";
-import Loader from './components/Loader'
+import Loader, { LoaderAnalysis } from "./components/Loader";
+import TimeRadarSection from "./components/sections/TimeRadarSection";
+import Footer from './components/sections/Footer'
+import CTA from './components/CTA'
 
 export const FileContext = createContext(null);
 
 function App() {
   const [file, setFile] = useState(null);
+  const [loader, setLoader] = useState(false);
   useEffect(() => {
     setInterval(() => {
       setFile(mockData);
-      
-    }, 3000);
+    }, 2000);
   }, []);
 
+  if(loader){
+    return (
+      <LoaderAnalysis/>
+    )
+  }
+
   return (
-    <FileContext.Provider value={file}>
+    <FileContext.Provider value={{file,setLoader}}>
       {!file ? (
-        < Loader/>
+        <Loader />
       ) : (
         <>
-          <Hero file={file} />
+          <Hero />
           <Summary file={file} />
           <TimelineSection data={mockData.stats.timelineByMonth} />
           <DaySection />
+          <TimeRadarSection />
+           <CTA/>
+          <Footer/>
         </>
       )}
     </FileContext.Provider>

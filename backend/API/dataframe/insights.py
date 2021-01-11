@@ -50,8 +50,6 @@ def activity_by_year(data):
     act_by_year['NO_OF_MSGS']=msgs
     return act_by_year.to_dict(orient='records')
     
-            
-
 def insights(data):  
     data=pd.DataFrame(data)
     insights={'num_of_text':numOfText(data),'general_stats':generalstats(data),'activity_by_day':activity_by_day(data),'activity_by_year':activity_by_year(data)}

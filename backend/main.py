@@ -1,15 +1,15 @@
 #Customize Created Functions
-from upload.upload import parsefile
-from dataframe.token import corpus
-from dataframe.TXTtoCSV import dataframe
-from dataframe.preprocessing import preProcess
-from dataframe.insights import insights
-from dummy.test import tempory
-from werkzeug.utils import secure_filename
-import os
-
-
+from API.upload.upload import parsefile
+from API.upload.check import check
+from API.dataframe.token import corpus
+from API.dataframe.TXTtoCSV import dataframe
+from API.dataframe.preprocessing import preProcess
+from API.dataframe.insights import insights
+from API.dummy.test import tempory
+# from API.wordcloud.wordcloud import WordCloudfun
+ 
 import pandas as pd
+import os
 from flask import Flask, jsonify, request, redirect, flash, url_for, session, g, Response, send_file, make_response
 from flask_cors import CORS
 
@@ -20,6 +20,9 @@ app.config["DEBUG"] = True
 cors = CORS(app, resources={r"*": {"origins": "*"}})
 
 
+CORS(app)
+
+#index route
 @app.route('/', methods=['GET'])
 def hello():
     return "pong"
