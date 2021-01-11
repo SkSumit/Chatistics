@@ -9,15 +9,17 @@ from API.dummy.test import tempory
 # from API.wordcloud.wordcloud import WordCloudfun
  
 import pandas as pd
-from flask import Flask, jsonify, request
-from flask_cors import CORS
-from flask_restful import Resource, Api
-from flask_httpauth import HTTPBasicAuth
-from werkzeug.utils import secure_filename
 import os
+from flask import Flask, jsonify, request, redirect, flash, url_for, session, g, Response, send_file, make_response
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
+
+#Add bearer token for authentication
+cors = CORS(app, resources={r"*": {"origins": "*"}})
+
+
 CORS(app)
 
 #index route
@@ -26,24 +28,19 @@ def hello():
     return "pong"
 
 #Testing Route
-@app.route('/testing', methods = ['POST'])
+@app.route('/testing', methods=['POST'])
 def index():
     if request.method == 'POST': 
         file = request.files['file']
         if file.filename != '':
-            file.save(file.filename)                #Save File in Root
-            filepath = check(file.filename)         #check file extension
-            content=parsefile(filepath)             #Readfile
-            os.remove(file.filename)                #Remove file from root
-            content=corpus(content)                 #Filter the words
-            content=preProcess(content)             #Preprocess the data
-            df = dataframe(content)                 #
-            new_insights=insights(df)               #
-            return jsonify(new_insights)    
-    else:
-        print("Something went wrong")
-        return "wrong"
-
+            file.save(file.filename)
+            content=parsefile(file.filename)
+            os.remove(file.filename)
+            content=corpus(content)
+            content=preProcess(content)
+            df = dataframe(content)
+            new_insights=insights(df)
+            return jsonify(new_insights)
 
 #API Route
 @app.route('/api/v1/dummy', methods=['GET'])
