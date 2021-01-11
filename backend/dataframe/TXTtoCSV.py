@@ -14,10 +14,7 @@ def dataframe(content):
             messages.append(" ".join(content[i].split(":")[2:])[1:])
         else:
             messages.append("^".join(content[i].split(":")[2:])[1:])
-    df["DATE"] = date
-    df["TIME"] = time
-    df["USERNAME"] = username
-    df["MESSAGE"] = messages            
+    df["DATE"] = date            
     try:
         days=[]
         years=[]
@@ -31,5 +28,8 @@ def dataframe(content):
             days.append(datetime.strptime(i, "%m/%d/%y").strftime("%A"))
             years.append(datetime.strptime(i, "%m/%d/%y").year)
     df['DAY'] = days
-    df['YEAR']=years               
+    df['YEAR']=years
+    df["TIME"] = time
+    df["USERNAME"] = username
+    df["MESSAGE"] = messages               
     return df
