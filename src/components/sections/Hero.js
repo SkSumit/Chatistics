@@ -3,35 +3,15 @@ import html2pdf from "html2pdf.js";
 import { FileContext } from "../../App";
 import axios from "axios";
 
-export default function Hero({ onSubmitFile}) {
+export default function Hero() {
   const context = useContext(FileContext);
-
-  const [file, setFile] = useState(null);
-
-  // const onSubmitFile = (event) => {
-  //   event.preventDefault();
-  //   setFile(data);
-  //   // readFile(file);
-  // };
-
-
-  const onFileChange = async(e) => {
-    e.preventDefault();
-    console.log(e.target.files[0]);
-    const dataFile = e.target.files[0];
-    const result = await axios.post('http://localhost:5000/post',dataFile)
-    console.log(result)
-
+  const [uploadFile, setUploadFile] = useState(null);
+  const onFileChange = async (e) => {
+    setUploadFile(e.target.files[0])
   };
-  const sendFile = (e) => {
-    e.preventDefault();
-    console.log(e.target.files[0]);
-  };
-
-
   const download = async () => {
     console.log("download");
-
+  
     var element = document.getElementById("root");
     const getOptions = (filename, element) => {
       let opt = {
@@ -53,6 +33,26 @@ export default function Hero({ onSubmitFile}) {
     };
     await html2pdf().from(element).set(getOptions("filename", element)).save();
   };
+
+  const sendFile = (e) => {
+    e.preventDefault();
+    if(uploadFile){
+      console.log(uploadFile);
+      if(uploadFile.name.slice((uploadFile.name.lastIndexOf(".") - 1 >>> 0) + 2) !== 'txt'){
+        alert('Wrong File SISTA')
+      } else{
+  context.setLoader(true)
+      setInterval(() => {
+        context.setLoader(false);
+      }, 3000);
+      }
+    
+   }else{
+     console.log('NO!')
+   }
+  };
+ 
+  console.log('up',uploadFile)
   return (
     <section className="hero is-medium is-primary ">
       <div className="hero-body">
@@ -72,6 +72,7 @@ export default function Hero({ onSubmitFile}) {
                       className="file-input"
                       type="file"
                       onChange={onFileChange}
+                      accept = '.txt'
                     />
                     <span className="file-cta" style={{ color: "#25D366" }}>
                       <span className="file-icon">
@@ -79,8 +80,8 @@ export default function Hero({ onSubmitFile}) {
                       </span>
                     </span>
                     <span className="file-name">
-                      {file && file.filename
-                        ? file.filename
+                      {uploadFile && uploadFile.name
+                        ? uploadFile.name
                         : "Upload Exported Text File"}
                     </span>
                   </label>
@@ -113,3 +114,5 @@ export default function Hero({ onSubmitFile}) {
     </section>
   );
 }
+
+

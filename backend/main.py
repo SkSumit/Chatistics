@@ -9,15 +9,17 @@ from API.dummy.test import tempory
 # from API.wordcloud.wordcloud import WordCloudfun
  
 import pandas as pd
-from flask import Flask, jsonify, request
-from flask_cors import CORS
-from flask_restful import Resource, Api
-from flask_httpauth import HTTPBasicAuth
-from werkzeug.utils import secure_filename
 import os
+from flask import Flask, jsonify, request, redirect, flash, url_for, session, g, Response, send_file, make_response
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
+
+#Add bearer token for authentication
+cors = CORS(app, resources={r"*": {"origins": "*"}})
+
+
 CORS(app)
 
 #index route
@@ -26,7 +28,7 @@ def hello():
     return "pong"
 
 #Testing Route
-@app.route('/testing', methods = ['POST'])
+@app.route('/testing', methods=['POST'])
 def index():
     if request.method == 'POST': 
         file = request.files['file']

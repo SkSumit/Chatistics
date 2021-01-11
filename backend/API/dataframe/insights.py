@@ -40,8 +40,15 @@ def activity_by_year(data):
     return act_by_year.to_dict(orient='records')        
 
 def numOfText(data):
-    user_info = data[data['MESSAGE'] != '']['USERNAME'].value_counts()
-    return user_info.to_dict()
+    user_info = pd.DataFrame(columns=['USER_NAME','NO_OF_MSGS'])
+    name,msgs = [],[]
+    res=data[data['MESSAGE'] != '']['USERNAME'].value_counts()
+    for i in data[data['MESSAGE'] != '']['USERNAME'].unique():
+        name.append(i)
+        msgs.append(res[i])
+    user_info['USER_NAME']=name
+    user_info['NO_OF_MSGS']=msgs
+    return user_info.to_dict(orient="records")
      
 
 def searchEmoji(data):
@@ -66,8 +73,6 @@ def searchEmoji(data):
     
     return emoji_info.to_dict(orient='records')
                 
-
-
 def insights(data):  
     data=pd.DataFrame(data)
     insights={'Emoji':searchEmoji(data),'user_message_count':numOfText(data),'general_stats':generalstats(data),'activity_by_day':activity_by_day(data),'activity_by_year':activity_by_year(data)}

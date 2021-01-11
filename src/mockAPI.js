@@ -96,48 +96,611 @@ export const mockData = {
     ],
     analysis: {
       basedOnDays: {
-        days: [
-          {
-            day: "Monday",
-            value: 5667,
-            frequency : 54
-          },
-          {
-            day: "Tuesday",
-            value: 5661,
-            frequency : 54
-          },
-          {
-            day: "Wednesday",
-            value: 4232,
-            frequency : 52
-          },
-          {
-            day: "Thursay",
-            value: 3841,
-            frequency : 54
-          },
-          {
-            day: "Friday",
-            value: 4523,
-            frequency : 57
-          },
-          {
-            day: "Saturday",
-            value: 8965,
-            frequency : 67
-          },
-          {
-            day: "Sunday",
-            value: 7856,
-            frequency : 53
-          },
-        ],
-        mostActiveDay : "Saturday",
-        mostFrequentDay : "Saturday",
-        averageTexts : 5820
+        all : {
+          days: [
+            {
+              day: "Monday",
+              value: 5667,
+              frequency : 54
+            },
+            {
+              day: "Tuesday",
+              value: 5661,
+              frequency : 54
+            },
+            {
+              day: "Wednesday",
+              value: 4232,
+              frequency : 52
+            },
+            {
+              day: "Thursay",
+              value: 3841,
+              frequency : 54
+            },
+            {
+              day: "Friday",
+              value: 4523,
+              frequency : 57
+            },
+            {
+              day: "Saturday",
+              value: 8965,
+              frequency : 67
+            },
+            {
+              day: "Sunday",
+              value: 7856,
+              frequency : 53
+            },
+          ],
+          mostActiveDay : "Saturday",
+          mostFrequentDay : "Saturday",
+          averageTexts : 5820
 
+        },
+        sumit :{
+          days: [
+            {
+              day: "Monday",
+              value: 57,
+              frequency : 54
+            },
+            {
+              day: "Tuesday",
+              value: 51,
+              frequency : 54
+            },
+            {
+              day: "Wednesday",
+              value: 42,
+              frequency : 52
+            },
+            {
+              day: "Thursay",
+              value: 1,
+              frequency : 54
+            },
+            {
+              day: "Friday",
+              value: 43,
+              frequency : 57
+            },
+            {
+              day: "Saturday",
+              value: 85,
+              frequency : 67
+            },
+            {
+              day: "Sunday",
+              value: 76,
+              frequency : 53
+            },
+          ],
+          mostActiveDay : "Monday",
+          mostFrequentDay : "Sunday",
+          averageTexts : 124
 
+        },
+        yash : {
+          days: [
+            {
+              day: "Monday",
+              value: 5667,
+              frequency : 54
+            },
+            {
+              day: "Tuesday",
+              value: 5661,
+              frequency : 54
+            },
+            {
+              day: "Wednesday",
+              value: 4232,
+              frequency : 52
+            },
+            {
+              day: "Thursay",
+              value: 3841,
+              frequency : 54
+            },
+            {
+              day: "Friday",
+              value: 4523,
+              frequency : 57
+            },
+            {
+              day: "Saturday",
+              value: 8965,
+              frequency : 67
+            },
+            {
+              day: "Sunday",
+              value: 7856,
+              frequency : 53
+            },
+          ],
+          mostActiveDay : "Saturday",
+          mostFrequentDay : "Saturday",
+          averageTexts : 5820
+
+        },
+        atharva : {
+          days: [
+            {
+              day: "Monday",
+              value: 5667,
+              frequency : 54
+            },
+            {
+              day: "Tuesday",
+              value: 5661,
+              frequency : 54
+            },
+            {
+              day: "Wednesday",
+              value: 4232,
+              frequency : 52
+            },
+            {
+              day: "Thursay",
+              value: 3841,
+              frequency : 54
+            },
+            {
+              day: "Friday",
+              value: 4523,
+              frequency : 57
+            },
+            {
+              day: "Saturday",
+              value: 8965,
+              frequency : 67
+            },
+            {
+              day: "Sunday",
+              value: 7856,
+              frequency : 53
+            },
+          ],
+          mostActiveDay : "Saturday",
+          mostFrequentDay : "Saturday",
+          averageTexts : 5820
+
+        },
+        purva : {
+          days: [
+            {
+              day: "Monday",
+              value: 0,
+              frequency : 54
+            },
+            {
+              day: "Tuesday",
+              value: 0,
+              frequency : 54
+            },
+            {
+              day: "Wednesday",
+              value: 0,
+              frequency : 52
+            },
+            {
+              day: "Thursay",
+              value: 3841,
+              frequency : 54
+            },
+            {
+              day: "Friday",
+              value: 4523,
+              frequency : 57
+            },
+            {
+              day: "Saturday",
+              value: 8965,
+              frequency : 67
+            },
+            {
+              day: "Sunday",
+              value: 7856,
+              frequency : 53
+            },
+          ],
+          mostActiveDay : "Saturday",
+          mostFrequentDay : "Saturday",
+          averageTexts : 5820
+
+        }
+      
+      },
+      basedOnTime: {
+        all : {
+         time: [
+            {
+              day: "1h",
+              value: 56,
+              frequency : 2
+            },
+            {
+              day: "2h",
+              value: 51,
+              frequency : 2
+            },
+            {
+              day: "3h",
+              value: 4,
+              frequency : 1
+            },
+            {
+              day: "4h",
+              value: 0,
+              frequency : 0
+            },
+            {
+              day: "5h",
+              value: 0,
+              frequency : 0
+            },
+            {
+              day: "6h",
+              value: 89,
+              frequency : 6
+            },
+            {
+              day: "7h",
+              value: 785,
+              frequency : 53
+            },
+            {
+              day: "8h",
+              value: 675,
+              frequency : 51
+            },
+            {
+              day: "9h",
+              value: 2325,
+              frequency : 513
+            },
+            {
+              day: "10h",
+              value: 4511,
+              frequency : 122
+            },
+            {
+              day: "11h",
+              value: 6454,
+              frequency : 442
+            },
+            {
+              day: "12h",
+              value: 4521,
+              frequency : 541
+            },
+            {
+              day: "13h",
+              value: 5412,
+              frequency : 123
+            },
+            {
+              day: "14h",
+              value: 4520,
+              frequency : 745
+            },
+            {
+              day: "15h",
+              value: 7855,
+              frequency : 321
+            },
+            {
+              day: "16h",
+              value: 7858,
+              frequency : 534
+            },
+            {
+              day: "17h",
+              value: 8454,
+              frequency : 344
+            },
+            {
+              day: "18h",
+              value: 7855,
+              frequency : 534
+            },
+            {
+              day: "19h",
+              value: 7854,
+              frequency : 534
+            },
+            {
+              day: "20h",
+              value: 1885,
+              frequency : 241
+            },
+            {
+              day: "21h",
+              value: 4552,
+              frequency : 511
+            },
+            {
+              day: "22h",
+              value: 2313,
+              frequency : 231
+            },
+            {
+              day: "23h",
+              value: 4512,
+              frequency : 236
+            },
+            {
+              day: "24h",
+              value: 8595,
+              frequency : 238
+            },
+          ],
+          mostActiveTime : "Saturday",
+          mostFrequentTime : "Saturday",
+          averageTexts : 5820
+
+        },
+        sumit : {
+          time: [
+             {
+               day: "1h",
+               value: 56,
+               frequency : 2
+             },
+             {
+               day: "2h",
+               value: 51,
+               frequency : 2
+             },
+             {
+               day: "3h",
+               value: 4,
+               frequency : 1
+             },
+             {
+               day: "4h",
+               value: 0,
+               frequency : 0
+             },
+             {
+               day: "5h",
+               value: 0,
+               frequency : 0
+             },
+             {
+               day: "6h",
+               value: 89,
+               frequency : 6
+             },
+             {
+               day: "7h",
+               value: 785,
+               frequency : 53
+             },
+             {
+               day: "8h",
+               value: 675,
+               frequency : 51
+             },
+             {
+               day: "9h",
+               value: 2325,
+               frequency : 513
+             },
+             {
+               day: "10h",
+               value: 4511,
+               frequency : 122
+             },
+             {
+               day: "11h",
+               value: 6454,
+               frequency : 442
+             },
+             {
+               day: "12h",
+               value: 4521,
+               frequency : 541
+             },
+             {
+               day: "13h",
+               value: 5412,
+               frequency : 123
+             },
+             {
+               day: "14h",
+               value: 4520,
+               frequency : 745
+             },
+             {
+               day: "15h",
+               value: 7855,
+               frequency : 321
+             },
+             {
+               day: "16h",
+               value: 7858,
+               frequency : 534
+             },
+             {
+               day: "17h",
+               value: 8454,
+               frequency : 344
+             },
+             {
+               day: "18h",
+               value: 7855,
+               frequency : 534
+             },
+             {
+               day: "19h",
+               value: 7854,
+               frequency : 534
+             },
+             {
+               day: "20h",
+               value: 1885,
+               frequency : 241
+             },
+             {
+               day: "21h",
+               value: 4552,
+               frequency : 511
+             },
+             {
+               day: "22h",
+               value: 2313,
+               frequency : 231
+             },
+             {
+               day: "23h",
+               value: 4512,
+               frequency : 236
+             },
+             {
+               day: "24h",
+               value: 8595,
+               frequency : 238
+             },
+           ],
+           mostActiveTime : "Saturday",
+           mostFrequentTime : "Saturday",
+           averageTexts : 5820
+ 
+         },
+        yash : {
+          time: [
+             {
+               day: "1h",
+               value: 56,
+               frequency : 2
+             },
+             {
+               day: "2h",
+               value: 51,
+               frequency : 2
+             },
+             {
+               day: "3h",
+               value: 4,
+               frequency : 1
+             },
+             {
+               day: "4h",
+               value: 0,
+               frequency : 0
+             },
+             {
+               day: "5h",
+               value: 0,
+               frequency : 0
+             },
+             {
+               day: "6h",
+               value: 89,
+               frequency : 6
+             },
+             {
+               day: "7h",
+               value: 785,
+               frequency : 53
+             },
+             {
+               day: "8h",
+               value: 675,
+               frequency : 51
+             },
+             {
+               day: "9h",
+               value: 2325,
+               frequency : 513
+             },
+             {
+               day: "10h",
+               value: 4511,
+               frequency : 122
+             },
+             {
+               day: "11h",
+               value: 6454,
+               frequency : 442
+             },
+             {
+               day: "12h",
+               value: 4521,
+               frequency : 541
+             },
+             {
+               day: "13h",
+               value: 5412,
+               frequency : 123
+             },
+             {
+               day: "14h",
+               value: 4520,
+               frequency : 745
+             },
+             {
+               day: "15h",
+               value: 7855,
+               frequency : 321
+             },
+             {
+               day: "16h",
+               value: 7858,
+               frequency : 534
+             },
+             {
+               day: "17h",
+               value: 8454,
+               frequency : 344
+             },
+             {
+               day: "18h",
+               value: 7855,
+               frequency : 534
+             },
+             {
+               day: "19h",
+               value: 7854,
+               frequency : 534
+             },
+             {
+               day: "20h",
+               value: 1885,
+               frequency : 241
+             },
+             {
+               day: "21h",
+               value: 4552,
+               frequency : 511
+             },
+             {
+               day: "22h",
+               value: 2313,
+               frequency : 231
+             },
+             {
+               day: "23h",
+               value: 4512,
+               frequency : 236
+             },
+             {
+               day: "24h",
+               value: 8595,
+               frequency : 238
+             },
+           ],
+           mostActiveTime : "Saturday",
+           mostFrequentTime : "Saturday",
+           averageTexts : 5820
+ 
+         },
+      
+       
+      
       },
     },
     mock:[{'USERNAME': 'atharva kulkarni 😂', 'MESSAGES': 1000},
