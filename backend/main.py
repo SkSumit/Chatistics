@@ -9,9 +9,12 @@ from API.dummy.test import tempory
 # from API.wordcloud.wordcloud import WordCloudfun
  
 import pandas as pd
-import os
-from flask import Flask, jsonify, request, redirect, flash, url_for, session, g, Response, send_file, make_response
+from flask import Flask, jsonify, request
 from flask_cors import CORS
+from flask_restful import Resource, Api
+from flask_httpauth import HTTPBasicAuth
+from werkzeug.utils import secure_filename
+import os
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
@@ -41,6 +44,9 @@ def index():
             df = dataframe(content)
             new_insights=insights(df)
             return jsonify(new_insights)
+    else:
+        print("Something went wrong")
+        return "wrong"        
 
 #API Route
 @app.route('/api/v1/dummy', methods=['GET'])
