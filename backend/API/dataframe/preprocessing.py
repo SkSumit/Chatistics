@@ -14,7 +14,9 @@ def correct(listnew):
 
 def preProcess(content):
     CORPUS = list(content)
-    stopwords = [".*^$",".*security code changed. tap for more info.",".*messages and calls are end-to-end encrypted",".*changed their phone number",".*changed this group's icon"]
+    stopwords = [".*^$",".*security code changed. tap for more info.",".*messages and calls are end-to-end encrypted",".*changed their phone number",".*changed this group's icon",".*turned on disappearing messages",".*turned on disappearing messages",".*turned off disappearing messages",".*added you",".*left",".*new added you",".*this message was deleted"
+    ,'.*changed the subject from','.*changed the group description','.*deleted this group','.*added','.*settings to allow all participants to send messages'
+    ,'.*settings to allow only admins to send messages to this group','.*deleted the group description','.*removed','.*no longer an admin','.*now an admin']
     r=re.compile('|'.join(stopwords))
     for i in list(filter(r.match, CORPUS)):
         CORPUS.remove(i)

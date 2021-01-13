@@ -8,7 +8,7 @@ from API.dataframe.insights import insights
 from API.dummy.test import tempory
 # from API.wordcloud.wordcloud import WordCloudfun
  
-import pandas as pd
+#import pandas as pd
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from flask_restful import Resource, Api
@@ -42,8 +42,8 @@ def index():
                 os.remove(file.filename)                #Remove file from root
                 content=corpus(content)                 #Filter the words
                 content=preProcess(content)             #Preprocess the data
-                df = dataframe(content)                 #
-                new_insights=insights(df)               #
+                new_insights = dataframe(content)                 #
+                #new_insights=insights(df)               #
                 return jsonify(new_insights)   
             else:
                 os.remove(file.filename) 
