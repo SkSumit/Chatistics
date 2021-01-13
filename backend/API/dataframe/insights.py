@@ -54,25 +54,13 @@ def numOfText(data):
      
 
 def searchEmoji(data):
-    emoji_info=pd.DataFrame(columns=['Emoji','NO_OF_Emoji'])
-    
-    Emojichar = []
-    Emoji = []
-    NO_OF_Emoji = []
-    
+    Emojichar = []   
     for i in range(len(data)):
         for character in data['MESSAGE'][i]:
             if character in emoji.UNICODE_EMOJI:   #emoji search
                 Emojichar.append(character)
-    Emojichar.sort()
-
-    for team in [ele for ind, ele in enumerate(Emojichar,1) if ele not in Emojichar[ind:]]:
-        Emoji.append(team)
-        NO_OF_Emoji.append(Emojichar.count(team)) 
-
-    emoji_info['Emoji'] = Emoji
-    emoji_info['NO_OF_Emoji'] = NO_OF_Emoji
-    
+    emojidata=Counter(Emojichar).most_common()
+    emoji_info=pd.DataFrame(emojidata[:20] , columns=['Emoji','No_Of_Emoji'])
     return emoji_info.to_dict(orient='records')
                 
 def insights(data):  
