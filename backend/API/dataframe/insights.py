@@ -73,7 +73,9 @@ def searchEmoji(data):
     emoji_info['Emoji'] = Emoji
     emoji_info['NO_OF_Emoji'] = NO_OF_Emoji
     
-    return emoji_info.to_dict(orient='records')
+    emoji_info = emoji_info.sort_values(by=['NO_OF_Emoji'],ascending=False)
+    emoji_info = emoji_info.head(20)
+    return emoji_info.head(20).to_dict(orient='records')
                 
 def insights(data):  
     data=pd.DataFrame(data)
