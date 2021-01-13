@@ -36,22 +36,27 @@ def index():
     if request.method == 'POST': 
         file = request.files['file']
         if file.filename != '':
-            file.save(file.filename)
-            content=parsefile(file.filename)
-            os.remove(file.filename)
-            content=corpus(content)
-            content=preProcess(content)
-            df = dataframe(content)
-            new_insights=insights(df)
-            return jsonify(new_insights)
+            file.save(file.filename)                    #Save File in Root
+            if check(file.filename) == True:            #check file extension
+                content=parsefile(file.filename)        #Readfile
+                os.remove(file.filename)                #Remove file from root
+                content=corpus(content)                 #Filter the words
+                content=preProcess(content)             #Preprocess the data
+                df = dataframe(content)                 #
+                new_insights=insights(df)               #
+                return jsonify(new_insights)   
+            else:
+                os.remove(file.filename) 
+                print("your file is not in TXT") 
+                return "wrong"
     else:
         print("Something went wrong")
-        return "wrong"        
+        return "wrong"
+
 
 #API Route
 @app.route('/api/v1/dummy', methods=['GET'])
 def api():
-    
     books = tempory()
     return jsonify(books)
 
