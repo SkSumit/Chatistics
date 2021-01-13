@@ -1,37 +1,32 @@
 body {
   font-family: "Roboto", sans-serif !important;
+  background-color: #ece5dd;
+  background-image: url("../img/bg-chat.png");
+  background-size: 75vh;
 }
 
 $family-sans-serif: "Roboto", sans-serif;
-$card-header-shadow: 0;
-$card-footer-border-top: 0;
 $primary: #25d366;
 $primary-light: #075e54;
 $text-light: white;
 $title-color: #000;
-$subtitle-color:#000;
+$subtitle-color: #000;
 
-$box-shadow:0;
-// $box-background-color:#DCF8C6;
-
-$dimensions: 16 24 32 48 64 96 128 256;
-
+//Text Underline
 .underline {
   text-decoration: underline !important;
   text-decoration-style: wavy !important;
   text-decoration-color: $primary !important;
   text-underline-offset: 5px;
 }
-.box .image{
+
+.bg-light-green {
+  background-color: #dcf8c6 !important;
+}
+.bg-green {
   background-color: #25d366 !important;
 }
-.bg-light-green{
-  background-color: #DCF8C6 !important;
-}
-.bg-dark-green{
-  background-color:$primary !important;
-}
-
+//Rotating WA logo like a maniac
 .rotate {
   animation: rotation 2s infinite linear;
 }
@@ -42,6 +37,15 @@ $dimensions: 16 24 32 48 64 96 128 256;
   to {
     transform: rotate(359deg);
   }
+}
+.container-box {
+  border-radius: 8px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0px 0 1px rgba(10, 10, 10, 0.02);
+  padding: 1.5rem;
+}
+.bg-white {
+  background-color: white;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
