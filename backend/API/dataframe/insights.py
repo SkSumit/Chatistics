@@ -19,13 +19,25 @@ def generalstats(data):
     }
     return generalstats
 
+def activity_by_day(data):
+    return pd.DataFrame(Counter(list(data['DAY'])).most_common(),columns=['DAY','NO_OF_MSGS']).to_dict(orient='records')
+
+def activity_by_year(data):
+    return pd.DataFrame(Counter(list(data['YEAR'])).most_common(),columns=['YEAR','NO_OF_MSGS']).to_dict(orient='records')     
+
+def numOfText(data):
+    return pd.DataFrame(Counter(list(data['USERNAME'])).most_common(),columns=['NAME','NO_OF_MSGS']).to_dict(orient='records')
+
+def heatMap(data):
+    return pd.DataFrame(Counter(list(data['DATE'])).most_common(), columns=['DATE','VALUE']).to_dict(orient='records')    
+     
 def searchEmoji(data):
     Emojichar = []   
     for i in range(len(data)):
         for character in data['MESSAGE'][i]:
             if character in emoji.UNICODE_EMOJI:   #emoji search
                 Emojichar.append(character)
-    emojidata=dict(Counter(Emojichar).most_common()[:20])
+    emojidata=pd.DataFrame((Counter(Emojichar).most_common()[:20]),columns=['EMOJI','VALUE']).to_dict(orient='records')
     emojistats={'Different_Emojis_used':len(Counter(Emojichar).most_common()),'Number_of_emojis':len(Emojichar)}
     return {'Emoji_usage':emojidata,'Emoji_stats':emojistats}
                 
@@ -37,15 +49,15 @@ def wordcloud(data):
     for character in data['MESSAGE']:  
         character = str(character)
         tokens = character.split() #SPLITING EACH CHARACTER  
-        Word.append(tokens)
-    
+        Word.append(tokens)  
     flat_list = []
     for sublist in Word:           #Creating a SINGLE LIST from NESTED LIST
         for item in sublist:
-            Words.append(item)
-    return dict(Counter(Words).most_common()[:50])
+            if item != "<media" and item != "omitted>":
+                Words.append(item)
+    return pd.DataFrame(Counter(Words).most_common()[:50], columns=['WORD','FREQUENCY']).to_dict(orient='records')
 
 def insights(data):  
     data=pd.DataFrame(data)
-    insights={'wordcloud':wordcloud(data),'activity_by_date':dict(Counter(list(data['DATE'])).most_common()),'Emoji':searchEmoji(data),'user_message_count':dict(Counter(list(data['USERNAME'])).most_common()),'general_stats':generalstats(data),'activity_by_day':dict(Counter(list(data['DAY'])).most_common()),'activity_by_year':dict(Counter(list(data['YEAR'])).most_common())}
+    insights={'wordcloud':wordcloud(data),'Heatmap':heatMap(data),'Emoji':searchEmoji(data),'user_message_count':numOfText(data),'general_stats':generalstats(data),'activity_by_day':activity_by_day(data),'activity_by_year':activity_by_year(data)}
     return insights
