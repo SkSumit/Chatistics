@@ -9,7 +9,7 @@ def correct(listnew):
         if x:
             updated.append(i)
         else:
-            updated[-1] = str(updated[-1] + " " + i)
+            updated[-1] = str(updated[-1] + " " + i)    
     return updated                        
 
 def preProcess(content):
