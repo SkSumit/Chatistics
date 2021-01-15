@@ -67,13 +67,13 @@ def wordcloud(data):
     Word = []
     Words = []
     NO_OF_Word = []
-    for character in data['MESSAGE']:  #emoji search
+    for character in data['MESSAGE']:  
         character = str(character)
-        tokens = character.split() 
+        tokens = character.split() #SPLITING EACH CHARACTER  
         Word.append(tokens)
     
     flat_list = []
-    for sublist in Word:
+    for sublist in Word:           #Creating a SINGLE LIST from NESTED LIST
         for item in sublist:
             Words.append(item)
     
@@ -84,7 +84,7 @@ def wordcloud(data):
 def heatMap(data):
     temp=[]
     for i in range(len(data)):
-        review = re.sub('/','-',str(data['DATE'][i]))
+        review = re.sub('/','-',str(data['DATE'][i]))   #Exchanging "/" from "-"
         temp.append(review)
     X = Counter(temp).most_common()
     heatMap_info=pd.DataFrame(X, columns=['DATE','FREQUENCY'])
