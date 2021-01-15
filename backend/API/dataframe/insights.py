@@ -2,7 +2,7 @@ import pandas as pd
 import datetime
 import emoji
 from collections import Counter
-
+import re
 def generalstats(data):
     parameter=['No_of_msgs','No_of_media','No_of_users','Days_on_WhatsApp','Dt_max_convo','Dt_min_convo','Most_msg_by','Dy_max_convo']
     result=[]
@@ -52,32 +52,46 @@ def numOfText(data):
     user_info['NO_OF_MSGS']=msgs
     return user_info.to_dict(orient="records")
      
-
 def searchEmoji(data):
-    emoji_info=pd.DataFrame(columns=['Emoji','NO_OF_Emoji'])
-    
-    Emojichar = []
-    Emoji = []
-    NO_OF_Emoji = []
-    
+    Emojichar = []   
     for i in range(len(data)):
         for character in data['MESSAGE'][i]:
             if character in emoji.UNICODE_EMOJI:   #emoji search
                 Emojichar.append(character)
-    Emojichar.sort()
-
-    for team in [ele for ind, ele in enumerate(Emojichar,1) if ele not in Emojichar[ind:]]:
-        Emoji.append(team)
-        NO_OF_Emoji.append(Emojichar.count(team)) 
-
-    emoji_info['Emoji'] = Emoji
-    emoji_info['NO_OF_Emoji'] = NO_OF_Emoji
-    
-    emoji_info = emoji_info.sort_values(by=['NO_OF_Emoji'],ascending=False)
-    emoji_info = emoji_info.head(20)
-    return emoji_info.head(20).to_dict(orient='records')
+    emojidata=Counter(Emojichar).most_common()
+    emoji_info=pd.DataFrame(emojidata[:20] , columns=['Emoji','No_Of_Emoji'])
+    return emoji_info.to_dict(orient='records')
                 
+def wordcloud(data):
+    tokens = []
+    Word = []
+    Words = []
+    NO_OF_Word = []
+    for character in data['MESSAGE']:  #emoji search
+        character = str(character)
+        tokens = character.split() 
+        Word.append(tokens)
+    
+    flat_list = []
+    for sublist in Word:
+        for item in sublist:
+            Words.append(item)
+    
+    X = Counter(Words).most_common()
+    Word_info=pd.DataFrame(X[:50], columns=['WORD','FREQUENCY'])
+    return Word_info.to_dict(orient='records')
+
+def heatMap(data):
+    temp=[]
+    for i in range(len(data)):
+        review = re.sub('/','-',str(data['DATE'][i]))
+        temp.append(review)
+    X = Counter(temp).most_common()
+    heatMap_info=pd.DataFrame(X, columns=['DATE','FREQUENCY'])
+    return heatMap_info.to_dict(orient='records')
+
+
 def insights(data):  
     data=pd.DataFrame(data)
-    insights={'Emoji':searchEmoji(data),'user_message_count':numOfText(data),'general_stats':generalstats(data),'activity_by_day':activity_by_day(data),'activity_by_year':activity_by_year(data)}
+    insights={'wordcloud':wordcloud(data),'Heatmap':heatMap(data),'Emoji':searchEmoji(data),'user_message_count':numOfText(data),'general_stats':generalstats(data),'activity_by_day':activity_by_day(data),'activity_by_year':activity_by_year(data)}
     return insights
