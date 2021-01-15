@@ -2,7 +2,7 @@ import pandas as pd
 import datetime
 import emoji
 from collections import Counter
-
+import re
 def generalstats(data):
     generalstats={
         'No_of_msgs':len(data[data['MESSAGE'] != ""]),
@@ -29,7 +29,23 @@ def searchEmoji(data):
     emojistats={'Different_Emojis_used':len(Counter(Emojichar).most_common()),'Number_of_emojis':len(Emojichar)}
     return {'Emoji_usage':emojidata,'Emoji_stats':emojistats}
                 
+def wordcloud(data):
+    tokens = []
+    Word = []
+    Words = []
+    NO_OF_Word = []
+    for character in data['MESSAGE']:  
+        character = str(character)
+        tokens = character.split() #SPLITING EACH CHARACTER  
+        Word.append(tokens)
+    
+    flat_list = []
+    for sublist in Word:           #Creating a SINGLE LIST from NESTED LIST
+        for item in sublist:
+            Words.append(item)
+    return dict(Counter(Words).most_common()[:50])
+
 def insights(data):  
     data=pd.DataFrame(data)
-    insights={'Emoji':searchEmoji(data),'user_message_count':dict(Counter(list(data['USERNAME'])).most_common()),'general_stats':generalstats(data),'activity_by_day':dict(Counter(list(data['DAY'])).most_common()),'activity_by_year':dict(Counter(list(data['YEAR'])).most_common())}
+    insights={'wordcloud':wordcloud(data),'activity_by_date':dict(Counter(list(data['DATE'])).most_common()),'Emoji':searchEmoji(data),'user_message_count':dict(Counter(list(data['USERNAME'])).most_common()),'general_stats':generalstats(data),'activity_by_day':dict(Counter(list(data['DAY'])).most_common()),'activity_by_year':dict(Counter(list(data['YEAR'])).most_common())}
     return insights
