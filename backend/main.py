@@ -11,8 +11,6 @@ from API.dummy.test import tempory
 import pandas as pd
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-from flask_restful import Resource, Api
-from flask_httpauth import HTTPBasicAuth
 from werkzeug.utils import secure_filename
 import os
 
@@ -62,3 +60,4 @@ def api():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
