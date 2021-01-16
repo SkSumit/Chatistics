@@ -20,16 +20,28 @@ def generalstats(data):
     return generalstats
 
 def activity_by_day(data):
-    return pd.DataFrame(Counter(list(data['DAY'])).most_common(),columns=['DAY','NO_OF_MSGS']).to_dict(orient='records')
+    days=list(data['DAY'])
+    value=Counter(days).most_common()
+    df=pd.DataFrame(value,columns=['DAY','NO_OF_MSGS'])
+    return df.to_dict(orient='records')
 
 def activity_by_year(data):
-    return pd.DataFrame(Counter(list(data['YEAR'])).most_common(),columns=['YEAR','NO_OF_MSGS']).to_dict(orient='records')     
+    year=list(data['YEAR'])
+    value=Counter(year).most_common()
+    df=pd.DataFrame(value,columns=['YEAR','NO_OF_MSGS'])
+    return df.to_dict(orient='records')     
 
 def numOfText(data):
-    return pd.DataFrame(Counter(list(data['USERNAME'])).most_common(),columns=['NAME','NO_OF_MSGS']).to_dict(orient='records')
+    names=list(data['USERNAME'])
+    value=Counter(names).most_common()
+    df=pd.DataFrame(value,columns=['NAME','NO_OF_MSGS'])
+    return df.to_dict(orient='records')
 
 def heatMap(data):
-    return pd.DataFrame(Counter(list(data['DATE'])).most_common(), columns=['DATE','VALUE']).to_dict(orient='records')    
+    date=list(data['DATE'])
+    value=Counter(date).most_common()
+    df=pd.DataFrame(value, columns=['DATE','VALUE'])
+    return df.to_dict(orient='records')    
      
 def searchEmoji(data):
     Emojichar = []   
