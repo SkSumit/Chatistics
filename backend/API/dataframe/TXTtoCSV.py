@@ -1,4 +1,5 @@
 import pandas as pd
+import re
 from datetime import datetime
 
 def dataframe(content):
@@ -7,7 +8,7 @@ def dataframe(content):
     df = pd.DataFrame(columns = column_names)
     CORPUS=list(content)
     for i in range(len(CORPUS)):
-        date.append(str(content[i].split(",")[0]))
+        date.append(re.sub('/','-',str(content[i].split(",")[0])))
         time.append(str((content[i].split(",")[1].split("-"))[0][1:-1]))
         username.append(str((content[i].split(",")[1].split("-")[1].split(":")[0][1:])))
         if len(content[i].split(":")[2:]) > 1:
@@ -19,14 +20,14 @@ def dataframe(content):
         days=[]
         years=[]
         for i in df['DATE']:
-            days.append(datetime.strptime(i, "%d/%m/%y").strftime("%A"))
-            years.append(datetime.strptime(i, "%d/%m/%y").year)
+            days.append(datetime.strptime(i, "%d-%m-%y").strftime("%A"))
+            years.append(datetime.strptime(i, "%d-%m-%y").year)
     except :
         days=[]
         years=[]
         for i in df['DATE']:
-            days.append(datetime.strptime(i, "%m/%d/%y").strftime("%A"))
-            years.append(datetime.strptime(i, "%m/%d/%y").year)
+            days.append(datetime.strptime(i, "%m-%d-%y").strftime("%A"))
+            years.append(datetime.strptime(i, "%m-%d-%y").year)
     df['DAY'] = days
     df['YEAR']=years
     df["TIME"] = time
