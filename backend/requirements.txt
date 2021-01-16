@@ -16,10 +16,7 @@ kiwisolver==1.3.1
 lxml==4.6.2
 MarkupSafe==1.1.1
 numpy==1.19.4
-<<<<<<< HEAD
-=======
 pandas==1.1.5
->>>>>>> bca99cf057f8f5343422272fdf1eb70abaefc7df
 Pillow==8.1.0
 pyparsing==2.4.7
 python-dateutil==2.8.1
