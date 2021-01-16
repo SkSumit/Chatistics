@@ -48,5 +48,47 @@ $subtitle-color: #000;
   background-color: white;
 }
 
+.bg-color-github-empty{
+  fill :#ECE5DD 
+}
+
+.bg-color-github-0{
+  fill: #25d366 !important;
+  opacity: 0.2;
+}
+.bg-color-github-1{
+  fill: #25d366 !important;
+  opacity: 0.4;
+}
+.bg-color-github-2{
+  fill: #25d366 !important;
+  opacity: 0.6;
+}
+.bg-color-github-3{
+  fill: #25d366 !important;
+  opacity: 0.7;
+}
+.bg-color-github-4{
+  fill: #25d366 !important;
+  opacity: 0.8;
+}
+.bg-color-github-5{
+  fill: #25d366 !important;
+  opacity: 0.9;
+}
+.bg-color-github-6{
+  fill: #25d366 !important;
+  opacity: 1;
+}
+
+
+.mt-100{
+  margin-top: -100px !important;
+}
+.rotate{
+  -webkit-transform:  rotate(-30deg) !important; 
+  -moz-transform:  rotate(-30deg) !important; 
+  transform: rotate(-30deg) !important;
+}
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import "../../node_modules/bulma/bulma.sass";

@@ -5,7 +5,7 @@ export default function Summary({ file }) {
   return (
     <Section>
       <h1 className="subtitle is-3 ">
-        Showing Chat Between <span className="underline"> {file.user1} </span>{" "}
+        Showing <span className="underline"> example </span>  Chat Between <span className="underline"> {file.user1} </span>{" "}
         {" & "}
         <span className="underline">{file.user2}</span>
       </h1>
