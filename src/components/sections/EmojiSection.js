@@ -8,6 +8,9 @@ export default function EmojiSection() {
 
   return (
     <Section>
+       <h1 className="subtitle is-3 ">
+       Emojis because <span className="underline">why not?</span>
+      </h1>
       <div className="columns is-vcentered">
         <div className="column ">
           <EmojiChart />

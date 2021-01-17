@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import randomColor from 'randomcolor'
 import {
   PieChart,
   Pie,
@@ -76,7 +77,7 @@ export default function EmojiChart() {
           {context.file.stats.emoji.map((entry, index) => (
             <Cell
               key={`cell-${index}`}
-              fill={"#" + Math.floor(Math.random() * 16777215).toString(16)}
+              fill={randomColor()}
             />
           ))}
         </Pie>

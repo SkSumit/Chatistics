@@ -11,7 +11,6 @@ export default function UserSummary() {
         <div className="tile is-parent">
           <StatsBox
             title={"Total Users in Chats"}
-            noBox={true}
             stats={3}
             icon={
               <i className="fas fa-users fa-2x" style={{ color: "#000" }} />
@@ -21,7 +20,6 @@ export default function UserSummary() {
         <div className="tile is-parent">
           <StatsBox
             title={"Most Texts Sent"}
-            noBox={true}
             stats={"Atharva"}
             icon={
               <i className="fas fa-medal fa-2x" style={{ color: "#000" }} />
@@ -30,7 +28,6 @@ export default function UserSummary() {
         </div>
         <div className="tile is-parent">
           <StatsBox
-            noBox={true}
             title={"Least Texts Sent"}
             stats={"Yash"}
             icon={<i className="fas fa-poo fa-2x" style={{ color: "#000" }} />}
@@ -39,7 +36,6 @@ export default function UserSummary() {
         <div className="tile is-parent">
           <StatsBox
             title={"Highest Streak"}
-            noBox={true}
             stats={"19 Days"}
             icon={
               <i

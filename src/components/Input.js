@@ -7,12 +7,17 @@ import Section from "./common/Section";
 export default function Input() {
   const context = useContext(FileContext);
   const [uploadFile, setUploadFile] = useState(null);
+  const [error, setError] = useState(false);
   const onFileChange = async (e) => {
-    setUploadFile(e.target.files[0]);
+    console.log(e.target.files[0]);
+    if (e.target.files[0]) {
+      setError(false);
+      setUploadFile(e.target.files[0]);
+    } else {
+      setError(true);
+    }
   };
   const download = async () => {
-    console.log("download");
-
     var element = document.getElementById("root");
     const getOptions = (filename, element) => {
       let opt = {
@@ -39,6 +44,7 @@ export default function Input() {
     e.preventDefault();
     if (uploadFile) {
       console.log(uploadFile);
+      setError(false);
       if (
         uploadFile.name.slice(
           ((uploadFile.name.lastIndexOf(".") - 1) >>> 0) + 2
@@ -52,51 +58,58 @@ export default function Input() {
         }, 3000);
       }
     } else {
-      console.log("NO!");
+      setError(true);
     }
   };
-
-  console.log("up", uploadFile);
   return (
     <Section containerVariant={"bg-white mt-100 py-6"}>
       <div className="field is-horizontal is-justify-content-center">
         <div className="field-body is-justify-content-center ">
           <div className="field is-narrow">
-            <p className="control file is-medium has-name">
+            <p className={`control file has-name`}>
               <label className="file-label">
                 <input
-                  className="file-input input is-medium"
+                  className="file-input input  is-size-5-desktop"
                   type="file"
                   onChange={onFileChange}
                   accept=".txt"
                 />
-                <span className="file-cta" style={{ color: "#25D366" }}>
+                <span
+                  className="file-cta is-size-5-desktop"
+                  style={{ color: "#25D366" }}
+                >
                   <span className="file-icon">
                     <i className="fas fa-upload " />
                   </span>
                 </span>
-                <span className="file-name">
+                <span
+                  className={` ${
+                    error ? "has-text-danger" : ""
+                  } file-name is-size-5-desktop`}
+                >
                   {uploadFile && uploadFile.name
                     ? uploadFile.name
+                    : error
+                    ? "Please select a text file"
                     : "Upload Exported Text File"}
                 </span>
               </label>
             </p>
           </div>
           <div className="field is-grouped is-narrow">
-            <p className="control">
+            <p className="control is-expanded">
               <button
                 type="submit"
-                className=" button is-medium has-text-primary has-text-weight-semibold "
+                className=" button is-size-5-desktop has-text-primary has-text-weight-semibold is-fullwidth"
                 onClick={sendFile}
               >
                 Upload
               </button>
             </p>
-            <p className="control">
+            <p className="control is-expanded">
               <button
                 type="submit"
-                className=" button is-medium has-text-primary has-text-weight-semibold  "
+                className=" button is-size-5-desktop has-text-primary has-text-weight-semibold  is-fullwidth"
                 onClick={download}
               >
                 Know More
@@ -105,10 +118,34 @@ export default function Input() {
           </div>
         </div>
       </div>
-      <h6 className="subtitle is-6 has-text-centered ">
-        <span className=" ">We don't store your chats, </span> <span className="has-text-weight-semibold bg-light-green py-2 px-2 rotate">  we aren't Facebook </span>. PS You can check the 
-        <span className="underline "> code over here </span> 
-      </h6>
+      <div className="columns is-centered mt-2 is-hidden-touch">
+        <div className="column is-narrow">
+          <h6 className="subtitle is-6 has-text-centered  ">
+            We don't store your chats,
+          </h6>
+        </div>
+        <div className="column is-narrow">
+          <h6 className="subtitle is-6 has-text-centered  has-text-weight-semibold bg-light-green py-2 px-2 rotateTXT">
+            we aren't Facebook.
+          </h6>
+        </div>
+        <div className="column is-narrow">
+          <h6 className="subtitle is-6 has-text-centered  ">
+            PS You can check the
+            <span className="underline "> code over here </span>
+          </h6>
+        </div>
+      </div>
+      <div className="subtitle is-6 has-text-centered is-hidden-desktop mt-4 ">
+        <h6 className="has-text-weight-semibold bg-light-green py-2 rotateTXT-2">
+          we aren't Facebook.
+        </h6>
+        <br />
+        <h6 className="subtitle is-6 has-text-centered  ">
+          We don't store your chats, you can check the
+          <span className="underline "> code over here </span>
+        </h6>
+      </div>
     </Section>
   );
 }

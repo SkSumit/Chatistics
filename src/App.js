@@ -12,6 +12,7 @@ import UserSummary from "./components/sections/UserSummary";
 import Input from "./components/Input";
 import Heatmap from './components/sections/Heatmap'
 import EmojiSection from './components/sections/EmojiSection'
+import WordcloudSection from './components/sections/WordcloudSection'
 
 
 export const FileContext = createContext(null);
@@ -44,6 +45,7 @@ function App() {
           <Heatmap/>
           <EmojiSection/>
           <UserSummary/>
+          <WordcloudSection/>
         </div>
       )}
     </FileContext.Provider>

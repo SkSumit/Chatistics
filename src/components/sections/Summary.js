@@ -4,11 +4,12 @@ import Section from "../common/Section";
 export default function Summary({ file }) {
   return (
     <Section>
-      <h1 className="subtitle is-3 ">
-        Showing <span className="underline"> example </span>  Chat Between <span className="underline"> {file.user1} </span>{" "}
-        {" & "}
+      <h1 className="title is-3 ">Lazy? Here's how we'd show your stats,</h1>
+      <h3 className="subtitle is-5 ">
+        showing <span className="underline"> example </span> chat between{" "}
+        <span className="underline"> {file.user1} </span> {" & "}
         <span className="underline">{file.user2}</span>
-      </h1>
+      </h3>
       <div className="tile is-ancestor">
         <div className="tile is-parent">
           <StatsBox

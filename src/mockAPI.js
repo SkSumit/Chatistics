@@ -862,5 +862,207 @@ export const mockData = {
       { DATE: "12-13-20", FREQUENCY: 120 },
       { DATE: "1-13-21", FREQUENCY: 41 },
     ],
+    wordcloud: [
+      {
+          "FREQUENCY": 8817,
+          "WORD": "h"
+      },
+      {
+          "FREQUENCY": 5043,
+          "WORD": "hod"
+      },
+      {
+          "FREQUENCY": 5024,
+          "WORD": "chutya"
+      },
+      {
+          "FREQUENCY": 4116,
+          "WORD": "<media"
+      },
+      {
+          "FREQUENCY": 4116,
+          "WORD": "omitted>"
+      },
+      {
+          "FREQUENCY": 1366,
+          "WORD": "hain"
+      },
+      {
+          "FREQUENCY": 1230,
+          "WORD": "kya"
+      },
+      {
+          "FREQUENCY": 1148,
+          "WORD": "ka"
+      },
+      {
+          "FREQUENCY": 1067,
+          "WORD": "and"
+      },
+      {
+          "FREQUENCY": 958,
+          "WORD": "bc"
+      },
+      {
+          "FREQUENCY": 895,
+          "WORD": "toh"
+      },
+      {
+          "FREQUENCY": 841,
+          "WORD": "to"
+      },
+      {
+          "FREQUENCY": 826,
+          "WORD": "rha"
+      },
+      {
+          "FREQUENCY": 817,
+          "WORD": "i"
+      },
+      {
+          "FREQUENCY": 779,
+          "WORD": "nahi"
+      },
+      {
+          "FREQUENCY": 771,
+          "WORD": "na"
+      },
+      {
+          "FREQUENCY": 732,
+          "WORD": "bhi"
+      },
+      {
+          "FREQUENCY": 724,
+          "WORD": "tha"
+      },
+      {
+          "FREQUENCY": 674,
+          "WORD": "ko"
+      },
+      {
+          "FREQUENCY": 663,
+          "WORD": "the"
+      },
+      {
+          "FREQUENCY": 649,
+          "WORD": "yash"
+      },
+      {
+          "FREQUENCY": 646,
+          "WORD": "se"
+      },
+      {
+          "FREQUENCY": 636,
+          "WORD": "but"
+      },
+      {
+          "FREQUENCY": 611,
+          "WORD": "you"
+      },
+      {
+          "FREQUENCY": 609,
+          "WORD": "kar"
+      },
+      {
+          "FREQUENCY": 601,
+          "WORD": "is"
+      },
+      {
+          "FREQUENCY": 591,
+          "WORD": "https"
+      },
+      {
+          "FREQUENCY": 556,
+          "WORD": "xd"
+      },
+      {
+          "FREQUENCY": 542,
+          "WORD": "main"
+      },
+      {
+          "FREQUENCY": 532,
+          "WORD": "yes"
+      },
+      {
+          "FREQUENCY": 530,
+          "WORD": "this"
+      },
+      {
+          "FREQUENCY": 527,
+          "WORD": "abhi"
+      },
+      {
+          "FREQUENCY": 510,
+          "WORD": "@917020037195"
+      },
+      {
+          "FREQUENCY": 495,
+          "WORD": "bhai"
+      },
+      {
+          "FREQUENCY": 487,
+          "WORD": "nice"
+      },
+      {
+          "FREQUENCY": 484,
+          "WORD": "haa"
+      },
+      {
+          "FREQUENCY": 482,
+          "WORD": "ho"
+      },
+      {
+          "FREQUENCY": 478,
+          "WORD": "like"
+      },
+      {
+          "FREQUENCY": 476,
+          "WORD": "hi"
+      },
+      {
+          "FREQUENCY": 475,
+          "WORD": "ke"
+      },
+      {
+          "FREQUENCY": 459,
+          "WORD": "@918602842290"
+      },
+      {
+          "FREQUENCY": 445,
+          "WORD": "nhhi"
+      },
+      {
+          "FREQUENCY": 437,
+          "WORD": "for"
+      },
+      {
+          "FREQUENCY": 427,
+          "WORD": "me"
+      },
+      {
+          "FREQUENCY": 420,
+          "WORD": "in"
+      },
+      {
+          "FREQUENCY": 418,
+          "WORD": "kia"
+      },
+      {
+          "FREQUENCY": 413,
+          "WORD": "a"
+      },
+      {
+          "FREQUENCY": 405,
+          "WORD": "mai"
+      },
+      {
+          "FREQUENCY": 402,
+          "WORD": "ye"
+      },
+      {
+          "FREQUENCY": 393,
+          "WORD": "'no_of_emoji'"
+      }
+  ]
   },
 };

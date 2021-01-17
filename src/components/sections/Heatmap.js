@@ -14,12 +14,11 @@ export default function Heatmap() {
       percentage : (items.FREQUENCY/sumValue) * 100
     }
   });
-
-
-  
-  console.log(randomValues)
   return (
     <Section>
+      <h1 className="subtitle is-3 ">
+       It's called a Heatmap not, <span className="underline">GitHub commit wall</span>
+      </h1>
       <div className="columns is-gapless  is-centered">
         <div className="column is-half">
           <CalendarHeatmap
@@ -32,7 +31,6 @@ export default function Heatmap() {
               if (!value) {
                 return 'bg-color-github-empty';
               }
-              console.log(getClass(value.percentage))
               return getClass(value.percentage)
             }}
             tooltipDataAttrs={value => {
@@ -56,23 +54,6 @@ function shiftDate(date, numDays) {
 }
 
 function getClass(percentage) {
-  // console.log(percentage >= 0 && percentage < 0.5)
-  // switch (true) {
-  //   case percentage >= 0 && percentage < 0.5:
-  //     return "bg-color-github-0";
-  //   case percentage >= 0.5 && percentage < 1:
-  //     return "bg-color-github-1";
-  //   case percentage >= 1 && percentage < 1.5:
-  //     return "bg-color-github-3";
-  //   case percentage >= 1.5 && percentage < 2:
-  //     return "bg-color-github-4";
-  //   case percentage >= 2 && percentage < 2.5:
-  //     return "bg-color-github-5";
-  //   case percentage >= 2.5 && percentage < 3:
-  //     return "bg-color-github-6";
-  //   default:
-  //     return "bg-color-github-7";
-  // }
   return percentage < 0.5 ? "bg-color-github-0" :
   percentage < 1 ? "bg-color-github-1":
   percentage < 1.5 ? "bg-color-github-2":
