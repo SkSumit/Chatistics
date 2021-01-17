@@ -13,6 +13,9 @@ export default function DaySection() {
   console.log(context);
   return (
     <Section>
+      <h1 className="subtitle is-3 ">
+        Breakdown of your chats, <span className="underline">day-wise</span>
+      </h1>
       <div className="columns is-vcentered">
         <div className="column is-4">
           <div className="tile is-ancestor">
