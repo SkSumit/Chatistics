@@ -1,23 +1,19 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { FileContext } from "../../App";
-import TimeRadarChart from "../graphs/TimeRadarChart";
+import EmojiChart from "../graphs/EmojiChart";
 import StatsBox from "../StatsBox";
 import Section from "../common/Section";
-export default function TimeRadarSection() {
+export default function EmojiSection() {
   const context = useContext(FileContext);
-  const [selectedOption, setSelectedOption] = useState({
-    value: "all",
-    label: "All",
-  });
 
   return (
     <Section>
        <h1 className="subtitle is-3 ">
-       Hourwise breakdown, so you <span className="underline">sleep early</span>
+       Emojis because <span className="underline">why not?</span>
       </h1>
       <div className="columns is-vcentered">
         <div className="column ">
-          <TimeRadarChart />
+          <EmojiChart />
         </div>
         <div className="column is-4">
           <div className="tile is-ancestor">
@@ -25,11 +21,11 @@ export default function TimeRadarSection() {
               <div className="tile">
                 <div className="tile is-parent is-vertical">
                   <StatsBox
-                    title={"Average Texts Per Day"}
+                    title={"Most Used Emojis"}
                     stats={
-                      context.file.stats.analysis.basedOnDays[
-                        selectedOption.value
-                      ].averageTexts
+                        context.file.stats.emoji.map((item,index)=>{
+                           return  index >= 5 ? null :  `${item.Emoji}`  
+                        })
                     }
                     icon={
                       <i
@@ -39,11 +35,11 @@ export default function TimeRadarSection() {
                     }
                   />
                   <StatsBox
-                    title={"Most Texted Day"}
+                    title={"Least Used Emojis"}
                     stats={
-                      context.file.stats.analysis.basedOnDays[
-                        selectedOption.value
-                      ].mostActiveDay
+                        context.file.stats.emoji.slice(Math.max(context.file.stats.emoji.length - 5, 1)).map((item,index)=>{
+                           return  index >= 5 ? null :  `${item.Emoji}`  
+                        })
                     }
                     icon={
                       <i
@@ -53,11 +49,9 @@ export default function TimeRadarSection() {
                     }
                   />
                   <StatsBox
-                    title={"Most Frequently texted Day"}
+                    title={"Average No of Emoji Per Text"}
                     stats={
-                      context.file.stats.analysis.basedOnDays[
-                        selectedOption.value
-                      ].mostFrequentDay
+                   2.6
                     }
                     icon={
                       <i

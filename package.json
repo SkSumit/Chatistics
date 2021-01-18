@@ -11,10 +11,13 @@
     "bulma": "^0.9.1",
     "html2pdf.js": "^0.9.2",
     "node-sass": "4.14.1",
+    "randomcolor": "^0.6.2",
     "react": "^17.0.1",
+    "react-calendar-heatmap": "^1.8.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "react-select": "^3.1.1",
+    "react-wordcloud": "^1.2.7",
     "recharts": "1.8.5",
     "serve": "^11.3.2",
     "web-vitals": "^0.2.4"

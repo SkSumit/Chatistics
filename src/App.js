@@ -9,7 +9,10 @@ import axios from "axios";
 import Loader, { LoaderAnalysis } from "./components/Loader";
 import TimeRadarSection from "./components/sections/TimeRadarSection";
 import UserSummary from "./components/sections/UserSummary";
-import CTA from "./components/CTA";
+import Input from "./components/Input";
+import Heatmap from './components/sections/Heatmap'
+import EmojiSection from './components/sections/EmojiSection'
+import WordcloudSection from './components/sections/WordcloudSection'
 
 
 export const FileContext = createContext(null);
@@ -34,11 +37,15 @@ function App() {
       ) : (
         <div>
           <Hero />
+          <Input/>
           <Summary file={file} />
           <TimelineSection data={mockData.stats.timelineByMonth} />
           <DaySection />
           <TimeRadarSection />
-          <UserSummary />
+          <Heatmap/>
+          <EmojiSection/>
+          <UserSummary/>
+          <WordcloudSection/>
         </div>
       )}
     </FileContext.Provider>

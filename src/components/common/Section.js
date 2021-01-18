@@ -5,6 +5,7 @@ export default function Section({
   children,
   containerVariant = "bg-white",
   noBox = false,
+
 }) {
   return (
     <section className={`hero ${variation}`}>
@@ -12,7 +13,7 @@ export default function Section({
         <div
           className={`container ${containerVariant} ${
             noBox ? " " : "container-box"
-          } `}
+          }  `}
         >
           {children}
         </div>

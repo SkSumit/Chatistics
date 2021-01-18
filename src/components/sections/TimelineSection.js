@@ -8,7 +8,10 @@ export default function TimelineSection({ data }) {
   );
   return (
     <Section>
-      <div className="columns is-vcentered  {highestValue.Value} Text Exchanged">
+      <h1 className="subtitle is-3 ">
+        Who doesn't like a <span className="underline">timeline?</span>
+      </h1>
+      <div className="columns is-vcentered">
         <div className="column is-8">
           <Timeline data={data} />
         </div>
