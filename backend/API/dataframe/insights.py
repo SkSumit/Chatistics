@@ -9,13 +9,14 @@ def generalstats(data):
         'No_of_media':len(data[data['MESSAGE'] == '<media omitted>']),
         'No_of_users':len(data[data['MESSAGE'] != '']['USERNAME'].unique()),
         'No_of_Days_had_Convo':len(data['DATE'].unique()),
-        'Dt_max_convo':str(data['DATE'].value_counts().idxmax()),
-        'Dt_min_convo':str(data['DATE'].value_counts().idxmin()),
+        'Dt_max_convo':data['DATE'].value_counts().idxmax(),
+        'Dt_min_convo':data['DATE'].value_counts().idxmin(),
         'Most_msg_by':data['USERNAME'].value_counts().index[0],
         'Dy_max_convo':data['DAY'].value_counts().index[0],
         'Avg_msg_per_user':len(data[data['MESSAGE'] != ""])/len(data[data['MESSAGE'] != '']['USERNAME'].unique()),
         'Deleted_msgs':len(data[data["MESSAGE"]=='this message was deleted']),
-        'Avg_msg_per_day':len(data[data['MESSAGE'] != ""])/len(data['DATE'].unique())
+        'Avg_msg_per_day':len(data[data['MESSAGE'] != ""])/len(data['DATE'].unique()),
+        'Text_per_hour':len(data)/(24*len(data['DATE'].unique()))
     }
     return generalstats
 
@@ -40,8 +41,16 @@ def numOfText(data):
 def heatMap(data):
     date=list(data['DATE'])
     value=Counter(date).most_common()
-    df=pd.DataFrame(value, columns=['DATE','VALUE'])
-    return df.to_dict(orient='records')    
+    df=pd.DataFrame(value,columns=['DATE','VALUE'])
+    return df.to_dict(orient='records')
+
+def activity_by_time(data):
+    time=[]
+    for i in data['TIME']:
+        time.append(i.split(":")[0]+i.split(":")[1].split(" ")[1])
+    value=Counter(time).most_common()
+    df=pd.DataFrame(value,columns=['DATE','VALUE'])
+    return df.to_dict(orient='records')               
      
 def searchEmoji(data):
     Emojichar = []   
@@ -54,10 +63,7 @@ def searchEmoji(data):
     return {'Emoji_usage':emojidata,'Emoji_stats':emojistats}
                 
 def wordcloud(data):
-    tokens = []
-    Word = []
-    Words = []
-    NO_OF_Word = []
+    tokens,Word,Words,NO_OF_Word,links,letters = [],[],[],[],[],[]
     for character in data['MESSAGE']:  
         character = str(character)
         tokens = character.split() #SPLITING EACH CHARACTER  
@@ -65,11 +71,18 @@ def wordcloud(data):
     flat_list = []
     for sublist in Word:           #Creating a SINGLE LIST from NESTED LIST
         for item in sublist:
+            r1 = re.search('.*http',item)
+            if r1:
+                links.append(item)
             if item != "<media" and item != "omitted>":
                 Words.append(item)
-    return pd.DataFrame(Counter(Words).most_common()[:50], columns=['WORD','FREQUENCY']).to_dict(orient='records')
+            for letter in item:
+                letters.append(letter)    
+    worddata=pd.DataFrame(Counter(Words).most_common()[:50], columns=['WORD','FREQUENCY']).to_dict(orient='records')                
+    wordstats={'Avg_word_per_text':len(Words)/len(data),'Total_Words':len(Words),'Total_links':len(links),'Total_letters':len(letters),'Total_lettrs_per_word':len(letters)/len(Words)}                
+    return {'word_usage':worddata , 'word_stat':wordstats}
 
 def insights(data):  
     data=pd.DataFrame(data)
-    insights={'wordcloud':wordcloud(data),'Heatmap':heatMap(data),'Emoji':searchEmoji(data),'user_message_count':numOfText(data),'general_stats':generalstats(data),'activity_by_day':activity_by_day(data),'activity_by_year':activity_by_year(data)}
+    insights={'wordcloud':wordcloud(data),'Heatmap':heatMap(data),'Emoji':searchEmoji(data),'user_message_count':numOfText(data),'general_stats':generalstats(data),'activity_by_day':activity_by_day(data),'activity_by_year':activity_by_year(data),'activity_by_time':activity_by_time(data)}
     return insights
