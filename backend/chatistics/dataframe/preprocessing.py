@@ -12,7 +12,7 @@ def correct(listnew):
             updated[-1] = str(updated[-1] + " " + i)
     return updated                        
 
-def preProcess(content):
+def preprocess(content):
     CORPUS = list(content)
     stopwords = [".*^$",".*security code changed. tap for more info.",".*messages and calls are end-to-end encrypted",".*changed their phone number",".*changed this group's icon"]
     r=re.compile('|'.join(stopwords))

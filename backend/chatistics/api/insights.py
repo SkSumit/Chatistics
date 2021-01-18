@@ -3,6 +3,8 @@ import datetime
 import emoji
 from collections import Counter
 import re
+
+
 def generalstats(data):
     parameter=['No_of_msgs','No_of_media','No_of_users','Days_on_WhatsApp','Dt_max_convo','Dt_min_convo','Most_msg_by','Dy_max_convo']
     result=[]
@@ -59,7 +61,7 @@ def searchEmoji(data):
             if character in emoji.UNICODE_EMOJI:   #emoji search
                 Emojichar.append(character)
     emojidata=Counter(Emojichar).most_common()
-    emoji_info=pd.DataFrame(emojidata[:20] , columns=['Emoji','No_Of_Emoji'])
+    emoji_info=pd.DataFrame(emojidata[:20], columns=['Emoji', 'No_Of_Emoji'])
     return emoji_info.to_dict(orient='records')
                 
 def wordcloud(data):
@@ -78,7 +80,7 @@ def wordcloud(data):
             Words.append(item)
     
     X = Counter(Words).most_common()
-    Word_info=pd.DataFrame(X[:50], columns=['WORD','FREQUENCY'])
+    Word_info=pd.DataFrame(X[:100], columns=['WORD','FREQUENCY'])
     return Word_info.to_dict(orient='records')
 
 def heatMap(data):
@@ -89,7 +91,6 @@ def heatMap(data):
     X = Counter(temp).most_common()
     heatMap_info=pd.DataFrame(X, columns=['DATE','FREQUENCY'])
     return heatMap_info.to_dict(orient='records')
-
 
 def insights(data):  
     data=pd.DataFrame(data)
