@@ -1,16 +1,16 @@
-from chatistics.files.upload import parsefile
-from chatistics.files.check import check
+from chatistics.files.upload import parsefile, check
 from chatistics.dataframe.token import corpus
 from chatistics.dataframe.dataframe import dataframe
 from chatistics.dataframe.preprocessing import preprocess
 from chatistics.api.insights import insights
-from chatistics.dummy.test import tempory
+from chatistics.dummy.dummyapi import dummyapi
+from chatistics.error.error import error
 
 import pandas as pd
 from flask import Flask, jsonify, request, Blueprint
 from flask_cors import CORS
-from werkzeug.utils import secure_filename
 import os
+from flask import abort
 
 main = Blueprint('main', __name__)
 
@@ -25,25 +25,31 @@ def index():
     if request.method == 'POST': 
         file = request.files['file']
         if file.filename != '':
-            file.save(file.filename)                    #Save File in Root
-            if check(file.filename) == True:            #check file extension
-                content=parsefile(file.filename)        #Readfile
-                os.remove(file.filename)                #Remove file from root
-                content=corpus(content)                 #Filter the words
-                content=preprocess(content)             #Preprocess the data
-                df = dataframe(content)                 #
-                new_insights=insights(df)               #
-                return jsonify(new_insights)   
+            file.save(file.filename)                    
+            if check(file.filename) == True:            
+                content=parsefile(file.filename)        
+                os.remove(file.filename)
+                if corpus(content) != False:                 
+                    content=corpus(content)
+                    if preprocess(content) !=False:
+                        try:                 
+                            content=preprocess(content) 
+                            try:            
+                                df = dataframe(content)                 
+                                new_insights=insights(df)               
+                                return jsonify(new_insights)
+                            except:
+                                return error("Wrong file Content")
+                        except:
+                            return error("Wrong file Content")
+                    else:
+                        return error("Wrong file Content") 
             else:
                 os.remove(file.filename) 
-                print("your file is not in TXT") 
-                return "wrong"
-    else:
-        print("Something went wrong")
-        return "wrong"
+                return error("Wrong file format")
 
 #API Route
 @main.route('/api/v1/dummy', methods=['GET'])
 def api():
-    books = tempory()
-    return jsonify(books)
+    dummyjson = dummyapi()
+    return jsonify(dummyjson)
