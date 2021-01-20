@@ -7,8 +7,8 @@ import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
 const options = {
   rotations: 2,
-  rotationAngles: [0, 0],
-  fontSizes: [20, 100],
+  rotationAngles: [0, 90],
+  fontSizes: [20, 110],
 };
 
 export default function WordcloudSection() {
@@ -19,10 +19,11 @@ export default function WordcloudSection() {
       value: item.FREQUENCY,
     };
   });
+  console.log(context.file.stats.wordcloud.length);
   return (
     <Section>
       <h1 className="subtitle is-3 ">
-      Word cloud of <span className="underline">most used words</span>
+        Word cloud of <span className="underline">most used words</span>
       </h1>
       <div className="columns is-vcentered">
         <div className="column is-4">
@@ -32,7 +33,7 @@ export default function WordcloudSection() {
                 <div className="tile is-parent is-vertical">
                   <StatsBox
                     title={"Most Used Word"}
-                    stats={'hod'}
+                    stats={"hod"}
                     icon={
                       <i
                         className="fas fa-comment-dots fa-2x"
@@ -42,7 +43,7 @@ export default function WordcloudSection() {
                   />
                   <StatsBox
                     title={"Least Used Word"}
-                    stats={'a'}
+                    stats={"a"}
                     icon={
                       <i
                         className="fas fa-calendar-week fa-2x"
@@ -66,7 +67,9 @@ export default function WordcloudSection() {
           </div>
         </div>
         <div className="column ">
-          <ReactWordcloud words={words} options={options} />
+          <div>
+            <ReactWordcloud words={words} options={options} />
+          </div>
         </div>
       </div>
     </Section>
