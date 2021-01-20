@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 from datetime import datetime
-
+import calendar
 
 def dataframe(content):
     column_names = ["DATE","TIME","USERNAME","MESSAGE","DAY","YEAR"]
@@ -9,7 +9,7 @@ def dataframe(content):
     df = pd.DataFrame(columns = column_names)
     CORPUS=list(content)
     for i in range(len(CORPUS)):
-        date.append(re.sub('/','-',str(content[i].split(",")[0])))
+        date.append(str(content[i].split(",")[0]))
         time.append(str((content[i].split(",")[1].split("-"))[0][1:-1]))
         username.append(str((content[i].split(",")[1].split("-")[1].split(":")[0][1:])))
         if len(content[i].split(":")[2:]) > 1:
@@ -20,19 +20,26 @@ def dataframe(content):
     try:
         days=[]
         years=[]
+        month=[]
         for i in df['DATE']:
-            days.append(datetime.strptime(i, "%d-%m-%y").strftime("%A"))
-            years.append(datetime.strptime(i, "%d-%m-%y").year)
+            date_to_extract=datetime.strptime(i, "%d/%m/%y")
+            days.append(date_to_extract.strftime("%A"))
+            years.append(date_to_extract.year)
+            month.append(calendar.month_name[date_to_extract.month]+" "+str(date_to_extract.year))
     except :
         days=[]
         years=[]
+        month=[]
         for i in df['DATE']:
-            days.append(datetime.strptime(i, "%m-%d-%y").strftime("%A"))
-            years.append(datetime.strptime(i, "%m-%d-%y").year)
+            date_to_extract=datetime.strptime(i, "%m/%d/%y")
+            days.append(date_to_extract.strftime("%A"))
+            years.append(date_to_extract.year)
+            month.append(calendar.month_name[date_to_extract.month]+" "+str(date_to_extract.year))
     df['DAY'] = days
     df['YEAR']=years
     df["TIME"] = time
     df["USERNAME"] = username
-    df["MESSAGE"] = messages               
+    df["MESSAGE"] = messages
+    df['MONTH']=month               
     return df
         
