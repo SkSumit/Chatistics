@@ -10,9 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-export default function DayBar({selectedOption, setSelectedOption}) {
-
-  
+export default function DayBar({ selectedOption, setSelectedOption }) {
   const customStyles = {
     control: (styles) => ({
       ...styles,
@@ -22,15 +20,17 @@ export default function DayBar({selectedOption, setSelectedOption}) {
       cursor: "pointer",
       justifyContent: "center",
       marginBottom: "1rem",
-      width:'50%'
+      width: "50%",
     }),
   };
   const context = useContext(FileContext);
 
-  const options = Object.keys(context.file.stats.analysis.basedOnDays).map((item)=>({
-   label:item.charAt(0).toUpperCase() +  item.slice(1),
-   value:item
-  })) 
+  const options = Object.keys(context.file.stats.analysis.basedOnDays).map(
+    (item) => ({
+      label: item.charAt(0).toUpperCase() + item.slice(1),
+      value: item,
+    })
+  );
 
   return (
     <>
@@ -47,7 +47,9 @@ export default function DayBar({selectedOption, setSelectedOption}) {
         <BarChart
           width="100%"
           height={400}
-          data={context.file.stats.analysis.basedOnDays[selectedOption.value].days}
+          data={
+            context.file.stats.analysis.basedOnDays[selectedOption.value].days
+          }
           layout="vertical"
         >
           <XAxis type="number" />

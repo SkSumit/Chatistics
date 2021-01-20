@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  AreaChart,
-  BarChart,
-  Bar,
-  Area,
-  XAxis,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
+import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer } from "recharts";
 
 export default function Timeline({ data }) {
   return (
