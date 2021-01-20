@@ -9,7 +9,7 @@ def dataframe(content):
     df = pd.DataFrame(columns = column_names)
     CORPUS=list(content)
     for i in range(len(CORPUS)):
-        date.append(re.sub('/','-',str(content[i].split(",")[0])))
+        date.append(str(content[i].split(",")[0]))
         time.append(str((content[i].split(",")[1].split("-"))[0][1:-1]))
         username.append(str((content[i].split(",")[1].split("-")[1].split(":")[0][1:])))
         if len(content[i].split(":")[2:]) > 1:
@@ -22,7 +22,7 @@ def dataframe(content):
         years=[]
         month=[]
         for i in df['DATE']:
-            date_to_extract=datetime.strptime(i, "%d-%m-%y")
+            date_to_extract=datetime.strptime(i, "%d/%m/%y")
             days.append(date_to_extract.strftime("%A"))
             years.append(date_to_extract.year)
             month.append(calendar.month_name[date_to_extract.month]+" "+str(date_to_extract.year))
@@ -31,7 +31,7 @@ def dataframe(content):
         years=[]
         month=[]
         for i in df['DATE']:
-            date_to_extract=datetime.strptime(i, "%m-%d-%y")
+            date_to_extract=datetime.strptime(i, "%m/%d/%y")
             days.append(date_to_extract.strftime("%A"))
             years.append(date_to_extract.year)
             month.append(calendar.month_name[date_to_extract.month]+" "+str(date_to_extract.year))

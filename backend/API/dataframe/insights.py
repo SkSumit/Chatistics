@@ -39,10 +39,13 @@ def numOfText(data):
     return df.to_dict(orient='records')
 
 def heatMap(data):
-    date=list(data['DATE'])
-    value=Counter(date).most_common()
-    df=pd.DataFrame(value,columns=['DATE','VALUE'])
-    return df.to_dict(orient='records')
+    temp=[]
+    for i in range(len(data)):
+        review = re.sub('/','-',str(data['DATE'][i]))   #Exchanging "/" from "-"
+        temp.append(review)
+    X = Counter(temp).most_common()
+    heatMap_info=pd.DataFrame(X, columns=['DATE','VALUE'])
+    return heatMap_info.to_dict(orient='records')
 
 def activity_by_time(data):
     time=[]
