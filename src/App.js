@@ -10,10 +10,10 @@ import Loader, { LoaderAnalysis } from "./components/Loader";
 import TimeRadarSection from "./components/sections/TimeRadarSection";
 import UserSummary from "./components/sections/UserSummary";
 import Input from "./components/Input";
-import Heatmap from './components/sections/Heatmap'
-import EmojiSection from './components/sections/EmojiSection'
-import WordcloudSection from './components/sections/WordcloudSection'
-
+import Heatmap from "./components/sections/Heatmap";
+import EmojiSection from "./components/sections/EmojiSection";
+import WordcloudSection from "./components/sections/WordcloudSection";
+import SpecificUserSection from "./components/sections/SpecificUserSection";
 
 export const FileContext = createContext(null);
 
@@ -37,15 +37,16 @@ function App() {
       ) : (
         <div>
           <Hero />
-          <Input/>
+          <Input />
           <Summary file={file} />
           <TimelineSection data={mockData.stats.timelineByMonth} />
           <DaySection />
           <TimeRadarSection />
-          <Heatmap/>
-          <EmojiSection/>
-          <UserSummary/>
-          <WordcloudSection/>
+          <Heatmap />
+          <EmojiSection />
+          <UserSummary />
+          <WordcloudSection />
+          <SpecificUserSection />
         </div>
       )}
     </FileContext.Provider>

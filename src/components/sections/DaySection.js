@@ -10,7 +10,7 @@ export default function DaySection() {
     value: "all",
     label: "All",
   });
-  console.log(context);
+
   return (
     <Section>
       <h1 className="subtitle is-3 ">

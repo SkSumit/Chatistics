@@ -3,6 +3,8 @@ import datetime
 import emoji
 from collections import Counter
 import re
+
+
 def generalstats(data):
     generalstats={
         'No_of_msgs':len(data[data['MESSAGE'] != ""]),

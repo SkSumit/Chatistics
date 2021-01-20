@@ -1,11 +1,9 @@
 import React from "react";
-
 export default function Section({
-  variation,
+  variation = "",
   children,
   containerVariant = "bg-white",
   noBox = false,
-
 }) {
   return (
     <section className={`hero ${variation}`}>

@@ -864,205 +864,491 @@ export const mockData = {
     ],
     wordcloud: [
       {
-          "FREQUENCY": 8817,
-          "WORD": "h"
+        FREQUENCY: 8816,
+        WORD: "h",
       },
       {
-          "FREQUENCY": 5043,
-          "WORD": "hod"
+        FREQUENCY: 5042,
+        WORD: "hod",
       },
       {
-          "FREQUENCY": 5024,
-          "WORD": "chutya"
+        FREQUENCY: 5023,
+        WORD: "cha",
       },
       {
-          "FREQUENCY": 4116,
-          "WORD": "<media"
+        FREQUENCY: 4169,
+        WORD: "<media",
       },
       {
-          "FREQUENCY": 4116,
-          "WORD": "omitted>"
+        FREQUENCY: 4169,
+        WORD: "omitted>",
       },
       {
-          "FREQUENCY": 1366,
-          "WORD": "hain"
+        FREQUENCY: 1358,
+        WORD: "hain",
       },
       {
-          "FREQUENCY": 1230,
-          "WORD": "kya"
+        FREQUENCY: 1247,
+        WORD: "kya",
       },
       {
-          "FREQUENCY": 1148,
-          "WORD": "ka"
+        FREQUENCY: 1138,
+        WORD: "ka",
       },
       {
-          "FREQUENCY": 1067,
-          "WORD": "and"
+        FREQUENCY: 1054,
+        WORD: "and",
       },
       {
-          "FREQUENCY": 958,
-          "WORD": "bc"
+        FREQUENCY: 995,
+        WORD: "bc",
       },
       {
-          "FREQUENCY": 895,
-          "WORD": "toh"
+        FREQUENCY: 876,
+        WORD: "toh",
       },
       {
-          "FREQUENCY": 841,
-          "WORD": "to"
+        FREQUENCY: 829,
+        WORD: "to",
       },
       {
-          "FREQUENCY": 826,
-          "WORD": "rha"
+        FREQUENCY: 827,
+        WORD: "rha",
       },
       {
-          "FREQUENCY": 817,
-          "WORD": "i"
+        FREQUENCY: 780,
+        WORD: "na",
       },
       {
-          "FREQUENCY": 779,
-          "WORD": "nahi"
+        FREQUENCY: 776,
+        WORD: "i",
       },
       {
-          "FREQUENCY": 771,
-          "WORD": "na"
+        FREQUENCY: 761,
+        WORD: "nahi",
       },
       {
-          "FREQUENCY": 732,
-          "WORD": "bhi"
+        FREQUENCY: 754,
+        WORD: "tha",
       },
       {
-          "FREQUENCY": 724,
-          "WORD": "tha"
+        FREQUENCY: 729,
+        WORD: "bhi",
       },
       {
-          "FREQUENCY": 674,
-          "WORD": "ko"
+        FREQUENCY: 677,
+        WORD: "ko",
       },
       {
-          "FREQUENCY": 663,
-          "WORD": "the"
+        FREQUENCY: 645,
+        WORD: "se",
       },
       {
-          "FREQUENCY": 649,
-          "WORD": "yash"
+        FREQUENCY: 645,
+        WORD: "the",
       },
       {
-          "FREQUENCY": 646,
-          "WORD": "se"
+        FREQUENCY: 640,
+        WORD: "yash",
       },
       {
-          "FREQUENCY": 636,
-          "WORD": "but"
+        FREQUENCY: 624,
+        WORD: "but",
       },
       {
-          "FREQUENCY": 611,
-          "WORD": "you"
+        FREQUENCY: 601,
+        WORD: "kar",
       },
       {
-          "FREQUENCY": 609,
-          "WORD": "kar"
+        FREQUENCY: 594,
+        WORD: "you",
       },
       {
-          "FREQUENCY": 601,
-          "WORD": "is"
+        FREQUENCY: 578,
+        WORD: "https",
       },
       {
-          "FREQUENCY": 591,
-          "WORD": "https"
+        FREQUENCY: 572,
+        WORD: "is",
       },
       {
-          "FREQUENCY": 556,
-          "WORD": "xd"
+        FREQUENCY: 564,
+        WORD: "xd",
       },
       {
-          "FREQUENCY": 542,
-          "WORD": "main"
+        FREQUENCY: 540,
+        WORD: "main",
       },
       {
-          "FREQUENCY": 532,
-          "WORD": "yes"
+        FREQUENCY: 527,
+        WORD: "abhi",
       },
       {
-          "FREQUENCY": 530,
-          "WORD": "this"
+        FREQUENCY: 526,
+        WORD: "yes",
       },
       {
-          "FREQUENCY": 527,
-          "WORD": "abhi"
+        FREQUENCY: 520,
+        WORD: "this",
       },
       {
-          "FREQUENCY": 510,
-          "WORD": "@917020037195"
+        FREQUENCY: 512,
+        WORD: "@917020037195",
       },
       {
-          "FREQUENCY": 495,
-          "WORD": "bhai"
+        FREQUENCY: 505,
+        WORD: "haa",
       },
       {
-          "FREQUENCY": 487,
-          "WORD": "nice"
+        FREQUENCY: 492,
+        WORD: "ho",
       },
       {
-          "FREQUENCY": 484,
-          "WORD": "haa"
+        FREQUENCY: 489,
+        WORD: "nice",
       },
       {
-          "FREQUENCY": 482,
-          "WORD": "ho"
+        FREQUENCY: 485,
+        WORD: "bhai",
       },
       {
-          "FREQUENCY": 478,
-          "WORD": "like"
+        FREQUENCY: 485,
+        WORD: "like",
       },
       {
-          "FREQUENCY": 476,
-          "WORD": "hi"
+        FREQUENCY: 483,
+        WORD: "ke",
       },
       {
-          "FREQUENCY": 475,
-          "WORD": "ke"
+        FREQUENCY: 483,
+        WORD: "hi",
       },
       {
-          "FREQUENCY": 459,
-          "WORD": "@918602842290"
+        FREQUENCY: 445,
+        WORD: "@918602842290",
       },
       {
-          "FREQUENCY": 445,
-          "WORD": "nhhi"
+        FREQUENCY: 441,
+        WORD: "nhhi",
       },
       {
-          "FREQUENCY": 437,
-          "WORD": "for"
+        FREQUENCY: 433,
+        WORD: "in",
       },
       {
-          "FREQUENCY": 427,
-          "WORD": "me"
+        FREQUENCY: 429,
+        WORD: "me",
       },
       {
-          "FREQUENCY": 420,
-          "WORD": "in"
+        FREQUENCY: 423,
+        WORD: "kia",
       },
       {
-          "FREQUENCY": 418,
-          "WORD": "kia"
+        FREQUENCY: 423,
+        WORD: "for",
       },
       {
-          "FREQUENCY": 413,
-          "WORD": "a"
+        FREQUENCY: 415,
+        WORD: "mai",
       },
       {
-          "FREQUENCY": 405,
-          "WORD": "mai"
+        FREQUENCY: 403,
+        WORD: "ye",
       },
       {
-          "FREQUENCY": 402,
-          "WORD": "ye"
+        FREQUENCY: 397,
+        WORD: "a",
       },
       {
-          "FREQUENCY": 393,
-          "WORD": "'no_of_emoji'"
-      }
-  ]
+        FREQUENCY: 393,
+        WORD: "'no_of_emoji'",
+      },
+      {
+        FREQUENCY: 392,
+        WORD: "{'emoji'",
+      },
+      {
+        FREQUENCY: 382,
+        WORD: "we",
+      },
+      {
+        FREQUENCY: 380,
+        WORD: "no",
+      },
+      {
+        FREQUENCY: 374,
+        WORD: "@918446224700",
+      },
+      {
+        FREQUENCY: 372,
+        WORD: "tu",
+      },
+      {
+        FREQUENCY: 368,
+        WORD: "ki",
+      },
+      {
+        FREQUENCY: 362,
+        WORD: "k",
+      },
+      {
+        FREQUENCY: 347,
+        WORD: "of",
+      },
+      {
+        FREQUENCY: 346,
+        WORD: "karna",
+      },
+      {
+        FREQUENCY: 346,
+        WORD: "vo",
+      },
+      {
+        FREQUENCY: 340,
+        WORD: "mera",
+      },
+      {
+        FREQUENCY: 335,
+        WORD: "kuch",
+      },
+      {
+        FREQUENCY: 327,
+        WORD: "ok",
+      },
+      {
+        FREQUENCY: 319,
+        WORD: "are",
+      },
+      {
+        FREQUENCY: 319,
+        WORD: "hu",
+      },
+      {
+        FREQUENCY: 316,
+        WORD: "be",
+      },
+      {
+        FREQUENCY: 314,
+        WORD: "what",
+      },
+      {
+        FREQUENCY: 310,
+        WORD: "it",
+      },
+      {
+        FREQUENCY: 306,
+        WORD: "was",
+      },
+      {
+        FREQUENCY: 304,
+        WORD: "can",
+      },
+      {
+        FREQUENCY: 293,
+        WORD: "bahut",
+      },
+      {
+        FREQUENCY: 287,
+        WORD: "so",
+      },
+      {
+        FREQUENCY: 286,
+        WORD: "on",
+      },
+      {
+        FREQUENCY: 286,
+        WORD: "ek",
+      },
+      {
+        FREQUENCY: 284,
+        WORD: "pe",
+      },
+      {
+        FREQUENCY: 274,
+        WORD: "hua",
+      },
+      {
+        FREQUENCY: 266,
+        WORD: "time",
+      },
+      {
+        FREQUENCY: 261,
+        WORD: "not",
+      },
+      {
+        FREQUENCY: 260,
+        WORD: "xddd",
+      },
+      {
+        FREQUENCY: 259,
+        WORD: "gaya",
+      },
+      {
+        FREQUENCY: 256,
+        WORD: "kal",
+      },
+      {
+        FREQUENCY: 253,
+        WORD: "that",
+      },
+      {
+        FREQUENCY: 248,
+        WORD: "bola",
+      },
+      {
+        FREQUENCY: 242,
+        WORD: "yeh",
+      },
+      {
+        FREQUENCY: 242,
+        WORD: "do",
+      },
+      {
+        FREQUENCY: 238,
+        WORD: "n",
+      },
+      {
+        FREQUENCY: 230,
+        WORD: "mujhe",
+      },
+      {
+        FREQUENCY: 229,
+        WORD: "wtf",
+      },
+      {
+        FREQUENCY: 228,
+        WORD: "he",
+      },
+      {
+        FREQUENCY: 222,
+        WORD: "m",
+      },
+      {
+        FREQUENCY: 221,
+        WORD: "acha",
+      },
+      {
+        FREQUENCY: 221,
+        WORD: "karte",
+      },
+      {
+        FREQUENCY: 218,
+        WORD: "code",
+      },
+      {
+        FREQUENCY: 218,
+        WORD: "bol",
+      },
+      {
+        FREQUENCY: 217,
+        WORD: "aaj",
+      },
+      {
+        FREQUENCY: 215,
+        WORD: "?",
+      },
+      {
+        FREQUENCY: 213,
+        WORD: "yaar",
+      },
+      {
+        FREQUENCY: 213,
+        WORD: "hota",
+      },
+      {
+        FREQUENCY: 212,
+        WORD: "kr",
+      },
+      {
+        FREQUENCY: 210,
+        WORD: "sab",
+      },
+    ],
+    userSpecific: [
+      {
+        totalDays: 450,
+        totalMessageExchanged: 3598,
+        averageTexts: 124,
+        highestStreak: 12,
+        streakRange: {
+          startDate: "12-12-20",
+          endDate: "24-12-20",
+        },
+        mostUsedWord: "lol",
+        mostUsedEmoji: "😳",
+        name: "Sumit",
+        speciality:'Highest Emoji Texter'
+      },
+      {
+        totalDays: 398,
+        totalMessageExchanged: 2564,
+        averageTexts: 78,
+        highestStreak: 6,
+        streakRange: {
+          startDate: "12-12-20",
+          endDate: "24-12-20",
+        },
+        mostUsedWord: "haa",
+        mostUsedEmoji: "😳",
+        name: "Yash",
+        speciality:'Seen Zoner'
+      },
+      {
+        totalDays: 453,
+        totalMessageExchanged: 9458,
+        averageTexts: 356,
+        highestStreak: 17,
+        streakRange: {
+          startDate: "12-12-20",
+          endDate: "24-12-20",
+        },
+        mostUsedWord: "lol",
+        mostUsedEmoji: "😳",
+        name: "Atharva",
+        speciality:'Spammer'
+      },
+      {
+        totalDays: 450,
+        totalMessageExchanged: 3598,
+        averageTexts: 124,
+        highestStreak: 12,
+        streakRange: {
+          startDate: "12-12-20",
+          endDate: "24-12-20",
+        },
+        mostUsedWord: "lol",
+        mostUsedEmoji: "😳",
+        name: "Amitesh",
+        speciality:'Media MegaGod'
+      },
+      {
+        totalDays: 450,
+        totalMessageExchanged: 3598,
+        averageTexts: 124,
+        highestStreak: 12,
+        streakRange: {
+          startDate: "12-12-20",
+          endDate: "24-12-20",
+        },
+        mostUsedWord: "lol",
+        mostUsedEmoji: "😳",
+        name: "Lubna",
+        speciality:null
+      },
+      {
+        totalDays: 450,
+        totalMessageExchanged: 3598,
+        averageTexts: 124,
+        highestStreak: 12,
+        streakRange: {
+          startDate: "12-12-20",
+          endDate: "24-12-20",
+        },
+        mostUsedWord: "lol",
+        mostUsedEmoji: "😳",
+        name: "Tamal",
+        speciality:'LinksIn '
+      },
+    ],
   },
 };
