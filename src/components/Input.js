@@ -9,7 +9,7 @@ export default function Input() {
   const [uploadFile, setUploadFile] = useState(null);
   const [error, setError] = useState(false);
   const onFileChange = async (e) => {
-    console.log(e.target.files[0]);
+    // console.log(e.target.files[0]);
     if (e.target.files[0]) {
       setError(false);
       setUploadFile(e.target.files[0]);
@@ -40,27 +40,35 @@ export default function Input() {
     await html2pdf().from(element).set(getOptions("filename", element)).save();
   };
 
-  const sendFile = (e) => {
+  const sendFile = async (e) => {
     e.preventDefault();
+    const formData = new FormData()
+
     if (uploadFile) {
       console.log(uploadFile);
-      setError(false);
+      formData.append('file', uploadFile)
       if (
         uploadFile.name.slice(
           ((uploadFile.name.lastIndexOf(".") - 1) >>> 0) + 2
         ) !== "txt"
       ) {
-        alert("Wrong File SISTA");
-      } else {
-        context.setLoader(true);
-        setInterval(() => {
-          context.setLoader(false);
-        }, 3000);
+        console.log("error");
+        return setError(true);
       }
+
+      context.setLoader(true);
+      const result = await axios.post(
+        "http://localhost:5000/testing",
+        formData,
+        { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
+      );
+      console.log(result);
+      context.setLoader(false);
     } else {
-      setError(true);
+      return setError(true);
     }
   };
+
   return (
     <Section containerVariant={"bg-white mt-100 py-6"}>
       <div className="field is-horizontal is-justify-content-center">
