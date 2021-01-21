@@ -29,6 +29,7 @@ def index():
             file = request.files['file']
             file.save(file.filename)
             if not file.filename.endswith('.txt'):
+                os.remove(file.filename)
                 raise Exception("Wrong file type")
             content=parsefile(file.filename)
             content=preprocess(content)
