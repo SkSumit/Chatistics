@@ -1,7 +1,7 @@
 from flask import jsonify
 
 
-def error(message):
+def error(message , errorcode):
     response = jsonify({'message': message})
-    response.status_code = 400 
+    response.status_code = errorcode 
     return response

@@ -1,4 +1,4 @@
-from chatistics.files.upload import parsefile, check
+from chatistics.files.upload import parsefile
 from chatistics.dataframe.token import corpus
 from chatistics.dataframe.dataframe import dataframe
 from chatistics.dataframe.preprocessing import preprocess
@@ -22,31 +22,21 @@ def hello():
 #Testing Route
 @main.route('/testing', methods=['POST'])
 def index():
-    if request.method == 'POST': 
-        file = request.files['file']
-        if file.filename != '':
-            file.save(file.filename)                    
-            if check(file.filename) == True:            
-                content=parsefile(file.filename)        
-                os.remove(file.filename)
-                if corpus(content) != False:                 
-                    content=corpus(content)
-                    if preprocess(content) !=False:
-                        try:                 
-                            content=preprocess(content) 
-                            try:            
-                                df = dataframe(content)                 
-                                new_insights=insights(df)               
-                                return jsonify(new_insights)
-                            except:
-                                return error("Wrong file Content")
-                        except:
-                            return error("Wrong file Content")
-                    else:
-                        return error("Wrong file Content") 
-            else:
-                os.remove(file.filename) 
-                return error("Wrong file format")
+    if request.method == 'POST':                     
+        try:
+            if not request.files or request.files['file'].filename == '':
+                raise Exception("Select a file")
+            file = request.files['file']
+            file.save(file.filename)
+            if not file.filename.endswith('.txt'):
+                raise Exception("Wrong file type")
+            content=parsefile(file.filename)
+            content=preprocess(content)
+            df = dataframe(content)
+            new_insights=insights(df)
+            return jsonify(new_insights)
+        except Exception as e:
+            return error(str(e.args[0]) , 415)
 
 #API Route
 @main.route('/api/v1/dummy', methods=['GET'])

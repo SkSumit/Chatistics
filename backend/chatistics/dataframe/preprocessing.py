@@ -13,11 +13,10 @@ def correct(listnew):
             else:
                 updated[-1] = str(updated[-1] + " " + i)    
         return updated    
-    except:
-        return False                    
+    except(IndexError):
+        raise Exception("Not a What's App txt file")                    
 
 def preprocess(content):
-    try:
         CORPUS = list(content)
         stopwords = [".*^$",".*security code changed. tap for more info.",".*messages and calls are end-to-end encrypted",".*changed their phone number",".*changed this group's icon",".*turned on disappearing messages",".*turned on disappearing messages",".*turned off disappearing messages",".*added you",".*left",".*new added you"
         ,'.*changed the subject from','.*changed the group description','.*deleted this group','.*added','.*settings to allow all participants to send messages'
@@ -25,10 +24,9 @@ def preprocess(content):
         r=re.compile('|'.join(stopwords))
         for i in list(filter(r.match, CORPUS)):
             CORPUS.remove(i)
-        if correct(CORPUS) != False:
+        correct(CORPUS)
+        try:    
             CORPUS=correct(CORPUS)
             return CORPUS
-        else:
-            return False
-    except:
-        return False
+        except(ValueError):
+            raise Exception("Not a What's App txt file")
