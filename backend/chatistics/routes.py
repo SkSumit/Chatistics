@@ -8,7 +8,7 @@ from chatistics.error.error import error
 
 import pandas as pd
 from flask import Flask, jsonify, request, Blueprint
-from flask_cors import CORS
+from flask_cors import CORS,cross_origin
 import os
 from flask import abort
 
@@ -21,6 +21,7 @@ def hello():
 
 #Testing Route
 @main.route('/testing', methods=['POST'])
+@cross_origin()
 def index():
     if request.method == 'POST':                     
         try:
@@ -44,3 +45,5 @@ def index():
 def api():
     dummyjson = dummyapi()
     return jsonify(dummyjson)
+
+        

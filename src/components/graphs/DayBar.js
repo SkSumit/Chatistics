@@ -55,7 +55,7 @@ export default function DayBar({ selectedOption, setSelectedOption }) {
           <XAxis type="number" />
           <YAxis dataKey="day" height={"100%"} width={85} type="category" />
           <Tooltip />
-          <Bar name="Texts" dataKey="value" fill="#25d366" />
+          <Bar name="Texts" dataKey="value" fill="#25d366" isAnimationActive={false}/>
         </BarChart>
       </ResponsiveContainer>
     </>

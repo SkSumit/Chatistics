@@ -12,8 +12,8 @@ export default function SpecificUserSection() {
           {chunk(context.file.stats.userSpecific, 3).map((row, index) => {
             return (
               <div className="tile is-parent " key={index}>
-                {row.map((item) => (
-                  <div className="tile is-parent ">
+                {row.map((item,index) => (
+                  <div className="tile is-parent "  key={index}>
                     <div className="tile is-child box bg-light-green">
                       <p className="title is-3 " style={{ color: "#000" }}>
                         {item.name}
