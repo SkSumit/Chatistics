@@ -6,8 +6,12 @@ export default function Summary({ file }) {
     <Section>
       <h1 className="title is-3 ">Lazy? Here's how we'd show your stats,</h1>
       <h3 className="subtitle is-5 ">
-        showing <span className="underline"> example </span> chat between{" "}
-        <span className="underline"> {file.user1} </span> {" & "}
+        showing{" "}
+        <span className="has-text-weight-semibold bg-light-green px-1">
+          {" "}
+          example{" "}
+        </span>{" "}
+        chat between <span className="underline"> {file.user1} </span> {" & "}
         <span className="underline">{file.user2}</span>
       </h3>
       <div className="tile is-ancestor">

@@ -9,8 +9,8 @@ from chatistics.auth.auth import check_for_token
 
 
 import pandas as pd
-from flask import Flask, jsonify, request, Blueprint, session, flash, make_response
-from flask_cors import CORS
+from flask import Flask, jsonify, request, Blueprint
+from flask_cors import CORS,cross_origin
 import os
 
 main = Blueprint('main', __name__)
@@ -18,13 +18,11 @@ main = Blueprint('main', __name__)
 #index route
 @main.route('/', methods=['GET'])
 def hello():
-    if not session.get('logged_in'):
-        return "Not Logged In"
-    else:
-        return "currently logged in"
+    return "Not Logged In"
 
 #Testing Route
 @main.route('/testing', methods=['POST'])
+@cross_origin()
 def index():
     if request.method == 'POST': 
         file = request.files['file']
@@ -57,3 +55,5 @@ def index():
 def api():
     dummyjson = dummyapi()
     return jsonify(dummyjson)
+
+        

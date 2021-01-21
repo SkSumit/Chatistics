@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import {
   Radar,
   RadarChart,
@@ -24,7 +24,7 @@ export default function TimeRadarChart() {
         <PolarAngleAxis dataKey="day" />
         <PolarRadiusAxis />
         <Tooltip />
-        <Radar name="Texts" dataKey="value" fill="#25d366" fillOpacity={0.6} />
+        <Radar name="Texts" dataKey="value" fill="#25d366" fillOpacity={0.6} isAnimationActive={false} />
       </RadarChart>
     </ResponsiveContainer>
   );
