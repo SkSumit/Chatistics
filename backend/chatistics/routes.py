@@ -55,11 +55,4 @@ def api():
     dummyjson = dummyapi()
     return jsonify(dummyjson)
 
-@main.route('/v1/postFile', methods=['POST'])
-@cross_origin()
-def postFile():
-    print(request)
-    # print(request.files.get('file', False)
-    # print(request.files['file'].filename == '')
-    return 'Hey There'
         
