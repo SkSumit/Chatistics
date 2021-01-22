@@ -11,7 +11,7 @@ export default function DaySection() {
     value: "all",
     label: "All",
   });
-  console.log(context);
+
   return (
     <Layout
       sectionHeader={

@@ -1,15 +1,15 @@
 import React, { useContext, useState } from "react";
-import html2pdf from "html2pdf.js";
 import { FileContext } from "../App";
-import axios from "axios";
 import Section from "./common/Section";
+
 
 export default function Input() {
   const context = useContext(FileContext);
+  console.log(context)
   const [uploadFile, setUploadFile] = useState(null);
   const [error, setError] = useState(false);
+
   const onFileChange = async (e) => {
-    // console.log(e.target.files[0]);
     if (e.target.files[0]) {
       setError(false);
       setUploadFile(e.target.files[0]);
@@ -17,56 +17,13 @@ export default function Input() {
       setError(true);
     }
   };
-  const download = async () => {
-    var element = document.getElementById("root");
-    const getOptions = (filename, element) => {
-      let opt = {
-        margin: 0,
-        filename: filename + ".pdf",
-        image: { type: "jpeg", quality: 0.7 },
-        html2canvas: { scale: 2, foreignObjectRendering: true },
-        jsPDF: {
-          unit: "px",
-          format: [
-            element.getBoundingClientRect().height,
-            element.getBoundingClientRect().width,
-          ],
-          orientation: "portrait",
-          hotfixes: ["px_scaling"],
-        },
-      };
-      return opt;
-    };
-    await html2pdf().from(element).set(getOptions("filename", element)).save();
-  };
 
   const sendFile = async (e) => {
     e.preventDefault();
-    const formData = new FormData()
-
-    if (uploadFile) {
-      console.log(uploadFile);
-      formData.append('file', uploadFile)
-      if (
-        uploadFile.name.slice(
-          ((uploadFile.name.lastIndexOf(".") - 1) >>> 0) + 2
-        ) !== "txt"
-      ) {
-        console.log("error");
-        return setError(true);
-      }
-
-      context.setLoader(true);
-      const result = await axios.post(
-        "http://localhost:5000/testing",
-        formData,
-        { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
-      );
-      console.log(result);
-      context.setLoader(false);
-    } else {
-      return setError(true);
+    if(!uploadFile){
+     return setError(true)
     }
+    context.handlePostFile(uploadFile)
   };
 
   return (
@@ -118,7 +75,6 @@ export default function Input() {
               <button
                 type="submit"
                 className=" button is-size-5-desktop has-text-primary has-text-weight-semibold  is-fullwidth"
-                onClick={download}
               >
                 Know More
               </button>
@@ -157,3 +113,26 @@ export default function Input() {
     </Section>
   );
 }
+
+// const download = async () => {
+//   var element = document.getElementById("root");
+//   const getOptions = (filename, element) => {
+//     let opt = {
+//       margin: 0,
+//       filename: filename + ".pdf",
+//       image: { type: "jpeg", quality: 0.7 },
+//       html2canvas: { scale: 2, foreignObjectRendering: true },
+//       jsPDF: {
+//         unit: "px",
+//         format: [
+//           element.getBoundingClientRect().height,
+//           element.getBoundingClientRect().width,
+//         ],
+//         orientation: "portrait",
+//         hotfixes: ["px_scaling"],
+//       },
+//     };
+//     return opt;
+//   };
+//   await html2pdf().from(element).set(getOptions("filename", element)).save();
+// };

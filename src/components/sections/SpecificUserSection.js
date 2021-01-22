@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { chunk } from "lodash";
+import chunk from 'lodash.chunk'
 import Section from "../common/Section";
 import { FileContext } from "../../App";
 

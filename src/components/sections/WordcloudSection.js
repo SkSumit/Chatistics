@@ -19,7 +19,7 @@ export default function WordcloudSection() {
       value: item.FREQUENCY,
     };
   });
-  console.log(context.file.stats.wordcloud.length);
+
   return (
     <Layout
       sectionHeader={
