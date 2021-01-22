@@ -6,7 +6,6 @@ def create_app():
     app = Flask(__name__)
     CORS(app)
     
-    
     from chatistics.routes import main    
     app.register_blueprint(main)
     return app

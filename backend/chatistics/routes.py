@@ -5,19 +5,20 @@ from chatistics.dataframe.preprocessing import preprocess
 from chatistics.api.insights import insights
 from chatistics.dummy.dummyapi import dummyapi
 from chatistics.error.error import error
+from chatistics.auth.auth import check_for_token
+
 
 import pandas as pd
 from flask import Flask, jsonify, request, Blueprint
 from flask_cors import CORS,cross_origin
 import os
-from flask import abort
 
 main = Blueprint('main', __name__)
 
 #index route
 @main.route('/', methods=['GET'])
 def hello():
-    return "pong"
+    return "Not Logged In"
 
 #Testing Route
 @main.route('/testing', methods=['POST'])
@@ -33,6 +34,7 @@ def index():
                 os.remove(file.filename)
                 raise Exception("Wrong file type")
             content=parsefile(file.filename)
+            
             content=preprocess(content)
             df = dataframe(content)
             new_insights=insights(df)
@@ -41,7 +43,7 @@ def index():
             return error(str(e.args[0]) , 415)
 
 #API Route
-@main.route('/api/v1/dummy', methods=['GET'])
+@main.route('/api/v1/dummy')
 def api():
     dummyjson = dummyapi()
     return jsonify(dummyjson)
