@@ -17,7 +17,7 @@ def dataframe(content):
                 messages.append(" ".join(content[i].split(":")[2:])[1:])
             else:
                 messages.append("^".join(content[i].split(":")[2:])[1:])
-        df["DATE"] = date            
+        df["DATE"] = date           
         try:
             days=[]
             years=[]
