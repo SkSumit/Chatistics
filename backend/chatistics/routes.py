@@ -34,7 +34,6 @@ def index():
                 os.remove(file.filename)
                 raise Exception("Wrong file type")
             content=parsefile(file.filename)
-            
             content=preprocess(content)
             df = dataframe(content)
             new_insights=insights(df)
