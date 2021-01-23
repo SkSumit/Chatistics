@@ -2,7 +2,7 @@ import emoji
 from collections import Counter
 import pandas as pd
 from chatistics.api.user.user import usernameid
-import emoji
+
 
 def emojiuser(data, username): #add username
     Emojichar = []   
