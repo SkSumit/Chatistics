@@ -13,10 +13,7 @@ import Heatmap from "./components/sections/Heatmap";
 import EmojiSection from "./components/sections/EmojiSection";
 import WordcloudSection from "./components/sections/WordcloudSection";
 import SpecificUserSection from "./components/sections/SpecificUserSection";
-import ErrorModal from './components/modals/ErrorModal'
-import {postFile} from './api/api'
-import {fileExtensionValidation} from './api/apiUtils'
-
+import ErrorModal from "./components/modals/ErrorModal";
 
 export const FileContext = createContext(null);
 
@@ -24,57 +21,41 @@ function App() {
   const [file, setFile] = useState(null);
   const [loader, setLoader] = useState(false);
   const [initLoader, setInitLoader] = useState(true);
-  const [showDownloadBtn, setShowDownloadBtn] = useState(false);
   const [axiosError, setAxiosError] = useState(null);
-
+  const [showDownloadBtn, setShowDownloadBtn] = useState(false);
 
   useEffect(() => {
     setFile(mockData);
     setInitLoader(false);
   }, []);
 
-  const handlePostFile = async (data) => {
-    console.log(data);
-    const formData = new FormData();
-      try {
-        fileExtensionValidation(data);
-        formData.append("file", data);
-        setLoader(true);
-        const result = await postFile(formData);
-        console.log(result);
-        setLoader(false);
-      } catch (error) {
-        setAxiosError(true)
-        setLoader(false)
-        console.log(error);
-      }
-  } 
-  
-
   if (initLoader) {
     return <Loader />;
   }
 
-  if (loader ) {
+  if (loader) {
     return <LoaderAnalysis />;
   }
 
   return (
-    <FileContext.Provider value={{ file, setLoader,handlePostFile,axiosError, setAxiosError  }}>
+    <>
       <Hero />
-      <Input />
-      <Summary file={file} />
-      <TimelineSection data={mockData.stats.timelineByMonth} />
-      <DaySection />
-      <TimeRadarSection />
-      <Heatmap />
-      <EmojiSection />
-      <UserSummary />
-      <WordcloudSection />
-      <SpecificUserSection />
-     {axiosError && <ErrorModal error={axiosError} setError = {setAxiosError}/>}
-    </FileContext.Provider>
+      <Input setLoader={setLoader} setAxiosError={setAxiosError} showDownloadBtn={showDownloadBtn} setShowDownloadBtn={setShowDownloadBtn} />
+      <FileContext.Provider value={{ file }}>
+        <Summary file={file} />
+        <TimelineSection data={mockData.stats.timelineByMonth} />
+        <DaySection />
+        <TimeRadarSection />
+        <Heatmap />
+        <EmojiSection />
+        <UserSummary />
+        <WordcloudSection />
+        <SpecificUserSection />
+      </FileContext.Provider>
+      {axiosError && <ErrorModal error={axiosError} setError = {setAxiosError}/>}
+    </>
   );
 }
 
 export default App;
+

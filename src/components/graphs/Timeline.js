@@ -2,8 +2,6 @@ import React, { useContext } from "react";
 import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { FileContext } from "../../App";
 
-
-
 export default function Timeline({ data }) {
   const context = useContext(FileContext);
   return (

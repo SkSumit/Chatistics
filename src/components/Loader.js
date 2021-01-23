@@ -1,7 +1,6 @@
 import React from "react";
-import hero from "../img/hero.png";
 import whitehero from '../img/whitehero.png'
-import blackhero from '../img/blackhero.png'
+
 
 export default function Loader() {
   const loadingText = [
