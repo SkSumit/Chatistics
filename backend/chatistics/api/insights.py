@@ -57,7 +57,7 @@ import re
 #     for i in data['TIME']:
 #         time.append(i.split(":")[0]+i.split(":")[1].split(" ")[1])
 #     value=Counter(time).most_common()
-#     df=pd.DataFrame(value,columns=['DATE','VALUE']
+#     df=pd.DataFrame(value,columns=['DATE','VALUE'])
 #     return df.to_dict(orient='records')               
      
 # def searchEmoji(data):
