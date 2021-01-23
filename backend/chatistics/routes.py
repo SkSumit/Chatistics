@@ -25,7 +25,7 @@ def hello():
 @cross_origin()
 def index():
     if request.method == 'POST':                     
-        try:
+        # try:
             if not request.files or request.files['file'].filename == '':
                 raise Exception("Select a file")
             file = request.files['file']
@@ -39,8 +39,8 @@ def index():
             df = dataframe(content)
             new_insights=insights(df)
             return jsonify(new_insights)
-        except Exception as e:
-            return error(str(e.args[0]) , 415)
+        # except Exception as e:
+        #     return error(str(e.args[0]) , 415)
 
 #API Route
 @main.route('/api/v1/dummy')
