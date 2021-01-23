@@ -8,7 +8,7 @@ def stats(data):
     stats = {
       "summary"    : summary(data),
       "emoji"      : emojicontent(data),
-      "wordcloud"  : wordcloud(data),
       "heatmap"    : heatmap(data),
+      "wordcloud"  : wordcloud(data),
     } 
     return stats

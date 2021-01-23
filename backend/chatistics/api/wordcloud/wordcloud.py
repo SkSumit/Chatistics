@@ -4,19 +4,6 @@ import pandas as pd
 from chatistics.api.user.user import usernameid
 
 
-
-def usernameid(data):
-    user_numid = data['USERNAME'].unique()
-    return user_numid
-
-def wordsListNestedall(data):
-    word = [x.split() for x in data['MESSAGE'].tolist()]
-    return word
-
-def wordsListNestedUser(data,username):
-    word = [x.split() for x in data[data['USERNAME'] == username]['MESSAGE']]
-    return word
- 
 def word_list(word):
     words,letters,links = [],[],[]
     for sublist in word:           #Creating a SINGLE LIST from NESTED LIST
@@ -30,14 +17,13 @@ def word_list(word):
                 letters.append(letter)
     return words, letters, links;
 
-def wordCountAll(data):
-    word=wordsListNestedall(data)
-    word, letter, link = word_list(word)
-    return word, letter, link;
+def wordsListNestedall(data):
+    word = [x.split() for x in data['MESSAGE'].tolist()]
+    return word
 
-def wordCountUser(data,username):
-    word=wordsListNestedUser(data,username)
-    word, letter, link = word_list(word)
+def wordCountAll(data):
+    words=wordsListNestedall(data)
+    word, letter, link = word_list(words)
     return word, letter, link;
 
 def wordcloudAll(data):  
@@ -50,16 +36,25 @@ def wordcloudAll(data):
                 'word_stat':wordstats
            }
     } 
+    
+def wordsListNestedUser(data,username):
+    word = [x.split() for x in data[data['USERNAME'] == username]['MESSAGE']]
+    return word
+ 
+def wordCountUser(data,username):
+    words=wordsListNestedUser(data,username)
+    word, letter, link = word_list(words)
+    return word, letter, link;
+
 def wordcloudUser(data,username):  
     words, letters, links = wordCountUser(data,username)
     worddata=pd.DataFrame(Counter(words).most_common()[:50], columns=['WORD','FREQUENCY']).to_dict(orient='records')                
     wordstats={'Avg_word_per_text':len(words)/len(data),'Total_Words':len(words),'Total_links':len(links),'Total_letters':len(letters),'Total_lettrs_per_word':len(letters)/len(words)}                
     return {   username :
                 {
-                    'word_usage':worddata, 
+                    'word_usage':worddata , 
                     'word_stat':wordstats
             }
-        
         }
 
 def wordcloud(data):
