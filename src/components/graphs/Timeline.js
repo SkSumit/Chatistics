@@ -7,7 +7,7 @@ export default function Timeline({ data }) {
   return (
     <ResponsiveContainer width="100%" height={400} >
       <BarChart width="100%" height={400} data={context.file.stats.timelineByMonth}>
-        <Bar dataKey="Value" fill="#25d366" legendType={"line"} isAnimationActive={false}/>
+        <Bar dataKey="Value" fill="#25d366" legendType={"line"} onAnimationEnd={console.log('hi')} isAnimationActive={false}/>
         <XAxis dataKey="Date" />
         <Tooltip />
       </BarChart>
