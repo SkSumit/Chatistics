@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Select from "react-select";
 import { FileContext } from "../../App";
 import {
@@ -55,7 +55,12 @@ export default function DayBar({ selectedOption, setSelectedOption }) {
           <XAxis type="number" />
           <YAxis dataKey="day" height={"100%"} width={85} type="category" />
           <Tooltip />
-          <Bar name="Texts" dataKey="value" fill="#25d366" isAnimationActive={false}/>
+          <Bar
+            name="Texts"
+            dataKey="value"
+            fill="#25d366"
+            isAnimationActive={false}
+          />
         </BarChart>
       </ResponsiveContainer>
     </>

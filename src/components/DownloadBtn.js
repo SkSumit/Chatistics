@@ -1,7 +1,7 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import html2pdf from "html2pdf.js";
 
-export default function CTA() {
+export default function DownloadBtn() {
   const [loading, setLoading] = useState(false);
   const download = async () => {
     setLoading(true);
@@ -32,9 +32,9 @@ export default function CTA() {
   return (
     <section className="hero ">
       <div className="hero-body">
-        <div className="container">
-          <button onClick={download} class={`button is-primary is-large is-fullwidth ${loading ? 'is-loading': ''} `}  disabled={loading}>
-            Download Statistics
+        <div className="container is-flex is-justify-content-center">
+          <button onClick={download} class={`button is-primary is-large  ${loading ? 'is-loading': ''} `}  disabled={loading}>
+          <i className="fas fa-download mr-3"/> Download Statistics
           </button>
         </div>
       </div>
