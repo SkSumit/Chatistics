@@ -2,6 +2,7 @@ import emoji
 from collections import Counter
 import pandas as pd
 from chatistics.api.user.user import usernameid
+from chatistics.dataframe.dict import my_dictionary
 
 
 def emojiuser(data, username): #add username
@@ -13,12 +14,11 @@ def emojiuser(data, username): #add username
                     Emojichar.append(character)
     emojistats={'Different_Emojis_used':len(Counter(Emojichar).most_common()),'Number_of_emojis':len(Emojichar)}                
     emojidata=pd.DataFrame((Counter(Emojichar).most_common()[:20]),columns=['EMOJI','VALUE']).to_dict(orient='records')
-    return { username : 
-            { 
+    return { 
             'Emoji_usage' :emojidata,
             'Emoji_stats':emojistats
         } 
-    }
+
 def emojiall(data): #add username
     Emojichar = []   
     for i in range(len(data)):
@@ -27,16 +27,14 @@ def emojiall(data): #add username
                 Emojichar.append(character)
     emojidata=pd.DataFrame((Counter(Emojichar).most_common()[:20]),columns=['EMOJI','VALUE']).to_dict(orient='records')
     emojistats={'Different_Emojis_used':len(Counter(Emojichar).most_common()),'Number_of_emojis':len(Emojichar)}
-    return { 'all' : 
-            { 
+    return { 
             'Emoji_usage' :emojidata,
             'Emoji_stats':emojistats
         } 
-    }
 
 def emojicontent(data):
-    emoji = []
-    emoji.append(emojiall(data))
+    emoji = my_dictionary() 
+    emoji.add("all",emojiall(data)) 
     for i in usernameid(data):
-        emoji.append(emojiuser(data,i))
-    return emoji 
+         emoji.add(i,emojiuser(data,i))
+    return emoji
