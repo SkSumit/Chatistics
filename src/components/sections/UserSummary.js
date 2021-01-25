@@ -1,6 +1,13 @@
 import React from "react";
 import Section from "../common/Section";
 import StatsBox from "../StatsBox";
+import {
+  faUsers,
+  faMedal,
+  faPoo,
+  faFireAlt,
+} from "@fortawesome/free-solid-svg-icons";
+
 export default function UserSummary() {
   return (
     <Section containerVariant={"bg-light-green"}>
@@ -9,40 +16,23 @@ export default function UserSummary() {
       </h1>
       <div className="tile is-ancestor">
         <div className="tile is-parent">
-          <StatsBox
-            title={"Total Users in Chats"}
-            stats={3}
-            icon={
-              <i className="fas fa-users fa-2x" style={{ color: "#000" }} />
-            }
-          />
+          <StatsBox title={"Total Users in Chats"} stats={3} icon={faUsers} />
         </div>
         <div className="tile is-parent">
           <StatsBox
             title={"Most Texts Sent"}
             stats={"Atharva"}
-            icon={
-              <i className="fas fa-medal fa-2x" style={{ color: "#000" }} />
-            }
+            icon={faMedal}
           />
         </div>
         <div className="tile is-parent">
-          <StatsBox
-            title={"Least Texts Sent"}
-            stats={"Yash"}
-            icon={<i className="fas fa-poo fa-2x" style={{ color: "#000" }} />}
-          />
+          <StatsBox title={"Least Texts Sent"} stats={"Yash"} icon={faPoo} />
         </div>
         <div className="tile is-parent">
           <StatsBox
             title={"Highest Streak"}
             stats={"19 Days"}
-            icon={
-              <i
-                className="  fas   fa-fire-alt fa-2x "
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faFireAlt}
           />
         </div>
       </div>

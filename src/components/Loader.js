@@ -1,5 +1,8 @@
 import React from "react";
 import whitehero from '../img/whitehero.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp  } from '@fortawesome/free-brands-svg-icons'
+
 
 
 export default function Loader() {
@@ -221,7 +224,7 @@ export default function Loader() {
     <section className="hero is-fullheight is-primary ">
       <div className="hero-body">
         <div className="container has-text-centered">
-          <i className="fab fa-whatsapp fa-spin fa-3x" />
+        <FontAwesomeIcon icon={faWhatsapp} size="3x" spin />
           <h1 className="subtitle is-3 mt-3">
             {" "}
             {

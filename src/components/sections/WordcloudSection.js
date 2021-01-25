@@ -5,6 +5,12 @@ import { FileContext } from "../../App";
 import StatsBox from "../StatsBox";
 import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
+import {
+  faCommentDots,
+  faCalendarWeek,
+  faAngleDoubleUp,
+} from "@fortawesome/free-solid-svg-icons";
+
 const options = {
   rotations: 2,
   rotationAngles: [0, 90],
@@ -34,32 +40,17 @@ export default function WordcloudSection() {
           <StatsBox
             title={"Most Used Word"}
             stats={"hod"}
-            icon={
-              <i
-                className="fas fa-comment-dots fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faCommentDots}
           />
           <StatsBox
             title={"Least Used Word"}
             stats={"a"}
-            icon={
-              <i
-                className="fas fa-calendar-week fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faCalendarWeek}
           />
           <StatsBox
             title={"Average No of Emoji Per Text"}
             stats={2.6}
-            icon={
-              <i
-                className="fas fa-angle-double-up fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faAngleDoubleUp}
           />
         </>
       }

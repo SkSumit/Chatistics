@@ -12,13 +12,6 @@ $text-light: white;
 $title-color: #000;
 $subtitle-color: #000;
 
-//Text Underline
-.underline {
-  text-decoration: underline !important;
-  text-decoration-style: wavy !important;
-  text-decoration-color: $primary !important;
-  text-underline-offset: 5px;
-}
 
 .bg-light-green {
   background-color: #dcf8c6 !important;
@@ -38,6 +31,7 @@ $subtitle-color: #000;
     transform: rotate(359deg);
   }
 }
+
 .container-box {
   border-radius: 8px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
@@ -81,7 +75,6 @@ $subtitle-color: #000;
   opacity: 1;
 }
 
-
 .mt-100{
   margin-top: -100px !important;
 }
@@ -90,10 +83,9 @@ $subtitle-color: #000;
   -moz-transform:  rotate(-5deg) !important; 
   transform: rotate(-5deg) !important;
 }
-.rotateTXT-2{
-  -webkit-transform:  rotate(-3deg) !important; 
-  -moz-transform:  rotate(-3deg) !important; 
-  transform: rotate(-3deg) !important;
+
+.has-text-orange{
+  color: #e25822  !important;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");

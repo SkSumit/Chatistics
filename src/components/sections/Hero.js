@@ -1,5 +1,7 @@
 import React from "react";
 import Section from "../common/Section";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export default function Hero() {
   return (
@@ -9,7 +11,8 @@ export default function Hero() {
       noBox={true}
     >
       <h1 className="title is-1 has-text-centered-desktop">
-        <i className="fab fa-whatsapp " /> Chatistics
+        <FontAwesomeIcon icon={faWhatsapp} className="mr-2" spin />
+        Chatistics
       </h1>
       <h1 className="subtitle is-3 has-text-centered-desktop">
         WhatsApp chat analytics and insights

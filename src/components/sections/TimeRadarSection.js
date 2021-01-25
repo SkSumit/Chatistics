@@ -3,6 +3,12 @@ import { FileContext } from "../../App";
 import TimeRadarChart from "../graphs/TimeRadarChart";
 import StatsBox from "../StatsBox";
 import Layout from "../common/Layout";
+import {
+  faCommentDots,
+  faCalendarWeek,
+  faAngleDoubleUp,
+} from "@fortawesome/free-solid-svg-icons";
+
 export default function TimeRadarSection() {
   const context = useContext(FileContext);
   const [selectedOption, setSelectedOption] = useState({
@@ -27,12 +33,7 @@ export default function TimeRadarSection() {
               context.file.stats.analysis.basedOnDays[selectedOption.value]
                 .averageTexts
             }
-            icon={
-              <i
-                className="fas fa-comment-dots fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faCommentDots}
           />
           <StatsBox
             title={"Most Texted Day"}
@@ -40,12 +41,7 @@ export default function TimeRadarSection() {
               context.file.stats.analysis.basedOnDays[selectedOption.value]
                 .mostActiveDay
             }
-            icon={
-              <i
-                className="fas fa-calendar-week fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faCalendarWeek}
           />
           <StatsBox
             title={"Most Frequently texted Day"}
@@ -53,12 +49,7 @@ export default function TimeRadarSection() {
               context.file.stats.analysis.basedOnDays[selectedOption.value]
                 .mostFrequentDay
             }
-            icon={
-              <i
-                className="fas fa-angle-double-up fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faAngleDoubleUp}
           />
         </>
       }
