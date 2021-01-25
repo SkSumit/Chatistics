@@ -3,6 +3,8 @@ import Section from "./common/Section";
 import { postFile } from "../api/api";
 import { fileExtensionValidation } from "../api/apiUtils";
 import DownloadBtn from "./DownloadBtn";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUpload  } from '@fortawesome/free-solid-svg-icons'
 
 export default function Input({ setLoader, setAxiosError,showDownloadBtn, setShowDownloadBtn }) {
   const [uploadFile, setUploadFile] = useState(null);
@@ -74,7 +76,7 @@ export default function Input({ setLoader, setAxiosError,showDownloadBtn, setSho
                       style={{ color: "#25D366" }}
                     >
                       <span className="file-icon">
-                        <i className="fas fa-upload " />
+                      <FontAwesomeIcon icon={faUpload}/>
                       </span>
                     </span>
                     <span

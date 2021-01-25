@@ -3,6 +3,12 @@ import { FileContext } from "../../App";
 import EmojiChart from "../graphs/EmojiChart";
 import StatsBox from "../StatsBox";
 import Layout from "../common/Layout";
+import {
+  faCommentDots,
+  faCalendarWeek,
+  faAngleDoubleUp,
+} from "@fortawesome/free-solid-svg-icons";
+
 export default function EmojiSection() {
   const context = useContext(FileContext);
 
@@ -22,12 +28,7 @@ export default function EmojiSection() {
             stats={context.file.stats.emoji.map((item, index) => {
               return index >= 5 ? null : `${item.Emoji}`;
             })}
-            icon={
-              <i
-                className="fas fa-comment-dots fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faCommentDots}
           />
           <StatsBox
             title={"Least Used Emojis"}
@@ -36,22 +37,12 @@ export default function EmojiSection() {
               .map((item, index) => {
                 return index >= 5 ? null : `${item.Emoji}`;
               })}
-            icon={
-              <i
-                className="fas fa-calendar-week fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faCalendarWeek}
           />
           <StatsBox
             title={"Average No of Emoji Per Text"}
             stats={2.6}
-            icon={
-              <i
-                className="fas fa-angle-double-up fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faAngleDoubleUp}
           />
         </>
       }

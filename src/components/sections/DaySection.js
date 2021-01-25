@@ -2,8 +2,12 @@ import React, { useContext, useState } from "react";
 import { FileContext } from "../../App";
 import DayBar from "../graphs/DayBar";
 import StatsBox from "../StatsBox";
-import Section from "../common/Section";
 import Layout from "../common/Layout";
+import {
+  faCommentDots,
+  faCalendarWeek,
+  faAngleDoubleUp,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function DaySection() {
   const context = useContext(FileContext);
@@ -34,12 +38,7 @@ export default function DaySection() {
               context.file.stats.analysis.basedOnDays[selectedOption.value]
                 .averageTexts
             }
-            icon={
-              <i
-                className="fas fa-comment-dots fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faCommentDots}
           />
           <StatsBox
             title={"Most Texted Day"}
@@ -47,12 +46,7 @@ export default function DaySection() {
               context.file.stats.analysis.basedOnDays[selectedOption.value]
                 .mostActiveDay
             }
-            icon={
-              <i
-                className="fas fa-calendar-week fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faCalendarWeek}
           />
           <StatsBox
             title={"Most Frequently texted Day"}
@@ -60,12 +54,7 @@ export default function DaySection() {
               context.file.stats.analysis.basedOnDays[selectedOption.value]
                 .mostFrequentDay
             }
-            icon={
-              <i
-                className="fas fa-angle-double-up fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faAngleDoubleUp}
           />
         </>
       }

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import html2pdf from "html2pdf.js";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload  } from '@fortawesome/free-solid-svg-icons'
 
 export default function DownloadBtn() {
   const [loading, setLoading] = useState(false);
@@ -34,7 +36,7 @@ export default function DownloadBtn() {
       <div className="hero-body">
         <div className="container is-flex is-justify-content-center">
           <button onClick={download} class={`button is-primary is-large  ${loading ? 'is-loading': ''} `}  disabled={loading}>
-          <i className="fas fa-download mr-3"/> Download Statistics
+          <FontAwesomeIcon icon={faDownload}  />  Download Statistics
           </button>
         </div>
       </div>
