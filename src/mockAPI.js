@@ -773,95 +773,1408 @@ export const mockData = {
         No_Of_Emoji: 41,
       },
     ],
-    heatmap: [
-      { DATE: "11-19-20", FREQUENCY: 1488 },
-      { DATE: "12-4-20", FREQUENCY: 1083 },
-      { DATE: "10-27-20", FREQUENCY: 997 },
-      { DATE: "10-28-20", FREQUENCY: 864 },
-      { DATE: "11-11-20", FREQUENCY: 845 },
-      { DATE: "10-21-20", FREQUENCY: 805 },
-      { DATE: "11-5-20", FREQUENCY: 802 },
-      { DATE: "12-3-20", FREQUENCY: 786 },
-      { DATE: "10-23-20", FREQUENCY: 768 },
-      { DATE: "11-7-20", FREQUENCY: 762 },
-      { DATE: "12-8-20", FREQUENCY: 755 },
-      { DATE: "12-19-20", FREQUENCY: 752 },
-      { DATE: "10-29-20", FREQUENCY: 744 },
-      { DATE: "11-21-20", FREQUENCY: 741 },
-      { DATE: "11-26-20", FREQUENCY: 736 },
-      { DATE: "11-28-20", FREQUENCY: 698 },
-      { DATE: "12-20-20", FREQUENCY: 669 },
-      { DATE: "10-22-20", FREQUENCY: 659 },
-      { DATE: "10-26-20", FREQUENCY: 650 },
-      { DATE: "11-4-20", FREQUENCY: 645 },
-      { DATE: "11-8-20", FREQUENCY: 637 },
-      { DATE: "11-20-20", FREQUENCY: 597 },
-      { DATE: "12-15-20", FREQUENCY: 567 },
-      { DATE: "1-2-21", FREQUENCY: 565 },
-      { DATE: "11-25-20", FREQUENCY: 555 },
-      { DATE: "1-6-21", FREQUENCY: 551 },
-      { DATE: "10-31-20", FREQUENCY: 544 },
-      { DATE: "12-2-20", FREQUENCY: 540 },
-      { DATE: "10-20-20", FREQUENCY: 536 },
-      { DATE: "10-19-20", FREQUENCY: 520 },
-      { DATE: "12-21-20", FREQUENCY: 519 },
-      { DATE: "12-5-20", FREQUENCY: 497 },
-      { DATE: "10-24-20", FREQUENCY: 494 },
-      { DATE: "12-31-20", FREQUENCY: 477 },
-      { DATE: "12-9-20", FREQUENCY: 471 },
-      { DATE: "11-1-20", FREQUENCY: 466 },
-      { DATE: "1-11-21", FREQUENCY: 466 },
-      { DATE: "12-23-20", FREQUENCY: 459 },
-      { DATE: "12-12-20", FREQUENCY: 452 },
-      { DATE: "11-10-20", FREQUENCY: 451 },
-      { DATE: "12-14-20", FREQUENCY: 450 },
-      { DATE: "12-7-20", FREQUENCY: 443 },
-      { DATE: "11-27-20", FREQUENCY: 436 },
-      { DATE: "1-5-21", FREQUENCY: 428 },
-      { DATE: "11-29-20", FREQUENCY: 427 },
-      { DATE: "1-8-21", FREQUENCY: 401 },
-      { DATE: "12-27-20", FREQUENCY: 399 },
-      { DATE: "1-7-21", FREQUENCY: 399 },
-      { DATE: "11-13-20", FREQUENCY: 397 },
-      { DATE: "11-9-20", FREQUENCY: 389 },
-      { DATE: "11-6-20", FREQUENCY: 377 },
-      { DATE: "12-17-20", FREQUENCY: 375 },
-      { DATE: "12-24-20", FREQUENCY: 373 },
-      { DATE: "11-23-20", FREQUENCY: 368 },
-      { DATE: "1-10-21", FREQUENCY: 354 },
-      { DATE: "1-9-21", FREQUENCY: 338 },
-      { DATE: "11-30-20", FREQUENCY: 335 },
-      { DATE: "12-11-20", FREQUENCY: 335 },
-      { DATE: "12-26-20", FREQUENCY: 329 },
-      { DATE: "1-1-21", FREQUENCY: 328 },
-      { DATE: "12-29-20", FREQUENCY: 317 },
-      { DATE: "12-6-20", FREQUENCY: 303 },
-      { DATE: "1-12-21", FREQUENCY: 281 },
-      { DATE: "10-25-20", FREQUENCY: 271 },
-      { DATE: "11-22-20", FREQUENCY: 265 },
-      { DATE: "12-25-20", FREQUENCY: 264 },
-      { DATE: "11-14-20", FREQUENCY: 261 },
-      { DATE: "1-4-21", FREQUENCY: 257 },
-      { DATE: "11-24-20", FREQUENCY: 250 },
-      { DATE: "11-17-20", FREQUENCY: 247 },
-      { DATE: "11-15-20", FREQUENCY: 244 },
-      { DATE: "10-30-20", FREQUENCY: 233 },
-      { DATE: "11-12-20", FREQUENCY: 231 },
-      { DATE: "12-28-20", FREQUENCY: 223 },
-      { DATE: "12-16-20", FREQUENCY: 207 },
-      { DATE: "1-3-21", FREQUENCY: 196 },
-      { DATE: "11-16-20", FREQUENCY: 194 },
-      { DATE: "11-3-20", FREQUENCY: 183 },
-      { DATE: "11-18-20", FREQUENCY: 180 },
-      { DATE: "12-30-20", FREQUENCY: 179 },
-      { DATE: "12-22-20", FREQUENCY: 170 },
-      { DATE: "12-1-20", FREQUENCY: 158 },
-      { DATE: "12-18-20", FREQUENCY: 142 },
-      { DATE: "11-2-20", FREQUENCY: 138 },
-      { DATE: "12-10-20", FREQUENCY: 137 },
-      { DATE: "12-13-20", FREQUENCY: 120 },
-      { DATE: "1-13-21", FREQUENCY: 41 },
-    ],
+    heatmap: {
+      "Kulkarni New": [
+        {
+          count: 439,
+          date: "12-4-20",
+        },
+        {
+          count: 434,
+          date: "11-19-20",
+        },
+        {
+          count: 417,
+          date: "10-27-20",
+        },
+        {
+          count: 332,
+          date: "12-19-20",
+        },
+        {
+          count: 322,
+          date: "12-3-20",
+        },
+        {
+          count: 311,
+          date: "10-21-20",
+        },
+        {
+          count: 309,
+          date: "11-28-20",
+        },
+        {
+          count: 308,
+          date: "11-7-20",
+        },
+        {
+          count: 304,
+          date: "12-20-20",
+        },
+        {
+          count: 287,
+          date: "11-26-20",
+        },
+        {
+          count: 282,
+          date: "10-29-20",
+        },
+        {
+          count: 280,
+          date: "11-5-20",
+        },
+        {
+          count: 271,
+          date: "11-21-20",
+        },
+        {
+          count: 270,
+          date: "10-23-20",
+        },
+        {
+          count: 254,
+          date: "10-22-20",
+        },
+        {
+          count: 253,
+          date: "11-4-20",
+        },
+        {
+          count: 251,
+          date: "10-31-20",
+        },
+        {
+          count: 249,
+          date: "1-2-21",
+        },
+        {
+          count: 246,
+          date: "12-8-20",
+        },
+        {
+          count: 243,
+          date: "1-6-21",
+        },
+        {
+          count: 242,
+          date: "10-28-20",
+        },
+        {
+          count: 242,
+          date: "12-15-20",
+        },
+        {
+          count: 229,
+          date: "12-21-20",
+        },
+        {
+          count: 229,
+          date: "12-31-20",
+        },
+        {
+          count: 219,
+          date: "10-19-20",
+        },
+        {
+          count: 218,
+          date: "10-26-20",
+        },
+        {
+          count: 211,
+          date: "11-8-20",
+        },
+        {
+          count: 211,
+          date: "1-11-21",
+        },
+        {
+          count: 204,
+          date: "10-20-20",
+        },
+        {
+          count: 203,
+          date: "12-9-20",
+        },
+        {
+          count: 202,
+          date: "11-11-20",
+        },
+        {
+          count: 195,
+          date: "11-25-20",
+        },
+        {
+          count: 195,
+          date: "1-5-21",
+        },
+        {
+          count: 191,
+          date: "12-7-20",
+        },
+        {
+          count: 188,
+          date: "12-23-20",
+        },
+        {
+          count: 186,
+          date: "12-2-20",
+        },
+        {
+          count: 186,
+          date: "12-24-20",
+        },
+        {
+          count: 185,
+          date: "10-24-20",
+        },
+        {
+          count: 180,
+          date: "12-17-20",
+        },
+        {
+          count: 179,
+          date: "12-12-20",
+        },
+        {
+          count: 172,
+          date: "12-5-20",
+        },
+        {
+          count: 169,
+          date: "11-10-20",
+        },
+        {
+          count: 164,
+          date: "1-8-21",
+        },
+        {
+          count: 163,
+          date: "11-27-20",
+        },
+        {
+          count: 158,
+          date: "12-14-20",
+        },
+        {
+          count: 158,
+          date: "1-7-21",
+        },
+        {
+          count: 154,
+          date: "11-29-20",
+        },
+        {
+          count: 148,
+          date: "11-20-20",
+        },
+        {
+          count: 147,
+          date: "11-9-20",
+        },
+        {
+          count: 142,
+          date: "11-30-20",
+        },
+        {
+          count: 138,
+          date: "12-29-20",
+        },
+        {
+          count: 134,
+          date: "12-6-20",
+        },
+        {
+          count: 134,
+          date: "1-1-21",
+        },
+        {
+          count: 131,
+          date: "12-11-20",
+        },
+        {
+          count: 131,
+          date: "12-25-20",
+        },
+        {
+          count: 126,
+          date: "11-22-20",
+        },
+        {
+          count: 123,
+          date: "11-6-20",
+        },
+        {
+          count: 122,
+          date: "11-23-20",
+        },
+        {
+          count: 120,
+          date: "1-12-21",
+        },
+        {
+          count: 117,
+          date: "1-9-21",
+        },
+        {
+          count: 113,
+          date: "10-25-20",
+        },
+        {
+          count: 111,
+          date: "12-26-20",
+        },
+        {
+          count: 107,
+          date: "1-4-21",
+        },
+        {
+          count: 104,
+          date: "12-27-20",
+        },
+        {
+          count: 99,
+          date: "11-13-20",
+        },
+        {
+          count: 98,
+          date: "11-1-20",
+        },
+        {
+          count: 97,
+          date: "12-16-20",
+        },
+        {
+          count: 88,
+          date: "11-14-20",
+        },
+        {
+          count: 88,
+          date: "12-30-20",
+        },
+        {
+          count: 85,
+          date: "11-24-20",
+        },
+        {
+          count: 85,
+          date: "1-3-21",
+        },
+        {
+          count: 83,
+          date: "10-30-20",
+        },
+        {
+          count: 77,
+          date: "11-18-20",
+        },
+        {
+          count: 74,
+          date: "1-10-21",
+        },
+        {
+          count: 69,
+          date: "12-10-20",
+        },
+        {
+          count: 66,
+          date: "12-22-20",
+        },
+        {
+          count: 65,
+          date: "11-3-20",
+        },
+        {
+          count: 65,
+          date: "12-18-20",
+        },
+        {
+          count: 63,
+          date: "12-1-20",
+        },
+        {
+          count: 63,
+          date: "12-28-20",
+        },
+        {
+          count: 62,
+          date: "11-16-20",
+        },
+        {
+          count: 61,
+          date: "11-17-20",
+        },
+        {
+          count: 60,
+          date: "11-15-20",
+        },
+        {
+          count: 59,
+          date: "12-13-20",
+        },
+        {
+          count: 56,
+          date: "11-12-20",
+        },
+        {
+          count: 43,
+          date: "11-2-20",
+        },
+        {
+          count: 17,
+          date: "1-13-21",
+        },
+      ],
+      "Sumit Skn": [
+        {
+          count: 557,
+          date: "11-19-20",
+        },
+        {
+          count: 392,
+          date: "10-28-20",
+        },
+        {
+          count: 388,
+          date: "11-11-20",
+        },
+        {
+          count: 370,
+          date: "12-4-20",
+        },
+        {
+          count: 368,
+          date: "10-27-20",
+        },
+        {
+          count: 364,
+          date: "11-5-20",
+        },
+        {
+          count: 328,
+          date: "10-21-20",
+        },
+        {
+          count: 312,
+          date: "12-8-20",
+        },
+        {
+          count: 303,
+          date: "11-7-20",
+        },
+        {
+          count: 299,
+          date: "11-4-20",
+        },
+        {
+          count: 294,
+          date: "11-20-20",
+        },
+        {
+          count: 285,
+          date: "11-21-20",
+        },
+        {
+          count: 284,
+          date: "11-26-20",
+        },
+        {
+          count: 276,
+          date: "11-28-20",
+        },
+        {
+          count: 272,
+          date: "10-26-20",
+        },
+        {
+          count: 267,
+          date: "12-3-20",
+        },
+        {
+          count: 261,
+          date: "10-23-20",
+        },
+        {
+          count: 253,
+          date: "10-29-20",
+        },
+        {
+          count: 253,
+          date: "12-19-20",
+        },
+        {
+          count: 242,
+          date: "11-25-20",
+        },
+        {
+          count: 226,
+          date: "11-8-20",
+        },
+        {
+          count: 225,
+          date: "12-2-20",
+        },
+        {
+          count: 222,
+          date: "10-22-20",
+        },
+        {
+          count: 214,
+          date: "10-19-20",
+        },
+        {
+          count: 201,
+          date: "10-20-20",
+        },
+        {
+          count: 188,
+          date: "12-9-20",
+        },
+        {
+          count: 188,
+          date: "12-21-20",
+        },
+        {
+          count: 185,
+          date: "10-24-20",
+        },
+        {
+          count: 184,
+          date: "11-1-20",
+        },
+        {
+          count: 181,
+          date: "12-27-20",
+        },
+        {
+          count: 179,
+          date: "12-5-20",
+        },
+        {
+          count: 177,
+          date: "11-27-20",
+        },
+        {
+          count: 177,
+          date: "1-6-21",
+        },
+        {
+          count: 176,
+          date: "1-2-21",
+        },
+        {
+          count: 174,
+          date: "11-10-20",
+        },
+        {
+          count: 173,
+          date: "11-9-20",
+        },
+        {
+          count: 172,
+          date: "1-10-21",
+        },
+        {
+          count: 170,
+          date: "12-15-20",
+        },
+        {
+          count: 170,
+          date: "12-31-20",
+        },
+        {
+          count: 169,
+          date: "12-20-20",
+        },
+        {
+          count: 168,
+          date: "12-14-20",
+        },
+        {
+          count: 162,
+          date: "10-31-20",
+        },
+        {
+          count: 161,
+          date: "11-13-20",
+        },
+        {
+          count: 161,
+          date: "12-12-20",
+        },
+        {
+          count: 151,
+          date: "11-23-20",
+        },
+        {
+          count: 147,
+          date: "1-8-21",
+        },
+        {
+          count: 145,
+          date: "1-9-21",
+        },
+        {
+          count: 142,
+          date: "1-7-21",
+        },
+        {
+          count: 138,
+          date: "11-30-20",
+        },
+        {
+          count: 133,
+          date: "12-7-20",
+        },
+        {
+          count: 132,
+          date: "11-29-20",
+        },
+        {
+          count: 130,
+          date: "11-6-20",
+        },
+        {
+          count: 128,
+          date: "12-29-20",
+        },
+        {
+          count: 127,
+          date: "12-11-20",
+        },
+        {
+          count: 126,
+          date: "1-5-21",
+        },
+        {
+          count: 125,
+          date: "1-11-21",
+        },
+        {
+          count: 116,
+          date: "12-26-20",
+        },
+        {
+          count: 105,
+          date: "12-23-20",
+        },
+        {
+          count: 98,
+          date: "1-1-21",
+        },
+        {
+          count: 98,
+          date: "1-4-21",
+        },
+        {
+          count: 97,
+          date: "11-14-20",
+        },
+        {
+          count: 95,
+          date: "11-22-20",
+        },
+        {
+          count: 94,
+          date: "10-25-20",
+        },
+        {
+          count: 91,
+          date: "11-15-20",
+        },
+        {
+          count: 88,
+          date: "11-24-20",
+        },
+        {
+          count: 88,
+          date: "12-6-20",
+        },
+        {
+          count: 84,
+          date: "11-3-20",
+        },
+        {
+          count: 84,
+          date: "12-17-20",
+        },
+        {
+          count: 80,
+          date: "11-12-20",
+        },
+        {
+          count: 79,
+          date: "11-16-20",
+        },
+        {
+          count: 79,
+          date: "11-17-20",
+        },
+        {
+          count: 75,
+          date: "12-25-20",
+        },
+        {
+          count: 74,
+          date: "12-24-20",
+        },
+        {
+          count: 72,
+          date: "10-30-20",
+        },
+        {
+          count: 72,
+          date: "1-12-21",
+        },
+        {
+          count: 69,
+          date: "12-28-20",
+        },
+        {
+          count: 68,
+          date: "11-18-20",
+        },
+        {
+          count: 67,
+          date: "12-10-20",
+        },
+        {
+          count: 63,
+          date: "12-22-20",
+        },
+        {
+          count: 61,
+          date: "11-2-20",
+        },
+        {
+          count: 61,
+          date: "12-16-20",
+        },
+        {
+          count: 53,
+          date: "12-30-20",
+        },
+        {
+          count: 42,
+          date: "12-1-20",
+        },
+        {
+          count: 37,
+          date: "12-13-20",
+        },
+        {
+          count: 34,
+          date: "1-3-21",
+        },
+        {
+          count: 29,
+          date: "12-18-20",
+        },
+        {
+          count: 12,
+          date: "1-13-21",
+        },
+      ],
+      all: [
+        {
+          count: 1488,
+          date: "11-19-20",
+        },
+        {
+          count: 1081,
+          date: "12-4-20",
+        },
+        {
+          count: 997,
+          date: "10-27-20",
+        },
+        {
+          count: 863,
+          date: "10-28-20",
+        },
+        {
+          count: 844,
+          date: "11-11-20",
+        },
+        {
+          count: 805,
+          date: "10-21-20",
+        },
+        {
+          count: 802,
+          date: "11-5-20",
+        },
+        {
+          count: 786,
+          date: "12-3-20",
+        },
+        {
+          count: 768,
+          date: "10-23-20",
+        },
+        {
+          count: 762,
+          date: "11-7-20",
+        },
+        {
+          count: 755,
+          date: "12-8-20",
+        },
+        {
+          count: 752,
+          date: "12-19-20",
+        },
+        {
+          count: 744,
+          date: "10-29-20",
+        },
+        {
+          count: 741,
+          date: "11-21-20",
+        },
+        {
+          count: 736,
+          date: "11-26-20",
+        },
+        {
+          count: 693,
+          date: "11-28-20",
+        },
+        {
+          count: 669,
+          date: "12-20-20",
+        },
+        {
+          count: 658,
+          date: "10-22-20",
+        },
+        {
+          count: 650,
+          date: "10-26-20",
+        },
+        {
+          count: 643,
+          date: "11-4-20",
+        },
+        {
+          count: 637,
+          date: "11-8-20",
+        },
+        {
+          count: 596,
+          date: "11-20-20",
+        },
+        {
+          count: 567,
+          date: "12-15-20",
+        },
+        {
+          count: 565,
+          date: "1-2-21",
+        },
+        {
+          count: 552,
+          date: "11-25-20",
+        },
+        {
+          count: 550,
+          date: "1-6-21",
+        },
+        {
+          count: 543,
+          date: "10-31-20",
+        },
+        {
+          count: 540,
+          date: "12-2-20",
+        },
+        {
+          count: 535,
+          date: "10-20-20",
+        },
+        {
+          count: 520,
+          date: "10-19-20",
+        },
+        {
+          count: 518,
+          date: "12-21-20",
+        },
+        {
+          count: 497,
+          date: "12-5-20",
+        },
+        {
+          count: 494,
+          date: "10-24-20",
+        },
+        {
+          count: 475,
+          date: "12-31-20",
+        },
+        {
+          count: 471,
+          date: "12-9-20",
+        },
+        {
+          count: 466,
+          date: "11-1-20",
+        },
+        {
+          count: 466,
+          date: "1-11-21",
+        },
+        {
+          count: 459,
+          date: "12-23-20",
+        },
+        {
+          count: 452,
+          date: "12-12-20",
+        },
+        {
+          count: 451,
+          date: "11-10-20",
+        },
+        {
+          count: 450,
+          date: "12-14-20",
+        },
+        {
+          count: 443,
+          date: "12-7-20",
+        },
+        {
+          count: 434,
+          date: "11-27-20",
+        },
+        {
+          count: 428,
+          date: "1-5-21",
+        },
+        {
+          count: 427,
+          date: "11-29-20",
+        },
+        {
+          count: 399,
+          date: "12-27-20",
+        },
+        {
+          count: 399,
+          date: "1-7-21",
+        },
+        {
+          count: 399,
+          date: "1-8-21",
+        },
+        {
+          count: 397,
+          date: "11-13-20",
+        },
+        {
+          count: 388,
+          date: "11-9-20",
+        },
+        {
+          count: 375,
+          date: "12-17-20",
+        },
+        {
+          count: 374,
+          date: "11-6-20",
+        },
+        {
+          count: 372,
+          date: "12-24-20",
+        },
+        {
+          count: 368,
+          date: "11-23-20",
+        },
+        {
+          count: 354,
+          date: "1-10-21",
+        },
+        {
+          count: 337,
+          date: "1-9-21",
+        },
+        {
+          count: 335,
+          date: "11-30-20",
+        },
+        {
+          count: 335,
+          date: "12-11-20",
+        },
+        {
+          count: 329,
+          date: "12-26-20",
+        },
+        {
+          count: 328,
+          date: "1-1-21",
+        },
+        {
+          count: 317,
+          date: "12-29-20",
+        },
+        {
+          count: 303,
+          date: "12-6-20",
+        },
+        {
+          count: 281,
+          date: "1-12-21",
+        },
+        {
+          count: 271,
+          date: "10-25-20",
+        },
+        {
+          count: 265,
+          date: "11-22-20",
+        },
+        {
+          count: 264,
+          date: "12-25-20",
+        },
+        {
+          count: 261,
+          date: "11-14-20",
+        },
+        {
+          count: 256,
+          date: "1-4-21",
+        },
+        {
+          count: 250,
+          date: "11-24-20",
+        },
+        {
+          count: 247,
+          date: "11-17-20",
+        },
+        {
+          count: 244,
+          date: "11-15-20",
+        },
+        {
+          count: 233,
+          date: "10-30-20",
+        },
+        {
+          count: 231,
+          date: "11-12-20",
+        },
+        {
+          count: 223,
+          date: "12-28-20",
+        },
+        {
+          count: 207,
+          date: "12-16-20",
+        },
+        {
+          count: 196,
+          date: "1-3-21",
+        },
+        {
+          count: 194,
+          date: "11-16-20",
+        },
+        {
+          count: 183,
+          date: "11-3-20",
+        },
+        {
+          count: 179,
+          date: "12-30-20",
+        },
+        {
+          count: 178,
+          date: "11-18-20",
+        },
+        {
+          count: 169,
+          date: "12-22-20",
+        },
+        {
+          count: 158,
+          date: "12-1-20",
+        },
+        {
+          count: 142,
+          date: "12-18-20",
+        },
+        {
+          count: 138,
+          date: "11-2-20",
+        },
+        {
+          count: 137,
+          date: "12-10-20",
+        },
+        {
+          count: 120,
+          date: "12-13-20",
+        },
+        {
+          count: 41,
+          date: "1-13-21",
+        },
+      ],
+      "yashdev.py ヤシュ・デワンガン": [
+        {
+          count: 497,
+          date: "11-19-20",
+        },
+        {
+          count: 272,
+          date: "12-4-20",
+        },
+        {
+          count: 254,
+          date: "11-11-20",
+        },
+        {
+          count: 237,
+          date: "10-23-20",
+        },
+        {
+          count: 229,
+          date: "10-28-20",
+        },
+        {
+          count: 212,
+          date: "10-27-20",
+        },
+        {
+          count: 209,
+          date: "10-29-20",
+        },
+        {
+          count: 200,
+          date: "11-8-20",
+        },
+        {
+          count: 197,
+          date: "12-3-20",
+        },
+        {
+          count: 197,
+          date: "12-8-20",
+        },
+        {
+          count: 196,
+          date: "12-20-20",
+        },
+        {
+          count: 185,
+          date: "11-21-20",
+        },
+        {
+          count: 184,
+          date: "11-1-20",
+        },
+        {
+          count: 182,
+          date: "10-22-20",
+        },
+        {
+          count: 167,
+          date: "12-19-20",
+        },
+        {
+          count: 166,
+          date: "10-21-20",
+        },
+        {
+          count: 166,
+          date: "12-23-20",
+        },
+        {
+          count: 165,
+          date: "11-26-20",
+        },
+        {
+          count: 160,
+          date: "10-26-20",
+        },
+        {
+          count: 158,
+          date: "11-5-20",
+        },
+        {
+          count: 155,
+          date: "12-15-20",
+        },
+        {
+          count: 154,
+          date: "11-20-20",
+        },
+        {
+          count: 151,
+          date: "11-7-20",
+        },
+        {
+          count: 146,
+          date: "12-5-20",
+        },
+        {
+          count: 141,
+          date: "11-29-20",
+        },
+        {
+          count: 140,
+          date: "1-2-21",
+        },
+        {
+          count: 137,
+          date: "11-13-20",
+        },
+        {
+          count: 130,
+          date: "10-20-20",
+        },
+        {
+          count: 130,
+          date: "10-31-20",
+        },
+        {
+          count: 130,
+          date: "1-6-21",
+        },
+        {
+          count: 130,
+          date: "1-11-21",
+        },
+        {
+          count: 129,
+          date: "12-2-20",
+        },
+        {
+          count: 124,
+          date: "10-24-20",
+        },
+        {
+          count: 124,
+          date: "12-14-20",
+        },
+        {
+          count: 121,
+          date: "11-6-20",
+        },
+        {
+          count: 119,
+          date: "12-7-20",
+        },
+        {
+          count: 115,
+          date: "11-25-20",
+        },
+        {
+          count: 114,
+          date: "12-27-20",
+        },
+        {
+          count: 112,
+          date: "12-12-20",
+        },
+        {
+          count: 112,
+          date: "12-24-20",
+        },
+        {
+          count: 111,
+          date: "12-17-20",
+        },
+        {
+          count: 108,
+          date: "11-10-20",
+        },
+        {
+          count: 108,
+          date: "11-28-20",
+        },
+        {
+          count: 108,
+          date: "1-10-21",
+        },
+        {
+          count: 107,
+          date: "11-17-20",
+        },
+        {
+          count: 107,
+          date: "1-5-21",
+        },
+        {
+          count: 102,
+          date: "12-26-20",
+        },
+        {
+          count: 101,
+          date: "12-21-20",
+        },
+        {
+          count: 99,
+          date: "1-7-21",
+        },
+        {
+          count: 96,
+          date: "1-1-21",
+        },
+        {
+          count: 95,
+          date: "11-12-20",
+        },
+        {
+          count: 95,
+          date: "11-23-20",
+        },
+        {
+          count: 94,
+          date: "11-27-20",
+        },
+        {
+          count: 93,
+          date: "11-15-20",
+        },
+        {
+          count: 91,
+          date: "11-4-20",
+        },
+        {
+          count: 91,
+          date: "12-28-20",
+        },
+        {
+          count: 89,
+          date: "1-12-21",
+        },
+        {
+          count: 88,
+          date: "1-8-21",
+        },
+        {
+          count: 87,
+          date: "10-19-20",
+        },
+        {
+          count: 81,
+          date: "12-6-20",
+        },
+        {
+          count: 80,
+          date: "12-9-20",
+        },
+        {
+          count: 78,
+          date: "10-30-20",
+        },
+        {
+          count: 77,
+          date: "11-24-20",
+        },
+        {
+          count: 77,
+          date: "12-11-20",
+        },
+        {
+          count: 77,
+          date: "1-3-21",
+        },
+        {
+          count: 76,
+          date: "11-14-20",
+        },
+        {
+          count: 76,
+          date: "12-31-20",
+        },
+        {
+          count: 75,
+          date: "1-9-21",
+        },
+        {
+          count: 68,
+          date: "11-9-20",
+        },
+        {
+          count: 64,
+          date: "10-25-20",
+        },
+        {
+          count: 58,
+          date: "12-25-20",
+        },
+        {
+          count: 55,
+          date: "11-30-20",
+        },
+        {
+          count: 53,
+          date: "11-16-20",
+        },
+        {
+          count: 53,
+          date: "12-1-20",
+        },
+        {
+          count: 51,
+          date: "12-29-20",
+        },
+        {
+          count: 51,
+          date: "1-4-21",
+        },
+        {
+          count: 49,
+          date: "12-16-20",
+        },
+        {
+          count: 48,
+          date: "12-18-20",
+        },
+        {
+          count: 44,
+          date: "11-22-20",
+        },
+        {
+          count: 40,
+          date: "12-22-20",
+        },
+        {
+          count: 38,
+          date: "12-30-20",
+        },
+        {
+          count: 34,
+          date: "11-2-20",
+        },
+        {
+          count: 34,
+          date: "11-3-20",
+        },
+        {
+          count: 33,
+          date: "11-18-20",
+        },
+        {
+          count: 24,
+          date: "12-13-20",
+        },
+        {
+          count: 12,
+          date: "1-13-21",
+        },
+        {
+          count: 1,
+          date: "12-10-20",
+        },
+      ],
+    },
     wordcloud: [
       {
         FREQUENCY: 8816,
@@ -1277,7 +2590,7 @@ export const mockData = {
         mostUsedWord: "lol",
         mostUsedEmoji: "😳",
         name: "Sumit",
-        speciality:'Highest Emoji Texter'
+        speciality: "Highest Emoji Texter",
       },
       {
         totalDays: 398,
@@ -1291,7 +2604,7 @@ export const mockData = {
         mostUsedWord: "haa",
         mostUsedEmoji: "😳",
         name: "Yash",
-        speciality:'Seen Zoner'
+        speciality: "Seen Zoner",
       },
       {
         totalDays: 453,
@@ -1305,7 +2618,7 @@ export const mockData = {
         mostUsedWord: "lol",
         mostUsedEmoji: "😳",
         name: "Atharva",
-        speciality:'Spammer'
+        speciality: "Spammer",
       },
       {
         totalDays: 450,
@@ -1319,7 +2632,7 @@ export const mockData = {
         mostUsedWord: "lol",
         mostUsedEmoji: "😳",
         name: "Amitesh",
-        speciality:'Media MegaGod'
+        speciality: "Media MegaGod",
       },
       {
         totalDays: 450,
@@ -1333,7 +2646,7 @@ export const mockData = {
         mostUsedWord: "lol",
         mostUsedEmoji: "😳",
         name: "Lubna",
-        speciality:null
+        speciality: null,
       },
       {
         totalDays: 450,
@@ -1347,7 +2660,7 @@ export const mockData = {
         mostUsedWord: "lol",
         mostUsedEmoji: "😳",
         name: "Tamal",
-        speciality:'LinksIn '
+        speciality: "LinksIn ",
       },
     ],
   },

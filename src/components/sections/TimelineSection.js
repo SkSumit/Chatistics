@@ -2,6 +2,7 @@ import React from "react";
 import Timeline from "../graphs/Timeline";
 import StatsBox from "../StatsBox";
 import Layout from "../common/Layout";
+import { faFireAlt  } from '@fortawesome/free-solid-svg-icons'
 export default function TimelineSection({ data }) {
   const highestValue = data.find(
     (o) => o.Value == Math.max(...data.map((o) => o.Value))
@@ -19,10 +20,7 @@ export default function TimelineSection({ data }) {
           title={`Most Active Day With  ${highestValue.Value}  Text Exchanged`}
           stats={highestValue.Date}
           icon={
-            <i
-              className="fas fa-fire-alt fa-2x"
-              style={{ color: " #e25822 " }}
-            />
+            faFireAlt  
           }
         />
       }

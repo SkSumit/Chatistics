@@ -6,16 +6,7 @@ import { FileContext } from "../../App";
 const today = new Date();
 export default function Heatmap() {
   const context = useContext(FileContext);
-  const sumValue = context.file.stats.heatmap
-    .map((a) => a.FREQUENCY)
-    .reduce((prev, next) => prev + next);
-  const randomValues = context.file.stats.heatmap.map((items, index) => {
-    return {
-      date: items.DATE,
-      count: items.FREQUENCY,
-      percentage: (items.FREQUENCY / sumValue) * 100,
-    };
-  });
+  console.log(context.file.stats.heatmap.all)
   return (
     <Section>
       <h1 className="subtitle is-3 ">
@@ -27,14 +18,14 @@ export default function Heatmap() {
           <CalendarHeatmap
             startDate={shiftDate(today, -180)}
             endDate={today}
-            values={randomValues}
+            values={context.file.stats.heatmap.all}
             horizontal={true}
             showMonthLabels={true}
             classForValue={(value) => {
               if (!value) {
                 return "bg-color-github-empty";
               }
-              return getClass(value.percentage);
+              return getClass((value.count / context.file.stats.summary.total_message) * 100);
             }}
             tooltipDataAttrs={(value) => {
               return {

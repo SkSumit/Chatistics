@@ -24,7 +24,13 @@ export default function TimeRadarChart() {
         <PolarAngleAxis dataKey="day" />
         <PolarRadiusAxis />
         <Tooltip />
-        <Radar name="Texts" dataKey="value" fill="#25d366" fillOpacity={0.6} isAnimationActive={false} />
+        <Radar
+          name="Texts"
+          dataKey="value"
+          fill="#25d366"
+          fillOpacity={0.6}
+          isAnimationActive={false}
+        />
       </RadarChart>
     </ResponsiveContainer>
   );

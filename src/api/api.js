@@ -2,7 +2,7 @@ import axios from "axios";
 
 const url =
   process.env.NODE_ENV === "development"
-    ? "http://localhost:5000/"
+    ? "http://localhost:5000/testing"
     : process.env.REACT_APP_API_URL;
 
 export const postFile = async (formData) => {
@@ -13,7 +13,6 @@ export const postFile = async (formData) => {
     return result;
   } catch (error) {
     console.log(error);
-    throw error
+    throw error;
   }
 };
-

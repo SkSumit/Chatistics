@@ -1,7 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import html2pdf from "html2pdf.js";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload  } from '@fortawesome/free-solid-svg-icons'
 
-export default function CTA() {
+export default function DownloadBtn() {
   const [loading, setLoading] = useState(false);
   const download = async () => {
     setLoading(true);
@@ -32,9 +34,9 @@ export default function CTA() {
   return (
     <section className="hero ">
       <div className="hero-body">
-        <div className="container">
-          <button onClick={download} class={`button is-primary is-large is-fullwidth ${loading ? 'is-loading': ''} `}  disabled={loading}>
-            Download Statistics
+        <div className="container is-flex is-justify-content-center">
+          <button onClick={download} class={`button is-primary is-large  ${loading ? 'is-loading': ''} `}  disabled={loading}>
+          <FontAwesomeIcon icon={faDownload}  />  Download Statistics
           </button>
         </div>
       </div>

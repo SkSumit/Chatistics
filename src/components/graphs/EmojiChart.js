@@ -47,7 +47,7 @@ export default function EmojiChart() {
     <ResponsiveContainer width="100%" height={500}>
       <PieChart>
         <Pie
-        isAnimationActive={false}
+          isAnimationActive={false}
           data={context.file.stats.emoji}
           labelLine={false}
           label={renderCustomizedLabel}

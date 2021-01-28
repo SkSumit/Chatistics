@@ -1,6 +1,12 @@
 import React from "react";
 import StatsBox from "../StatsBox";
 import Section from "../common/Section";
+import {
+  faCalendarAlt,
+  faComments,
+  faPaperPlane,
+  faHeading,
+} from "@fortawesome/free-solid-svg-icons";
 export default function Summary({ file }) {
   return (
     <Section>
@@ -19,45 +25,28 @@ export default function Summary({ file }) {
           <StatsBox
             title={"Total Days"}
             stats={file.stats.summary.total_days}
-            icon={
-              <i
-                className="far fa-calendar-alt fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faCalendarAlt}
           />
         </div>
         <div className="tile is-parent">
           <StatsBox
             title={"Total Message Exchanged"}
             stats={35985}
-            icon={
-              <i className="far fa-comments fa-2x" style={{ color: "#000" }} />
-            }
+            icon={faComments}
           />
         </div>
         <div className="tile is-parent">
           <StatsBox
             title={"Total Words Sent"}
             stats={168265}
-            icon={
-              <i
-                className="fas fa-paper-plane fa-2x"
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faPaperPlane}
           />
         </div>
         <div className="tile is-parent">
           <StatsBox
             title={"Total Letters Used"}
             stats={697235}
-            icon={
-              <i
-                className="  fas   fa-heading fa-2x "
-                style={{ color: "#000" }}
-              />
-            }
+            icon={faHeading}
           />
         </div>
       </div>
