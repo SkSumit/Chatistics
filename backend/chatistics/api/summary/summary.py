@@ -14,11 +14,11 @@ def word_list(Word):
             r1 = re.search('.*http',item)
             if r1:
                 links.append(item)
-            if item != "<media" and item != "omitted>":   #have to add stops words
+            if item != "<Media" and item != "omitted>":   #have to add stops words
                 Words.append(item)
             for letter in item:
                 letters.append(letter)
-    return len(Words), len(letters), len(links);
+    return Words, letters, links;
 
 def wordCount(data):
     word=words_list_nested(data)
@@ -30,7 +30,7 @@ def summary(data):
     summary = {
         'total_days' : len(data['DATE'].unique()),
         'total_message' : len(data[data['MESSAGE'] != ""]),
-        'total_words' : word,
-        'total_letters' : letter,
+        'total_words' : len(word),
+        'total_letters' : len(letter),
     }
     return summary
