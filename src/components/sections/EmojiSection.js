@@ -19,7 +19,7 @@ export default function EmojiSection() {
           Emojis because <span className="underline">why not?</span>
         </h1>
       }
-      rightColumn={false}
+      rightColumn={true}
       graph={<EmojiChart />}
       rightColumnContent={
         <>

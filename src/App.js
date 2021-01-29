@@ -14,6 +14,7 @@ import EmojiSection from "./components/sections/EmojiSection";
 import WordcloudSection from "./components/sections/WordcloudSection";
 import SpecificUserSection from "./components/sections/SpecificUserSection";
 import ErrorModal from "./components/modals/ErrorModal";
+import Footer from './components/sections/Footer';
 
 export const FileContext = createContext(null);
 
@@ -52,6 +53,7 @@ function App() {
         <WordcloudSection />
         <SpecificUserSection />
       </FileContext.Provider>
+      <Footer/>
       {axiosError && <ErrorModal error={axiosError} setError = {setAxiosError}/>}
     </>
   );

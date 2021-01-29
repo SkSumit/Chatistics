@@ -6,7 +6,6 @@ import { FileContext } from "../../App";
 const today = new Date();
 export default function Heatmap() {
   const context = useContext(FileContext);
-  console.log(context.file.stats.heatmap.all)
   return (
     <Section>
       <h1 className="subtitle is-3 ">

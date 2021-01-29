@@ -2,7 +2,7 @@ import axios from "axios";
 
 const url =
   process.env.NODE_ENV === "development"
-    ? "http://localhost:5000/testing"
+    ? "https://chatistics.herokuapp.com/testing"
     : process.env.REACT_APP_API_URL;
 
 export const postFile = async (formData) => {
