@@ -7,5 +7,6 @@ def username(data):
     return useranme_df.to_dict(orient='records')  
 
 def usernameid(data):
-    user_numid = data['USERNAME'].unique()
+    user_numid = list(data['USERNAME'].unique())
+    user_numid.append("all")
     return user_numid
