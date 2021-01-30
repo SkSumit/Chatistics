@@ -36,8 +36,7 @@ def index():
             content=parsefile(file.filename)
             content=preprocess(content)
             df = dataframe(content)
-            new_insights=insights(df)
-            return jsonify(new_insights)
+            return jsonify(insights(df))
         except Exception as e:
             return error(str(e.args[0]) , 415)
 
