@@ -16,13 +16,12 @@ def dataframe(content):
             if len(content[i].split(":")[2:]) > 1:
                 messages.append(" ".join(content[i].split(":")[2:])[1:])
             else:
-                messages.append("^".join(content[i].split(":")[2:])[1:])
-        df["DATE"] = date           
+                messages.append("^".join(content[i].split(":")[2:])[1:])         
         try:
             days=[]
             years=[]
             month=[]
-            for i in df['DATE']:
+            for i in date:
                 date_to_extract=datetime.strptime(i, "%d/%m/%y")
                 days.append(date_to_extract.strftime("%A"))
                 years.append(date_to_extract.year)
@@ -31,7 +30,7 @@ def dataframe(content):
             days=[]
             years=[]
             month=[]
-            for i in df['DATE']:
+            for i in date:
                 date_to_extract=datetime.strptime(i, "%m/%d/%y")
                 days.append(date_to_extract.strftime("%A"))
                 years.append(date_to_extract.year)
@@ -41,7 +40,8 @@ def dataframe(content):
         df["TIME"] = time
         df["USERNAME"] = username
         df["MESSAGE"] = messages
-        df['MONTH']=month               
+        df['MONTH']=month
+        df['DAY']=days                
         return df
     except:
         raise Exception("Not a Whats App txt file")    
