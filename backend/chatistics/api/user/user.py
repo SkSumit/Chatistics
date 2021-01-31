@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+
 def username(data):
     user_name = data[data['MESSAGE'] != '']['USERNAME'].unique()
     useranme_df=pd.DataFrame(user_name,columns=['username'])
