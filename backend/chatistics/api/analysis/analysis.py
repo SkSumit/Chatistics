@@ -1,9 +1,9 @@
-from chatistics.api.analysis.days import basedonDay
+from chatistics.api.analysis.days import basedonday
 
 
 def analysis(data):
     analysis = {
-                    "basedOnDays" : basedonDay(data), 
-                    "basedOnTime" : basedonDay(data)          
+                "basedOnDays" : basedonday(data) 
+                # "basedOnTime" : basedonday(data)          
     } 
     return analysis
