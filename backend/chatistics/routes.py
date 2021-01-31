@@ -38,7 +38,7 @@ def index():
             df = dataframe(content)
             return jsonify(insights(df))
         except Exception as e:
-            return error(str(e.args[0]) , 415)
+            return error(str(e.args) , 415)
 
 #API Route
 @main.route('/api/v1/dummy')
