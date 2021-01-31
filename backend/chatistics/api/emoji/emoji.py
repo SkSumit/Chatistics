@@ -5,6 +5,7 @@ from chatistics.api.user.user import usernameid
 from chatistics.dataframe.dict import my_dictionary
 
 
+
 def emojiuser(data, username, num): #add username
     Emojichar = []   
     for i in range(len(data)):
