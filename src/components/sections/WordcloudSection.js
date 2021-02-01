@@ -14,7 +14,7 @@ import {
 const options = {
   rotations: 2,
   rotationAngles: [0, 90],
-  fontSizes: [20, 110],
+  fontSizes: [20, 80 ],
 };
 
 export default function WordcloudSection() {
