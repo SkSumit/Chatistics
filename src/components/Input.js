@@ -128,8 +128,7 @@ export default function Input({ setLoader, setAxiosError,showDownloadBtn, setSho
             </div>
             <div className="column is-narrow">
               <h6 className="subtitle is-6 has-text-centered  ">
-                PS You can check the
-                <span className="underline "> code over here </span>
+                Open Sourced, Always
               </h6>
             </div>
           </div>
