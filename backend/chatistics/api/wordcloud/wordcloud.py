@@ -21,7 +21,7 @@ def wordCountUser(data,username):
 
 def wordcloudUser(data,username,num):  
     words, letters, links = wordCountUser(data,username)
-    worddata=pd.DataFrame(Counter(words).most_common()[:num], columns=['WORD','FREQUENCY']).to_dict(orient='records')                
+    worddata=pd.DataFrame(Counter(words).most_common()[:num], columns=['text','value']).to_dict(orient='records')                
     wordstats={'Avg_word_per_text':len(words)/len(data),'Total_Words':len(words),'Total_links':len(links),'Total_letters':len(letters),'Total_lettrs_per_word':len(letters)/len(words)}                
     return {
                 'word_usage':worddata, 
