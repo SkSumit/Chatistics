@@ -1,0 +1,42 @@
+{
+  "short_name": "Chatistics",
+  "name": "Chatistics - Open Source WhatsApp Analytics and Insights",
+  "icons": [
+    
+    {
+      "src": "android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "apple-icon-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "apple-icon-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "favicon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
+
