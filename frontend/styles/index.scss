@@ -1,0 +1,109 @@
+body {
+  font-family: "Roboto", sans-serif !important;
+  background-color: #ece5dd;
+  background-image: url("/bg-chat.png");
+  background-size: 75vh;
+}
+
+$family-sans-serif: "Roboto", sans-serif;
+$primary: #25d366;
+$primary-light: #075e54;
+$text-light: white;
+$title-color: #000;
+$subtitle-color: #000;
+
+
+.bg-light-green {
+  background-color: #dcf8c6 !important;
+}
+.bg-green {
+  background-color: #25d366 !important;
+}
+//Rotating WA logo like a maniac
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.container-box {
+  border-radius: 8px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0px 0 1px rgba(10, 10, 10, 0.02);
+  padding: 1.5rem;
+}
+.bg-white {
+  background-color: white;
+}
+
+.bg-color-github-empty{
+  fill :#ECE5DD 
+}
+
+.bg-color-github-0{
+  fill: #25d366 !important;
+  opacity: 0.2;
+}
+.bg-color-github-1{
+  fill: #25d366 !important;
+  opacity: 0.4;
+}
+.bg-color-github-2{
+  fill: #25d366 !important;
+  opacity: 0.6;
+}
+.bg-color-github-3{
+  fill: #25d366 !important;
+  opacity: 0.7;
+}
+.bg-color-github-4{
+  fill: #25d366 !important;
+  opacity: 0.8;
+}
+.bg-color-github-5{
+  fill: #25d366 !important;
+  opacity: 0.9;
+}
+.bg-color-github-6{
+  fill: #25d366 !important;
+  opacity: 1;
+}
+
+.mt-100{
+  margin-top: -100px !important;
+}
+.rotateTXT{
+  -webkit-transform:  rotate(-5deg) !important; 
+  -moz-transform:  rotate(-5deg) !important; 
+  transform: rotate(-5deg) !important;
+}
+
+.has-text-orange{
+  color: #e25822  !important;
+}
+
+
+//Import Bulma Modularly
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+// @import "../../node_modules/bulma/sass/utilities/_all.sass";
+// @import "../../node_modules/bulma/sass/grid/columns.sass";
+// @import "../../node_modules/bulma/sass/grid/tiles.sass";
+// @import "../../node_modules/bulma/sass/components/modal.sass";
+// @import "../../node_modules/bulma/sass/base/_all.sass";
+// @import "../../node_modules/bulma/sass/layout/_all.sass";
+// @import "../../node_modules/bulma/sass/elements/container.sass";
+// @import "../../node_modules/bulma/sass/elements/notification.sass";
+// @import "../../node_modules/bulma/sass/elements/title.sass";
+// @import "../../node_modules/bulma/sass/helpers/_all.sass";
+// @import "../../node_modules/bulma/sass/elements/box.sass";
+// @import "../../node_modules/bulma/sass/components/card.sass";
+// @import "../../node_modules/bulma/sass/elements/button.sass";
+// @import "../../node_modules/bulma/sass/form/_all.sass";
+
+@import "../node_modules/bulma/bulma.sass";
