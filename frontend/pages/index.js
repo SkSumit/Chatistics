@@ -1,9 +1,8 @@
 import Head from "next/head";
 import React, { useState, useEffect, createContext } from "react";
-
+import { getDefaultStats } from "../api/api";
 import Hero from "../components/sections/Hero";
 import Summary from "../components/sections/Summary";
-import { mockData } from "../api/mockAPI";
 import TimelineSection from "../components/sections/TimelineSection";
 import DaySection from "../components/sections/DaySection";
 import Loader, { LoaderAnalysis } from "../components/Loader";
@@ -19,15 +18,14 @@ import Footer from "../components/sections/Footer";
 
 export const FileContext = createContext(null);
 
-export default function Home() {
-  const [file, setFile] = useState(null);
+export default function Home({ data }) {
+  const [file, setFile] = useState(data);
   const [loader, setLoader] = useState(false);
   const [initLoader, setInitLoader] = useState(true);
   const [axiosError, setAxiosError] = useState(null);
   const [showDownloadBtn, setShowDownloadBtn] = useState(false);
 
   useEffect(() => {
-    setFile(mockData);
     setInitLoader(false);
   }, []);
 
@@ -89,19 +87,20 @@ export default function Home() {
 
       <Hero />
       <Input
+        setFile={setFile}
         setLoader={setLoader}
         setAxiosError={setAxiosError}
         showDownloadBtn={showDownloadBtn}
         setShowDownloadBtn={setShowDownloadBtn}
       />
       <FileContext.Provider value={{ file }}>
-        <Summary file={file} />
-        <TimelineSection data={mockData.stats.timelineByMonth} />
+        <Summary />
+        {/* <TimelineSection /> */}
         <DaySection />
-        <TimeRadarSection />
+        {/* <TimeRadarSection /> */}
         <Heatmap />
         <EmojiSection />
-        <UserSummary />
+        {/* <UserSummary /> */}
         <WordcloudSection />
         <SpecificUserSection />
       </FileContext.Provider>
@@ -111,8 +110,16 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps(context) {
-//   return {
-//     props: {}, // will be passed to the page component as props
-//   }
-// }
+export async function getStaticProps(context) {
+  const data = await getDefaultStats();
+  if (!data || data.isAxiosError) {
+    return {
+      notFound: true,
+    };
+  }
+  return {
+    props: {
+      data: data.data,
+    },
+  };
+}

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Modal = ({ error, setError, children }) => {
-  console.log(error, "error");
+
   return (
     <div className={`modal ${error ? "is-active" : ""} `}>
       <div className="modal-background" onClick={() => setError(false)}></div>

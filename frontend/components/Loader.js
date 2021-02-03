@@ -267,7 +267,7 @@ export const LoaderAnalysis = () => {
               <button class="button is-primary is-inverted is-outlined  ">Sumit</button>
             </p>
             <p className="control ">
-              <button class="button is-primary is-inverted is-outlined    ">Atharva</button>
+              <button className="button is-primary is-inverted is-outlined    ">Atharva</button>
             </p>
           </div>
         </div>

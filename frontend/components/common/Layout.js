@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { FileContext } from "../../pages/index";
 import Section from "./Section";
 import Select from "react-select";
 
@@ -8,16 +9,13 @@ export const Layout = ({
   rightColumnContent,
   rightColumn = true,
   showSelect = true,
-  selectedOption,
-  setSelectedOption,
-  initSelectedOption,
+  selectedOption, 
+  setSelectedOption
 
 }) => {
-  // const [selectedOption, setSelectedOption] = useState({
-  //   value: "all",
-  //   label: "All",
-  // });
 
+  const context = useContext(FileContext);
+ 
   const customStyles = {
     control: (styles) => ({
       ...styles,
@@ -42,12 +40,14 @@ export const Layout = ({
               <>
                 {showSelect && (
                   <Select
-                    defaultValue={selectedOption}
-                    onChange={setSelectedOption}
-                    options={initSelectedOption}
-                    isSearchable={true}
-                    styles={customStyles}
-                    id={1}
+                  defaultValue={selectedOption}
+                  onChange={setSelectedOption}
+                  options={context.file.usernames}
+                  getOptionLabel ={(option)=>option.username}
+                  getOptionValue ={(option)=>option.username}
+                  isSearchable={true}
+                  styles={customStyles}
+                  id={1}
                   />
                 )}
                 {graph}
@@ -65,12 +65,14 @@ export const Layout = ({
               <>
                 {showSelect && (
                   <Select
-                    defaultValue={selectedOption}
-                    onChange={setSelectedOption}
-                    options={{}}
-                    isSearchable={true}
-                    styles={customStyles}
-                    id={1}
+                  defaultValue={selectedOption}
+                  onChange={setSelectedOption}
+                  options={[...context.file.usernames,{username:"All"}]}
+                  getOptionLabel ={(option)=>option.username}
+                  getOptionValue ={(option)=>option.username}
+                  isSearchable={true}
+                  styles={customStyles}
+                  id={1}
                   />
                 )}
                 {graph}
