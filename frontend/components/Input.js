@@ -3,17 +3,16 @@ import Section from "./common/Section";
 import { postFile } from "../api/api";
 import { fileExtensionValidation } from "../api/apiUtils";
 import DownloadBtn from "./DownloadBtn";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUpload  } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpload } from "@fortawesome/free-solid-svg-icons";
 
-export default function Input({ setLoader, setAxiosError,showDownloadBtn, setShowDownloadBtn,setFile }) {
-
+export default function Input({ setLoader, setAxiosError, setFile }) {
   const [uploadFile, setUploadFile] = useState(null);
   const [error, setError] = useState({
     fileError: { error: false, message: "" },
     axiosError: { error: false, message: "" },
   });
- 
+  const [showDownloadBtn, setShowDownloadBtn] = useState(false);
 
   const onFileChange = async (e) => {
     if (e.target.files[0]) {
@@ -30,7 +29,6 @@ export default function Input({ setLoader, setAxiosError,showDownloadBtn, setSho
           fileError: { error: true, message: error.message },
         });
       }
-    
     } else {
       return setError({
         ...error,
@@ -47,11 +45,10 @@ export default function Input({ setLoader, setAxiosError,showDownloadBtn, setSho
 
       setLoader(true);
       const result = await postFile(formData);
-      setFile(result.data)
+      setFile(result.data);
 
       setShowDownloadBtn(true);
       setLoader(false);
-      
     } catch (error) {
       setAxiosError(error);
       setLoader(false);
@@ -80,7 +77,7 @@ export default function Input({ setLoader, setAxiosError,showDownloadBtn, setSho
                       style={{ color: "#25D366" }}
                     >
                       <span className="file-icon">
-                      <FontAwesomeIcon icon={faUpload}/>
+                        <FontAwesomeIcon icon={faUpload} />
                       </span>
                     </span>
                     <span

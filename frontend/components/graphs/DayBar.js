@@ -10,7 +10,6 @@ import {
 } from "recharts";
 
 export default function DayBar({ selectedOption, setSelectedOption }) {
-
   const context = useContext(FileContext);
 
   // const options = Object.keys(context.file.stats.analysis.basedOnDays).map(
@@ -33,7 +32,6 @@ export default function DayBar({ selectedOption, setSelectedOption }) {
 
       <ResponsiveContainer width="100%" height={400}>
         <BarChart
-          width="100%"
           height={400}
           data={
             context.file.stats.analysis.basedOnDays[selectedOption.username]
@@ -41,7 +39,7 @@ export default function DayBar({ selectedOption, setSelectedOption }) {
           layout="vertical"
         >
           <XAxis type="number" />
-          <YAxis dataKey="DAY" height={"100%"} width={85} type="category" />
+          <YAxis dataKey="DAY" width={85} type="category" />
           <Tooltip />
           <Bar
             name="Texts"
