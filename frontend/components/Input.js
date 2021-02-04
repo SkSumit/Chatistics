@@ -3,33 +3,32 @@ import Section from "./common/Section";
 import { postFile } from "../api/api";
 import { fileExtensionValidation } from "../api/apiUtils";
 import DownloadBtn from "./DownloadBtn";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUpload  } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpload } from "@fortawesome/free-solid-svg-icons";
 
-export default function Input({ setLoader, setAxiosError,showDownloadBtn, setShowDownloadBtn }) {
+export default function Input({ setLoader, setAxiosError, setFile }) {
   const [uploadFile, setUploadFile] = useState(null);
- 
   const [error, setError] = useState({
     fileError: { error: false, message: "" },
     axiosError: { error: false, message: "" },
   });
-  console.log("showDownloadBtn", showDownloadBtn)
+  const [showDownloadBtn, setShowDownloadBtn] = useState(false);
 
   const onFileChange = async (e) => {
     if (e.target.files[0]) {
       try {
         fileExtensionValidation(e.target.files[0]);
+        setError({
+          ...error,
+          fileError: { error: false, message: error.message },
+        });
+        setUploadFile(e.target.files[0]);
       } catch (error) {
         return setError({
           ...error,
           fileError: { error: true, message: error.message },
         });
       }
-      setError({
-        ...error,
-        fileError: { error: false, message: error.message },
-      });
-      setUploadFile(e.target.files[0]);
     } else {
       return setError({
         ...error,
@@ -43,9 +42,11 @@ export default function Input({ setLoader, setAxiosError,showDownloadBtn, setSho
     try {
       const formData = new FormData();
       formData.append("file", uploadFile);
+
       setLoader(true);
       const result = await postFile(formData);
-      console.log(result);
+      setFile(result.data);
+
       setShowDownloadBtn(true);
       setLoader(false);
     } catch (error) {
@@ -76,7 +77,7 @@ export default function Input({ setLoader, setAxiosError,showDownloadBtn, setSho
                       style={{ color: "#25D366" }}
                     >
                       <span className="file-icon">
-                      <FontAwesomeIcon icon={faUpload}/>
+                        <FontAwesomeIcon icon={faUpload} />
                       </span>
                     </span>
                     <span

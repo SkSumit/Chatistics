@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { FileContext } from "../../pages/index";
 import EmojiChart from "../graphs/EmojiChart";
 import StatsBox from "../StatsBox";
@@ -11,37 +11,39 @@ import {
 
 export default function EmojiSection() {
   const context = useContext(FileContext);
+  const [selectedOption, setSelectedOption] = useState({
+    username: "All",
+  });
 
   return (
     <Layout
+    selectedOption={selectedOption}
+    setSelectedOption={ setSelectedOption}
       sectionHeader={
         <h1 className="subtitle is-3 ">
           Emojis because <span className="underline">why not?</span>
         </h1>
       }
       rightColumn={true}
-      graph={<EmojiChart />}
+      graph={<EmojiChart        selectedOption={selectedOption}
+      setSelectedOption={setSelectedOption} />}
       rightColumnContent={
         <>
           <StatsBox
             title={"Most Used Emojis"}
-            stats={context.file.stats.emoji.map((item, index) => {
-              return index >= 5 ? null : `${item.Emoji}`;
+            stats={context.file.stats.emoji[selectedOption.username].Emoji_usage.map((item, index) => {
+              return index >= 5 ? null : `${item.EMOJI}`;
             })}
             icon={faCommentDots}
           />
           <StatsBox
-            title={"Least Used Emojis"}
-            stats={context.file.stats.emoji
-              .slice(Math.max(context.file.stats.emoji.length - 5, 1))
-              .map((item, index) => {
-                return index >= 5 ? null : `${item.Emoji}`;
-              })}
+            title={"Number of Emoji Used"}
+            stats={context.file.stats.emoji[selectedOption.username].Emoji_stats.Number_of_emojis}
             icon={faCalendarWeek}
           />
           <StatsBox
-            title={"Average No of Emoji Per Text"}
-            stats={2.6}
+            title={"Number of Unqiue Emojis "}
+            stats={context.file.stats.emoji[selectedOption.username].Emoji_stats.Different_Emojis_used}
             icon={faAngleDoubleUp}
           />
         </>

@@ -10,7 +10,7 @@ const renderCustomizedLabel = ({
   outerRadius,
   percent,
 
-  Emoji,
+  EMOJI,
 }) => {
   const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
   const x = cx + radius * Math.cos((-midAngle * Math.PI) / 180);
@@ -24,7 +24,7 @@ const renderCustomizedLabel = ({
       textAnchor={x > cx ? "start" : "end"}
       dominantBaseline="central"
     >
-      {percent * 100 >= 3 ? `${Emoji}  ${(percent * 100).toFixed(0)}%` : ""}
+      {percent * 100 >= 3 ? `${EMOJI}  ${(percent * 100).toFixed(0)}%` : ""}
     </text>
   );
 };
@@ -40,7 +40,7 @@ const CustomTooltip = ({ payload }) => {
     </div>
   );
 };
-export default function EmojiChart() {
+export default function EmojiChart({ selectedOption, setSelectedOption }) {
   const context = useContext(FileContext);
 
   return (
@@ -48,14 +48,14 @@ export default function EmojiChart() {
       <PieChart>
         <Pie
           isAnimationActive={false}
-          data={context.file.stats.emoji}
+          data={context.file.stats.emoji[selectedOption.username].Emoji_usage}
           labelLine={false}
           label={renderCustomizedLabel}
           outerRadius={150}
           fill="#8884d8"
-          dataKey="No_Of_Emoji"
+          dataKey="VALUE"
         >
-          {context.file.stats.emoji.map((entry, index) => (
+          {context.file.stats.emoji[selectedOption.username].Emoji_usage.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={randomColor()} />
           ))}
         </Pie>

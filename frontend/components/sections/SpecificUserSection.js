@@ -7,11 +7,13 @@ import { faFireAlt } from "@fortawesome/free-solid-svg-icons";
 
 export default function SpecificUserSection() {
   const context = useContext(FileContext);
+  console.log(context)
   return (
     <Section>
       <div className="tile is-ancestor">
         <div className="tile is-vertical is-parent">
-          {chunk(context.file.stats.userSpecific, 3).map((row, index) => {
+          {chunk(context.file.stats.userspecific, 3).map((row, index) => {
+            console.log(row)
             return (
               <div className="tile is-parent " key={index}>
                 {row.map((item, index) => (

@@ -91,19 +91,19 @@ $subtitle-color: #000;
 
 //Import Bulma Modularly
 // @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-// @import "../../node_modules/bulma/sass/utilities/_all.sass";
-// @import "../../node_modules/bulma/sass/grid/columns.sass";
-// @import "../../node_modules/bulma/sass/grid/tiles.sass";
-// @import "../../node_modules/bulma/sass/components/modal.sass";
-// @import "../../node_modules/bulma/sass/base/_all.sass";
-// @import "../../node_modules/bulma/sass/layout/_all.sass";
-// @import "../../node_modules/bulma/sass/elements/container.sass";
-// @import "../../node_modules/bulma/sass/elements/notification.sass";
-// @import "../../node_modules/bulma/sass/elements/title.sass";
-// @import "../../node_modules/bulma/sass/helpers/_all.sass";
-// @import "../../node_modules/bulma/sass/elements/box.sass";
-// @import "../../node_modules/bulma/sass/components/card.sass";
-// @import "../../node_modules/bulma/sass/elements/button.sass";
-// @import "../../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+@import "../node_modules/bulma/sass/grid/tiles.sass";
+@import "../node_modules/bulma/sass/components/modal.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/notification.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/components/card.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
 
-@import "../node_modules/bulma/bulma.sass";
+// @import "../node_modules/bulma/bulma.sass";

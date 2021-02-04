@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import Select from "react-select";
 import { FileContext } from "../../pages/index";
 import {
   BarChart,
@@ -11,18 +10,6 @@ import {
 } from "recharts";
 
 export default function DayBar({ selectedOption, setSelectedOption }) {
-  // const customStyles = {
-  //   control: (styles) => ({
-  //     ...styles,
-  //     backgroundColor: "white",
-  //     borderColor: "#dbdbdb",
-  //     borderWidth: "1px",
-  //     cursor: "pointer",
-  //     justifyContent: "center",
-  //     marginBottom: "1rem",
-  //     width: "50%",
-  //   }),
-  // };
   const context = useContext(FileContext);
 
   // const options = Object.keys(context.file.stats.analysis.basedOnDays).map(
@@ -45,19 +32,18 @@ export default function DayBar({ selectedOption, setSelectedOption }) {
 
       <ResponsiveContainer width="100%" height={400}>
         <BarChart
-          width="100%"
           height={400}
           data={
-            context.file.stats.analysis.basedOnDays[selectedOption.value].days
+            context.file.stats.analysis.basedOnDays[selectedOption.username]
           }
           layout="vertical"
         >
           <XAxis type="number" />
-          <YAxis dataKey="day" height={"100%"} width={85} type="category" />
+          <YAxis dataKey="DAY" width={85} type="category" />
           <Tooltip />
           <Bar
             name="Texts"
-            dataKey="value"
+            dataKey="MESSAGE"
             fill="#25d366"
             isAnimationActive={false}
           />

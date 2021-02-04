@@ -1,15 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext,useState } from "react";
+import { FileContext } from "../../pages/index";
 import Section from "../common/Section";
 import CalendarHeatmap from "react-calendar-heatmap";
 import "react-calendar-heatmap/dist/styles.css";
-import { FileContext } from "../../pages/index";
-const today = new Date();
+
+
 export default function Heatmap() {
+  
+  const today = new Date();
   const context = useContext(FileContext);
+  const [selectedOption, setSelectedOption] = useState({
+    username: "All",
+  });
+  
   return (
     <Section>
       <h1 className="subtitle is-3 ">
-        It's called a Heatmap not,{" "}
+        It's called a Heatmap not,
         <span className="underline">GitHub commit wall</span>
       </h1>
       <div className="columns is-gapless  is-centered">
@@ -17,7 +24,7 @@ export default function Heatmap() {
           <CalendarHeatmap
             startDate={shiftDate(today, -180)}
             endDate={today}
-            values={context.file.stats.heatmap.all}
+            values={context.file.stats.heatmap[selectedOption.username]}
             horizontal={true}
             showMonthLabels={true}
             classForValue={(value) => {
