@@ -7,7 +7,7 @@ import numpy as np
 def userSpecificInfo(data,username):
     word, letter, link = wordCountUser(data,username)
     userSpecificInfo = {
-        #'averageMessage'          :     len(data[data['USERNAME'] == username]['MESSAGE'])/data[data['USERNAME'] == username]['DATE'].value_counts().count(),
+        'averageMessage'          :     len(data[data['USERNAME'] == username]['MESSAGE'])/data[data['USERNAME'] == username]['DATE'].value_counts().count(),
         'no_of_link'              :     len(link),
         'totalMessageExchanged'   :     int(data[data['USERNAME']== username]['MESSAGE'].value_counts().sum()),
         'total_num_words'         :     len(word),
