@@ -134,7 +134,10 @@ class getData:
         
     def analysis(self,data):
         configvars.totalwords = 0
+        configvars.no_of_days = 0
         configvars.emojidata = {}
+        configvars.userdata = {}
+        configvars.worddata = {}
         configvars.worddata.update(getData.wordcloudall(data))
         getData.emojiall(data , "All")
         getData.emojidata(data)
