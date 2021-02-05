@@ -6,9 +6,8 @@ import numpy as np
 
 def userSpecificInfo(data,username):
     word, letter, link = wordCountUser(data,username)
-    
     userSpecificInfo = {
-        'averageMessage'          :     data[data['USERNAME'] == username]['MESSAGE'].value_counts().sum()/data[data['USERNAME'] == username]['DATE'].value_counts().count(),
+        'averageMessage'          :     len(data[data['USERNAME'] == username]['MESSAGE'])/data[data['USERNAME'] == username]['DATE'].value_counts().count(),
         'no_of_link'              :     len(link),
         'totalMessageExchanged'   :     int(data[data['USERNAME']== username]['MESSAGE'].value_counts().sum()),
         'total_num_words'         :     len(word),
@@ -23,8 +22,8 @@ def userSpecificInfo(data,username):
         'Deleted_msgs'            :     len(data[data["MESSAGE"]=='This message was deleted']['USERNAME']==username),
         'Avg_msg_per_day'         :     len(data[data['USERNAME']==username]['MESSAGE'] != "")/len(data[data['USERNAME']==username]['DATE'].unique()),
         'Text_per_hour'           :     len(data[data['USERNAME']==username]['MESSAGE'] != "")/24*len(data[data['USERNAME']==username]['DATE'].unique()),
-        'mostUsedEmoji'           :     emojiuser(data, username, 1),
-        'wordcloud'               :     wordcloudUser(data,username,1)
+        # 'mostUsedEmoji'           :     emojiuser(data, username, 1),
+        # 'wordcloud'               :     wordcloudUser(data,username,1)
     }
     return userSpecificInfo
 
