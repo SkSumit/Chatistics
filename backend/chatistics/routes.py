@@ -2,7 +2,7 @@ from chatistics.files.upload import parsefile
 from chatistics.dataframe.token import corpus
 from chatistics.dataframe.dataframe import dataframe
 from chatistics.dataframe.preprocessing import preprocess
-from chatistics.api.insights import insights
+from chatistics.api import insights
 from chatistics.dummy.dummyapi import dummyapi
 from chatistics.error.error import error
 from chatistics.auth.auth import check_for_token
@@ -41,7 +41,9 @@ def index():
             content = parsefile(file.filename)
             content = preprocess(content)
             df = dataframe(content)
-            return jsonify(insights(df))
+            whatsapp = insights.getData()
+            new_insights=whatsapp.analysis(df)
+            return jsonify(new_insights)
         except Exception as e:
             return error(str(e.args), 415)
 
