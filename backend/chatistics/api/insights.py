@@ -78,8 +78,9 @@ class getData:
             for j in i.split():
                 if j != "<Media" and j != "omitted>":
                     word.append(j)
-        wordcounter = Counter(word).most_common()                 
-        wordcloud.add("All",[pd.DataFrame(wordcounter[:50], columns=['WORD','FREQUENCY']).to_dict(orient='records'),{'Most_used_word':wordcounter[0][0],'Least_used_word':wordcounter[-1][0]}])
+        wordcounter = Counter(word).most_common()
+        if wordcounter:                 
+            wordcloud.add("All",[pd.DataFrame(wordcounter[:50], columns=['WORD','FREQUENCY']).to_dict(orient='records'),{'Most_used_word':wordcounter[0][0],'Least_used_word':wordcounter[-1][0]}])
         return wordcloud
 
     def wordsListNestedUser(data , username):
@@ -98,7 +99,8 @@ class getData:
         wordcloud = dict.my_dictionary()
         word , link=getData.wordsListNestedUser(data , username)
         wordcounter=Counter(word).most_common()
-        wordcloud.add(username,[pd.DataFrame(wordcounter[:50], columns=['WORD','FREQUENCY']).to_dict(orient='records'),{'Most_used_word':wordcounter[0][0],'Least_used_word':wordcounter[-1][0]}])
+        if wordcounter:
+            wordcloud.add(username,[pd.DataFrame(wordcounter[:50], columns=['WORD','FREQUENCY']).to_dict(orient='records'),{'Most_used_word':wordcounter[0][0],'Least_used_word':wordcounter[-1][0]}])
         return word,link,wordcloud;
 
     def userspecific(data):
