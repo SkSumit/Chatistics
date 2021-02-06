@@ -42,12 +42,10 @@ def index():
             content = preprocess(content)
             df = dataframe(content)
             whatsapp = insights.getData()
-            new_insights=whatsapp.analysis(df)
+            new_insights = whatsapp.analysis(df)
             return jsonify(new_insights)
         except Exception as e:
             return error(str(e.args), 415)
-
-# API Route
 
 
 @main.route('/api/v1/dummy')
@@ -56,8 +54,38 @@ def api():
     return jsonify(dummyjson)
 
 
+# Endpoint for storing feedback
 @main.route('/api/v1/feedback', methods=['POST'])
 def feedback():
-    database = db()
-    results = database.child("feedback").push(request.json)
-    return results
+    try:
+        db.child("feedback").push(request.json)
+        return 'Thanks for the feedback', 200
+    except Exception as e:
+        print(e)
+        return 'Something Went Wrong', 502
+
+# Endpoint for storing visitor counts
+
+
+@main.route('/api/v1/analytics/visited', methods=['POST'])
+def analytics():
+    try:
+        visited = db.child("visited").get()
+        db.child("visited").set(visited.val() + 1)
+        return '', 200
+    except Exception as e:
+        print(e)
+        return 'Something Went Wrong', 502
+
+# Endpoint for storing visitor counts
+
+
+@main.route('/api/v1/analytics/uploads', methods=['POST'])
+def uploads():
+    try:
+        uploadCount = db.child("uploads").get()
+        db.child("uploads").set(uploadCount.val() + 1)
+        return '', 200
+    except Exception as e:
+        print(e)
+        return 'Something Went Wrong', 502

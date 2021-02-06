@@ -21,3 +21,16 @@ export const getDefaultStats = async () => {
     return error;
   }
 };
+
+export const postFeedback = async (filename, rating) => {
+  try {
+    const result = await axios.post(url + "/api/v1/feedback", {
+      filename,
+      rating,
+    });
+    return result;
+  } catch (error) {
+    console.log(error);
+    return error;
+  }
+};
