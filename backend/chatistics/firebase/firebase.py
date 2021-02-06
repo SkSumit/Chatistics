@@ -1,5 +1,8 @@
-import os
 import pyrebase
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 
 config = {
     "apiKey": os.environ.get("FIREBASE_API_KEY"),
@@ -8,12 +11,6 @@ config = {
     "storageBucket": os.environ.get("FIREBASE_STORAGE_BUCKET")
 }
 
+print(os.environ)
 firebase = pyrebase.initialize_app(config)
-
-
-def db():
-    return firebase.database()
-
-
-# results = db.child("users").push("dadadd")
-# print(results)
+db = firebase.database()
