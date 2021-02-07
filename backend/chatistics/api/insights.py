@@ -26,13 +26,10 @@ class getData:
             for word in data:
                 if word in emoji.UNICODE_EMOJI:   #emoji search
                     emoji_list.append(word)
-        emojistats={'Different_Emojis_used':len(Counter(emoji_list).most_common()),'Number_of_emojis':len(emoji_list)}                
-        emojidata=pd.DataFrame((Counter(emoji_list).most_common()[:20]),columns=['EMOJI','VALUE']).to_dict(orient='records')
-        emojiusage={ 
-                'Emoji_usage' :emojidata,
-                'Emoji_stats':emojistats
-            }
-        emojidict.add(name , emojiusage)
+        Emoji_stats = {"Emoji_stats":{'Different_Emojis_used':len(Counter(emoji_list).most_common()),'Number_of_emojis':len(emoji_list)}}                
+        Emoji_data = {"Emoji_usage":pd.DataFrame((Counter(emoji_list).most_common()[:20]),columns=['EMOJI','VALUE']).to_dict(orient='records')}
+        Emoji_stats.update(Emoji_data)
+        emojidict.add(name , Emoji_stats)
         configvars.emojidata.update(emojidict)    
 
 
@@ -80,7 +77,10 @@ class getData:
                     word.append(j)
         wordcounter = Counter(word).most_common()
         if wordcounter:                 
-            wordcloud.add("All",[pd.DataFrame(wordcounter[:50], columns=['WORD','FREQUENCY']).to_dict(orient='records'),{'Most_used_word':wordcounter[0][0],'Least_used_word':wordcounter[-1][0]}])
+            word_usage={"word usage":pd.DataFrame(wordcounter[:50], columns=['WORD','FREQUENCY']).to_dict(orient='records')}
+            word_stat = {"word stat":{'Most_used_word':wordcounter[0][0],'Least_used_word':wordcounter[-1][0]}}
+            word_usage.update(word_stat)                           
+            wordcloud.add("All",word_usage)
         return wordcloud
 
     def wordsListNestedUser(data , username):
@@ -100,7 +100,10 @@ class getData:
         word , link=getData.wordsListNestedUser(data , username)
         wordcounter=Counter(word).most_common()
         if wordcounter:
-            wordcloud.add(username,[pd.DataFrame(wordcounter[:50], columns=['WORD','FREQUENCY']).to_dict(orient='records'),{'Most_used_word':wordcounter[0][0],'Least_used_word':wordcounter[-1][0]}])
+            word_usage={"word usage":pd.DataFrame(wordcounter[:50], columns=['WORD','FREQUENCY']).to_dict(orient='records')}
+            word_stat = {"word stat":{'Most_used_word':wordcounter[0][0],'Least_used_word':wordcounter[-1][0]}}
+            word_usage.update(word_stat)                           
+            wordcloud.add(username,word_usage)
         return word,link,wordcloud;
 
     def userspecific(data):
