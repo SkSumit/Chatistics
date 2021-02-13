@@ -35,93 +35,111 @@ def dummyapi():
                     }
                 ],
                 "Atharva Kulkarni": [
+                    [
+                        {
+                            "DAY": "Thursday",
+                            "MESSAGE": 2762
+                        },
+                        {
+                            "DAY": "Saturday",
+                            "MESSAGE": 2686
+                        },
+                        {
+                            "DAY": "Wednesday",
+                            "MESSAGE": 2407
+                        },
+                        {
+                            "DAY": "Friday",
+                            "MESSAGE": 2038
+                        },
+                        {
+                            "DAY": "Tuesday",
+                            "MESSAGE": 1989
+                        },
+                        {
+                            "DAY": "Monday",
+                            "MESSAGE": 1850
+                        },
+                        {
+                            "DAY": "Sunday",
+                            "MESSAGE": 1649
+                        }
+                    ],
                     {
-                        "DAY": "Friday",
-                        "MESSAGE": 2038
-                    },
-                    {
-                        "DAY": "Monday",
-                        "MESSAGE": 1850
-                    },
-                    {
-                        "DAY": "Saturday",
-                        "MESSAGE": 2686
-                    },
-                    {
-                        "DAY": "Sunday",
-                        "MESSAGE": 1649
-                    },
-                    {
-                        "DAY": "Thursday",
-                        "MESSAGE": 2762
-                    },
-                    {
-                        "DAY": "Tuesday",
-                        "MESSAGE": 1989
-                    },
-                    {
-                        "DAY": "Wednesday",
-                        "MESSAGE": 2407
+                        "Avg_msg_per_day": 169.02197802197801,
+                        "Dy_max_convo": "Thursday"
                     }
                 ],
                 "Sumit Kolpekwar": [
+                    [
+                        {
+                            "DAY": "Thursday",
+                            "MESSAGE": 2502
+                        },
+                        {
+                            "DAY": "Wednesday",
+                            "MESSAGE": 2432
+                        },
+                        {
+                            "DAY": "Saturday",
+                            "MESSAGE": 2332
+                        },
+                        {
+                            "DAY": "Friday",
+                            "MESSAGE": 1998
+                        },
+                        {
+                            "DAY": "Tuesday",
+                            "MESSAGE": 1725
+                        },
+                        {
+                            "DAY": "Monday",
+                            "MESSAGE": 1686
+                        },
+                        {
+                            "DAY": "Sunday",
+                            "MESSAGE": 1609
+                        }
+                    ],
                     {
-                        "DAY": "Friday",
-                        "MESSAGE": 1998
-                    },
-                    {
-                        "DAY": "Monday",
-                        "MESSAGE": 1686
-                    },
-                    {
-                        "DAY": "Saturday",
-                        "MESSAGE": 2332
-                    },
-                    {
-                        "DAY": "Sunday",
-                        "MESSAGE": 1609
-                    },
-                    {
-                        "DAY": "Thursday",
-                        "MESSAGE": 2502
-                    },
-                    {
-                        "DAY": "Tuesday",
-                        "MESSAGE": 1725
-                    },
-                    {
-                        "DAY": "Wednesday",
-                        "MESSAGE": 2432
+                        "Avg_msg_per_day": 156.96703296703296,
+                        "Dy_max_convo": "Thursday"
                     }
                 ],
                 "Yash Dewangan": [
+                    [
+                        {
+                            "DAY": "Thursday",
+                            "MESSAGE": 1808
+                        },
+                        {
+                            "DAY": "Wednesday",
+                            "MESSAGE": 1614
+                        },
+                        {
+                            "DAY": "Saturday",
+                            "MESSAGE": 1608
+                        },
+                        {
+                            "DAY": "Sunday",
+                            "MESSAGE": 1467
+                        },
+                        {
+                            "DAY": "Friday",
+                            "MESSAGE": 1438
+                        },
+                        {
+                            "DAY": "Tuesday",
+                            "MESSAGE": 1276
+                        },
+                        {
+                            "DAY": "Monday",
+                            "MESSAGE": 1070
+                        }
+                    ],
                     {
-                        "DAY": "Friday",
-                        "MESSAGE": 1438
-                    },
-                    {
-                        "DAY": "Monday",
-                        "MESSAGE": 1070
-                    },
-                    {
-                        "DAY": "Saturday",
-                        "MESSAGE": 1608
-                    },
-                    {
-                        "DAY": "Sunday",
-                        "MESSAGE": 1467
-                    },
-                    {
-                        "DAY": "Thursday",
-                        "MESSAGE": 1808
-                    },
-                    {
-                        "DAY": "Tuesday",
-                        "MESSAGE": 1276
-                    },
-                    {
-                        "DAY": "Wednesday",
-                        "MESSAGE": 1614
+                        "Avg_msg_per_day": 112.97802197802197,
+                        "Dy_max_convo": "Thursday"
                     }
                 ]
             }
@@ -483,2370 +501,2348 @@ def dummyapi():
         "heatmap": {
             "All": [
                 {
-                    "count": 1488,
-                    "date": "11-19-20"
+                    "DATE": "11-19-20",
+                    "MESSAGE": 1488
                 },
                 {
-                    "count": 1080,
-                    "date": "12-4-20"
+                    "DATE": "12-4-20",
+                    "MESSAGE": 1080
                 },
                 {
-                    "count": 863,
-                    "date": "10-28-20"
+                    "DATE": "10-28-20",
+                    "MESSAGE": 863
                 },
                 {
-                    "count": 844,
-                    "date": "11-11-20"
+                    "DATE": "11-11-20",
+                    "MESSAGE": 844
                 },
                 {
-                    "count": 802,
-                    "date": "11-5-20"
+                    "DATE": "11-5-20",
+                    "MESSAGE": 802
                 },
                 {
-                    "count": 785,
-                    "date": "12-3-20"
+                    "DATE": "12-3-20",
+                    "MESSAGE": 785
                 },
                 {
-                    "count": 762,
-                    "date": "11-7-20"
+                    "DATE": "11-7-20",
+                    "MESSAGE": 762
                 },
                 {
-                    "count": 755,
-                    "date": "12-8-20"
+                    "DATE": "12-8-20",
+                    "MESSAGE": 755
                 },
                 {
-                    "count": 752,
-                    "date": "12-19-20"
+                    "DATE": "12-19-20",
+                    "MESSAGE": 752
                 },
                 {
-                    "count": 745,
-                    "date": "10-29-20"
+                    "DATE": "10-29-20",
+                    "MESSAGE": 745
                 },
                 {
-                    "count": 736,
-                    "date": "11-26-20"
+                    "DATE": "11-26-20",
+                    "MESSAGE": 736
                 },
                 {
-                    "count": 731,
-                    "date": "11-21-20"
+                    "DATE": "11-21-20",
+                    "MESSAGE": 731
                 },
                 {
-                    "count": 697,
-                    "date": "12-21-20"
+                    "DATE": "12-21-20",
+                    "MESSAGE": 697
                 },
                 {
-                    "count": 694,
-                    "date": "11-28-20"
+                    "DATE": "11-28-20",
+                    "MESSAGE": 694
                 },
                 {
-                    "count": 669,
-                    "date": "12-20-20"
+                    "DATE": "12-20-20",
+                    "MESSAGE": 669
                 },
                 {
-                    "count": 658,
-                    "date": "10-27-20"
+                    "DATE": "10-27-20",
+                    "MESSAGE": 658
                 },
                 {
-                    "count": 643,
-                    "date": "11-4-20"
+                    "DATE": "11-4-20",
+                    "MESSAGE": 643
                 },
                 {
-                    "count": 637,
-                    "date": "11-8-20"
+                    "DATE": "11-8-20",
+                    "MESSAGE": 637
                 },
                 {
-                    "count": 618,
-                    "date": "1-15-21"
+                    "DATE": "1-15-21",
+                    "MESSAGE": 618
                 },
                 {
-                    "count": 595,
-                    "date": "11-20-20"
+                    "DATE": "11-20-20",
+                    "MESSAGE": 595
                 },
                 {
-                    "count": 573,
-                    "date": "1-20-21"
+                    "DATE": "1-20-21",
+                    "MESSAGE": 573
                 },
                 {
-                    "count": 567,
-                    "date": "12-15-20"
+                    "DATE": "12-15-20",
+                    "MESSAGE": 567
                 },
                 {
-                    "count": 564,
-                    "date": "1-2-21"
+                    "DATE": "1-2-21",
+                    "MESSAGE": 564
                 },
                 {
-                    "count": 552,
-                    "date": "11-25-20"
+                    "DATE": "11-25-20",
+                    "MESSAGE": 552
                 },
                 {
-                    "count": 550,
-                    "date": "1-6-21"
+                    "DATE": "1-6-21",
+                    "MESSAGE": 550
                 },
                 {
-                    "count": 543,
-                    "date": "10-31-20"
+                    "DATE": "10-31-20",
+                    "MESSAGE": 543
                 },
                 {
-                    "count": 540,
-                    "date": "12-2-20"
+                    "DATE": "12-2-20",
+                    "MESSAGE": 540
                 },
                 {
-                    "count": 497,
-                    "date": "12-5-20"
+                    "DATE": "12-5-20",
+                    "MESSAGE": 497
                 },
                 {
-                    "count": 474,
-                    "date": "12-31-20"
+                    "DATE": "12-31-20",
+                    "MESSAGE": 474
                 },
                 {
-                    "count": 471,
-                    "date": "12-9-20"
+                    "DATE": "12-9-20",
+                    "MESSAGE": 471
                 },
                 {
-                    "count": 466,
-                    "date": "11-1-20"
+                    "DATE": "11-1-20",
+                    "MESSAGE": 466
                 },
                 {
-                    "count": 466,
-                    "date": "1-11-21"
+                    "DATE": "1-11-21",
+                    "MESSAGE": 466
                 },
                 {
-                    "count": 459,
-                    "date": "12-23-20"
+                    "DATE": "12-23-20",
+                    "MESSAGE": 459
                 },
                 {
-                    "count": 452,
-                    "date": "12-12-20"
+                    "DATE": "12-12-20",
+                    "MESSAGE": 452
                 },
                 {
-                    "count": 451,
-                    "date": "11-10-20"
+                    "DATE": "11-10-20",
+                    "MESSAGE": 451
                 },
                 {
-                    "count": 449,
-                    "date": "12-14-20"
+                    "DATE": "12-14-20",
+                    "MESSAGE": 449
                 },
                 {
-                    "count": 443,
-                    "date": "12-7-20"
+                    "DATE": "12-7-20",
+                    "MESSAGE": 443
                 },
                 {
-                    "count": 434,
-                    "date": "11-27-20"
+                    "DATE": "11-27-20",
+                    "MESSAGE": 434
                 },
                 {
-                    "count": 428,
-                    "date": "1-5-21"
+                    "DATE": "1-5-21",
+                    "MESSAGE": 428
                 },
                 {
-                    "count": 427,
-                    "date": "11-29-20"
+                    "DATE": "11-29-20",
+                    "MESSAGE": 427
                 },
                 {
-                    "count": 400,
-                    "date": "1-8-21"
+                    "DATE": "1-8-21",
+                    "MESSAGE": 400
                 },
                 {
-                    "count": 399,
-                    "date": "12-27-20"
+                    "DATE": "1-7-21",
+                    "MESSAGE": 399
                 },
                 {
-                    "count": 399,
-                    "date": "1-7-21"
+                    "DATE": "12-27-20",
+                    "MESSAGE": 399
                 },
                 {
-                    "count": 395,
-                    "date": "11-13-20"
+                    "DATE": "11-13-20",
+                    "MESSAGE": 395
                 },
                 {
-                    "count": 395,
-                    "date": "1-23-21"
+                    "DATE": "1-23-21",
+                    "MESSAGE": 395
                 },
                 {
-                    "count": 394,
-                    "date": "1-13-21"
+                    "DATE": "1-13-21",
+                    "MESSAGE": 394
                 },
                 {
-                    "count": 390,
-                    "date": "1-21-21"
+                    "DATE": "1-21-21",
+                    "MESSAGE": 390
                 },
                 {
-                    "count": 388,
-                    "date": "11-9-20"
+                    "DATE": "11-9-20",
+                    "MESSAGE": 388
                 },
                 {
-                    "count": 375,
-                    "date": "12-17-20"
+                    "DATE": "12-17-20",
+                    "MESSAGE": 375
                 },
                 {
-                    "count": 374,
-                    "date": "11-6-20"
+                    "DATE": "11-6-20",
+                    "MESSAGE": 374
                 },
                 {
-                    "count": 372,
-                    "date": "12-24-20"
+                    "DATE": "12-24-20",
+                    "MESSAGE": 372
                 },
                 {
-                    "count": 367,
-                    "date": "11-23-20"
+                    "DATE": "11-23-20",
+                    "MESSAGE": 367
                 },
                 {
-                    "count": 360,
-                    "date": "1-19-21"
+                    "DATE": "1-19-21",
+                    "MESSAGE": 360
                 },
                 {
-                    "count": 354,
-                    "date": "1-10-21"
+                    "DATE": "1-10-21",
+                    "MESSAGE": 354
                 },
                 {
-                    "count": 350,
-                    "date": "1-18-21"
+                    "DATE": "1-18-21",
+                    "MESSAGE": 350
                 },
                 {
-                    "count": 342,
-                    "date": "1-24-21"
+                    "DATE": "1-24-21",
+                    "MESSAGE": 342
                 },
                 {
-                    "count": 337,
-                    "date": "1-9-21"
+                    "DATE": "1-9-21",
+                    "MESSAGE": 337
                 },
                 {
-                    "count": 335,
-                    "date": "11-30-20"
+                    "DATE": "12-11-20",
+                    "MESSAGE": 335
                 },
                 {
-                    "count": 335,
-                    "date": "12-11-20"
+                    "DATE": "12-22-20",
+                    "MESSAGE": 335
                 },
                 {
-                    "count": 335,
-                    "date": "12-22-20"
+                    "DATE": "11-30-20",
+                    "MESSAGE": 335
                 },
                 {
-                    "count": 329,
-                    "date": "12-26-20"
+                    "DATE": "12-26-20",
+                    "MESSAGE": 329
                 },
                 {
-                    "count": 328,
-                    "date": "1-1-21"
+                    "DATE": "1-1-21",
+                    "MESSAGE": 328
                 },
                 {
-                    "count": 317,
-                    "date": "12-29-20"
+                    "DATE": "12-29-20",
+                    "MESSAGE": 317
                 },
                 {
-                    "count": 311,
-                    "date": "1-16-21"
+                    "DATE": "1-16-21",
+                    "MESSAGE": 311
                 },
                 {
-                    "count": 303,
-                    "date": "12-6-20"
+                    "DATE": "1-17-21",
+                    "MESSAGE": 303
                 },
                 {
-                    "count": 303,
-                    "date": "1-17-21"
+                    "DATE": "12-6-20",
+                    "MESSAGE": 303
                 },
                 {
-                    "count": 300,
-                    "date": "1-25-21"
+                    "DATE": "1-25-21",
+                    "MESSAGE": 300
                 },
                 {
-                    "count": 281,
-                    "date": "1-12-21"
+                    "DATE": "1-12-21",
+                    "MESSAGE": 281
                 },
                 {
-                    "count": 276,
-                    "date": "1-22-21"
+                    "DATE": "1-22-21",
+                    "MESSAGE": 276
                 },
                 {
-                    "count": 265,
-                    "date": "11-22-20"
+                    "DATE": "11-22-20",
+                    "MESSAGE": 265
                 },
                 {
-                    "count": 264,
-                    "date": "12-25-20"
+                    "DATE": "12-25-20",
+                    "MESSAGE": 264
                 },
                 {
-                    "count": 259,
-                    "date": "11-14-20"
+                    "DATE": "11-14-20",
+                    "MESSAGE": 259
                 },
                 {
-                    "count": 256,
-                    "date": "1-4-21"
+                    "DATE": "1-4-21",
+                    "MESSAGE": 256
                 },
                 {
-                    "count": 250,
-                    "date": "11-24-20"
+                    "DATE": "11-24-20",
+                    "MESSAGE": 250
                 },
                 {
-                    "count": 247,
-                    "date": "11-17-20"
+                    "DATE": "11-17-20",
+                    "MESSAGE": 247
                 },
                 {
-                    "count": 244,
-                    "date": "11-15-20"
+                    "DATE": "11-15-20",
+                    "MESSAGE": 244
                 },
                 {
-                    "count": 233,
-                    "date": "10-30-20"
+                    "DATE": "10-30-20",
+                    "MESSAGE": 233
                 },
                 {
-                    "count": 232,
-                    "date": "11-12-20"
+                    "DATE": "11-12-20",
+                    "MESSAGE": 232
                 },
                 {
-                    "count": 223,
-                    "date": "12-28-20"
+                    "DATE": "12-28-20",
+                    "MESSAGE": 223
                 },
                 {
-                    "count": 207,
-                    "date": "12-16-20"
+                    "DATE": "12-16-20",
+                    "MESSAGE": 207
                 },
                 {
-                    "count": 196,
-                    "date": "1-3-21"
+                    "DATE": "1-3-21",
+                    "MESSAGE": 196
                 },
                 {
-                    "count": 194,
-                    "date": "11-16-20"
+                    "DATE": "11-16-20",
+                    "MESSAGE": 194
                 },
                 {
-                    "count": 183,
-                    "date": "11-3-20"
+                    "DATE": "11-3-20",
+                    "MESSAGE": 183
                 },
                 {
-                    "count": 179,
-                    "date": "12-30-20"
+                    "DATE": "12-30-20",
+                    "MESSAGE": 179
                 },
                 {
-                    "count": 178,
-                    "date": "11-18-20"
+                    "DATE": "11-18-20",
+                    "MESSAGE": 178
                 },
                 {
-                    "count": 158,
-                    "date": "12-1-20"
+                    "DATE": "12-1-20",
+                    "MESSAGE": 158
                 },
                 {
-                    "count": 142,
-                    "date": "12-18-20"
+                    "DATE": "12-18-20",
+                    "MESSAGE": 142
                 },
                 {
-                    "count": 138,
-                    "date": "11-2-20"
+                    "DATE": "11-2-20",
+                    "MESSAGE": 138
                 },
                 {
-                    "count": 137,
-                    "date": "12-10-20"
+                    "DATE": "1-14-21",
+                    "MESSAGE": 137
                 },
                 {
-                    "count": 137,
-                    "date": "1-14-21"
+                    "DATE": "12-10-20",
+                    "MESSAGE": 137
                 },
                 {
-                    "count": 120,
-                    "date": "12-13-20"
+                    "DATE": "12-13-20",
+                    "MESSAGE": 120
                 }
             ],
             "Atharva Kulkarni": [
                 {
-                    "count": 439,
-                    "date": "12-4-20"
+                    "DATE": "12-4-20",
+                    "MESSAGE": 439
                 },
                 {
-                    "count": 434,
-                    "date": "11-19-20"
+                    "DATE": "11-19-20",
+                    "MESSAGE": 434
                 },
                 {
-                    "count": 332,
-                    "date": "12-19-20"
+                    "DATE": "12-19-20",
+                    "MESSAGE": 332
                 },
                 {
-                    "count": 322,
-                    "date": "12-3-20"
+                    "DATE": "12-3-20",
+                    "MESSAGE": 322
                 },
                 {
-                    "count": 310,
-                    "date": "11-28-20"
+                    "DATE": "11-28-20",
+                    "MESSAGE": 310
                 },
                 {
-                    "count": 308,
-                    "date": "11-7-20"
+                    "DATE": "11-7-20",
+                    "MESSAGE": 308
                 },
                 {
-                    "count": 305,
-                    "date": "12-21-20"
+                    "DATE": "12-21-20",
+                    "MESSAGE": 305
                 },
                 {
-                    "count": 304,
-                    "date": "12-20-20"
+                    "DATE": "12-20-20",
+                    "MESSAGE": 304
                 },
                 {
-                    "count": 287,
-                    "date": "11-26-20"
+                    "DATE": "11-26-20",
+                    "MESSAGE": 287
                 },
                 {
-                    "count": 283,
-                    "date": "10-29-20"
+                    "DATE": "10-29-20",
+                    "MESSAGE": 283
                 },
                 {
-                    "count": 280,
-                    "date": "11-5-20"
+                    "DATE": "11-5-20",
+                    "MESSAGE": 280
                 },
                 {
-                    "count": 280,
-                    "date": "1-15-21"
+                    "DATE": "1-15-21",
+                    "MESSAGE": 280
                 },
                 {
-                    "count": 273,
-                    "date": "10-27-20"
+                    "DATE": "10-27-20",
+                    "MESSAGE": 273
                 },
                 {
-                    "count": 271,
-                    "date": "11-21-20"
+                    "DATE": "11-21-20",
+                    "MESSAGE": 271
                 },
                 {
-                    "count": 262,
-                    "date": "1-20-21"
+                    "DATE": "1-20-21",
+                    "MESSAGE": 262
                 },
                 {
-                    "count": 253,
-                    "date": "11-4-20"
+                    "DATE": "11-4-20",
+                    "MESSAGE": 253
                 },
                 {
-                    "count": 251,
-                    "date": "10-31-20"
+                    "DATE": "10-31-20",
+                    "MESSAGE": 251
                 },
                 {
-                    "count": 248,
-                    "date": "1-2-21"
+                    "DATE": "1-2-21",
+                    "MESSAGE": 248
                 },
                 {
-                    "count": 246,
-                    "date": "12-8-20"
+                    "DATE": "12-8-20",
+                    "MESSAGE": 246
                 },
                 {
-                    "count": 243,
-                    "date": "1-6-21"
+                    "DATE": "1-6-21",
+                    "MESSAGE": 243
                 },
                 {
-                    "count": 242,
-                    "date": "10-28-20"
+                    "DATE": "12-15-20",
+                    "MESSAGE": 242
                 },
                 {
-                    "count": 242,
-                    "date": "12-15-20"
+                    "DATE": "10-28-20",
+                    "MESSAGE": 242
                 },
                 {
-                    "count": 228,
-                    "date": "12-31-20"
+                    "DATE": "12-31-20",
+                    "MESSAGE": 228
                 },
                 {
-                    "count": 211,
-                    "date": "11-8-20"
+                    "DATE": "11-8-20",
+                    "MESSAGE": 211
                 },
                 {
-                    "count": 211,
-                    "date": "1-11-21"
+                    "DATE": "1-11-21",
+                    "MESSAGE": 211
                 },
                 {
-                    "count": 205,
-                    "date": "1-21-21"
+                    "DATE": "1-21-21",
+                    "MESSAGE": 205
                 },
                 {
-                    "count": 203,
-                    "date": "12-9-20"
+                    "DATE": "12-9-20",
+                    "MESSAGE": 203
                 },
                 {
-                    "count": 202,
-                    "date": "11-11-20"
+                    "DATE": "11-11-20",
+                    "MESSAGE": 202
                 },
                 {
-                    "count": 195,
-                    "date": "11-25-20"
+                    "DATE": "11-25-20",
+                    "MESSAGE": 195
                 },
                 {
-                    "count": 195,
-                    "date": "1-5-21"
+                    "DATE": "1-5-21",
+                    "MESSAGE": 195
                 },
                 {
-                    "count": 191,
-                    "date": "12-7-20"
+                    "DATE": "12-7-20",
+                    "MESSAGE": 191
                 },
                 {
-                    "count": 188,
-                    "date": "12-23-20"
+                    "DATE": "12-23-20",
+                    "MESSAGE": 188
                 },
                 {
-                    "count": 186,
-                    "date": "12-2-20"
+                    "DATE": "12-24-20",
+                    "MESSAGE": 186
                 },
                 {
-                    "count": 186,
-                    "date": "12-24-20"
+                    "DATE": "12-2-20",
+                    "MESSAGE": 186
                 },
                 {
-                    "count": 180,
-                    "date": "12-17-20"
+                    "DATE": "12-17-20",
+                    "MESSAGE": 180
                 },
                 {
-                    "count": 179,
-                    "date": "12-12-20"
+                    "DATE": "12-12-20",
+                    "MESSAGE": 179
                 },
                 {
-                    "count": 178,
-                    "date": "1-23-21"
+                    "DATE": "1-23-21",
+                    "MESSAGE": 178
                 },
                 {
-                    "count": 175,
-                    "date": "1-19-21"
+                    "DATE": "1-19-21",
+                    "MESSAGE": 175
                 },
                 {
-                    "count": 172,
-                    "date": "12-5-20"
+                    "DATE": "12-5-20",
+                    "MESSAGE": 172
                 },
                 {
-                    "count": 171,
-                    "date": "1-13-21"
+                    "DATE": "1-13-21",
+                    "MESSAGE": 171
                 },
                 {
-                    "count": 171,
-                    "date": "1-18-21"
+                    "DATE": "1-18-21",
+                    "MESSAGE": 171
                 },
                 {
-                    "count": 169,
-                    "date": "11-10-20"
+                    "DATE": "11-10-20",
+                    "MESSAGE": 169
                 },
                 {
-                    "count": 164,
-                    "date": "1-8-21"
+                    "DATE": "1-8-21",
+                    "MESSAGE": 164
                 },
                 {
-                    "count": 163,
-                    "date": "11-27-20"
+                    "DATE": "11-27-20",
+                    "MESSAGE": 163
                 },
                 {
-                    "count": 158,
-                    "date": "1-7-21"
+                    "DATE": "1-7-21",
+                    "MESSAGE": 158
                 },
                 {
-                    "count": 157,
-                    "date": "12-14-20"
+                    "DATE": "12-22-20",
+                    "MESSAGE": 157
                 },
                 {
-                    "count": 157,
-                    "date": "12-22-20"
+                    "DATE": "12-14-20",
+                    "MESSAGE": 157
                 },
                 {
-                    "count": 154,
-                    "date": "11-29-20"
+                    "DATE": "11-29-20",
+                    "MESSAGE": 154
                 },
                 {
-                    "count": 148,
-                    "date": "11-20-20"
+                    "DATE": "11-20-20",
+                    "MESSAGE": 148
                 },
                 {
-                    "count": 147,
-                    "date": "11-9-20"
+                    "DATE": "11-9-20",
+                    "MESSAGE": 147
                 },
                 {
-                    "count": 142,
-                    "date": "11-30-20"
+                    "DATE": "11-30-20",
+                    "MESSAGE": 142
                 },
                 {
-                    "count": 138,
-                    "date": "12-29-20"
+                    "DATE": "12-29-20",
+                    "MESSAGE": 138
                 },
                 {
-                    "count": 134,
-                    "date": "12-6-20"
+                    "DATE": "1-1-21",
+                    "MESSAGE": 134
                 },
                 {
-                    "count": 134,
-                    "date": "1-1-21"
+                    "DATE": "12-6-20",
+                    "MESSAGE": 134
                 },
                 {
-                    "count": 133,
-                    "date": "1-24-21"
+                    "DATE": "1-24-21",
+                    "MESSAGE": 133
                 },
                 {
-                    "count": 131,
-                    "date": "12-11-20"
+                    "DATE": "12-11-20",
+                    "MESSAGE": 131
                 },
                 {
-                    "count": 131,
-                    "date": "12-25-20"
+                    "DATE": "12-25-20",
+                    "MESSAGE": 131
                 },
                 {
-                    "count": 129,
-                    "date": "1-25-21"
+                    "DATE": "1-25-21",
+                    "MESSAGE": 129
                 },
                 {
-                    "count": 126,
-                    "date": "11-22-20"
+                    "DATE": "11-22-20",
+                    "MESSAGE": 126
                 },
                 {
-                    "count": 123,
-                    "date": "11-6-20"
+                    "DATE": "11-6-20",
+                    "MESSAGE": 123
                 },
                 {
-                    "count": 122,
-                    "date": "11-23-20"
+                    "DATE": "11-23-20",
+                    "MESSAGE": 122
                 },
                 {
-                    "count": 121,
-                    "date": "1-16-21"
+                    "DATE": "1-16-21",
+                    "MESSAGE": 121
                 },
                 {
-                    "count": 120,
-                    "date": "1-12-21"
+                    "DATE": "1-12-21",
+                    "MESSAGE": 120
                 },
                 {
-                    "count": 117,
-                    "date": "1-9-21"
+                    "DATE": "1-9-21",
+                    "MESSAGE": 117
                 },
                 {
-                    "count": 111,
-                    "date": "12-26-20"
+                    "DATE": "12-26-20",
+                    "MESSAGE": 111
                 },
                 {
-                    "count": 107,
-                    "date": "1-4-21"
+                    "DATE": "1-17-21",
+                    "MESSAGE": 107
                 },
                 {
-                    "count": 107,
-                    "date": "1-17-21"
+                    "DATE": "1-4-21",
+                    "MESSAGE": 107
                 },
                 {
-                    "count": 104,
-                    "date": "12-27-20"
+                    "DATE": "12-27-20",
+                    "MESSAGE": 104
                 },
                 {
-                    "count": 99,
-                    "date": "11-13-20"
+                    "DATE": "11-13-20",
+                    "MESSAGE": 99
                 },
                 {
-                    "count": 98,
-                    "date": "11-1-20"
+                    "DATE": "11-1-20",
+                    "MESSAGE": 98
                 },
                 {
-                    "count": 97,
-                    "date": "12-16-20"
+                    "DATE": "12-16-20",
+                    "MESSAGE": 97
                 },
                 {
-                    "count": 88,
-                    "date": "11-14-20"
+                    "DATE": "12-30-20",
+                    "MESSAGE": 88
                 },
                 {
-                    "count": 88,
-                    "date": "12-30-20"
+                    "DATE": "11-14-20",
+                    "MESSAGE": 88
                 },
                 {
-                    "count": 85,
-                    "date": "11-24-20"
+                    "DATE": "1-3-21",
+                    "MESSAGE": 85
                 },
                 {
-                    "count": 85,
-                    "date": "1-3-21"
+                    "DATE": "11-24-20",
+                    "MESSAGE": 85
                 },
                 {
-                    "count": 83,
-                    "date": "10-30-20"
+                    "DATE": "10-30-20",
+                    "MESSAGE": 83
                 },
                 {
-                    "count": 78,
-                    "date": "1-22-21"
+                    "DATE": "1-22-21",
+                    "MESSAGE": 78
                 },
                 {
-                    "count": 77,
-                    "date": "11-18-20"
+                    "DATE": "11-18-20",
+                    "MESSAGE": 77
                 },
                 {
-                    "count": 74,
-                    "date": "1-10-21"
+                    "DATE": "1-14-21",
+                    "MESSAGE": 74
                 },
                 {
-                    "count": 74,
-                    "date": "1-14-21"
+                    "DATE": "1-10-21",
+                    "MESSAGE": 74
                 },
                 {
-                    "count": 69,
-                    "date": "12-10-20"
+                    "DATE": "12-10-20",
+                    "MESSAGE": 69
                 },
                 {
-                    "count": 65,
-                    "date": "11-3-20"
+                    "DATE": "12-18-20",
+                    "MESSAGE": 65
                 },
                 {
-                    "count": 65,
-                    "date": "12-18-20"
+                    "DATE": "11-3-20",
+                    "MESSAGE": 65
                 },
                 {
-                    "count": 63,
-                    "date": "12-1-20"
+                    "DATE": "12-1-20",
+                    "MESSAGE": 63
                 },
                 {
-                    "count": 63,
-                    "date": "12-28-20"
+                    "DATE": "12-28-20",
+                    "MESSAGE": 63
                 },
                 {
-                    "count": 62,
-                    "date": "11-16-20"
+                    "DATE": "11-16-20",
+                    "MESSAGE": 62
                 },
                 {
-                    "count": 61,
-                    "date": "11-17-20"
+                    "DATE": "11-17-20",
+                    "MESSAGE": 61
                 },
                 {
-                    "count": 60,
-                    "date": "11-15-20"
+                    "DATE": "11-15-20",
+                    "MESSAGE": 60
                 },
                 {
-                    "count": 59,
-                    "date": "12-13-20"
+                    "DATE": "12-13-20",
+                    "MESSAGE": 59
                 },
                 {
-                    "count": 56,
-                    "date": "11-12-20"
+                    "DATE": "11-12-20",
+                    "MESSAGE": 56
                 },
                 {
-                    "count": 43,
-                    "date": "11-2-20"
+                    "DATE": "11-2-20",
+                    "MESSAGE": 43
                 }
             ],
             "Sumit Kolpekwar": [
                 {
-                    "count": 557,
-                    "date": "11-19-20"
+                    "DATE": "11-19-20",
+                    "MESSAGE": 557
                 },
                 {
-                    "count": 392,
-                    "date": "10-28-20"
+                    "DATE": "10-28-20",
+                    "MESSAGE": 392
                 },
                 {
-                    "count": 388,
-                    "date": "11-11-20"
+                    "DATE": "11-11-20",
+                    "MESSAGE": 388
                 },
                 {
-                    "count": 369,
-                    "date": "12-4-20"
+                    "DATE": "12-4-20",
+                    "MESSAGE": 369
                 },
                 {
-                    "count": 364,
-                    "date": "11-5-20"
+                    "DATE": "11-5-20",
+                    "MESSAGE": 364
                 },
                 {
-                    "count": 312,
-                    "date": "12-8-20"
+                    "DATE": "12-8-20",
+                    "MESSAGE": 312
                 },
                 {
-                    "count": 303,
-                    "date": "11-7-20"
+                    "DATE": "11-7-20",
+                    "MESSAGE": 303
                 },
                 {
-                    "count": 299,
-                    "date": "11-4-20"
+                    "DATE": "11-4-20",
+                    "MESSAGE": 299
                 },
                 {
-                    "count": 294,
-                    "date": "11-20-20"
+                    "DATE": "11-20-20",
+                    "MESSAGE": 294
                 },
                 {
-                    "count": 291,
-                    "date": "12-21-20"
+                    "DATE": "12-21-20",
+                    "MESSAGE": 291
                 },
                 {
-                    "count": 284,
-                    "date": "11-26-20"
+                    "DATE": "11-26-20",
+                    "MESSAGE": 284
                 },
                 {
-                    "count": 276,
-                    "date": "11-28-20"
+                    "DATE": "11-28-20",
+                    "MESSAGE": 276
                 },
                 {
-                    "count": 275,
-                    "date": "11-21-20"
+                    "DATE": "11-21-20",
+                    "MESSAGE": 275
                 },
                 {
-                    "count": 267,
-                    "date": "12-3-20"
+                    "DATE": "12-3-20",
+                    "MESSAGE": 267
                 },
                 {
-                    "count": 253,
-                    "date": "10-29-20"
+                    "DATE": "12-19-20",
+                    "MESSAGE": 253
                 },
                 {
-                    "count": 253,
-                    "date": "12-19-20"
+                    "DATE": "10-29-20",
+                    "MESSAGE": 253
                 },
                 {
-                    "count": 242,
-                    "date": "11-25-20"
+                    "DATE": "11-25-20",
+                    "MESSAGE": 242
                 },
                 {
-                    "count": 226,
-                    "date": "11-8-20"
+                    "DATE": "11-8-20",
+                    "MESSAGE": 226
                 },
                 {
-                    "count": 225,
-                    "date": "12-2-20"
+                    "DATE": "12-2-20",
+                    "MESSAGE": 225
                 },
                 {
-                    "count": 221,
-                    "date": "10-27-20"
+                    "DATE": "10-27-20",
+                    "MESSAGE": 221
                 },
                 {
-                    "count": 215,
-                    "date": "1-15-21"
+                    "DATE": "1-15-21",
+                    "MESSAGE": 215
                 },
                 {
-                    "count": 188,
-                    "date": "12-9-20"
+                    "DATE": "12-9-20",
+                    "MESSAGE": 188
                 },
                 {
-                    "count": 184,
-                    "date": "11-1-20"
+                    "DATE": "11-1-20",
+                    "MESSAGE": 184
                 },
                 {
-                    "count": 181,
-                    "date": "12-27-20"
+                    "DATE": "12-27-20",
+                    "MESSAGE": 181
                 },
                 {
-                    "count": 179,
-                    "date": "12-5-20"
+                    "DATE": "12-5-20",
+                    "MESSAGE": 179
                 },
                 {
-                    "count": 177,
-                    "date": "11-27-20"
+                    "DATE": "11-27-20",
+                    "MESSAGE": 177
                 },
                 {
-                    "count": 177,
-                    "date": "1-6-21"
+                    "DATE": "1-6-21",
+                    "MESSAGE": 177
                 },
                 {
-                    "count": 176,
-                    "date": "1-2-21"
+                    "DATE": "1-2-21",
+                    "MESSAGE": 176
                 },
                 {
-                    "count": 174,
-                    "date": "11-10-20"
+                    "DATE": "11-10-20",
+                    "MESSAGE": 174
                 },
                 {
-                    "count": 173,
-                    "date": "11-9-20"
+                    "DATE": "11-9-20",
+                    "MESSAGE": 173
                 },
                 {
-                    "count": 172,
-                    "date": "1-10-21"
+                    "DATE": "1-10-21",
+                    "MESSAGE": 172
                 },
                 {
-                    "count": 170,
-                    "date": "12-15-20"
+                    "DATE": "12-31-20",
+                    "MESSAGE": 170
                 },
                 {
-                    "count": 170,
-                    "date": "12-31-20"
+                    "DATE": "12-15-20",
+                    "MESSAGE": 170
                 },
                 {
-                    "count": 169,
-                    "date": "12-20-20"
+                    "DATE": "12-20-20",
+                    "MESSAGE": 169
                 },
                 {
-                    "count": 168,
-                    "date": "12-14-20"
+                    "DATE": "12-14-20",
+                    "MESSAGE": 168
                 },
                 {
-                    "count": 162,
-                    "date": "10-31-20"
+                    "DATE": "10-31-20",
+                    "MESSAGE": 162
                 },
                 {
-                    "count": 161,
-                    "date": "11-13-20"
+                    "DATE": "12-12-20",
+                    "MESSAGE": 161
                 },
                 {
-                    "count": 161,
-                    "date": "12-12-20"
+                    "DATE": "11-13-20",
+                    "MESSAGE": 161
                 },
                 {
-                    "count": 151,
-                    "date": "11-23-20"
+                    "DATE": "11-23-20",
+                    "MESSAGE": 151
                 },
                 {
-                    "count": 147,
-                    "date": "1-8-21"
+                    "DATE": "1-8-21",
+                    "MESSAGE": 147
                 },
                 {
-                    "count": 145,
-                    "date": "1-9-21"
+                    "DATE": "1-9-21",
+                    "MESSAGE": 145
                 },
                 {
-                    "count": 142,
-                    "date": "1-7-21"
+                    "DATE": "1-7-21",
+                    "MESSAGE": 142
                 },
                 {
-                    "count": 138,
-                    "date": "11-30-20"
+                    "DATE": "11-30-20",
+                    "MESSAGE": 138
                 },
                 {
-                    "count": 138,
-                    "date": "12-22-20"
+                    "DATE": "12-22-20",
+                    "MESSAGE": 138
                 },
                 {
-                    "count": 133,
-                    "date": "12-7-20"
+                    "DATE": "12-7-20",
+                    "MESSAGE": 133
                 },
                 {
-                    "count": 133,
-                    "date": "1-17-21"
+                    "DATE": "1-17-21",
+                    "MESSAGE": 133
                 },
                 {
-                    "count": 132,
-                    "date": "11-29-20"
+                    "DATE": "11-29-20",
+                    "MESSAGE": 132
                 },
                 {
-                    "count": 130,
-                    "date": "11-6-20"
+                    "DATE": "11-6-20",
+                    "MESSAGE": 130
                 },
                 {
-                    "count": 128,
-                    "date": "12-29-20"
+                    "DATE": "12-29-20",
+                    "MESSAGE": 128
                 },
                 {
-                    "count": 127,
-                    "date": "12-11-20"
+                    "DATE": "12-11-20",
+                    "MESSAGE": 127
                 },
                 {
-                    "count": 126,
-                    "date": "1-5-21"
+                    "DATE": "1-5-21",
+                    "MESSAGE": 126
                 },
                 {
-                    "count": 125,
-                    "date": "1-11-21"
+                    "DATE": "1-11-21",
+                    "MESSAGE": 125
                 },
                 {
-                    "count": 118,
-                    "date": "1-13-21"
+                    "DATE": "1-13-21",
+                    "MESSAGE": 118
                 },
                 {
-                    "count": 116,
-                    "date": "12-26-20"
+                    "DATE": "12-26-20",
+                    "MESSAGE": 116
                 },
                 {
-                    "count": 116,
-                    "date": "1-20-21"
+                    "DATE": "1-20-21",
+                    "MESSAGE": 116
                 },
                 {
-                    "count": 115,
-                    "date": "1-21-21"
+                    "DATE": "1-21-21",
+                    "MESSAGE": 115
                 },
                 {
-                    "count": 105,
-                    "date": "12-23-20"
+                    "DATE": "12-23-20",
+                    "MESSAGE": 105
                 },
                 {
-                    "count": 104,
-                    "date": "1-16-21"
+                    "DATE": "1-22-21",
+                    "MESSAGE": 104
                 },
                 {
-                    "count": 104,
-                    "date": "1-22-21"
+                    "DATE": "1-16-21",
+                    "MESSAGE": 104
                 },
                 {
-                    "count": 102,
-                    "date": "1-25-21"
+                    "DATE": "1-25-21",
+                    "MESSAGE": 102
                 },
                 {
-                    "count": 98,
-                    "date": "1-1-21"
+                    "DATE": "1-1-21",
+                    "MESSAGE": 98
                 },
                 {
-                    "count": 98,
-                    "date": "1-4-21"
+                    "DATE": "1-4-21",
+                    "MESSAGE": 98
                 },
                 {
-                    "count": 98,
-                    "date": "1-18-21"
+                    "DATE": "1-18-21",
+                    "MESSAGE": 98
                 },
                 {
-                    "count": 97,
-                    "date": "11-14-20"
+                    "DATE": "11-14-20",
+                    "MESSAGE": 97
                 },
                 {
-                    "count": 95,
-                    "date": "11-22-20"
+                    "DATE": "11-22-20",
+                    "MESSAGE": 95
                 },
                 {
-                    "count": 91,
-                    "date": "11-15-20"
+                    "DATE": "11-15-20",
+                    "MESSAGE": 91
                 },
                 {
-                    "count": 91,
-                    "date": "1-19-21"
+                    "DATE": "1-19-21",
+                    "MESSAGE": 91
                 },
                 {
-                    "count": 88,
-                    "date": "11-24-20"
+                    "DATE": "12-6-20",
+                    "MESSAGE": 88
                 },
                 {
-                    "count": 88,
-                    "date": "12-6-20"
+                    "DATE": "11-24-20",
+                    "MESSAGE": 88
                 },
                 {
-                    "count": 85,
-                    "date": "1-23-21"
+                    "DATE": "1-23-21",
+                    "MESSAGE": 85
                 },
                 {
-                    "count": 84,
-                    "date": "11-3-20"
+                    "DATE": "11-3-20",
+                    "MESSAGE": 84
                 },
                 {
-                    "count": 84,
-                    "date": "12-17-20"
+                    "DATE": "12-17-20",
+                    "MESSAGE": 84
                 },
                 {
-                    "count": 81,
-                    "date": "11-12-20"
+                    "DATE": "11-12-20",
+                    "MESSAGE": 81
                 },
                 {
-                    "count": 79,
-                    "date": "11-16-20"
+                    "DATE": "11-16-20",
+                    "MESSAGE": 79
                 },
                 {
-                    "count": 79,
-                    "date": "11-17-20"
+                    "DATE": "11-17-20",
+                    "MESSAGE": 79
                 },
                 {
-                    "count": 75,
-                    "date": "12-25-20"
+                    "DATE": "12-25-20",
+                    "MESSAGE": 75
                 },
                 {
-                    "count": 74,
-                    "date": "12-24-20"
+                    "DATE": "12-24-20",
+                    "MESSAGE": 74
                 },
                 {
-                    "count": 72,
-                    "date": "10-30-20"
+                    "DATE": "1-12-21",
+                    "MESSAGE": 72
                 },
                 {
-                    "count": 72,
-                    "date": "1-12-21"
+                    "DATE": "10-30-20",
+                    "MESSAGE": 72
                 },
                 {
-                    "count": 69,
-                    "date": "12-28-20"
+                    "DATE": "12-28-20",
+                    "MESSAGE": 69
                 },
                 {
-                    "count": 68,
-                    "date": "11-18-20"
+                    "DATE": "11-18-20",
+                    "MESSAGE": 68
                 },
                 {
-                    "count": 67,
-                    "date": "12-10-20"
+                    "DATE": "12-10-20",
+                    "MESSAGE": 67
                 },
                 {
-                    "count": 67,
-                    "date": "1-24-21"
+                    "DATE": "1-24-21",
+                    "MESSAGE": 67
                 },
                 {
-                    "count": 61,
-                    "date": "11-2-20"
+                    "DATE": "12-16-20",
+                    "MESSAGE": 61
                 },
                 {
-                    "count": 61,
-                    "date": "12-16-20"
+                    "DATE": "11-2-20",
+                    "MESSAGE": 61
                 },
                 {
-                    "count": 53,
-                    "date": "12-30-20"
+                    "DATE": "12-30-20",
+                    "MESSAGE": 53
                 },
                 {
-                    "count": 44,
-                    "date": "1-14-21"
+                    "DATE": "1-14-21",
+                    "MESSAGE": 44
                 },
                 {
-                    "count": 42,
-                    "date": "12-1-20"
+                    "DATE": "12-1-20",
+                    "MESSAGE": 42
                 },
                 {
-                    "count": 37,
-                    "date": "12-13-20"
+                    "DATE": "12-13-20",
+                    "MESSAGE": 37
                 },
                 {
-                    "count": 34,
-                    "date": "1-3-21"
+                    "DATE": "1-3-21",
+                    "MESSAGE": 34
                 },
                 {
-                    "count": 29,
-                    "date": "12-18-20"
+                    "DATE": "12-18-20",
+                    "MESSAGE": 29
                 }
             ],
             "Yash Dewangan": [
                 {
-                    "count": 497,
-                    "date": "11-19-20"
+                    "DATE": "11-19-20",
+                    "MESSAGE": 497
                 },
                 {
-                    "count": 272,
-                    "date": "12-4-20"
+                    "DATE": "12-4-20",
+                    "MESSAGE": 272
                 },
                 {
-                    "count": 254,
-                    "date": "11-11-20"
+                    "DATE": "11-11-20",
+                    "MESSAGE": 254
                 },
                 {
-                    "count": 229,
-                    "date": "10-28-20"
+                    "DATE": "10-28-20",
+                    "MESSAGE": 229
                 },
                 {
-                    "count": 209,
-                    "date": "10-29-20"
+                    "DATE": "10-29-20",
+                    "MESSAGE": 209
                 },
                 {
-                    "count": 200,
-                    "date": "11-8-20"
+                    "DATE": "11-8-20",
+                    "MESSAGE": 200
                 },
                 {
-                    "count": 197,
-                    "date": "12-8-20"
+                    "DATE": "12-8-20",
+                    "MESSAGE": 197
                 },
                 {
-                    "count": 196,
-                    "date": "12-3-20"
+                    "DATE": "12-20-20",
+                    "MESSAGE": 196
                 },
                 {
-                    "count": 196,
-                    "date": "12-20-20"
+                    "DATE": "12-3-20",
+                    "MESSAGE": 196
                 },
                 {
-                    "count": 195,
-                    "date": "1-20-21"
+                    "DATE": "1-20-21",
+                    "MESSAGE": 195
                 },
                 {
-                    "count": 185,
-                    "date": "11-21-20"
+                    "DATE": "11-21-20",
+                    "MESSAGE": 185
                 },
                 {
-                    "count": 184,
-                    "date": "11-1-20"
+                    "DATE": "11-1-20",
+                    "MESSAGE": 184
                 },
                 {
-                    "count": 167,
-                    "date": "12-19-20"
+                    "DATE": "12-19-20",
+                    "MESSAGE": 167
                 },
                 {
-                    "count": 166,
-                    "date": "12-23-20"
+                    "DATE": "12-23-20",
+                    "MESSAGE": 166
                 },
                 {
-                    "count": 165,
-                    "date": "11-26-20"
+                    "DATE": "11-26-20",
+                    "MESSAGE": 165
                 },
                 {
-                    "count": 164,
-                    "date": "10-27-20"
+                    "DATE": "10-27-20",
+                    "MESSAGE": 164
                 },
                 {
-                    "count": 158,
-                    "date": "11-5-20"
+                    "DATE": "11-5-20",
+                    "MESSAGE": 158
                 },
                 {
-                    "count": 155,
-                    "date": "12-15-20"
+                    "DATE": "12-15-20",
+                    "MESSAGE": 155
                 },
                 {
-                    "count": 153,
-                    "date": "11-20-20"
+                    "DATE": "11-20-20",
+                    "MESSAGE": 153
                 },
                 {
-                    "count": 151,
-                    "date": "11-7-20"
+                    "DATE": "11-7-20",
+                    "MESSAGE": 151
                 },
                 {
-                    "count": 146,
-                    "date": "12-5-20"
+                    "DATE": "12-5-20",
+                    "MESSAGE": 146
                 },
                 {
-                    "count": 142,
-                    "date": "1-24-21"
+                    "DATE": "1-24-21",
+                    "MESSAGE": 142
                 },
                 {
-                    "count": 141,
-                    "date": "11-29-20"
+                    "DATE": "11-29-20",
+                    "MESSAGE": 141
                 },
                 {
-                    "count": 140,
-                    "date": "1-2-21"
+                    "DATE": "1-2-21",
+                    "MESSAGE": 140
                 },
                 {
-                    "count": 135,
-                    "date": "11-13-20"
+                    "DATE": "11-13-20",
+                    "MESSAGE": 135
                 },
                 {
-                    "count": 132,
-                    "date": "1-23-21"
+                    "DATE": "1-23-21",
+                    "MESSAGE": 132
                 },
                 {
-                    "count": 130,
-                    "date": "10-31-20"
+                    "DATE": "10-31-20",
+                    "MESSAGE": 130
                 },
                 {
-                    "count": 130,
-                    "date": "1-6-21"
+                    "DATE": "1-11-21",
+                    "MESSAGE": 130
                 },
                 {
-                    "count": 130,
-                    "date": "1-11-21"
+                    "DATE": "1-6-21",
+                    "MESSAGE": 130
                 },
                 {
-                    "count": 129,
-                    "date": "12-2-20"
+                    "DATE": "12-2-20",
+                    "MESSAGE": 129
                 },
                 {
-                    "count": 124,
-                    "date": "12-14-20"
+                    "DATE": "12-14-20",
+                    "MESSAGE": 124
                 },
                 {
-                    "count": 123,
-                    "date": "1-15-21"
+                    "DATE": "1-15-21",
+                    "MESSAGE": 123
                 },
                 {
-                    "count": 121,
-                    "date": "11-6-20"
+                    "DATE": "11-6-20",
+                    "MESSAGE": 121
                 },
                 {
-                    "count": 119,
-                    "date": "12-7-20"
+                    "DATE": "12-7-20",
+                    "MESSAGE": 119
                 },
                 {
-                    "count": 115,
-                    "date": "11-25-20"
+                    "DATE": "11-25-20",
+                    "MESSAGE": 115
                 },
                 {
-                    "count": 114,
-                    "date": "12-27-20"
+                    "DATE": "12-27-20",
+                    "MESSAGE": 114
                 },
                 {
-                    "count": 112,
-                    "date": "12-12-20"
+                    "DATE": "12-12-20",
+                    "MESSAGE": 112
                 },
                 {
-                    "count": 112,
-                    "date": "12-24-20"
+                    "DATE": "12-24-20",
+                    "MESSAGE": 112
                 },
                 {
-                    "count": 111,
-                    "date": "12-17-20"
+                    "DATE": "12-17-20",
+                    "MESSAGE": 111
                 },
                 {
-                    "count": 108,
-                    "date": "11-10-20"
+                    "DATE": "11-28-20",
+                    "MESSAGE": 108
                 },
                 {
-                    "count": 108,
-                    "date": "11-28-20"
+                    "DATE": "1-10-21",
+                    "MESSAGE": 108
                 },
                 {
-                    "count": 108,
-                    "date": "1-10-21"
+                    "DATE": "11-10-20",
+                    "MESSAGE": 108
                 },
                 {
-                    "count": 107,
-                    "date": "11-17-20"
+                    "DATE": "11-17-20",
+                    "MESSAGE": 107
                 },
                 {
-                    "count": 107,
-                    "date": "1-5-21"
+                    "DATE": "1-5-21",
+                    "MESSAGE": 107
                 },
                 {
-                    "count": 105,
-                    "date": "1-13-21"
+                    "DATE": "1-13-21",
+                    "MESSAGE": 105
                 },
                 {
-                    "count": 102,
-                    "date": "12-26-20"
+                    "DATE": "12-26-20",
+                    "MESSAGE": 102
                 },
                 {
-                    "count": 101,
-                    "date": "12-21-20"
+                    "DATE": "12-21-20",
+                    "MESSAGE": 101
                 },
                 {
-                    "count": 99,
-                    "date": "1-7-21"
+                    "DATE": "1-7-21",
+                    "MESSAGE": 99
                 },
                 {
-                    "count": 96,
-                    "date": "1-1-21"
+                    "DATE": "1-1-21",
+                    "MESSAGE": 96
                 },
                 {
-                    "count": 95,
-                    "date": "11-12-20"
+                    "DATE": "11-12-20",
+                    "MESSAGE": 95
                 },
                 {
-                    "count": 94,
-                    "date": "11-23-20"
+                    "DATE": "1-19-21",
+                    "MESSAGE": 94
                 },
                 {
-                    "count": 94,
-                    "date": "11-27-20"
+                    "DATE": "1-22-21",
+                    "MESSAGE": 94
                 },
                 {
-                    "count": 94,
-                    "date": "1-19-21"
+                    "DATE": "11-23-20",
+                    "MESSAGE": 94
                 },
                 {
-                    "count": 94,
-                    "date": "1-22-21"
+                    "DATE": "11-27-20",
+                    "MESSAGE": 94
                 },
                 {
-                    "count": 93,
-                    "date": "11-15-20"
+                    "DATE": "11-15-20",
+                    "MESSAGE": 93
                 },
                 {
-                    "count": 91,
-                    "date": "11-4-20"
+                    "DATE": "12-28-20",
+                    "MESSAGE": 91
                 },
                 {
-                    "count": 91,
-                    "date": "12-28-20"
+                    "DATE": "11-4-20",
+                    "MESSAGE": 91
                 },
                 {
-                    "count": 89,
-                    "date": "1-8-21"
+                    "DATE": "1-8-21",
+                    "MESSAGE": 89
                 },
                 {
-                    "count": 89,
-                    "date": "1-12-21"
+                    "DATE": "1-12-21",
+                    "MESSAGE": 89
                 },
                 {
-                    "count": 86,
-                    "date": "1-16-21"
+                    "DATE": "1-16-21",
+                    "MESSAGE": 86
                 },
                 {
-                    "count": 81,
-                    "date": "12-6-20"
+                    "DATE": "12-6-20",
+                    "MESSAGE": 81
                 },
                 {
-                    "count": 81,
-                    "date": "1-18-21"
+                    "DATE": "1-18-21",
+                    "MESSAGE": 81
                 },
                 {
-                    "count": 80,
-                    "date": "12-9-20"
+                    "DATE": "12-9-20",
+                    "MESSAGE": 80
                 },
                 {
-                    "count": 78,
-                    "date": "10-30-20"
+                    "DATE": "10-30-20",
+                    "MESSAGE": 78
                 },
                 {
-                    "count": 77,
-                    "date": "11-24-20"
+                    "DATE": "11-24-20",
+                    "MESSAGE": 77
                 },
                 {
-                    "count": 77,
-                    "date": "12-11-20"
+                    "DATE": "1-3-21",
+                    "MESSAGE": 77
                 },
                 {
-                    "count": 77,
-                    "date": "1-3-21"
+                    "DATE": "12-11-20",
+                    "MESSAGE": 77
                 },
                 {
-                    "count": 76,
-                    "date": "12-31-20"
+                    "DATE": "12-31-20",
+                    "MESSAGE": 76
                 },
                 {
-                    "count": 75,
-                    "date": "1-9-21"
+                    "DATE": "1-9-21",
+                    "MESSAGE": 75
                 },
                 {
-                    "count": 74,
-                    "date": "11-14-20"
+                    "DATE": "11-14-20",
+                    "MESSAGE": 74
                 },
                 {
-                    "count": 70,
-                    "date": "1-21-21"
+                    "DATE": "1-21-21",
+                    "MESSAGE": 70
                 },
                 {
-                    "count": 69,
-                    "date": "1-25-21"
+                    "DATE": "1-25-21",
+                    "MESSAGE": 69
                 },
                 {
-                    "count": 68,
-                    "date": "11-9-20"
+                    "DATE": "11-9-20",
+                    "MESSAGE": 68
                 },
                 {
-                    "count": 63,
-                    "date": "1-17-21"
+                    "DATE": "1-17-21",
+                    "MESSAGE": 63
                 },
                 {
-                    "count": 58,
-                    "date": "12-25-20"
+                    "DATE": "12-25-20",
+                    "MESSAGE": 58
                 },
                 {
-                    "count": 55,
-                    "date": "11-30-20"
+                    "DATE": "11-30-20",
+                    "MESSAGE": 55
                 },
                 {
-                    "count": 53,
-                    "date": "11-16-20"
+                    "DATE": "11-16-20",
+                    "MESSAGE": 53
                 },
                 {
-                    "count": 53,
-                    "date": "12-1-20"
+                    "DATE": "12-1-20",
+                    "MESSAGE": 53
                 },
                 {
-                    "count": 51,
-                    "date": "12-29-20"
+                    "DATE": "12-29-20",
+                    "MESSAGE": 51
                 },
                 {
-                    "count": 51,
-                    "date": "1-4-21"
+                    "DATE": "1-4-21",
+                    "MESSAGE": 51
                 },
                 {
-                    "count": 49,
-                    "date": "12-16-20"
+                    "DATE": "12-16-20",
+                    "MESSAGE": 49
                 },
                 {
-                    "count": 48,
-                    "date": "12-18-20"
+                    "DATE": "12-18-20",
+                    "MESSAGE": 48
                 },
                 {
-                    "count": 44,
-                    "date": "11-22-20"
+                    "DATE": "11-22-20",
+                    "MESSAGE": 44
                 },
                 {
-                    "count": 40,
-                    "date": "12-22-20"
+                    "DATE": "12-22-20",
+                    "MESSAGE": 40
                 },
                 {
-                    "count": 38,
-                    "date": "12-30-20"
+                    "DATE": "12-30-20",
+                    "MESSAGE": 38
                 },
                 {
-                    "count": 34,
-                    "date": "11-2-20"
+                    "DATE": "11-2-20",
+                    "MESSAGE": 34
                 },
                 {
-                    "count": 34,
-                    "date": "11-3-20"
+                    "DATE": "11-3-20",
+                    "MESSAGE": 34
                 },
                 {
-                    "count": 33,
-                    "date": "11-18-20"
+                    "DATE": "11-18-20",
+                    "MESSAGE": 33
                 },
                 {
-                    "count": 24,
-                    "date": "12-13-20"
+                    "DATE": "12-13-20",
+                    "MESSAGE": 24
                 },
                 {
-                    "count": 19,
-                    "date": "1-14-21"
+                    "DATE": "1-14-21",
+                    "MESSAGE": 19
                 },
                 {
-                    "count": 1,
-                    "date": "12-10-20"
+                    "DATE": "12-10-20",
+                    "MESSAGE": 1
                 }
             ]
         },
         "summary": {
-            "total_days": 91,
-            "total_letters": 694432,
-            "total_message": 39946,
-            "total_words": 140587
+            "Msgs_exchanged": 39946,
+            "Total_no_days": 91,
+            "Total_no_words": 140587
         },
         "userspecific": {
             "Atharva Kulkarni": {
                 "Avg_msg_per_day": 169.02197802197801,
-                "Deleted_msgs": 152,
-                "Dt_max_convo": "12/4/20",
-                "Dt_min_convo": "11/2/20",
+                "Avg_words_per_msg": 3.1994018594369678,
+                "Dt_max_convo": "12-4-20",
+                "Dt_min_convo": "11-2-20",
                 "Dy_max_convo": "Thursday",
                 "Dy_min_convo": "Sunday",
                 "No_of_Days_had_Convo": 91,
-                "No_of_media": 4070,
-                "No_of_msgs": 39946,
-                "Text_per_hour": 58319.625,
-                "averageMessage": 169.02197802197801,
+                "No_of_emoji_used": 1927,
+                "No_of_media": 2163,
+                "No_of_msgs": 15381,
                 "no_of_link": 249,
-                "totalMessageExchanged": 15381,
-                "total_num_letter": 251121,
                 "total_num_words": 49210
             },
             "Sumit Kolpekwar": {
                 "Avg_msg_per_day": 156.96703296703296,
-                "Deleted_msgs": 152,
-                "Dt_max_convo": "11/19/20",
-                "Dt_min_convo": "12/18/20",
+                "Avg_words_per_msg": 3.313777653318398,
+                "Dt_max_convo": "11-19-20",
+                "Dt_min_convo": "12-18-20",
                 "Dy_max_convo": "Thursday",
                 "Dy_min_convo": "Sunday",
                 "No_of_Days_had_Convo": 91,
-                "No_of_media": 4070,
-                "No_of_msgs": 39946,
-                "Text_per_hour": 54160.166666666664,
-                "averageMessage": 156.96703296703296,
+                "No_of_emoji_used": 2234,
+                "No_of_media": 823,
+                "No_of_msgs": 14284,
                 "no_of_link": 206,
-                "totalMessageExchanged": 14284,
-                "total_num_letter": 217191,
                 "total_num_words": 47334
             },
             "Yash Dewangan": {
                 "Avg_msg_per_day": 112.97802197802197,
-                "Deleted_msgs": 152,
-                "Dt_max_convo": "11/19/20",
-                "Dt_min_convo": "12/10/20",
+                "Avg_words_per_msg": 4.283921797490517,
+                "Dt_max_convo": "11-19-20",
+                "Dt_min_convo": "12-10-20",
                 "Dy_max_convo": "Thursday",
                 "Dy_min_convo": "Monday",
                 "No_of_Days_had_Convo": 91,
-                "No_of_media": 4070,
-                "No_of_msgs": 39946,
-                "Text_per_hour": 38982.125,
-                "averageMessage": 112.97802197802197,
+                "No_of_emoji_used": 1034,
+                "No_of_media": 1084,
+                "No_of_msgs": 10281,
                 "no_of_link": 179,
-                "totalMessageExchanged": 10281,
-                "total_num_letter": 226120,
                 "total_num_words": 44043
             }
         },
         "wordcloud": {
             "All": {
-                "word_stat": {
-                    "Avg_word_per_text": 3.519426225404296,
-                    "Total_Words": 140587,
-                    "Total_letters": 694432,
-                    "Total_lettrs_per_word": 4.939517878608975,
-                    "Total_links": 634
+                "word stat": {
+                    "Least_used_word": "🥔",
+                    "Most_used_word": "h"
                 },
-                "word_usage": [
+                "word usage": [
                     {
-                        "text": "h",
-                        "value": 3697
+                        "FREQUENCY": 3697,
+                        "WORD": "h"
                     },
                     {
-                        "text": "hain",
-                        "value": 1417
+                        "FREQUENCY": 1417,
+                        "WORD": "hain"
                     },
                     {
-                        "text": "ka",
-                        "value": 1149
+                        "FREQUENCY": 1149,
+                        "WORD": "ka"
                     },
                     {
-                        "text": "{",
-                        "value": 1037
+                        "FREQUENCY": 1037,
+                        "WORD": "{"
                     },
                     {
-                        "text": "},",
-                        "value": 940
+                        "FREQUENCY": 940,
+                        "WORD": "},"
                     },
                     {
-                        "text": "kya",
-                        "value": 868
+                        "FREQUENCY": 868,
+                        "WORD": "kya"
                     },
                     {
-                        "text": "rha",
-                        "value": 812
+                        "FREQUENCY": 812,
+                        "WORD": "rha"
                     },
                     {
-                        "text": "to",
-                        "value": 796
+                        "FREQUENCY": 796,
+                        "WORD": "to"
                     },
                     {
-                        "text": "toh",
-                        "value": 747
+                        "FREQUENCY": 747,
+                        "WORD": "toh"
                     },
                     {
-                        "text": "bhi",
-                        "value": 739
+                        "FREQUENCY": 739,
+                        "WORD": "bhi"
                     },
                     {
-                        "text": "na",
-                        "value": 733
+                        "FREQUENCY": 733,
+                        "WORD": "na"
                     },
                     {
-                        "text": "tha",
-                        "value": 702
+                        "FREQUENCY": 702,
+                        "WORD": "tha"
                     },
                     {
-                        "text": "\"count\"",
-                        "value": 696
+                        "FREQUENCY": 696,
+                        "WORD": "\"count\""
                     },
                     {
-                        "text": "\"date\"",
-                        "value": 696
+                        "FREQUENCY": 696,
+                        "WORD": "\"date\""
                     },
                     {
-                        "text": "ko",
-                        "value": 664
+                        "FREQUENCY": 664,
+                        "WORD": "ko"
                     },
                     {
-                        "text": "and",
-                        "value": 645
+                        "FREQUENCY": 645,
+                        "WORD": "and"
                     },
                     {
-                        "text": "the",
-                        "value": 639
+                        "FREQUENCY": 639,
+                        "WORD": "the"
                     },
                     {
-                        "text": "nahi",
-                        "value": 633
+                        "FREQUENCY": 633,
+                        "WORD": "nahi"
                     },
                     {
-                        "text": "se",
-                        "value": 630
+                        "FREQUENCY": 630,
+                        "WORD": "se"
                     },
                     {
-                        "text": "Bc",
-                        "value": 614
+                        "FREQUENCY": 614,
+                        "WORD": "Bc"
                     },
                     {
-                        "text": "https",
-                        "value": 602
+                        "FREQUENCY": 602,
+                        "WORD": "https"
                     },
                     {
-                        "text": "kar",
-                        "value": 578
+                        "FREQUENCY": 578,
+                        "WORD": "kar"
                     },
                     {
-                        "text": "I",
-                        "value": 566
+                        "FREQUENCY": 566,
+                        "WORD": "I"
                     },
                     {
-                        "text": "is",
-                        "value": 562
+                        "FREQUENCY": 562,
+                        "WORD": "is"
                     },
                     {
-                        "text": "@917020037195",
-                        "value": 534
+                        "FREQUENCY": 534,
+                        "WORD": "@917020037195"
                     },
                     {
-                        "text": "you",
-                        "value": 494
+                        "FREQUENCY": 494,
+                        "WORD": "you"
                     },
                     {
-                        "text": "main",
-                        "value": 487
+                        "FREQUENCY": 487,
+                        "WORD": "main"
                     },
                     {
-                        "text": "Yes",
-                        "value": 478
+                        "FREQUENCY": 478,
+                        "WORD": "Yes"
                     },
                     {
-                        "text": "@918602842290",
-                        "value": 477
+                        "FREQUENCY": 477,
+                        "WORD": "@918602842290"
                     },
                     {
-                        "text": "ke",
-                        "value": 469
+                        "FREQUENCY": 469,
+                        "WORD": "ke"
                     },
                     {
-                        "text": "ho",
-                        "value": 462
+                        "FREQUENCY": 462,
+                        "WORD": "ho"
                     },
                     {
-                        "text": "hi",
-                        "value": 446
+                        "FREQUENCY": 446,
+                        "WORD": "hi"
                     },
                     {
-                        "text": "But",
-                        "value": 415
+                        "FREQUENCY": 415,
+                        "WORD": "But"
                     },
                     {
-                        "text": "nhhi",
-                        "value": 407
+                        "FREQUENCY": 407,
+                        "WORD": "nhhi"
                     },
                     {
-                        "text": "'NO_OF_Emoji'",
-                        "value": 393
+                        "FREQUENCY": 393,
+                        "WORD": "'NO_OF_Emoji'"
                     },
                     {
-                        "text": "{'Emoji'",
-                        "value": 392
+                        "FREQUENCY": 392,
+                        "WORD": "{'Emoji'"
                     },
                     {
-                        "text": "kia",
-                        "value": 390
+                        "FREQUENCY": 390,
+                        "WORD": "kia"
                     },
                     {
-                        "text": "a",
-                        "value": 388
+                        "FREQUENCY": 388,
+                        "WORD": "a"
                     },
                     {
-                        "text": "And",
-                        "value": 385
+                        "FREQUENCY": 385,
+                        "WORD": "And"
                     },
                     {
-                        "text": "me",
-                        "value": 383
+                        "FREQUENCY": 383,
+                        "WORD": "me"
                     },
                     {
-                        "text": "in",
-                        "value": 381
+                        "FREQUENCY": 381,
+                        "WORD": "in"
                     },
                     {
-                        "text": "Haa",
-                        "value": 372
+                        "FREQUENCY": 372,
+                        "WORD": "Haa"
                     },
                     {
-                        "text": "for",
-                        "value": 364
+                        "FREQUENCY": 364,
+                        "WORD": "for"
                     },
                     {
-                        "text": "Nice",
-                        "value": 364
+                        "FREQUENCY": 364,
+                        "WORD": "Nice"
                     },
                     {
-                        "text": "@918446224700",
-                        "value": 358
+                        "FREQUENCY": 358,
+                        "WORD": "@918446224700"
                     },
                     {
-                        "text": "like",
-                        "value": 356
+                        "FREQUENCY": 356,
+                        "WORD": "like"
                     },
                     {
-                        "text": "hu",
-                        "value": 351
+                        "FREQUENCY": 351,
+                        "WORD": "hu"
                     },
                     {
-                        "text": "of",
-                        "value": 345
+                        "FREQUENCY": 345,
+                        "WORD": "of"
                     },
                     {
-                        "text": "Kya",
-                        "value": 333
+                        "FREQUENCY": 333,
+                        "WORD": "Kya"
                     },
                     {
-                        "text": "mai",
-                        "value": 327
+                        "FREQUENCY": 327,
+                        "WORD": "mai"
                     }
                 ]
             },
             "Atharva Kulkarni": {
-                "word_stat": {
-                    "Avg_word_per_text": 1.2319130826615932,
-                    "Total_Words": 49210,
-                    "Total_letters": 251121,
-                    "Total_lettrs_per_word": 5.1030481609428975,
-                    "Total_links": 249
+                "word stat": {
+                    "Least_used_word": "🥔",
+                    "Most_used_word": "h"
                 },
-                "word_usage": [
+                "word usage": [
                     {
-                        "text": "h",
-                        "value": 2042
+                        "FREQUENCY": 2042,
+                        "WORD": "h"
                     },
                     {
-                        "text": "ka",
-                        "value": 384
+                        "FREQUENCY": 384,
+                        "WORD": "ka"
                     },
                     {
-                        "text": "kya",
-                        "value": 342
+                        "FREQUENCY": 342,
+                        "WORD": "kya"
                     },
                     {
-                        "text": "to",
-                        "value": 302
+                        "FREQUENCY": 302,
+                        "WORD": "to"
                     },
                     {
-                        "text": "na",
-                        "value": 300
+                        "FREQUENCY": 300,
+                        "WORD": "na"
                     },
                     {
-                        "text": "and",
-                        "value": 286
+                        "FREQUENCY": 286,
+                        "WORD": "and"
                     },
                     {
-                        "text": "toh",
-                        "value": 281
+                        "FREQUENCY": 281,
+                        "WORD": "toh"
                     },
                     {
-                        "text": "rha",
-                        "value": 278
+                        "FREQUENCY": 278,
+                        "WORD": "rha"
                     },
                     {
-                        "text": "ko",
-                        "value": 272
+                        "FREQUENCY": 272,
+                        "WORD": "ko"
                     },
                     {
-                        "text": "nahi",
-                        "value": 270
+                        "FREQUENCY": 270,
+                        "WORD": "nahi"
                     },
                     {
-                        "text": "bhi",
-                        "value": 269
+                        "FREQUENCY": 269,
+                        "WORD": "bhi"
                     },
                     {
-                        "text": "the",
-                        "value": 268
+                        "FREQUENCY": 268,
+                        "WORD": "the"
                     },
                     {
-                        "text": "me",
-                        "value": 252
+                        "FREQUENCY": 252,
+                        "WORD": "me"
                     },
                     {
-                        "text": "I",
-                        "value": 247
+                        "FREQUENCY": 247,
+                        "WORD": "I"
                     },
                     {
-                        "text": "https",
-                        "value": 241
+                        "FREQUENCY": 241,
+                        "WORD": "https"
                     },
                     {
-                        "text": "k",
-                        "value": 235
+                        "FREQUENCY": 235,
+                        "WORD": "k"
                     },
                     {
-                        "text": "Bc",
-                        "value": 231
+                        "FREQUENCY": 231,
+                        "WORD": "Bc"
                     },
                     {
-                        "text": "tha",
-                        "value": 228
+                        "FREQUENCY": 228,
+                        "WORD": "tha"
                     },
                     {
-                        "text": "se",
-                        "value": 217
+                        "FREQUENCY": 217,
+                        "WORD": "se"
                     },
                     {
-                        "text": "was",
-                        "value": 208
+                        "FREQUENCY": 208,
+                        "WORD": "was"
                     },
                     {
-                        "text": "m",
-                        "value": 197
+                        "FREQUENCY": 197,
+                        "WORD": "m"
                     },
                     {
-                        "text": "is",
-                        "value": 196
+                        "FREQUENCY": 196,
+                        "WORD": "is"
                     },
                     {
-                        "text": "kr",
-                        "value": 182
+                        "FREQUENCY": 182,
+                        "WORD": "kr"
                     },
                     {
-                        "text": "@918446224700",
-                        "value": 180
+                        "FREQUENCY": 180,
+                        "WORD": "@918446224700"
                     },
                     {
-                        "text": "Yes",
-                        "value": 176
+                        "FREQUENCY": 176,
+                        "WORD": "Yes"
                     },
                     {
-                        "text": "hi",
-                        "value": 171
+                        "FREQUENCY": 171,
+                        "WORD": "hi"
                     },
                     {
-                        "text": "ho",
-                        "value": 171
+                        "FREQUENCY": 171,
+                        "WORD": "ho"
                     },
                     {
-                        "text": "kia",
-                        "value": 169
+                        "FREQUENCY": 169,
+                        "WORD": "kia"
                     },
                     {
-                        "text": "And",
-                        "value": 167
+                        "FREQUENCY": 167,
+                        "WORD": "And"
                     },
                     {
-                        "text": "ki",
-                        "value": 164
+                        "FREQUENCY": 164,
+                        "WORD": "ki"
                     },
                     {
-                        "text": "in",
-                        "value": 163
+                        "FREQUENCY": 163,
+                        "WORD": "in"
                     },
                     {
-                        "text": "@918602842290",
-                        "value": 153
+                        "FREQUENCY": 153,
+                        "WORD": "@918602842290"
                     },
                     {
-                        "text": "This",
-                        "value": 152
+                        "FREQUENCY": 152,
+                        "WORD": "This"
                     },
                     {
-                        "text": "But",
-                        "value": 142
+                        "FREQUENCY": 142,
+                        "WORD": "But"
                     },
                     {
-                        "text": "a",
-                        "value": 139
+                        "FREQUENCY": 139,
+                        "WORD": "a"
                     },
                     {
-                        "text": "you",
-                        "value": 136
+                        "FREQUENCY": 136,
+                        "WORD": "you"
                     },
                     {
-                        "text": "of",
-                        "value": 133
+                        "FREQUENCY": 133,
+                        "WORD": "of"
                     },
                     {
-                        "text": "nhi",
-                        "value": 130
+                        "FREQUENCY": 130,
+                        "WORD": "nhi"
                     },
                     {
-                        "text": "like",
-                        "value": 128
+                        "FREQUENCY": 128,
+                        "WORD": "like"
                     },
                     {
-                        "text": "message",
-                        "value": 126
+                        "FREQUENCY": 126,
+                        "WORD": "message"
                     },
                     {
-                        "text": "vo",
-                        "value": 125
+                        "FREQUENCY": 125,
+                        "WORD": "vo"
                     },
                     {
-                        "text": "?",
-                        "value": 124
+                        "FREQUENCY": 124,
+                        "WORD": "?"
                     },
                     {
-                        "text": "deleted",
-                        "value": 124
+                        "FREQUENCY": 124,
+                        "WORD": "deleted"
                     },
                     {
-                        "text": "Kya",
-                        "value": 123
+                        "FREQUENCY": 123,
+                        "WORD": "Kya"
                     },
                     {
-                        "text": "ye",
-                        "value": 121
+                        "FREQUENCY": 121,
+                        "WORD": "ye"
                     },
                     {
-                        "text": "hua",
-                        "value": 119
+                        "FREQUENCY": 119,
+                        "WORD": "hua"
                     },
                     {
-                        "text": "for",
-                        "value": 119
+                        "FREQUENCY": 119,
+                        "WORD": "for"
                     },
                     {
-                        "text": "pe",
-                        "value": 118
+                        "FREQUENCY": 118,
+                        "WORD": "pe"
                     },
                     {
-                        "text": "hu",
-                        "value": 116
+                        "FREQUENCY": 116,
+                        "WORD": "hu"
                     },
                     {
-                        "text": "bc",
-                        "value": 112
+                        "FREQUENCY": 112,
+                        "WORD": "bc"
                     }
                 ]
             },
             "Sumit Kolpekwar": {
-                "word_stat": {
-                    "Avg_word_per_text": 1.1849496820707957,
-                    "Total_Words": 47334,
-                    "Total_letters": 217191,
-                    "Total_lettrs_per_word": 4.588477627075675,
-                    "Total_links": 206
+                "word stat": {
+                    "Least_used_word": "//hackclub.zoom.us/j/93244605379?pwd=RjJMcDZSd2w1cmczZmVnbmNkOHFlUT09",
+                    "Most_used_word": "h"
                 },
-                "word_usage": [
+                "word usage": [
                     {
-                        "text": "h",
-                        "value": 1649
+                        "FREQUENCY": 1649,
+                        "WORD": "h"
                     },
                     {
-                        "text": "nahi",
-                        "value": 363
+                        "FREQUENCY": 363,
+                        "WORD": "nahi"
                     },
                     {
-                        "text": "ka",
-                        "value": 362
+                        "FREQUENCY": 362,
+                        "WORD": "ka"
                     },
                     {
-                        "text": "kya",
-                        "value": 340
+                        "FREQUENCY": 340,
+                        "WORD": "kya"
                     },
                     {
-                        "text": "to",
-                        "value": 335
+                        "FREQUENCY": 335,
+                        "WORD": "to"
                     },
                     {
-                        "text": "@917020037195",
-                        "value": 332
+                        "FREQUENCY": 332,
+                        "WORD": "@917020037195"
                     },
                     {
-                        "text": "mai",
-                        "value": 325
+                        "FREQUENCY": 325,
+                        "WORD": "mai"
                     },
                     {
-                        "text": "@918602842290",
-                        "value": 324
+                        "FREQUENCY": 324,
+                        "WORD": "@918602842290"
                     },
                     {
-                        "text": "you",
-                        "value": 320
+                        "FREQUENCY": 320,
+                        "WORD": "you"
                     },
                     {
-                        "text": "na",
-                        "value": 307
+                        "FREQUENCY": 307,
+                        "WORD": "na"
                     },
                     {
-                        "text": "Yes",
-                        "value": 297
+                        "FREQUENCY": 297,
+                        "WORD": "Yes"
                     },
                     {
-                        "text": "and",
-                        "value": 295
+                        "FREQUENCY": 295,
+                        "WORD": "and"
                     },
                     {
-                        "text": "Bc",
-                        "value": 262
+                        "FREQUENCY": 262,
+                        "WORD": "Bc"
                     },
                     {
-                        "text": "is",
-                        "value": 262
+                        "FREQUENCY": 262,
+                        "WORD": "is"
                     },
                     {
-                        "text": "tha",
-                        "value": 260
+                        "FREQUENCY": 260,
+                        "WORD": "tha"
                     },
                     {
-                        "text": "rha",
-                        "value": 240
+                        "FREQUENCY": 240,
+                        "WORD": "rha"
                     },
                     {
-                        "text": "I",
-                        "value": 238
+                        "FREQUENCY": 238,
+                        "WORD": "I"
                     },
                     {
-                        "text": "kia",
-                        "value": 221
+                        "FREQUENCY": 221,
+                        "WORD": "kia"
                     },
                     {
-                        "text": "Nice",
-                        "value": 221
+                        "FREQUENCY": 221,
+                        "WORD": "Nice"
                     },
                     {
-                        "text": "And",
-                        "value": 215
+                        "FREQUENCY": 215,
+                        "WORD": "And"
                     },
                     {
-                        "text": "XD",
-                        "value": 215
+                        "FREQUENCY": 215,
+                        "WORD": "XD"
                     },
                     {
-                        "text": "toh",
-                        "value": 211
+                        "FREQUENCY": 211,
+                        "WORD": "toh"
                     },
                     {
-                        "text": "the",
-                        "value": 208
+                        "FREQUENCY": 208,
+                        "WORD": "the"
                     },
                     {
-                        "text": "bhi",
-                        "value": 200
+                        "FREQUENCY": 200,
+                        "WORD": "bhi"
                     },
                     {
-                        "text": "https",
-                        "value": 196
+                        "FREQUENCY": 196,
+                        "WORD": "https"
                     },
                     {
-                        "text": "a",
-                        "value": 186
+                        "FREQUENCY": 186,
+                        "WORD": "a"
                     },
                     {
-                        "text": "Haa",
-                        "value": 182
+                        "FREQUENCY": 182,
+                        "WORD": "Haa"
                     },
                     {
-                        "text": "in",
-                        "value": 173
+                        "FREQUENCY": 173,
+                        "WORD": "in"
                     },
                     {
-                        "text": "But",
-                        "value": 171
+                        "FREQUENCY": 171,
+                        "WORD": "But"
                     },
                     {
-                        "text": "se",
-                        "value": 171
+                        "FREQUENCY": 171,
+                        "WORD": "se"
                     },
                     {
-                        "text": "like",
-                        "value": 165
+                        "FREQUENCY": 165,
+                        "WORD": "like"
                     },
                     {
-                        "text": "for",
-                        "value": 161
+                        "FREQUENCY": 161,
+                        "WORD": "for"
                     },
                     {
-                        "text": "ke",
-                        "value": 161
+                        "FREQUENCY": 161,
+                        "WORD": "ke"
                     },
                     {
-                        "text": "What",
-                        "value": 157
+                        "FREQUENCY": 157,
+                        "WORD": "What"
                     },
                     {
-                        "text": "Kya",
-                        "value": 156
+                        "FREQUENCY": 156,
+                        "WORD": "Kya"
                     },
                     {
-                        "text": "ko",
-                        "value": 148
+                        "FREQUENCY": 148,
+                        "WORD": "ko"
                     },
                     {
-                        "text": "be",
-                        "value": 147
+                        "FREQUENCY": 147,
+                        "WORD": "be"
                     },
                     {
-                        "text": "i",
-                        "value": 146
+                        "FREQUENCY": 146,
+                        "WORD": "i"
                     },
                     {
-                        "text": "can",
-                        "value": 142
+                        "FREQUENCY": 142,
+                        "WORD": "can"
                     },
                     {
-                        "text": "this",
-                        "value": 140
+                        "FREQUENCY": 140,
+                        "WORD": "this"
                     },
                     {
-                        "text": "+1",
-                        "value": 139
+                        "FREQUENCY": 139,
+                        "WORD": "+1"
                     },
                     {
-                        "text": "kar",
-                        "value": 139
+                        "FREQUENCY": 139,
+                        "WORD": "kar"
                     },
                     {
-                        "text": "Yeh",
-                        "value": 134
+                        "FREQUENCY": 134,
+                        "WORD": "Yeh"
                     },
                     {
-                        "text": "it",
-                        "value": 127
+                        "FREQUENCY": 127,
+                        "WORD": "it"
                     },
                     {
-                        "text": "I'm",
-                        "value": 126
+                        "FREQUENCY": 126,
+                        "WORD": "I'm"
                     },
                     {
-                        "text": "that",
-                        "value": 125
+                        "FREQUENCY": 125,
+                        "WORD": "that"
                     },
                     {
-                        "text": "of",
-                        "value": 125
+                        "FREQUENCY": 125,
+                        "WORD": "of"
                     },
                     {
-                        "text": "Nahi",
-                        "value": 123
+                        "FREQUENCY": 123,
+                        "WORD": "Nahi"
                     },
                     {
-                        "text": "pe",
-                        "value": 120
+                        "FREQUENCY": 120,
+                        "WORD": "pe"
                     },
                     {
-                        "text": "we",
-                        "value": 120
+                        "FREQUENCY": 120,
+                        "WORD": "we"
                     }
                 ]
             },
             "Yash Dewangan": {
-                "word_stat": {
-                    "Avg_word_per_text": 1.102563460671907,
-                    "Total_Words": 44043,
-                    "Total_letters": 226120,
-                    "Total_lettrs_per_word": 5.134073519060918,
-                    "Total_links": 179
+                "word stat": {
+                    "Least_used_word": "IP",
+                    "Most_used_word": "hain"
                 },
-                "word_usage": [
+                "word usage": [
                     {
-                        "text": "hain",
-                        "value": 1406
+                        "FREQUENCY": 1406,
+                        "WORD": "hain"
                     },
                     {
-                        "text": "{",
-                        "value": 994
+                        "FREQUENCY": 994,
+                        "WORD": "{"
                     },
                     {
-                        "text": "},",
-                        "value": 933
+                        "FREQUENCY": 933,
+                        "WORD": "},"
                     },
                     {
-                        "text": "\"count\"",
-                        "value": 696
+                        "FREQUENCY": 696,
+                        "WORD": "\"count\""
                     },
                     {
-                        "text": "\"date\"",
-                        "value": 696
+                        "FREQUENCY": 696,
+                        "WORD": "\"date\""
                     },
                     {
-                        "text": "main",
-                        "value": 469
+                        "FREQUENCY": 469,
+                        "WORD": "main"
                     },
                     {
-                        "text": "nhhi",
-                        "value": 406
+                        "FREQUENCY": 406,
+                        "WORD": "nhhi"
                     },
                     {
-                        "text": "ka",
-                        "value": 403
+                        "FREQUENCY": 403,
+                        "WORD": "ka"
                     },
                     {
-                        "text": "kar",
-                        "value": 400
+                        "FREQUENCY": 400,
+                        "WORD": "kar"
                     },
                     {
-                        "text": "'NO_OF_Emoji'",
-                        "value": 393
+                        "FREQUENCY": 393,
+                        "WORD": "'NO_OF_Emoji'"
                     },
                     {
-                        "text": "{'Emoji'",
-                        "value": 392
+                        "FREQUENCY": 392,
+                        "WORD": "{'Emoji'"
                     },
                     {
-                        "text": "'FREQUENCY'",
-                        "value": 297
+                        "FREQUENCY": 297,
+                        "WORD": "'FREQUENCY'"
                     },
                     {
-                        "text": "rha",
-                        "value": 294
+                        "FREQUENCY": 294,
+                        "WORD": "rha"
                     },
                     {
-                        "text": "bhi",
-                        "value": 270
+                        "FREQUENCY": 270,
+                        "WORD": "bhi"
                     },
                     {
-                        "text": "{'DATE'",
-                        "value": 260
+                        "FREQUENCY": 260,
+                        "WORD": "{'DATE'"
                     },
                     {
-                        "text": "toh",
-                        "value": 255
+                        "FREQUENCY": 255,
+                        "WORD": "toh"
                     },
                     {
-                        "text": "ko",
-                        "value": 244
+                        "FREQUENCY": 244,
+                        "WORD": "ko"
                     },
                     {
-                        "text": "se",
-                        "value": 242
+                        "FREQUENCY": 242,
+                        "WORD": "se"
                     },
                     {
-                        "text": "ho",
-                        "value": 220
+                        "FREQUENCY": 220,
+                        "WORD": "ho"
                     },
                     {
-                        "text": "ke",
-                        "value": 218
+                        "FREQUENCY": 218,
+                        "WORD": "ke"
                     },
                     {
-                        "text": "tha",
-                        "value": 214
+                        "FREQUENCY": 214,
+                        "WORD": "tha"
                     },
                     {
-                        "text": "@917020037195",
-                        "value": 202
+                        "FREQUENCY": 202,
+                        "WORD": "@917020037195"
                     },
                     {
-                        "text": "kya",
-                        "value": 186
+                        "FREQUENCY": 186,
+                        "WORD": "kya"
                     },
                     {
-                        "text": "00",
-                        "value": 179
+                        "FREQUENCY": 179,
+                        "WORD": "00"
                     },
                     {
-                        "text": "@918446224700",
-                        "value": 178
+                        "FREQUENCY": 178,
+                        "WORD": "@918446224700"
                     },
                     {
-                        "text": "Haa",
-                        "value": 176
+                        "FREQUENCY": 176,
+                        "WORD": "Haa"
                     },
                     {
-                        "text": "hu",
-                        "value": 166
+                        "FREQUENCY": 166,
+                        "WORD": "hu"
                     },
                     {
-                        "text": "https",
-                        "value": 165
+                        "FREQUENCY": 165,
+                        "WORD": "https"
                     },
                     {
-                        "text": "the",
-                        "value": 163
+                        "FREQUENCY": 163,
+                        "WORD": "the"
                     },
                     {
-                        "text": "hi",
-                        "value": 160
+                        "FREQUENCY": 160,
+                        "WORD": "hi"
                     },
                     {
-                        "text": "to",
-                        "value": 159
+                        "FREQUENCY": 159,
+                        "WORD": "to"
                     },
                     {
-                        "text": "bhai",
-                        "value": 154
+                        "FREQUENCY": 154,
+                        "WORD": "bhai"
                     },
                     {
-                        "text": "n",
-                        "value": 149
+                        "FREQUENCY": 149,
+                        "WORD": "n"
                     },
                     {
-                        "text": "2},",
-                        "value": 148
+                        "FREQUENCY": 148,
+                        "WORD": "2},"
                     },
                     {
-                        "text": "ye",
-                        "value": 133
+                        "FREQUENCY": 133,
+                        "WORD": "ye"
                     },
                     {
-                        "text": "na",
-                        "value": 126
+                        "FREQUENCY": 126,
+                        "WORD": "na"
                     },
                     {
-                        "text": "Bc",
-                        "value": 121
+                        "FREQUENCY": 121,
+                        "WORD": "Bc"
                     },
                     {
-                        "text": "abhi",
-                        "value": 117
+                        "FREQUENCY": 117,
+                        "WORD": "abhi"
                     },
                     {
-                        "text": "hogga",
-                        "value": 112
+                        "FREQUENCY": 112,
+                        "WORD": "hogga"
                     },
                     {
-                        "text": "Xd",
-                        "value": 109
+                        "FREQUENCY": 109,
+                        "WORD": "Xd"
                     },
                     {
-                        "text": "gaya",
-                        "value": 108
+                        "FREQUENCY": 108,
+                        "WORD": "gaya"
                     },
                     {
-                        "text": "karna",
-                        "value": 108
+                        "FREQUENCY": 108,
+                        "WORD": "karna"
                     },
                     {
-                        "text": "is",
-                        "value": 104
+                        "FREQUENCY": 104,
+                        "WORD": "is"
                     },
                     {
-                        "text": "But",
-                        "value": 102
+                        "FREQUENCY": 102,
+                        "WORD": "But"
                     },
                     {
-                        "text": "\"FREQUENCY\"",
-                        "value": 100
+                        "FREQUENCY": 100,
+                        "WORD": "\"FREQUENCY\""
                     },
                     {
-                        "text": "\"WORD\"",
-                        "value": 100
+                        "FREQUENCY": 100,
+                        "WORD": "\"WORD\""
                     },
                     {
-                        "text": "karta",
-                        "value": 95
+                        "FREQUENCY": 95,
+                        "WORD": "karta"
                     },
                     {
-                        "text": "N",
-                        "value": 95
+                        "FREQUENCY": 95,
+                        "WORD": "N"
                     },
                     {
-                        "text": "Bhai",
-                        "value": 92
+                        "FREQUENCY": 92,
+                        "WORD": "Bhai"
                     },
                     {
-                        "text": "de",
-                        "value": 91
+                        "FREQUENCY": 91,
+                        "WORD": "de"
                     }
                 ]
             }
