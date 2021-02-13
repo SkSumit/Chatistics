@@ -11,9 +11,6 @@ config = {
     "storageBucket": os.environ.get("FIREBASE_STORAGE_BUCKET")
 }
 
-def firebase():
-    firebase = pyrebase.initialize_app(config)
-    db = firebase.database()
-    return db
 
-db = firebase()
+firebase = pyrebase.initialize_app(config)
+db = firebase.database()
