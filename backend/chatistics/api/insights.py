@@ -68,6 +68,11 @@ class getData:
         user_numid = data[data['MESSAGE'] != '']['USERNAME'].unique()
         return user_numid
 
+    def usernameonlydict(data):
+        user_numid = data[data['MESSAGE'] != '']['USERNAME'].unique()
+        useranme_df=pd.DataFrame(user_numid,columns=['username'])
+        return useranme_df.to_dict(orient='records') 
+
     def wordcloudall(data):
         wordcloud = dict.my_dictionary()
         word = []
@@ -135,8 +140,8 @@ class getData:
         for i in heatmapuser['USERNAME'].unique():
             heatmap.add(i,heatmapuser[heatmapuser['USERNAME'] == i][['DATE','MESSAGE']].to_dict(orient='records'))
         heatmap.add("All",heatmapall.to_dict(orient='records'))
-        return heatmap
-        
+        return heatmap 
+   
     def analysis(self,data):
         configvars.totalwords = 0
         configvars.no_of_days = 0
@@ -148,11 +153,16 @@ class getData:
         getData.emojidata(data)
         configvars.userdata.update(getData.userspecific(data))
         analysis = {
-                        "userspecific" : configvars.userdata,
-                        "basedOnDays" : getData.basedonday(data),
-                        "wordcloud" : configvars.worddata,
-                        "heatmap" : getData.heatmap(data),
-                        "summary" : getData.summary(data),
-                        "emoji" : configvars.emojidata
+                        "stats": {
+                                    "analysis" :{
+                                                    "basedOnDays" : getData.basedonday(data)
+                                    },
+                                    "emoji" : configvars.emojidata,
+                                    "wordcloud" : configvars.worddata,
+                                    "heatmap" : getData.heatmap(data),
+                                    "summary" : getData.summary(data),
+                                    "userspecific" : configvars.userdata
+                        },
+                        "usernames": getData.usernameonlydict(data)
         } 
         return analysis
