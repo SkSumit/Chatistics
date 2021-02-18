@@ -37,7 +37,7 @@ export default function DaySection() {
             title={"Average Texts Per Day"}
             stats={
               context.file.stats.basedOnDays[selectedOption.username][1]
-                .averageTexts
+                .averageTexts.toFixed(0)
             }
             icon={faCommentDots}
           />
