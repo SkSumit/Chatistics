@@ -2,9 +2,9 @@ def dummyapi():
 
     api ={
     "stats": {
-        "analysis": {
-            "basedOnDays": {
-                "All": [
+        "basedOnDays": {
+            "All": [
+                [
                     {
                         "DAY": "Wednesday",
                         "MESSAGE": 6453
@@ -34,115 +34,119 @@ def dummyapi():
                         "MESSAGE": 5474
                     }
                 ],
-                "Atharva Kulkarni": [
-                    [
-                        {
-                            "DAY": "Thursday",
-                            "MESSAGE": 2762
-                        },
-                        {
-                            "DAY": "Saturday",
-                            "MESSAGE": 2686
-                        },
-                        {
-                            "DAY": "Wednesday",
-                            "MESSAGE": 2407
-                        },
-                        {
-                            "DAY": "Friday",
-                            "MESSAGE": 2038
-                        },
-                        {
-                            "DAY": "Tuesday",
-                            "MESSAGE": 1989
-                        },
-                        {
-                            "DAY": "Monday",
-                            "MESSAGE": 1850
-                        },
-                        {
-                            "DAY": "Sunday",
-                            "MESSAGE": 1649
-                        }
-                    ],
+                {
+                    "averageTexts": 169.02197802197801,
+                    "mostActiveDay": "Thursday"
+                }
+            ],
+            "Atharva Kulkarni": [
+                [
                     {
-                        "Avg_msg_per_day": 169.02197802197801,
-                        "Dy_max_convo": "Thursday"
+                        "DAY": "Thursday",
+                        "MESSAGE": 2762
+                    },
+                    {
+                        "DAY": "Saturday",
+                        "MESSAGE": 2686
+                    },
+                    {
+                        "DAY": "Wednesday",
+                        "MESSAGE": 2407
+                    },
+                    {
+                        "DAY": "Friday",
+                        "MESSAGE": 2038
+                    },
+                    {
+                        "DAY": "Tuesday",
+                        "MESSAGE": 1989
+                    },
+                    {
+                        "DAY": "Monday",
+                        "MESSAGE": 1850
+                    },
+                    {
+                        "DAY": "Sunday",
+                        "MESSAGE": 1649
                     }
                 ],
-                "Sumit Kolpekwar": [
-                    [
-                        {
-                            "DAY": "Thursday",
-                            "MESSAGE": 2502
-                        },
-                        {
-                            "DAY": "Wednesday",
-                            "MESSAGE": 2432
-                        },
-                        {
-                            "DAY": "Saturday",
-                            "MESSAGE": 2332
-                        },
-                        {
-                            "DAY": "Friday",
-                            "MESSAGE": 1998
-                        },
-                        {
-                            "DAY": "Tuesday",
-                            "MESSAGE": 1725
-                        },
-                        {
-                            "DAY": "Monday",
-                            "MESSAGE": 1686
-                        },
-                        {
-                            "DAY": "Sunday",
-                            "MESSAGE": 1609
-                        }
-                    ],
+                {
+                    "averageTexts": 169.02197802197801,
+                    "mostActiveDay": "Thursday"
+                }
+            ],
+            "Sumit Kolpekwar": [
+                [
                     {
-                        "Avg_msg_per_day": 156.96703296703296,
-                        "Dy_max_convo": "Thursday"
+                        "DAY": "Thursday",
+                        "MESSAGE": 2502
+                    },
+                    {
+                        "DAY": "Wednesday",
+                        "MESSAGE": 2432
+                    },
+                    {
+                        "DAY": "Saturday",
+                        "MESSAGE": 2332
+                    },
+                    {
+                        "DAY": "Friday",
+                        "MESSAGE": 1998
+                    },
+                    {
+                        "DAY": "Tuesday",
+                        "MESSAGE": 1725
+                    },
+                    {
+                        "DAY": "Monday",
+                        "MESSAGE": 1686
+                    },
+                    {
+                        "DAY": "Sunday",
+                        "MESSAGE": 1609
                     }
                 ],
-                "Yash Dewangan": [
-                    [
-                        {
-                            "DAY": "Thursday",
-                            "MESSAGE": 1808
-                        },
-                        {
-                            "DAY": "Wednesday",
-                            "MESSAGE": 1614
-                        },
-                        {
-                            "DAY": "Saturday",
-                            "MESSAGE": 1608
-                        },
-                        {
-                            "DAY": "Sunday",
-                            "MESSAGE": 1467
-                        },
-                        {
-                            "DAY": "Friday",
-                            "MESSAGE": 1438
-                        },
-                        {
-                            "DAY": "Tuesday",
-                            "MESSAGE": 1276
-                        },
-                        {
-                            "DAY": "Monday",
-                            "MESSAGE": 1070
-                        }
-                    ],
+                {
+                    "averageTexts": 156.96703296703296,
+                    "mostActiveDay": "Thursday"
+                }
+            ],
+            "Yash Dewangan": [
+                [
                     {
-                        "Avg_msg_per_day": 112.97802197802197,
-                        "Dy_max_convo": "Thursday"
+                        "DAY": "Thursday",
+                        "MESSAGE": 1808
+                    },
+                    {
+                        "DAY": "Wednesday",
+                        "MESSAGE": 1614
+                    },
+                    {
+                        "DAY": "Saturday",
+                        "MESSAGE": 1608
+                    },
+                    {
+                        "DAY": "Sunday",
+                        "MESSAGE": 1467
+                    },
+                    {
+                        "DAY": "Friday",
+                        "MESSAGE": 1438
+                    },
+                    {
+                        "DAY": "Tuesday",
+                        "MESSAGE": 1276
+                    },
+                    {
+                        "DAY": "Monday",
+                        "MESSAGE": 1070
                     }
-                ]
-            }
+                ],
+                {
+                    "averageTexts": 112.97802197802197,
+                    "mostActiveDay": "Thursday"
+                }
+            ]
         },
         "emoji": {
             "All": {
@@ -1965,884 +1969,884 @@ def dummyapi():
             ]
         },
         "summary": {
-            "Msgs_exchanged": 39946,
-            "Total_no_days": 91,
-            "Total_no_words": 140587
+            "totalDays": 91,
+            "totalMessageExchanged": 39946,
+            "totalWords": 140587
         },
         "userspecific": {
             "Atharva Kulkarni": {
-                "Avg_msg_per_day": 169.02197802197801,
-                "Avg_words_per_msg": 3.1994018594369678,
-                "Dt_max_convo": "12-4-20",
-                "Dt_min_convo": "11-2-20",
-                "Dy_max_convo": "Thursday",
-                "Dy_min_convo": "Sunday",
-                "No_of_Days_had_Convo": 91,
-                "No_of_emoji_used": 1927,
-                "No_of_media": 2163,
-                "No_of_msgs": 15381,
-                "no_of_link": 249,
-                "total_num_words": 49210
+                "averageMessagePerDay": 169.02197802197801,
+                "averageWordsPerMessage": 3.1994018594369678,
+                "leastActiveDate": "11-2-20",
+                "leastActiveDay": "Sunday",
+                "mostActiveDate": "12-4-20",
+                "mostActiveDay": "Thursday",
+                "totalDays": 91,
+                "totalEmojis": 1927,
+                "totalLinks": 249,
+                "totalMedia": 2163,
+                "totalMessages": 15381,
+                "totalWords": 49210
             },
             "Sumit Kolpekwar": {
-                "Avg_msg_per_day": 156.96703296703296,
-                "Avg_words_per_msg": 3.313777653318398,
-                "Dt_max_convo": "11-19-20",
-                "Dt_min_convo": "12-18-20",
-                "Dy_max_convo": "Thursday",
-                "Dy_min_convo": "Sunday",
-                "No_of_Days_had_Convo": 91,
-                "No_of_emoji_used": 2234,
-                "No_of_media": 823,
-                "No_of_msgs": 14284,
-                "no_of_link": 206,
-                "total_num_words": 47334
+                "averageMessagePerDay": 156.96703296703296,
+                "averageWordsPerMessage": 3.313777653318398,
+                "leastActiveDate": "12-18-20",
+                "leastActiveDay": "Sunday",
+                "mostActiveDate": "11-19-20",
+                "mostActiveDay": "Thursday",
+                "totalDays": 91,
+                "totalEmojis": 2234,
+                "totalLinks": 206,
+                "totalMedia": 823,
+                "totalMessages": 14284,
+                "totalWords": 47334
             },
             "Yash Dewangan": {
-                "Avg_msg_per_day": 112.97802197802197,
-                "Avg_words_per_msg": 4.283921797490517,
-                "Dt_max_convo": "11-19-20",
-                "Dt_min_convo": "12-10-20",
-                "Dy_max_convo": "Thursday",
-                "Dy_min_convo": "Monday",
-                "No_of_Days_had_Convo": 91,
-                "No_of_emoji_used": 1034,
-                "No_of_media": 1084,
-                "No_of_msgs": 10281,
-                "no_of_link": 179,
-                "total_num_words": 44043
+                "averageMessagePerDay": 112.97802197802197,
+                "averageWordsPerMessage": 4.283921797490517,
+                "leastActiveDate": "12-10-20",
+                "leastActiveDay": "Monday",
+                "mostActiveDate": "11-19-20",
+                "mostActiveDay": "Thursday",
+                "totalDays": 91,
+                "totalEmojis": 1034,
+                "totalLinks": 179,
+                "totalMedia": 1084,
+                "totalMessages": 10281,
+                "totalWords": 44043
             }
         },
         "wordcloud": {
             "All": {
-                "word stat": {
-                    "Least_used_word": "🥔",
-                    "Most_used_word": "h"
+                "wordStat": {
+                    "leastUsedWord": "🥔",
+                    "mostUsedWord": "h"
                 },
-                "word usage": [
+                "wordUsage": [
                     {
-                        "FREQUENCY": 3697,
-                        "WORD": "h"
+                        "text": "h",
+                        "value": 3697
                     },
                     {
-                        "FREQUENCY": 1417,
-                        "WORD": "hain"
+                        "text": "hain",
+                        "value": 1417
                     },
                     {
-                        "FREQUENCY": 1149,
-                        "WORD": "ka"
+                        "text": "ka",
+                        "value": 1149
                     },
                     {
-                        "FREQUENCY": 1037,
-                        "WORD": "{"
+                        "text": "{",
+                        "value": 1037
                     },
                     {
-                        "FREQUENCY": 940,
-                        "WORD": "},"
+                        "text": "},",
+                        "value": 940
                     },
                     {
-                        "FREQUENCY": 868,
-                        "WORD": "kya"
+                        "text": "kya",
+                        "value": 868
                     },
                     {
-                        "FREQUENCY": 812,
-                        "WORD": "rha"
+                        "text": "rha",
+                        "value": 812
                     },
                     {
-                        "FREQUENCY": 796,
-                        "WORD": "to"
+                        "text": "to",
+                        "value": 796
                     },
                     {
-                        "FREQUENCY": 747,
-                        "WORD": "toh"
+                        "text": "toh",
+                        "value": 747
                     },
                     {
-                        "FREQUENCY": 739,
-                        "WORD": "bhi"
+                        "text": "bhi",
+                        "value": 739
                     },
                     {
-                        "FREQUENCY": 733,
-                        "WORD": "na"
+                        "text": "na",
+                        "value": 733
                     },
                     {
-                        "FREQUENCY": 702,
-                        "WORD": "tha"
+                        "text": "tha",
+                        "value": 702
                     },
                     {
-                        "FREQUENCY": 696,
-                        "WORD": "\"count\""
+                        "text": "\"count\"",
+                        "value": 696
                     },
                     {
-                        "FREQUENCY": 696,
-                        "WORD": "\"date\""
+                        "text": "\"date\"",
+                        "value": 696
                     },
                     {
-                        "FREQUENCY": 664,
-                        "WORD": "ko"
+                        "text": "ko",
+                        "value": 664
                     },
                     {
-                        "FREQUENCY": 645,
-                        "WORD": "and"
+                        "text": "and",
+                        "value": 645
                     },
                     {
-                        "FREQUENCY": 639,
-                        "WORD": "the"
+                        "text": "the",
+                        "value": 639
                     },
                     {
-                        "FREQUENCY": 633,
-                        "WORD": "nahi"
+                        "text": "nahi",
+                        "value": 633
                     },
                     {
-                        "FREQUENCY": 630,
-                        "WORD": "se"
+                        "text": "se",
+                        "value": 630
                     },
                     {
-                        "FREQUENCY": 614,
-                        "WORD": "Bc"
+                        "text": "Bc",
+                        "value": 614
                     },
                     {
-                        "FREQUENCY": 602,
-                        "WORD": "https"
+                        "text": "https",
+                        "value": 602
                     },
                     {
-                        "FREQUENCY": 578,
-                        "WORD": "kar"
+                        "text": "kar",
+                        "value": 578
                     },
                     {
-                        "FREQUENCY": 566,
-                        "WORD": "I"
+                        "text": "I",
+                        "value": 566
                     },
                     {
-                        "FREQUENCY": 562,
-                        "WORD": "is"
+                        "text": "is",
+                        "value": 562
                     },
                     {
-                        "FREQUENCY": 534,
-                        "WORD": "@917020037195"
+                        "text": "@917020037195",
+                        "value": 534
                     },
                     {
-                        "FREQUENCY": 494,
-                        "WORD": "you"
+                        "text": "you",
+                        "value": 494
                     },
                     {
-                        "FREQUENCY": 487,
-                        "WORD": "main"
+                        "text": "main",
+                        "value": 487
                     },
                     {
-                        "FREQUENCY": 478,
-                        "WORD": "Yes"
+                        "text": "Yes",
+                        "value": 478
                     },
                     {
-                        "FREQUENCY": 477,
-                        "WORD": "@918602842290"
+                        "text": "@918602842290",
+                        "value": 477
                     },
                     {
-                        "FREQUENCY": 469,
-                        "WORD": "ke"
+                        "text": "ke",
+                        "value": 469
                     },
                     {
-                        "FREQUENCY": 462,
-                        "WORD": "ho"
+                        "text": "ho",
+                        "value": 462
                     },
                     {
-                        "FREQUENCY": 446,
-                        "WORD": "hi"
+                        "text": "hi",
+                        "value": 446
                     },
                     {
-                        "FREQUENCY": 415,
-                        "WORD": "But"
+                        "text": "But",
+                        "value": 415
                     },
                     {
-                        "FREQUENCY": 407,
-                        "WORD": "nhhi"
+                        "text": "nhhi",
+                        "value": 407
                     },
                     {
-                        "FREQUENCY": 393,
-                        "WORD": "'NO_OF_Emoji'"
+                        "text": "'NO_OF_Emoji'",
+                        "value": 393
                     },
                     {
-                        "FREQUENCY": 392,
-                        "WORD": "{'Emoji'"
+                        "text": "{'Emoji'",
+                        "value": 392
                     },
                     {
-                        "FREQUENCY": 390,
-                        "WORD": "kia"
+                        "text": "kia",
+                        "value": 390
                     },
                     {
-                        "FREQUENCY": 388,
-                        "WORD": "a"
+                        "text": "a",
+                        "value": 388
                     },
                     {
-                        "FREQUENCY": 385,
-                        "WORD": "And"
+                        "text": "And",
+                        "value": 385
                     },
                     {
-                        "FREQUENCY": 383,
-                        "WORD": "me"
+                        "text": "me",
+                        "value": 383
                     },
                     {
-                        "FREQUENCY": 381,
-                        "WORD": "in"
+                        "text": "in",
+                        "value": 381
                     },
                     {
-                        "FREQUENCY": 372,
-                        "WORD": "Haa"
+                        "text": "Haa",
+                        "value": 372
                     },
                     {
-                        "FREQUENCY": 364,
-                        "WORD": "for"
+                        "text": "for",
+                        "value": 364
                     },
                     {
-                        "FREQUENCY": 364,
-                        "WORD": "Nice"
+                        "text": "Nice",
+                        "value": 364
                     },
                     {
-                        "FREQUENCY": 358,
-                        "WORD": "@918446224700"
+                        "text": "@918446224700",
+                        "value": 358
                     },
                     {
-                        "FREQUENCY": 356,
-                        "WORD": "like"
+                        "text": "like",
+                        "value": 356
                     },
                     {
-                        "FREQUENCY": 351,
-                        "WORD": "hu"
+                        "text": "hu",
+                        "value": 351
                     },
                     {
-                        "FREQUENCY": 345,
-                        "WORD": "of"
+                        "text": "of",
+                        "value": 345
                     },
                     {
-                        "FREQUENCY": 333,
-                        "WORD": "Kya"
+                        "text": "Kya",
+                        "value": 333
                     },
                     {
-                        "FREQUENCY": 327,
-                        "WORD": "mai"
+                        "text": "mai",
+                        "value": 327
                     }
                 ]
             },
             "Atharva Kulkarni": {
-                "word stat": {
-                    "Least_used_word": "🥔",
-                    "Most_used_word": "h"
+                "wordStat": {
+                    "leastUsedWord": "🥔",
+                    "mostUsedWord": "h"
                 },
-                "word usage": [
+                "wordUsage": [
                     {
-                        "FREQUENCY": 2042,
-                        "WORD": "h"
+                        "text": "h",
+                        "value": 2042
                     },
                     {
-                        "FREQUENCY": 384,
-                        "WORD": "ka"
+                        "text": "ka",
+                        "value": 384
                     },
                     {
-                        "FREQUENCY": 342,
-                        "WORD": "kya"
+                        "text": "kya",
+                        "value": 342
                     },
                     {
-                        "FREQUENCY": 302,
-                        "WORD": "to"
+                        "text": "to",
+                        "value": 302
                     },
                     {
-                        "FREQUENCY": 300,
-                        "WORD": "na"
+                        "text": "na",
+                        "value": 300
                     },
                     {
-                        "FREQUENCY": 286,
-                        "WORD": "and"
+                        "text": "and",
+                        "value": 286
                     },
                     {
-                        "FREQUENCY": 281,
-                        "WORD": "toh"
+                        "text": "toh",
+                        "value": 281
                     },
                     {
-                        "FREQUENCY": 278,
-                        "WORD": "rha"
+                        "text": "rha",
+                        "value": 278
                     },
                     {
-                        "FREQUENCY": 272,
-                        "WORD": "ko"
+                        "text": "ko",
+                        "value": 272
                     },
                     {
-                        "FREQUENCY": 270,
-                        "WORD": "nahi"
+                        "text": "nahi",
+                        "value": 270
                     },
                     {
-                        "FREQUENCY": 269,
-                        "WORD": "bhi"
+                        "text": "bhi",
+                        "value": 269
                     },
                     {
-                        "FREQUENCY": 268,
-                        "WORD": "the"
+                        "text": "the",
+                        "value": 268
                     },
                     {
-                        "FREQUENCY": 252,
-                        "WORD": "me"
+                        "text": "me",
+                        "value": 252
                     },
                     {
-                        "FREQUENCY": 247,
-                        "WORD": "I"
+                        "text": "I",
+                        "value": 247
                     },
                     {
-                        "FREQUENCY": 241,
-                        "WORD": "https"
+                        "text": "https",
+                        "value": 241
                     },
                     {
-                        "FREQUENCY": 235,
-                        "WORD": "k"
+                        "text": "k",
+                        "value": 235
                     },
                     {
-                        "FREQUENCY": 231,
-                        "WORD": "Bc"
+                        "text": "Bc",
+                        "value": 231
                     },
                     {
-                        "FREQUENCY": 228,
-                        "WORD": "tha"
+                        "text": "tha",
+                        "value": 228
                     },
                     {
-                        "FREQUENCY": 217,
-                        "WORD": "se"
+                        "text": "se",
+                        "value": 217
                     },
                     {
-                        "FREQUENCY": 208,
-                        "WORD": "was"
+                        "text": "was",
+                        "value": 208
                     },
                     {
-                        "FREQUENCY": 197,
-                        "WORD": "m"
+                        "text": "m",
+                        "value": 197
                     },
                     {
-                        "FREQUENCY": 196,
-                        "WORD": "is"
+                        "text": "is",
+                        "value": 196
                     },
                     {
-                        "FREQUENCY": 182,
-                        "WORD": "kr"
+                        "text": "kr",
+                        "value": 182
                     },
                     {
-                        "FREQUENCY": 180,
-                        "WORD": "@918446224700"
+                        "text": "@918446224700",
+                        "value": 180
                     },
                     {
-                        "FREQUENCY": 176,
-                        "WORD": "Yes"
+                        "text": "Yes",
+                        "value": 176
                     },
                     {
-                        "FREQUENCY": 171,
-                        "WORD": "hi"
+                        "text": "hi",
+                        "value": 171
                     },
                     {
-                        "FREQUENCY": 171,
-                        "WORD": "ho"
+                        "text": "ho",
+                        "value": 171
                     },
                     {
-                        "FREQUENCY": 169,
-                        "WORD": "kia"
+                        "text": "kia",
+                        "value": 169
                     },
                     {
-                        "FREQUENCY": 167,
-                        "WORD": "And"
+                        "text": "And",
+                        "value": 167
                     },
                     {
-                        "FREQUENCY": 164,
-                        "WORD": "ki"
+                        "text": "ki",
+                        "value": 164
                     },
                     {
-                        "FREQUENCY": 163,
-                        "WORD": "in"
+                        "text": "in",
+                        "value": 163
                     },
                     {
-                        "FREQUENCY": 153,
-                        "WORD": "@918602842290"
+                        "text": "@918602842290",
+                        "value": 153
                     },
                     {
-                        "FREQUENCY": 152,
-                        "WORD": "This"
+                        "text": "This",
+                        "value": 152
                     },
                     {
-                        "FREQUENCY": 142,
-                        "WORD": "But"
+                        "text": "But",
+                        "value": 142
                     },
                     {
-                        "FREQUENCY": 139,
-                        "WORD": "a"
+                        "text": "a",
+                        "value": 139
                     },
                     {
-                        "FREQUENCY": 136,
-                        "WORD": "you"
+                        "text": "you",
+                        "value": 136
                     },
                     {
-                        "FREQUENCY": 133,
-                        "WORD": "of"
+                        "text": "of",
+                        "value": 133
                     },
                     {
-                        "FREQUENCY": 130,
-                        "WORD": "nhi"
+                        "text": "nhi",
+                        "value": 130
                     },
                     {
-                        "FREQUENCY": 128,
-                        "WORD": "like"
+                        "text": "like",
+                        "value": 128
                     },
                     {
-                        "FREQUENCY": 126,
-                        "WORD": "message"
+                        "text": "message",
+                        "value": 126
                     },
                     {
-                        "FREQUENCY": 125,
-                        "WORD": "vo"
+                        "text": "vo",
+                        "value": 125
                     },
                     {
-                        "FREQUENCY": 124,
-                        "WORD": "?"
+                        "text": "?",
+                        "value": 124
                     },
                     {
-                        "FREQUENCY": 124,
-                        "WORD": "deleted"
+                        "text": "deleted",
+                        "value": 124
                     },
                     {
-                        "FREQUENCY": 123,
-                        "WORD": "Kya"
+                        "text": "Kya",
+                        "value": 123
                     },
                     {
-                        "FREQUENCY": 121,
-                        "WORD": "ye"
+                        "text": "ye",
+                        "value": 121
                     },
                     {
-                        "FREQUENCY": 119,
-                        "WORD": "hua"
+                        "text": "hua",
+                        "value": 119
                     },
                     {
-                        "FREQUENCY": 119,
-                        "WORD": "for"
+                        "text": "for",
+                        "value": 119
                     },
                     {
-                        "FREQUENCY": 118,
-                        "WORD": "pe"
+                        "text": "pe",
+                        "value": 118
                     },
                     {
-                        "FREQUENCY": 116,
-                        "WORD": "hu"
+                        "text": "hu",
+                        "value": 116
                     },
                     {
-                        "FREQUENCY": 112,
-                        "WORD": "bc"
+                        "text": "bc",
+                        "value": 112
                     }
                 ]
             },
             "Sumit Kolpekwar": {
-                "word stat": {
-                    "Least_used_word": "//hackclub.zoom.us/j/93244605379?pwd=RjJMcDZSd2w1cmczZmVnbmNkOHFlUT09",
-                    "Most_used_word": "h"
+                "wordStat": {
+                    "leastUsedWord": "//hackclub.zoom.us/j/93244605379?pwd=RjJMcDZSd2w1cmczZmVnbmNkOHFlUT09",
+                    "mostUsedWord": "h"
                 },
-                "word usage": [
+                "wordUsage": [
                     {
-                        "FREQUENCY": 1649,
-                        "WORD": "h"
+                        "text": "h",
+                        "value": 1649
                     },
                     {
-                        "FREQUENCY": 363,
-                        "WORD": "nahi"
+                        "text": "nahi",
+                        "value": 363
                     },
                     {
-                        "FREQUENCY": 362,
-                        "WORD": "ka"
+                        "text": "ka",
+                        "value": 362
                     },
                     {
-                        "FREQUENCY": 340,
-                        "WORD": "kya"
+                        "text": "kya",
+                        "value": 340
                     },
                     {
-                        "FREQUENCY": 335,
-                        "WORD": "to"
+                        "text": "to",
+                        "value": 335
                     },
                     {
-                        "FREQUENCY": 332,
-                        "WORD": "@917020037195"
+                        "text": "@917020037195",
+                        "value": 332
                     },
                     {
-                        "FREQUENCY": 325,
-                        "WORD": "mai"
+                        "text": "mai",
+                        "value": 325
                     },
                     {
-                        "FREQUENCY": 324,
-                        "WORD": "@918602842290"
+                        "text": "@918602842290",
+                        "value": 324
                     },
                     {
-                        "FREQUENCY": 320,
-                        "WORD": "you"
+                        "text": "you",
+                        "value": 320
                     },
                     {
-                        "FREQUENCY": 307,
-                        "WORD": "na"
+                        "text": "na",
+                        "value": 307
                     },
                     {
-                        "FREQUENCY": 297,
-                        "WORD": "Yes"
+                        "text": "Yes",
+                        "value": 297
                     },
                     {
-                        "FREQUENCY": 295,
-                        "WORD": "and"
+                        "text": "and",
+                        "value": 295
                     },
                     {
-                        "FREQUENCY": 262,
-                        "WORD": "Bc"
+                        "text": "Bc",
+                        "value": 262
                     },
                     {
-                        "FREQUENCY": 262,
-                        "WORD": "is"
+                        "text": "is",
+                        "value": 262
                     },
                     {
-                        "FREQUENCY": 260,
-                        "WORD": "tha"
+                        "text": "tha",
+                        "value": 260
                     },
                     {
-                        "FREQUENCY": 240,
-                        "WORD": "rha"
+                        "text": "rha",
+                        "value": 240
                     },
                     {
-                        "FREQUENCY": 238,
-                        "WORD": "I"
+                        "text": "I",
+                        "value": 238
                     },
                     {
-                        "FREQUENCY": 221,
-                        "WORD": "kia"
+                        "text": "kia",
+                        "value": 221
                     },
                     {
-                        "FREQUENCY": 221,
-                        "WORD": "Nice"
+                        "text": "Nice",
+                        "value": 221
                     },
                     {
-                        "FREQUENCY": 215,
-                        "WORD": "And"
+                        "text": "And",
+                        "value": 215
                     },
                     {
-                        "FREQUENCY": 215,
-                        "WORD": "XD"
+                        "text": "XD",
+                        "value": 215
                     },
                     {
-                        "FREQUENCY": 211,
-                        "WORD": "toh"
+                        "text": "toh",
+                        "value": 211
                     },
                     {
-                        "FREQUENCY": 208,
-                        "WORD": "the"
+                        "text": "the",
+                        "value": 208
                     },
                     {
-                        "FREQUENCY": 200,
-                        "WORD": "bhi"
+                        "text": "bhi",
+                        "value": 200
                     },
                     {
-                        "FREQUENCY": 196,
-                        "WORD": "https"
+                        "text": "https",
+                        "value": 196
                     },
                     {
-                        "FREQUENCY": 186,
-                        "WORD": "a"
+                        "text": "a",
+                        "value": 186
                     },
                     {
-                        "FREQUENCY": 182,
-                        "WORD": "Haa"
+                        "text": "Haa",
+                        "value": 182
                     },
                     {
-                        "FREQUENCY": 173,
-                        "WORD": "in"
+                        "text": "in",
+                        "value": 173
                     },
                     {
-                        "FREQUENCY": 171,
-                        "WORD": "But"
+                        "text": "But",
+                        "value": 171
                     },
                     {
-                        "FREQUENCY": 171,
-                        "WORD": "se"
+                        "text": "se",
+                        "value": 171
                     },
                     {
-                        "FREQUENCY": 165,
-                        "WORD": "like"
+                        "text": "like",
+                        "value": 165
                     },
                     {
-                        "FREQUENCY": 161,
-                        "WORD": "for"
+                        "text": "for",
+                        "value": 161
                     },
                     {
-                        "FREQUENCY": 161,
-                        "WORD": "ke"
+                        "text": "ke",
+                        "value": 161
                     },
                     {
-                        "FREQUENCY": 157,
-                        "WORD": "What"
+                        "text": "What",
+                        "value": 157
                     },
                     {
-                        "FREQUENCY": 156,
-                        "WORD": "Kya"
+                        "text": "Kya",
+                        "value": 156
                     },
                     {
-                        "FREQUENCY": 148,
-                        "WORD": "ko"
+                        "text": "ko",
+                        "value": 148
                     },
                     {
-                        "FREQUENCY": 147,
-                        "WORD": "be"
+                        "text": "be",
+                        "value": 147
                     },
                     {
-                        "FREQUENCY": 146,
-                        "WORD": "i"
+                        "text": "i",
+                        "value": 146
                     },
                     {
-                        "FREQUENCY": 142,
-                        "WORD": "can"
+                        "text": "can",
+                        "value": 142
                     },
                     {
-                        "FREQUENCY": 140,
-                        "WORD": "this"
+                        "text": "this",
+                        "value": 140
                     },
                     {
-                        "FREQUENCY": 139,
-                        "WORD": "+1"
+                        "text": "+1",
+                        "value": 139
                     },
                     {
-                        "FREQUENCY": 139,
-                        "WORD": "kar"
+                        "text": "kar",
+                        "value": 139
                     },
                     {
-                        "FREQUENCY": 134,
-                        "WORD": "Yeh"
+                        "text": "Yeh",
+                        "value": 134
                     },
                     {
-                        "FREQUENCY": 127,
-                        "WORD": "it"
+                        "text": "it",
+                        "value": 127
                     },
                     {
-                        "FREQUENCY": 126,
-                        "WORD": "I'm"
+                        "text": "I'm",
+                        "value": 126
                     },
                     {
-                        "FREQUENCY": 125,
-                        "WORD": "that"
+                        "text": "that",
+                        "value": 125
                     },
                     {
-                        "FREQUENCY": 125,
-                        "WORD": "of"
+                        "text": "of",
+                        "value": 125
                     },
                     {
-                        "FREQUENCY": 123,
-                        "WORD": "Nahi"
+                        "text": "Nahi",
+                        "value": 123
                     },
                     {
-                        "FREQUENCY": 120,
-                        "WORD": "pe"
+                        "text": "pe",
+                        "value": 120
                     },
                     {
-                        "FREQUENCY": 120,
-                        "WORD": "we"
+                        "text": "we",
+                        "value": 120
                     }
                 ]
             },
             "Yash Dewangan": {
-                "word stat": {
-                    "Least_used_word": "IP",
-                    "Most_used_word": "hain"
+                "wordStat": {
+                    "leastUsedWord": "IP",
+                    "mostUsedWord": "hain"
                 },
-                "word usage": [
+                "wordUsage": [
                     {
-                        "FREQUENCY": 1406,
-                        "WORD": "hain"
+                        "text": "hain",
+                        "value": 1406
                     },
                     {
-                        "FREQUENCY": 994,
-                        "WORD": "{"
+                        "text": "{",
+                        "value": 994
                     },
                     {
-                        "FREQUENCY": 933,
-                        "WORD": "},"
+                        "text": "},",
+                        "value": 933
                     },
                     {
-                        "FREQUENCY": 696,
-                        "WORD": "\"count\""
+                        "text": "\"count\"",
+                        "value": 696
                     },
                     {
-                        "FREQUENCY": 696,
-                        "WORD": "\"date\""
+                        "text": "\"date\"",
+                        "value": 696
                     },
                     {
-                        "FREQUENCY": 469,
-                        "WORD": "main"
+                        "text": "main",
+                        "value": 469
                     },
                     {
-                        "FREQUENCY": 406,
-                        "WORD": "nhhi"
+                        "text": "nhhi",
+                        "value": 406
                     },
                     {
-                        "FREQUENCY": 403,
-                        "WORD": "ka"
+                        "text": "ka",
+                        "value": 403
                     },
                     {
-                        "FREQUENCY": 400,
-                        "WORD": "kar"
+                        "text": "kar",
+                        "value": 400
                     },
                     {
-                        "FREQUENCY": 393,
-                        "WORD": "'NO_OF_Emoji'"
+                        "text": "'NO_OF_Emoji'",
+                        "value": 393
                     },
                     {
-                        "FREQUENCY": 392,
-                        "WORD": "{'Emoji'"
+                        "text": "{'Emoji'",
+                        "value": 392
                     },
                     {
-                        "FREQUENCY": 297,
-                        "WORD": "'FREQUENCY'"
+                        "text": "'FREQUENCY'",
+                        "value": 297
                     },
                     {
-                        "FREQUENCY": 294,
-                        "WORD": "rha"
+                        "text": "rha",
+                        "value": 294
                     },
                     {
-                        "FREQUENCY": 270,
-                        "WORD": "bhi"
+                        "text": "bhi",
+                        "value": 270
                     },
                     {
-                        "FREQUENCY": 260,
-                        "WORD": "{'DATE'"
+                        "text": "{'DATE'",
+                        "value": 260
                     },
                     {
-                        "FREQUENCY": 255,
-                        "WORD": "toh"
+                        "text": "toh",
+                        "value": 255
                     },
                     {
-                        "FREQUENCY": 244,
-                        "WORD": "ko"
+                        "text": "ko",
+                        "value": 244
                     },
                     {
-                        "FREQUENCY": 242,
-                        "WORD": "se"
+                        "text": "se",
+                        "value": 242
                     },
                     {
-                        "FREQUENCY": 220,
-                        "WORD": "ho"
+                        "text": "ho",
+                        "value": 220
                     },
                     {
-                        "FREQUENCY": 218,
-                        "WORD": "ke"
+                        "text": "ke",
+                        "value": 218
                     },
                     {
-                        "FREQUENCY": 214,
-                        "WORD": "tha"
+                        "text": "tha",
+                        "value": 214
                     },
                     {
-                        "FREQUENCY": 202,
-                        "WORD": "@917020037195"
+                        "text": "@917020037195",
+                        "value": 202
                     },
                     {
-                        "FREQUENCY": 186,
-                        "WORD": "kya"
+                        "text": "kya",
+                        "value": 186
                     },
                     {
-                        "FREQUENCY": 179,
-                        "WORD": "00"
+                        "text": "00",
+                        "value": 179
                     },
                     {
-                        "FREQUENCY": 178,
-                        "WORD": "@918446224700"
+                        "text": "@918446224700",
+                        "value": 178
                     },
                     {
-                        "FREQUENCY": 176,
-                        "WORD": "Haa"
+                        "text": "Haa",
+                        "value": 176
                     },
                     {
-                        "FREQUENCY": 166,
-                        "WORD": "hu"
+                        "text": "hu",
+                        "value": 166
                     },
                     {
-                        "FREQUENCY": 165,
-                        "WORD": "https"
+                        "text": "https",
+                        "value": 165
                     },
                     {
-                        "FREQUENCY": 163,
-                        "WORD": "the"
+                        "text": "the",
+                        "value": 163
                     },
                     {
-                        "FREQUENCY": 160,
-                        "WORD": "hi"
+                        "text": "hi",
+                        "value": 160
                     },
                     {
-                        "FREQUENCY": 159,
-                        "WORD": "to"
+                        "text": "to",
+                        "value": 159
                     },
                     {
-                        "FREQUENCY": 154,
-                        "WORD": "bhai"
+                        "text": "bhai",
+                        "value": 154
                     },
                     {
-                        "FREQUENCY": 149,
-                        "WORD": "n"
+                        "text": "n",
+                        "value": 149
                     },
                     {
-                        "FREQUENCY": 148,
-                        "WORD": "2},"
+                        "text": "2},",
+                        "value": 148
                     },
                     {
-                        "FREQUENCY": 133,
-                        "WORD": "ye"
+                        "text": "ye",
+                        "value": 133
                     },
                     {
-                        "FREQUENCY": 126,
-                        "WORD": "na"
+                        "text": "na",
+                        "value": 126
                     },
                     {
-                        "FREQUENCY": 121,
-                        "WORD": "Bc"
+                        "text": "Bc",
+                        "value": 121
                     },
                     {
-                        "FREQUENCY": 117,
-                        "WORD": "abhi"
+                        "text": "abhi",
+                        "value": 117
                     },
                     {
-                        "FREQUENCY": 112,
-                        "WORD": "hogga"
+                        "text": "hogga",
+                        "value": 112
                     },
                     {
-                        "FREQUENCY": 109,
-                        "WORD": "Xd"
+                        "text": "Xd",
+                        "value": 109
                     },
                     {
-                        "FREQUENCY": 108,
-                        "WORD": "gaya"
+                        "text": "gaya",
+                        "value": 108
                     },
                     {
-                        "FREQUENCY": 108,
-                        "WORD": "karna"
+                        "text": "karna",
+                        "value": 108
                     },
                     {
-                        "FREQUENCY": 104,
-                        "WORD": "is"
+                        "text": "is",
+                        "value": 104
                     },
                     {
-                        "FREQUENCY": 102,
-                        "WORD": "But"
+                        "text": "But",
+                        "value": 102
                     },
                     {
-                        "FREQUENCY": 100,
-                        "WORD": "\"FREQUENCY\""
+                        "text": "\"FREQUENCY\"",
+                        "value": 100
                     },
                     {
-                        "FREQUENCY": 100,
-                        "WORD": "\"WORD\""
+                        "text": "\"WORD\"",
+                        "value": 100
                     },
                     {
-                        "FREQUENCY": 95,
-                        "WORD": "karta"
+                        "text": "karta",
+                        "value": 95
                     },
                     {
-                        "FREQUENCY": 95,
-                        "WORD": "N"
+                        "text": "N",
+                        "value": 95
                     },
                     {
-                        "FREQUENCY": 92,
-                        "WORD": "Bhai"
+                        "text": "Bhai",
+                        "value": 92
                     },
                     {
-                        "FREQUENCY": 91,
-                        "WORD": "de"
+                        "text": "de",
+                        "value": 91
                     }
                 ]
             }

@@ -1,6 +1,8 @@
 import axios from "axios";
-
-const url = process.env.NEXT_PUBLIC_API_URL;
+const url =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:5000"
+    : process.env.NEXT_PUBLIC_API_URL;
 
 export const postFile = async (formData) => {
   try {
@@ -15,6 +17,7 @@ export const postFile = async (formData) => {
 export const getDefaultStats = async () => {
   try {
     const result = await axios.get(url + "/api/v1/dummy");
+    console.log(result.data);
     return result;
   } catch (error) {
     console.log(error);

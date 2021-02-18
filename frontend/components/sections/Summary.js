@@ -24,28 +24,28 @@ export default function Summary() {
         <div className="tile is-parent">
           <StatsBox
             title={"Total Days"}
-            stats={context.file.stats.summary.total_days}
+            stats={context.file.stats.summary.totalDays}
             icon={faCalendarAlt}
           />
         </div>
         <div className="tile is-parent">
           <StatsBox
             title={"Total Message Exchanged"}
-            stats={context.file.stats.summary.total_message}
+            stats={context.file.stats.summary.totalMessageExchanged}
             icon={faComments}
           />
         </div>
         <div className="tile is-parent">
           <StatsBox
             title={"Total Words Sent"}
-            stats={context.file.stats.summary.total_words}
+            stats={context.file.stats.summary.totalWords}
             icon={faPaperPlane}
           />
         </div>
         <div className="tile is-parent">
           <StatsBox
             title={"Total Letters Used"}
-            stats={context.file.stats.summary.total_letters}
+            stats={context.file.stats.summary.totalLetters}
             icon={faHeading}
           />
         </div>
