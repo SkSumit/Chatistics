@@ -19,11 +19,11 @@ import Footer from "../components/sections/Footer";
 export const FileContext = createContext(null);
 
 export default function Home({ data }) {
+  console.log(data, "data");
   const [file, setFile] = useState(data);
   const [loader, setLoader] = useState(false);
   const [initLoader, setInitLoader] = useState(true);
   const [axiosError, setAxiosError] = useState(null);
-  // const [showDownloadBtn, setShowDownloadBtn] = useState(false);
 
   useEffect(() => {
     setInitLoader(false);
@@ -40,7 +40,10 @@ export default function Home({ data }) {
     <div>
       <Head>
         <link rel="icon" href="/favicon-96x96.png" />
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"
+        />
         <meta name="theme-color" content="#000000" />
         <link rel="apple-touch-icon" href="/logo192.png" />
         <link rel="manifest" href="/manifest.json" />
@@ -89,7 +92,6 @@ export default function Home({ data }) {
         setFile={setFile}
         setLoader={setLoader}
         setAxiosError={setAxiosError}
-     
       />
       <FileContext.Provider value={{ file }}>
         <Summary />

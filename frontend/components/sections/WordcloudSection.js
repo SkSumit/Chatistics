@@ -36,7 +36,7 @@ export default function WordcloudSection() {
       graph={
         <ReactWordcloud
           words={
-            context.file.stats.wordcloud[selectedOption.username].word_usage
+            context.file.stats.wordcloud[selectedOption.username]["wordUsage"]
           }
           options={options}
         />
@@ -45,7 +45,10 @@ export default function WordcloudSection() {
         <>
           <StatsBox
             title={"Most Used Word"}
-            stats={"hod"}
+            stats={
+              context.file.stats.wordcloud[selectedOption.username]["wordStat"]
+                .mostUsedWord
+            }
             icon={faCommentDots}
           />
           <StatsBox
