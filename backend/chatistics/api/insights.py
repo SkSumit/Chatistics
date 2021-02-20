@@ -143,20 +143,19 @@ class getData:
 
     def heatmap(data):
         heatmap = dict.my_dictionary()
-        heatmapuser = data.groupby(
-            ["USERNAME", "DATE"], as_index=False)['MESSAGE']
-        heatmapall = data.groupby(["DATE"], as_index=False)['MESSAGE']
-        heatmapuser = heatmapuser.count().sort_values(
-            by=['MESSAGE'], ascending=False)
+        heatmapuser=data.groupby(["USERNAME","DATE"], as_index=False)['MESSAGE']
+        heatmapall=data.groupby(["DATE"],as_index=False)['MESSAGE']
+        heatmapuser=heatmapuser.count().sort_values(by=['MESSAGE'],ascending=False)
+        heatmapuser.columns = ['USERNAME' , 'date' , 'count']
         configvars.no_of_days = len(heatmapall)
-        heatmapall = heatmapall.count().sort_values(by='MESSAGE', ascending=False)
+        heatmapall=heatmapall.count().sort_values(by='MESSAGE',ascending=False)
+        heatmapall.columns = ['date' , 'count']
         for i in heatmapuser['USERNAME'].unique():
-            heatmap.add(i, heatmapuser[heatmapuser['USERNAME'] == i][[
-                        'DATE', 'MESSAGE']].to_dict(orient='records'))
-        heatmap.add("All", heatmapall.to_dict(orient='records'))
+            heatmap.add(i,heatmapuser[heatmapuser['USERNAME'] == i][['date','count']].to_dict(orient='records'))
+        heatmap.add("All",heatmapall.to_dict(orient='records'))
         return heatmap
 
-    def analysis(self, data):
+    def analysis(self, data, filename):
         configvars.totalwords = 0
         configvars.no_of_days = 0
         configvars.emojidata = {}
@@ -177,6 +176,7 @@ class getData:
                 "summary": getData.summary(data),
                 "userspecific": configvars.userdata
             },
-            "usernames": getData.usernameonlydict(data)
+            "usernames" : getData.usernameonlydict(data),
+            "filename" : filename
         }
         return analysis

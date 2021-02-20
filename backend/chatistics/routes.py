@@ -35,6 +35,7 @@ def index():
                 raise Exception("Select a file")
             file = request.files['file']
             file.save(file.filename)
+            fileName = file.filename
             if not file.filename.endswith('.txt'):
                 os.remove(file.filename)
                 raise Exception("Wrong file type")
@@ -42,7 +43,7 @@ def index():
             content = preprocess(content)
             df = dataframe(content)
             whatsapp = insights.getData()
-            new_insights = whatsapp.analysis(df)
+            new_insights = whatsapp.analysis(df, fileName)
             return jsonify(new_insights)
         except Exception as e:
             return error(str(e.args), 415)
