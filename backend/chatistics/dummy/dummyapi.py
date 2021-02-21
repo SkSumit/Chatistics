@@ -1,6 +1,8 @@
 def dummyapi():
 
     api ={
+    "filename": "WhatsApp Chat with 3 Bois (1).txt",
+    "example": True,
     "stats": {
         "basedOnDays": {
             "All": [
@@ -150,354 +152,354 @@ def dummyapi():
         },
         "emoji": {
             "All": {
-                "Emoji_stats": {
-                    "Different_Emojis_used": 397,
-                    "Number_of_emojis": 5195
+                "emojiStat": {
+                    "totalEmojis": 5195,
+                    "totalUniqueEmojis": 397
                 },
-                "Emoji_usage": [
+                "emojiUsage": [
                     {
-                        "EMOJI": "😭",
-                        "VALUE": 416
+                        "emoji": "😭",
+                        "value": 416
                     },
                     {
-                        "EMOJI": "😳",
-                        "VALUE": 403
+                        "emoji": "😳",
+                        "value": 403
                     },
                     {
-                        "EMOJI": "😂",
-                        "VALUE": 377
+                        "emoji": "😂",
+                        "value": 377
                     },
                     {
-                        "EMOJI": "👀",
-                        "VALUE": 301
+                        "emoji": "👀",
+                        "value": 301
                     },
                     {
-                        "EMOJI": "😜",
-                        "VALUE": 207
+                        "emoji": "😜",
+                        "value": 207
                     },
                     {
-                        "EMOJI": "🤣",
-                        "VALUE": 172
+                        "emoji": "🤣",
+                        "value": 172
                     },
                     {
-                        "EMOJI": "🥳",
-                        "VALUE": 102
+                        "emoji": "🥳",
+                        "value": 102
                     },
                     {
-                        "EMOJI": "➖",
-                        "VALUE": 86
+                        "emoji": "➖",
+                        "value": 86
                     },
                     {
-                        "EMOJI": "🥺",
-                        "VALUE": 74
+                        "emoji": "🥺",
+                        "value": 74
                     },
                     {
-                        "EMOJI": "❤",
-                        "VALUE": 63
+                        "emoji": "❤",
+                        "value": 63
                     },
                     {
-                        "EMOJI": "😫",
-                        "VALUE": 63
+                        "emoji": "😫",
+                        "value": 63
                     },
                     {
-                        "EMOJI": "😤",
-                        "VALUE": 60
+                        "emoji": "😤",
+                        "value": 60
                     },
                     {
-                        "EMOJI": "🇮",
-                        "VALUE": 59
+                        "emoji": "🇮",
+                        "value": 59
                     },
                     {
-                        "EMOJI": "😔",
-                        "VALUE": 57
+                        "emoji": "😔",
+                        "value": 57
                     },
                     {
-                        "EMOJI": "🤤",
-                        "VALUE": 56
+                        "emoji": "🤤",
+                        "value": 56
                     },
                     {
-                        "EMOJI": "🇳",
-                        "VALUE": 55
+                        "emoji": "🇳",
+                        "value": 55
                     },
                     {
-                        "EMOJI": "🥵",
-                        "VALUE": 53
+                        "emoji": "🥵",
+                        "value": 53
                     },
                     {
-                        "EMOJI": "🤮",
-                        "VALUE": 52
+                        "emoji": "🤮",
+                        "value": 52
                     },
                     {
-                        "EMOJI": "💀",
-                        "VALUE": 46
+                        "emoji": "💀",
+                        "value": 46
                     },
                     {
-                        "EMOJI": "🙏",
-                        "VALUE": 42
+                        "emoji": "🙏",
+                        "value": 42
                     }
                 ]
             },
             "Atharva Kulkarni": {
-                "Emoji_stats": {
-                    "Different_Emojis_used": 135,
-                    "Number_of_emojis": 1927
+                "emojiStat": {
+                    "totalEmojis": 1927,
+                    "totalUniqueEmojis": 135
                 },
-                "Emoji_usage": [
+                "emojiUsage": [
                     {
-                        "EMOJI": "😂",
-                        "VALUE": 265
+                        "emoji": "😂",
+                        "value": 265
                     },
                     {
-                        "EMOJI": "😜",
-                        "VALUE": 199
+                        "emoji": "😜",
+                        "value": 199
                     },
                     {
-                        "EMOJI": "😭",
-                        "VALUE": 108
+                        "emoji": "😭",
+                        "value": 108
                     },
                     {
-                        "EMOJI": "🤣",
-                        "VALUE": 107
+                        "emoji": "🤣",
+                        "value": 107
                     },
                     {
-                        "EMOJI": "🥳",
-                        "VALUE": 91
+                        "emoji": "🥳",
+                        "value": 91
                     },
                     {
-                        "EMOJI": "🇮",
-                        "VALUE": 50
+                        "emoji": "🇮",
+                        "value": 50
                     },
                     {
-                        "EMOJI": "🇳",
-                        "VALUE": 50
+                        "emoji": "🇳",
+                        "value": 50
                     },
                     {
-                        "EMOJI": "🥺",
-                        "VALUE": 48
+                        "emoji": "🥺",
+                        "value": 48
                     },
                     {
-                        "EMOJI": "🤤",
-                        "VALUE": 46
+                        "emoji": "🤤",
+                        "value": 46
                     },
                     {
-                        "EMOJI": "😳",
-                        "VALUE": 44
+                        "emoji": "😳",
+                        "value": 44
                     },
                     {
-                        "EMOJI": "👀",
-                        "VALUE": 43
+                        "emoji": "👀",
+                        "value": 43
                     },
                     {
-                        "EMOJI": "😔",
-                        "VALUE": 39
+                        "emoji": "😔",
+                        "value": 39
                     },
                     {
-                        "EMOJI": "🥵",
-                        "VALUE": 37
+                        "emoji": "🥵",
+                        "value": 37
                     },
                     {
-                        "EMOJI": "❤",
-                        "VALUE": 33
+                        "emoji": "❤",
+                        "value": 33
                     },
                     {
-                        "EMOJI": "😍",
-                        "VALUE": 31
+                        "emoji": "😍",
+                        "value": 31
                     },
                     {
-                        "EMOJI": "😊",
-                        "VALUE": 31
+                        "emoji": "😊",
+                        "value": 31
                     },
                     {
-                        "EMOJI": "😨",
-                        "VALUE": 30
+                        "emoji": "😨",
+                        "value": 30
                     },
                     {
-                        "EMOJI": "🙏",
-                        "VALUE": 28
+                        "emoji": "🙏",
+                        "value": 28
                     },
                     {
-                        "EMOJI": "😢",
-                        "VALUE": 26
+                        "emoji": "😢",
+                        "value": 26
                     },
                     {
-                        "EMOJI": "🤑",
-                        "VALUE": 26
+                        "emoji": "🤑",
+                        "value": 26
                     }
                 ]
             },
             "Sumit Kolpekwar": {
-                "Emoji_stats": {
-                    "Different_Emojis_used": 302,
-                    "Number_of_emojis": 2234
+                "emojiStat": {
+                    "totalEmojis": 2234,
+                    "totalUniqueEmojis": 302
                 },
-                "Emoji_usage": [
+                "emojiUsage": [
                     {
-                        "EMOJI": "😳",
-                        "VALUE": 351
+                        "emoji": "😳",
+                        "value": 351
                     },
                     {
-                        "EMOJI": "👀",
-                        "VALUE": 209
+                        "emoji": "👀",
+                        "value": 209
                     },
                     {
-                        "EMOJI": "😭",
-                        "VALUE": 156
+                        "emoji": "😭",
+                        "value": 156
                     },
                     {
-                        "EMOJI": "😂",
-                        "VALUE": 103
+                        "emoji": "😂",
+                        "value": 103
                     },
                     {
-                        "EMOJI": "😫",
-                        "VALUE": 42
+                        "emoji": "😫",
+                        "value": 42
                     },
                     {
-                        "EMOJI": "😤",
-                        "VALUE": 40
+                        "emoji": "😤",
+                        "value": 40
                     },
                     {
-                        "EMOJI": "🌚",
-                        "VALUE": 32
+                        "emoji": "🌚",
+                        "value": 32
                     },
                     {
-                        "EMOJI": "🏻",
-                        "VALUE": 32
+                        "emoji": "🏻",
+                        "value": 32
                     },
                     {
-                        "EMOJI": "😏",
-                        "VALUE": 31
+                        "emoji": "😏",
+                        "value": 31
                     },
                     {
-                        "EMOJI": "🤭",
-                        "VALUE": 30
+                        "emoji": "🤭",
+                        "value": 30
                     },
                     {
-                        "EMOJI": "🤮",
-                        "VALUE": 27
+                        "emoji": "🤮",
+                        "value": 27
                     },
                     {
-                        "EMOJI": "❤",
-                        "VALUE": 23
+                        "emoji": "❤",
+                        "value": 23
                     },
                     {
-                        "EMOJI": "🌝",
-                        "VALUE": 22
+                        "emoji": "🌝",
+                        "value": 22
                     },
                     {
-                        "EMOJI": "🇦",
-                        "VALUE": 22
+                        "emoji": "🇦",
+                        "value": 22
                     },
                     {
-                        "EMOJI": "🥺",
-                        "VALUE": 20
+                        "emoji": "🥺",
+                        "value": 20
                     },
                     {
-                        "EMOJI": "🙄",
-                        "VALUE": 20
+                        "emoji": "🙄",
+                        "value": 20
                     },
                     {
-                        "EMOJI": "💀",
-                        "VALUE": 20
+                        "emoji": "💀",
+                        "value": 20
                     },
                     {
-                        "EMOJI": "🇱",
-                        "VALUE": 20
+                        "emoji": "🇱",
+                        "value": 20
                     },
                     {
-                        "EMOJI": "🇨",
-                        "VALUE": 18
+                        "emoji": "🇨",
+                        "value": 18
                     },
                     {
-                        "EMOJI": "👌",
-                        "VALUE": 17
+                        "emoji": "👌",
+                        "value": 17
                     }
                 ]
             },
             "Yash Dewangan": {
-                "Emoji_stats": {
-                    "Different_Emojis_used": 380,
-                    "Number_of_emojis": 1034
+                "emojiStat": {
+                    "totalEmojis": 1034,
+                    "totalUniqueEmojis": 380
                 },
-                "Emoji_usage": [
+                "emojiUsage": [
                     {
-                        "EMOJI": "😭",
-                        "VALUE": 152
+                        "emoji": "😭",
+                        "value": 152
                     },
                     {
-                        "EMOJI": "➖",
-                        "VALUE": 85
+                        "emoji": "➖",
+                        "value": 85
                     },
                     {
-                        "EMOJI": "🤣",
-                        "VALUE": 57
+                        "emoji": "🤣",
+                        "value": 57
                     },
                     {
-                        "EMOJI": "👀",
-                        "VALUE": 49
+                        "emoji": "👀",
+                        "value": 49
                     },
                     {
-                        "EMOJI": "📢",
-                        "VALUE": 32
+                        "emoji": "📢",
+                        "value": 32
                     },
                     {
-                        "EMOJI": "🤪",
-                        "VALUE": 27
+                        "emoji": "🤪",
+                        "value": 27
                     },
                     {
-                        "EMOJI": "❗",
-                        "VALUE": 19
+                        "emoji": "❗",
+                        "value": 19
                     },
                     {
-                        "EMOJI": "💓",
-                        "VALUE": 17
+                        "emoji": "💓",
+                        "value": 17
                     },
                     {
-                        "EMOJI": "▪",
-                        "VALUE": 17
+                        "emoji": "▪",
+                        "value": 17
                     },
                     {
-                        "EMOJI": "🥵",
-                        "VALUE": 16
+                        "emoji": "🥵",
+                        "value": 16
                     },
                     {
-                        "EMOJI": "👇",
-                        "VALUE": 15
+                        "emoji": "👇",
+                        "value": 15
                     },
                     {
-                        "EMOJI": "😔",
-                        "VALUE": 11
+                        "emoji": "😔",
+                        "value": 11
                     },
                     {
-                        "EMOJI": "🤤",
-                        "VALUE": 10
+                        "emoji": "🤤",
+                        "value": 10
                     },
                     {
-                        "EMOJI": "🎃",
-                        "VALUE": 10
+                        "emoji": "🎃",
+                        "value": 10
                     },
                     {
-                        "EMOJI": "🤮",
-                        "VALUE": 10
+                        "emoji": "🤮",
+                        "value": 10
                     },
                     {
-                        "EMOJI": "🙏",
-                        "VALUE": 9
+                        "emoji": "🙏",
+                        "value": 9
                     },
                     {
-                        "EMOJI": "😂",
-                        "VALUE": 9
+                        "emoji": "😂",
+                        "value": 9
                     },
                     {
-                        "EMOJI": "😢",
-                        "VALUE": 8
+                        "emoji": "😢",
+                        "value": 8
                     },
                     {
-                        "EMOJI": "😊",
-                        "VALUE": 8
+                        "emoji": "😊",
+                        "value": 8
                     },
                     {
-                        "EMOJI": "✅",
-                        "VALUE": 8
+                        "emoji": "✅",
+                        "value": 8
                     }
                 ]
             }
@@ -505,1466 +507,1466 @@ def dummyapi():
         "heatmap": {
             "All": [
                 {
-                    "DATE": "11-19-20",
-                    "MESSAGE": 1488
+                    "count": 1488,
+                    "date": "11-19-20"
                 },
                 {
-                    "DATE": "12-4-20",
-                    "MESSAGE": 1080
+                    "count": 1080,
+                    "date": "12-4-20"
                 },
                 {
-                    "DATE": "10-28-20",
-                    "MESSAGE": 863
+                    "count": 863,
+                    "date": "10-28-20"
                 },
                 {
-                    "DATE": "11-11-20",
-                    "MESSAGE": 844
+                    "count": 844,
+                    "date": "11-11-20"
                 },
                 {
-                    "DATE": "11-5-20",
-                    "MESSAGE": 802
+                    "count": 802,
+                    "date": "11-5-20"
                 },
                 {
-                    "DATE": "12-3-20",
-                    "MESSAGE": 785
+                    "count": 785,
+                    "date": "12-3-20"
                 },
                 {
-                    "DATE": "11-7-20",
-                    "MESSAGE": 762
+                    "count": 762,
+                    "date": "11-7-20"
                 },
                 {
-                    "DATE": "12-8-20",
-                    "MESSAGE": 755
+                    "count": 755,
+                    "date": "12-8-20"
                 },
                 {
-                    "DATE": "12-19-20",
-                    "MESSAGE": 752
+                    "count": 752,
+                    "date": "12-19-20"
                 },
                 {
-                    "DATE": "10-29-20",
-                    "MESSAGE": 745
+                    "count": 745,
+                    "date": "10-29-20"
                 },
                 {
-                    "DATE": "11-26-20",
-                    "MESSAGE": 736
+                    "count": 736,
+                    "date": "11-26-20"
                 },
                 {
-                    "DATE": "11-21-20",
-                    "MESSAGE": 731
+                    "count": 731,
+                    "date": "11-21-20"
                 },
                 {
-                    "DATE": "12-21-20",
-                    "MESSAGE": 697
+                    "count": 697,
+                    "date": "12-21-20"
                 },
                 {
-                    "DATE": "11-28-20",
-                    "MESSAGE": 694
+                    "count": 694,
+                    "date": "11-28-20"
                 },
                 {
-                    "DATE": "12-20-20",
-                    "MESSAGE": 669
+                    "count": 669,
+                    "date": "12-20-20"
                 },
                 {
-                    "DATE": "10-27-20",
-                    "MESSAGE": 658
+                    "count": 658,
+                    "date": "10-27-20"
                 },
                 {
-                    "DATE": "11-4-20",
-                    "MESSAGE": 643
+                    "count": 643,
+                    "date": "11-4-20"
                 },
                 {
-                    "DATE": "11-8-20",
-                    "MESSAGE": 637
+                    "count": 637,
+                    "date": "11-8-20"
                 },
                 {
-                    "DATE": "1-15-21",
-                    "MESSAGE": 618
+                    "count": 618,
+                    "date": "1-15-21"
                 },
                 {
-                    "DATE": "11-20-20",
-                    "MESSAGE": 595
+                    "count": 595,
+                    "date": "11-20-20"
                 },
                 {
-                    "DATE": "1-20-21",
-                    "MESSAGE": 573
+                    "count": 573,
+                    "date": "1-20-21"
                 },
                 {
-                    "DATE": "12-15-20",
-                    "MESSAGE": 567
+                    "count": 567,
+                    "date": "12-15-20"
                 },
                 {
-                    "DATE": "1-2-21",
-                    "MESSAGE": 564
+                    "count": 564,
+                    "date": "1-2-21"
                 },
                 {
-                    "DATE": "11-25-20",
-                    "MESSAGE": 552
+                    "count": 552,
+                    "date": "11-25-20"
                 },
                 {
-                    "DATE": "1-6-21",
-                    "MESSAGE": 550
+                    "count": 550,
+                    "date": "1-6-21"
                 },
                 {
-                    "DATE": "10-31-20",
-                    "MESSAGE": 543
+                    "count": 543,
+                    "date": "10-31-20"
                 },
                 {
-                    "DATE": "12-2-20",
-                    "MESSAGE": 540
+                    "count": 540,
+                    "date": "12-2-20"
                 },
                 {
-                    "DATE": "12-5-20",
-                    "MESSAGE": 497
+                    "count": 497,
+                    "date": "12-5-20"
                 },
                 {
-                    "DATE": "12-31-20",
-                    "MESSAGE": 474
+                    "count": 474,
+                    "date": "12-31-20"
                 },
                 {
-                    "DATE": "12-9-20",
-                    "MESSAGE": 471
+                    "count": 471,
+                    "date": "12-9-20"
                 },
                 {
-                    "DATE": "11-1-20",
-                    "MESSAGE": 466
+                    "count": 466,
+                    "date": "11-1-20"
                 },
                 {
-                    "DATE": "1-11-21",
-                    "MESSAGE": 466
+                    "count": 466,
+                    "date": "1-11-21"
                 },
                 {
-                    "DATE": "12-23-20",
-                    "MESSAGE": 459
+                    "count": 459,
+                    "date": "12-23-20"
                 },
                 {
-                    "DATE": "12-12-20",
-                    "MESSAGE": 452
+                    "count": 452,
+                    "date": "12-12-20"
                 },
                 {
-                    "DATE": "11-10-20",
-                    "MESSAGE": 451
+                    "count": 451,
+                    "date": "11-10-20"
                 },
                 {
-                    "DATE": "12-14-20",
-                    "MESSAGE": 449
+                    "count": 449,
+                    "date": "12-14-20"
                 },
                 {
-                    "DATE": "12-7-20",
-                    "MESSAGE": 443
+                    "count": 443,
+                    "date": "12-7-20"
                 },
                 {
-                    "DATE": "11-27-20",
-                    "MESSAGE": 434
+                    "count": 434,
+                    "date": "11-27-20"
                 },
                 {
-                    "DATE": "1-5-21",
-                    "MESSAGE": 428
+                    "count": 428,
+                    "date": "1-5-21"
                 },
                 {
-                    "DATE": "11-29-20",
-                    "MESSAGE": 427
+                    "count": 427,
+                    "date": "11-29-20"
                 },
                 {
-                    "DATE": "1-8-21",
-                    "MESSAGE": 400
+                    "count": 400,
+                    "date": "1-8-21"
                 },
                 {
-                    "DATE": "1-7-21",
-                    "MESSAGE": 399
+                    "count": 399,
+                    "date": "1-7-21"
                 },
                 {
-                    "DATE": "12-27-20",
-                    "MESSAGE": 399
+                    "count": 399,
+                    "date": "12-27-20"
                 },
                 {
-                    "DATE": "11-13-20",
-                    "MESSAGE": 395
+                    "count": 395,
+                    "date": "11-13-20"
                 },
                 {
-                    "DATE": "1-23-21",
-                    "MESSAGE": 395
+                    "count": 395,
+                    "date": "1-23-21"
                 },
                 {
-                    "DATE": "1-13-21",
-                    "MESSAGE": 394
+                    "count": 394,
+                    "date": "1-13-21"
                 },
                 {
-                    "DATE": "1-21-21",
-                    "MESSAGE": 390
+                    "count": 390,
+                    "date": "1-21-21"
                 },
                 {
-                    "DATE": "11-9-20",
-                    "MESSAGE": 388
+                    "count": 388,
+                    "date": "11-9-20"
                 },
                 {
-                    "DATE": "12-17-20",
-                    "MESSAGE": 375
+                    "count": 375,
+                    "date": "12-17-20"
                 },
                 {
-                    "DATE": "11-6-20",
-                    "MESSAGE": 374
+                    "count": 374,
+                    "date": "11-6-20"
                 },
                 {
-                    "DATE": "12-24-20",
-                    "MESSAGE": 372
+                    "count": 372,
+                    "date": "12-24-20"
                 },
                 {
-                    "DATE": "11-23-20",
-                    "MESSAGE": 367
+                    "count": 367,
+                    "date": "11-23-20"
                 },
                 {
-                    "DATE": "1-19-21",
-                    "MESSAGE": 360
+                    "count": 360,
+                    "date": "1-19-21"
                 },
                 {
-                    "DATE": "1-10-21",
-                    "MESSAGE": 354
+                    "count": 354,
+                    "date": "1-10-21"
                 },
                 {
-                    "DATE": "1-18-21",
-                    "MESSAGE": 350
+                    "count": 350,
+                    "date": "1-18-21"
                 },
                 {
-                    "DATE": "1-24-21",
-                    "MESSAGE": 342
+                    "count": 342,
+                    "date": "1-24-21"
                 },
                 {
-                    "DATE": "1-9-21",
-                    "MESSAGE": 337
+                    "count": 337,
+                    "date": "1-9-21"
                 },
                 {
-                    "DATE": "12-11-20",
-                    "MESSAGE": 335
+                    "count": 335,
+                    "date": "12-11-20"
                 },
                 {
-                    "DATE": "12-22-20",
-                    "MESSAGE": 335
+                    "count": 335,
+                    "date": "12-22-20"
                 },
                 {
-                    "DATE": "11-30-20",
-                    "MESSAGE": 335
+                    "count": 335,
+                    "date": "11-30-20"
                 },
                 {
-                    "DATE": "12-26-20",
-                    "MESSAGE": 329
+                    "count": 329,
+                    "date": "12-26-20"
                 },
                 {
-                    "DATE": "1-1-21",
-                    "MESSAGE": 328
+                    "count": 328,
+                    "date": "1-1-21"
                 },
                 {
-                    "DATE": "12-29-20",
-                    "MESSAGE": 317
+                    "count": 317,
+                    "date": "12-29-20"
                 },
                 {
-                    "DATE": "1-16-21",
-                    "MESSAGE": 311
+                    "count": 311,
+                    "date": "1-16-21"
                 },
                 {
-                    "DATE": "1-17-21",
-                    "MESSAGE": 303
+                    "count": 303,
+                    "date": "1-17-21"
                 },
                 {
-                    "DATE": "12-6-20",
-                    "MESSAGE": 303
+                    "count": 303,
+                    "date": "12-6-20"
                 },
                 {
-                    "DATE": "1-25-21",
-                    "MESSAGE": 300
+                    "count": 300,
+                    "date": "1-25-21"
                 },
                 {
-                    "DATE": "1-12-21",
-                    "MESSAGE": 281
+                    "count": 281,
+                    "date": "1-12-21"
                 },
                 {
-                    "DATE": "1-22-21",
-                    "MESSAGE": 276
+                    "count": 276,
+                    "date": "1-22-21"
                 },
                 {
-                    "DATE": "11-22-20",
-                    "MESSAGE": 265
+                    "count": 265,
+                    "date": "11-22-20"
                 },
                 {
-                    "DATE": "12-25-20",
-                    "MESSAGE": 264
+                    "count": 264,
+                    "date": "12-25-20"
                 },
                 {
-                    "DATE": "11-14-20",
-                    "MESSAGE": 259
+                    "count": 259,
+                    "date": "11-14-20"
                 },
                 {
-                    "DATE": "1-4-21",
-                    "MESSAGE": 256
+                    "count": 256,
+                    "date": "1-4-21"
                 },
                 {
-                    "DATE": "11-24-20",
-                    "MESSAGE": 250
+                    "count": 250,
+                    "date": "11-24-20"
                 },
                 {
-                    "DATE": "11-17-20",
-                    "MESSAGE": 247
+                    "count": 247,
+                    "date": "11-17-20"
                 },
                 {
-                    "DATE": "11-15-20",
-                    "MESSAGE": 244
+                    "count": 244,
+                    "date": "11-15-20"
                 },
                 {
-                    "DATE": "10-30-20",
-                    "MESSAGE": 233
+                    "count": 233,
+                    "date": "10-30-20"
                 },
                 {
-                    "DATE": "11-12-20",
-                    "MESSAGE": 232
+                    "count": 232,
+                    "date": "11-12-20"
                 },
                 {
-                    "DATE": "12-28-20",
-                    "MESSAGE": 223
+                    "count": 223,
+                    "date": "12-28-20"
                 },
                 {
-                    "DATE": "12-16-20",
-                    "MESSAGE": 207
+                    "count": 207,
+                    "date": "12-16-20"
                 },
                 {
-                    "DATE": "1-3-21",
-                    "MESSAGE": 196
+                    "count": 196,
+                    "date": "1-3-21"
                 },
                 {
-                    "DATE": "11-16-20",
-                    "MESSAGE": 194
+                    "count": 194,
+                    "date": "11-16-20"
                 },
                 {
-                    "DATE": "11-3-20",
-                    "MESSAGE": 183
+                    "count": 183,
+                    "date": "11-3-20"
                 },
                 {
-                    "DATE": "12-30-20",
-                    "MESSAGE": 179
+                    "count": 179,
+                    "date": "12-30-20"
                 },
                 {
-                    "DATE": "11-18-20",
-                    "MESSAGE": 178
+                    "count": 178,
+                    "date": "11-18-20"
                 },
                 {
-                    "DATE": "12-1-20",
-                    "MESSAGE": 158
+                    "count": 158,
+                    "date": "12-1-20"
                 },
                 {
-                    "DATE": "12-18-20",
-                    "MESSAGE": 142
+                    "count": 142,
+                    "date": "12-18-20"
                 },
                 {
-                    "DATE": "11-2-20",
-                    "MESSAGE": 138
+                    "count": 138,
+                    "date": "11-2-20"
                 },
                 {
-                    "DATE": "1-14-21",
-                    "MESSAGE": 137
+                    "count": 137,
+                    "date": "1-14-21"
                 },
                 {
-                    "DATE": "12-10-20",
-                    "MESSAGE": 137
+                    "count": 137,
+                    "date": "12-10-20"
                 },
                 {
-                    "DATE": "12-13-20",
-                    "MESSAGE": 120
+                    "count": 120,
+                    "date": "12-13-20"
                 }
             ],
             "Atharva Kulkarni": [
                 {
-                    "DATE": "12-4-20",
-                    "MESSAGE": 439
+                    "count": 439,
+                    "date": "12-4-20"
                 },
                 {
-                    "DATE": "11-19-20",
-                    "MESSAGE": 434
+                    "count": 434,
+                    "date": "11-19-20"
                 },
                 {
-                    "DATE": "12-19-20",
-                    "MESSAGE": 332
+                    "count": 332,
+                    "date": "12-19-20"
                 },
                 {
-                    "DATE": "12-3-20",
-                    "MESSAGE": 322
+                    "count": 322,
+                    "date": "12-3-20"
                 },
                 {
-                    "DATE": "11-28-20",
-                    "MESSAGE": 310
+                    "count": 310,
+                    "date": "11-28-20"
                 },
                 {
-                    "DATE": "11-7-20",
-                    "MESSAGE": 308
+                    "count": 308,
+                    "date": "11-7-20"
                 },
                 {
-                    "DATE": "12-21-20",
-                    "MESSAGE": 305
+                    "count": 305,
+                    "date": "12-21-20"
                 },
                 {
-                    "DATE": "12-20-20",
-                    "MESSAGE": 304
+                    "count": 304,
+                    "date": "12-20-20"
                 },
                 {
-                    "DATE": "11-26-20",
-                    "MESSAGE": 287
+                    "count": 287,
+                    "date": "11-26-20"
                 },
                 {
-                    "DATE": "10-29-20",
-                    "MESSAGE": 283
+                    "count": 283,
+                    "date": "10-29-20"
                 },
                 {
-                    "DATE": "11-5-20",
-                    "MESSAGE": 280
+                    "count": 280,
+                    "date": "11-5-20"
                 },
                 {
-                    "DATE": "1-15-21",
-                    "MESSAGE": 280
+                    "count": 280,
+                    "date": "1-15-21"
                 },
                 {
-                    "DATE": "10-27-20",
-                    "MESSAGE": 273
+                    "count": 273,
+                    "date": "10-27-20"
                 },
                 {
-                    "DATE": "11-21-20",
-                    "MESSAGE": 271
+                    "count": 271,
+                    "date": "11-21-20"
                 },
                 {
-                    "DATE": "1-20-21",
-                    "MESSAGE": 262
+                    "count": 262,
+                    "date": "1-20-21"
                 },
                 {
-                    "DATE": "11-4-20",
-                    "MESSAGE": 253
+                    "count": 253,
+                    "date": "11-4-20"
                 },
                 {
-                    "DATE": "10-31-20",
-                    "MESSAGE": 251
+                    "count": 251,
+                    "date": "10-31-20"
                 },
                 {
-                    "DATE": "1-2-21",
-                    "MESSAGE": 248
+                    "count": 248,
+                    "date": "1-2-21"
                 },
                 {
-                    "DATE": "12-8-20",
-                    "MESSAGE": 246
+                    "count": 246,
+                    "date": "12-8-20"
                 },
                 {
-                    "DATE": "1-6-21",
-                    "MESSAGE": 243
+                    "count": 243,
+                    "date": "1-6-21"
                 },
                 {
-                    "DATE": "12-15-20",
-                    "MESSAGE": 242
+                    "count": 242,
+                    "date": "12-15-20"
                 },
                 {
-                    "DATE": "10-28-20",
-                    "MESSAGE": 242
+                    "count": 242,
+                    "date": "10-28-20"
                 },
                 {
-                    "DATE": "12-31-20",
-                    "MESSAGE": 228
+                    "count": 228,
+                    "date": "12-31-20"
                 },
                 {
-                    "DATE": "11-8-20",
-                    "MESSAGE": 211
+                    "count": 211,
+                    "date": "11-8-20"
                 },
                 {
-                    "DATE": "1-11-21",
-                    "MESSAGE": 211
+                    "count": 211,
+                    "date": "1-11-21"
                 },
                 {
-                    "DATE": "1-21-21",
-                    "MESSAGE": 205
+                    "count": 205,
+                    "date": "1-21-21"
                 },
                 {
-                    "DATE": "12-9-20",
-                    "MESSAGE": 203
+                    "count": 203,
+                    "date": "12-9-20"
                 },
                 {
-                    "DATE": "11-11-20",
-                    "MESSAGE": 202
+                    "count": 202,
+                    "date": "11-11-20"
                 },
                 {
-                    "DATE": "11-25-20",
-                    "MESSAGE": 195
+                    "count": 195,
+                    "date": "11-25-20"
                 },
                 {
-                    "DATE": "1-5-21",
-                    "MESSAGE": 195
+                    "count": 195,
+                    "date": "1-5-21"
                 },
                 {
-                    "DATE": "12-7-20",
-                    "MESSAGE": 191
+                    "count": 191,
+                    "date": "12-7-20"
                 },
                 {
-                    "DATE": "12-23-20",
-                    "MESSAGE": 188
+                    "count": 188,
+                    "date": "12-23-20"
                 },
                 {
-                    "DATE": "12-24-20",
-                    "MESSAGE": 186
+                    "count": 186,
+                    "date": "12-24-20"
                 },
                 {
-                    "DATE": "12-2-20",
-                    "MESSAGE": 186
+                    "count": 186,
+                    "date": "12-2-20"
                 },
                 {
-                    "DATE": "12-17-20",
-                    "MESSAGE": 180
+                    "count": 180,
+                    "date": "12-17-20"
                 },
                 {
-                    "DATE": "12-12-20",
-                    "MESSAGE": 179
+                    "count": 179,
+                    "date": "12-12-20"
                 },
                 {
-                    "DATE": "1-23-21",
-                    "MESSAGE": 178
+                    "count": 178,
+                    "date": "1-23-21"
                 },
                 {
-                    "DATE": "1-19-21",
-                    "MESSAGE": 175
+                    "count": 175,
+                    "date": "1-19-21"
                 },
                 {
-                    "DATE": "12-5-20",
-                    "MESSAGE": 172
+                    "count": 172,
+                    "date": "12-5-20"
                 },
                 {
-                    "DATE": "1-13-21",
-                    "MESSAGE": 171
+                    "count": 171,
+                    "date": "1-13-21"
                 },
                 {
-                    "DATE": "1-18-21",
-                    "MESSAGE": 171
+                    "count": 171,
+                    "date": "1-18-21"
                 },
                 {
-                    "DATE": "11-10-20",
-                    "MESSAGE": 169
+                    "count": 169,
+                    "date": "11-10-20"
                 },
                 {
-                    "DATE": "1-8-21",
-                    "MESSAGE": 164
+                    "count": 164,
+                    "date": "1-8-21"
                 },
                 {
-                    "DATE": "11-27-20",
-                    "MESSAGE": 163
+                    "count": 163,
+                    "date": "11-27-20"
                 },
                 {
-                    "DATE": "1-7-21",
-                    "MESSAGE": 158
+                    "count": 158,
+                    "date": "1-7-21"
                 },
                 {
-                    "DATE": "12-22-20",
-                    "MESSAGE": 157
+                    "count": 157,
+                    "date": "12-22-20"
                 },
                 {
-                    "DATE": "12-14-20",
-                    "MESSAGE": 157
+                    "count": 157,
+                    "date": "12-14-20"
                 },
                 {
-                    "DATE": "11-29-20",
-                    "MESSAGE": 154
+                    "count": 154,
+                    "date": "11-29-20"
                 },
                 {
-                    "DATE": "11-20-20",
-                    "MESSAGE": 148
+                    "count": 148,
+                    "date": "11-20-20"
                 },
                 {
-                    "DATE": "11-9-20",
-                    "MESSAGE": 147
+                    "count": 147,
+                    "date": "11-9-20"
                 },
                 {
-                    "DATE": "11-30-20",
-                    "MESSAGE": 142
+                    "count": 142,
+                    "date": "11-30-20"
                 },
                 {
-                    "DATE": "12-29-20",
-                    "MESSAGE": 138
+                    "count": 138,
+                    "date": "12-29-20"
                 },
                 {
-                    "DATE": "1-1-21",
-                    "MESSAGE": 134
+                    "count": 134,
+                    "date": "1-1-21"
                 },
                 {
-                    "DATE": "12-6-20",
-                    "MESSAGE": 134
+                    "count": 134,
+                    "date": "12-6-20"
                 },
                 {
-                    "DATE": "1-24-21",
-                    "MESSAGE": 133
+                    "count": 133,
+                    "date": "1-24-21"
                 },
                 {
-                    "DATE": "12-11-20",
-                    "MESSAGE": 131
+                    "count": 131,
+                    "date": "12-11-20"
                 },
                 {
-                    "DATE": "12-25-20",
-                    "MESSAGE": 131
+                    "count": 131,
+                    "date": "12-25-20"
                 },
                 {
-                    "DATE": "1-25-21",
-                    "MESSAGE": 129
+                    "count": 129,
+                    "date": "1-25-21"
                 },
                 {
-                    "DATE": "11-22-20",
-                    "MESSAGE": 126
+                    "count": 126,
+                    "date": "11-22-20"
                 },
                 {
-                    "DATE": "11-6-20",
-                    "MESSAGE": 123
+                    "count": 123,
+                    "date": "11-6-20"
                 },
                 {
-                    "DATE": "11-23-20",
-                    "MESSAGE": 122
+                    "count": 122,
+                    "date": "11-23-20"
                 },
                 {
-                    "DATE": "1-16-21",
-                    "MESSAGE": 121
+                    "count": 121,
+                    "date": "1-16-21"
                 },
                 {
-                    "DATE": "1-12-21",
-                    "MESSAGE": 120
+                    "count": 120,
+                    "date": "1-12-21"
                 },
                 {
-                    "DATE": "1-9-21",
-                    "MESSAGE": 117
+                    "count": 117,
+                    "date": "1-9-21"
                 },
                 {
-                    "DATE": "12-26-20",
-                    "MESSAGE": 111
+                    "count": 111,
+                    "date": "12-26-20"
                 },
                 {
-                    "DATE": "1-17-21",
-                    "MESSAGE": 107
+                    "count": 107,
+                    "date": "1-17-21"
                 },
                 {
-                    "DATE": "1-4-21",
-                    "MESSAGE": 107
+                    "count": 107,
+                    "date": "1-4-21"
                 },
                 {
-                    "DATE": "12-27-20",
-                    "MESSAGE": 104
+                    "count": 104,
+                    "date": "12-27-20"
                 },
                 {
-                    "DATE": "11-13-20",
-                    "MESSAGE": 99
+                    "count": 99,
+                    "date": "11-13-20"
                 },
                 {
-                    "DATE": "11-1-20",
-                    "MESSAGE": 98
+                    "count": 98,
+                    "date": "11-1-20"
                 },
                 {
-                    "DATE": "12-16-20",
-                    "MESSAGE": 97
+                    "count": 97,
+                    "date": "12-16-20"
                 },
                 {
-                    "DATE": "12-30-20",
-                    "MESSAGE": 88
+                    "count": 88,
+                    "date": "12-30-20"
                 },
                 {
-                    "DATE": "11-14-20",
-                    "MESSAGE": 88
+                    "count": 88,
+                    "date": "11-14-20"
                 },
                 {
-                    "DATE": "1-3-21",
-                    "MESSAGE": 85
+                    "count": 85,
+                    "date": "1-3-21"
                 },
                 {
-                    "DATE": "11-24-20",
-                    "MESSAGE": 85
+                    "count": 85,
+                    "date": "11-24-20"
                 },
                 {
-                    "DATE": "10-30-20",
-                    "MESSAGE": 83
+                    "count": 83,
+                    "date": "10-30-20"
                 },
                 {
-                    "DATE": "1-22-21",
-                    "MESSAGE": 78
+                    "count": 78,
+                    "date": "1-22-21"
                 },
                 {
-                    "DATE": "11-18-20",
-                    "MESSAGE": 77
+                    "count": 77,
+                    "date": "11-18-20"
                 },
                 {
-                    "DATE": "1-14-21",
-                    "MESSAGE": 74
+                    "count": 74,
+                    "date": "1-14-21"
                 },
                 {
-                    "DATE": "1-10-21",
-                    "MESSAGE": 74
+                    "count": 74,
+                    "date": "1-10-21"
                 },
                 {
-                    "DATE": "12-10-20",
-                    "MESSAGE": 69
+                    "count": 69,
+                    "date": "12-10-20"
                 },
                 {
-                    "DATE": "12-18-20",
-                    "MESSAGE": 65
+                    "count": 65,
+                    "date": "12-18-20"
                 },
                 {
-                    "DATE": "11-3-20",
-                    "MESSAGE": 65
+                    "count": 65,
+                    "date": "11-3-20"
                 },
                 {
-                    "DATE": "12-1-20",
-                    "MESSAGE": 63
+                    "count": 63,
+                    "date": "12-1-20"
                 },
                 {
-                    "DATE": "12-28-20",
-                    "MESSAGE": 63
+                    "count": 63,
+                    "date": "12-28-20"
                 },
                 {
-                    "DATE": "11-16-20",
-                    "MESSAGE": 62
+                    "count": 62,
+                    "date": "11-16-20"
                 },
                 {
-                    "DATE": "11-17-20",
-                    "MESSAGE": 61
+                    "count": 61,
+                    "date": "11-17-20"
                 },
                 {
-                    "DATE": "11-15-20",
-                    "MESSAGE": 60
+                    "count": 60,
+                    "date": "11-15-20"
                 },
                 {
-                    "DATE": "12-13-20",
-                    "MESSAGE": 59
+                    "count": 59,
+                    "date": "12-13-20"
                 },
                 {
-                    "DATE": "11-12-20",
-                    "MESSAGE": 56
+                    "count": 56,
+                    "date": "11-12-20"
                 },
                 {
-                    "DATE": "11-2-20",
-                    "MESSAGE": 43
+                    "count": 43,
+                    "date": "11-2-20"
                 }
             ],
             "Sumit Kolpekwar": [
                 {
-                    "DATE": "11-19-20",
-                    "MESSAGE": 557
+                    "count": 557,
+                    "date": "11-19-20"
                 },
                 {
-                    "DATE": "10-28-20",
-                    "MESSAGE": 392
+                    "count": 392,
+                    "date": "10-28-20"
                 },
                 {
-                    "DATE": "11-11-20",
-                    "MESSAGE": 388
+                    "count": 388,
+                    "date": "11-11-20"
                 },
                 {
-                    "DATE": "12-4-20",
-                    "MESSAGE": 369
+                    "count": 369,
+                    "date": "12-4-20"
                 },
                 {
-                    "DATE": "11-5-20",
-                    "MESSAGE": 364
+                    "count": 364,
+                    "date": "11-5-20"
                 },
                 {
-                    "DATE": "12-8-20",
-                    "MESSAGE": 312
+                    "count": 312,
+                    "date": "12-8-20"
                 },
                 {
-                    "DATE": "11-7-20",
-                    "MESSAGE": 303
+                    "count": 303,
+                    "date": "11-7-20"
                 },
                 {
-                    "DATE": "11-4-20",
-                    "MESSAGE": 299
+                    "count": 299,
+                    "date": "11-4-20"
                 },
                 {
-                    "DATE": "11-20-20",
-                    "MESSAGE": 294
+                    "count": 294,
+                    "date": "11-20-20"
                 },
                 {
-                    "DATE": "12-21-20",
-                    "MESSAGE": 291
+                    "count": 291,
+                    "date": "12-21-20"
                 },
                 {
-                    "DATE": "11-26-20",
-                    "MESSAGE": 284
+                    "count": 284,
+                    "date": "11-26-20"
                 },
                 {
-                    "DATE": "11-28-20",
-                    "MESSAGE": 276
+                    "count": 276,
+                    "date": "11-28-20"
                 },
                 {
-                    "DATE": "11-21-20",
-                    "MESSAGE": 275
+                    "count": 275,
+                    "date": "11-21-20"
                 },
                 {
-                    "DATE": "12-3-20",
-                    "MESSAGE": 267
+                    "count": 267,
+                    "date": "12-3-20"
                 },
                 {
-                    "DATE": "12-19-20",
-                    "MESSAGE": 253
+                    "count": 253,
+                    "date": "12-19-20"
                 },
                 {
-                    "DATE": "10-29-20",
-                    "MESSAGE": 253
+                    "count": 253,
+                    "date": "10-29-20"
                 },
                 {
-                    "DATE": "11-25-20",
-                    "MESSAGE": 242
+                    "count": 242,
+                    "date": "11-25-20"
                 },
                 {
-                    "DATE": "11-8-20",
-                    "MESSAGE": 226
+                    "count": 226,
+                    "date": "11-8-20"
                 },
                 {
-                    "DATE": "12-2-20",
-                    "MESSAGE": 225
+                    "count": 225,
+                    "date": "12-2-20"
                 },
                 {
-                    "DATE": "10-27-20",
-                    "MESSAGE": 221
+                    "count": 221,
+                    "date": "10-27-20"
                 },
                 {
-                    "DATE": "1-15-21",
-                    "MESSAGE": 215
+                    "count": 215,
+                    "date": "1-15-21"
                 },
                 {
-                    "DATE": "12-9-20",
-                    "MESSAGE": 188
+                    "count": 188,
+                    "date": "12-9-20"
                 },
                 {
-                    "DATE": "11-1-20",
-                    "MESSAGE": 184
+                    "count": 184,
+                    "date": "11-1-20"
                 },
                 {
-                    "DATE": "12-27-20",
-                    "MESSAGE": 181
+                    "count": 181,
+                    "date": "12-27-20"
                 },
                 {
-                    "DATE": "12-5-20",
-                    "MESSAGE": 179
+                    "count": 179,
+                    "date": "12-5-20"
                 },
                 {
-                    "DATE": "11-27-20",
-                    "MESSAGE": 177
+                    "count": 177,
+                    "date": "11-27-20"
                 },
                 {
-                    "DATE": "1-6-21",
-                    "MESSAGE": 177
+                    "count": 177,
+                    "date": "1-6-21"
                 },
                 {
-                    "DATE": "1-2-21",
-                    "MESSAGE": 176
+                    "count": 176,
+                    "date": "1-2-21"
                 },
                 {
-                    "DATE": "11-10-20",
-                    "MESSAGE": 174
+                    "count": 174,
+                    "date": "11-10-20"
                 },
                 {
-                    "DATE": "11-9-20",
-                    "MESSAGE": 173
+                    "count": 173,
+                    "date": "11-9-20"
                 },
                 {
-                    "DATE": "1-10-21",
-                    "MESSAGE": 172
+                    "count": 172,
+                    "date": "1-10-21"
                 },
                 {
-                    "DATE": "12-31-20",
-                    "MESSAGE": 170
+                    "count": 170,
+                    "date": "12-31-20"
                 },
                 {
-                    "DATE": "12-15-20",
-                    "MESSAGE": 170
+                    "count": 170,
+                    "date": "12-15-20"
                 },
                 {
-                    "DATE": "12-20-20",
-                    "MESSAGE": 169
+                    "count": 169,
+                    "date": "12-20-20"
                 },
                 {
-                    "DATE": "12-14-20",
-                    "MESSAGE": 168
+                    "count": 168,
+                    "date": "12-14-20"
                 },
                 {
-                    "DATE": "10-31-20",
-                    "MESSAGE": 162
+                    "count": 162,
+                    "date": "10-31-20"
                 },
                 {
-                    "DATE": "12-12-20",
-                    "MESSAGE": 161
+                    "count": 161,
+                    "date": "12-12-20"
                 },
                 {
-                    "DATE": "11-13-20",
-                    "MESSAGE": 161
+                    "count": 161,
+                    "date": "11-13-20"
                 },
                 {
-                    "DATE": "11-23-20",
-                    "MESSAGE": 151
+                    "count": 151,
+                    "date": "11-23-20"
                 },
                 {
-                    "DATE": "1-8-21",
-                    "MESSAGE": 147
+                    "count": 147,
+                    "date": "1-8-21"
                 },
                 {
-                    "DATE": "1-9-21",
-                    "MESSAGE": 145
+                    "count": 145,
+                    "date": "1-9-21"
                 },
                 {
-                    "DATE": "1-7-21",
-                    "MESSAGE": 142
+                    "count": 142,
+                    "date": "1-7-21"
                 },
                 {
-                    "DATE": "11-30-20",
-                    "MESSAGE": 138
+                    "count": 138,
+                    "date": "11-30-20"
                 },
                 {
-                    "DATE": "12-22-20",
-                    "MESSAGE": 138
+                    "count": 138,
+                    "date": "12-22-20"
                 },
                 {
-                    "DATE": "12-7-20",
-                    "MESSAGE": 133
+                    "count": 133,
+                    "date": "12-7-20"
                 },
                 {
-                    "DATE": "1-17-21",
-                    "MESSAGE": 133
+                    "count": 133,
+                    "date": "1-17-21"
                 },
                 {
-                    "DATE": "11-29-20",
-                    "MESSAGE": 132
+                    "count": 132,
+                    "date": "11-29-20"
                 },
                 {
-                    "DATE": "11-6-20",
-                    "MESSAGE": 130
+                    "count": 130,
+                    "date": "11-6-20"
                 },
                 {
-                    "DATE": "12-29-20",
-                    "MESSAGE": 128
+                    "count": 128,
+                    "date": "12-29-20"
                 },
                 {
-                    "DATE": "12-11-20",
-                    "MESSAGE": 127
+                    "count": 127,
+                    "date": "12-11-20"
                 },
                 {
-                    "DATE": "1-5-21",
-                    "MESSAGE": 126
+                    "count": 126,
+                    "date": "1-5-21"
                 },
                 {
-                    "DATE": "1-11-21",
-                    "MESSAGE": 125
+                    "count": 125,
+                    "date": "1-11-21"
                 },
                 {
-                    "DATE": "1-13-21",
-                    "MESSAGE": 118
+                    "count": 118,
+                    "date": "1-13-21"
                 },
                 {
-                    "DATE": "12-26-20",
-                    "MESSAGE": 116
+                    "count": 116,
+                    "date": "12-26-20"
                 },
                 {
-                    "DATE": "1-20-21",
-                    "MESSAGE": 116
+                    "count": 116,
+                    "date": "1-20-21"
                 },
                 {
-                    "DATE": "1-21-21",
-                    "MESSAGE": 115
+                    "count": 115,
+                    "date": "1-21-21"
                 },
                 {
-                    "DATE": "12-23-20",
-                    "MESSAGE": 105
+                    "count": 105,
+                    "date": "12-23-20"
                 },
                 {
-                    "DATE": "1-22-21",
-                    "MESSAGE": 104
+                    "count": 104,
+                    "date": "1-22-21"
                 },
                 {
-                    "DATE": "1-16-21",
-                    "MESSAGE": 104
+                    "count": 104,
+                    "date": "1-16-21"
                 },
                 {
-                    "DATE": "1-25-21",
-                    "MESSAGE": 102
+                    "count": 102,
+                    "date": "1-25-21"
                 },
                 {
-                    "DATE": "1-1-21",
-                    "MESSAGE": 98
+                    "count": 98,
+                    "date": "1-1-21"
                 },
                 {
-                    "DATE": "1-4-21",
-                    "MESSAGE": 98
+                    "count": 98,
+                    "date": "1-4-21"
                 },
                 {
-                    "DATE": "1-18-21",
-                    "MESSAGE": 98
+                    "count": 98,
+                    "date": "1-18-21"
                 },
                 {
-                    "DATE": "11-14-20",
-                    "MESSAGE": 97
+                    "count": 97,
+                    "date": "11-14-20"
                 },
                 {
-                    "DATE": "11-22-20",
-                    "MESSAGE": 95
+                    "count": 95,
+                    "date": "11-22-20"
                 },
                 {
-                    "DATE": "11-15-20",
-                    "MESSAGE": 91
+                    "count": 91,
+                    "date": "11-15-20"
                 },
                 {
-                    "DATE": "1-19-21",
-                    "MESSAGE": 91
+                    "count": 91,
+                    "date": "1-19-21"
                 },
                 {
-                    "DATE": "12-6-20",
-                    "MESSAGE": 88
+                    "count": 88,
+                    "date": "12-6-20"
                 },
                 {
-                    "DATE": "11-24-20",
-                    "MESSAGE": 88
+                    "count": 88,
+                    "date": "11-24-20"
                 },
                 {
-                    "DATE": "1-23-21",
-                    "MESSAGE": 85
+                    "count": 85,
+                    "date": "1-23-21"
                 },
                 {
-                    "DATE": "11-3-20",
-                    "MESSAGE": 84
+                    "count": 84,
+                    "date": "11-3-20"
                 },
                 {
-                    "DATE": "12-17-20",
-                    "MESSAGE": 84
+                    "count": 84,
+                    "date": "12-17-20"
                 },
                 {
-                    "DATE": "11-12-20",
-                    "MESSAGE": 81
+                    "count": 81,
+                    "date": "11-12-20"
                 },
                 {
-                    "DATE": "11-16-20",
-                    "MESSAGE": 79
+                    "count": 79,
+                    "date": "11-16-20"
                 },
                 {
-                    "DATE": "11-17-20",
-                    "MESSAGE": 79
+                    "count": 79,
+                    "date": "11-17-20"
                 },
                 {
-                    "DATE": "12-25-20",
-                    "MESSAGE": 75
+                    "count": 75,
+                    "date": "12-25-20"
                 },
                 {
-                    "DATE": "12-24-20",
-                    "MESSAGE": 74
+                    "count": 74,
+                    "date": "12-24-20"
                 },
                 {
-                    "DATE": "1-12-21",
-                    "MESSAGE": 72
+                    "count": 72,
+                    "date": "1-12-21"
                 },
                 {
-                    "DATE": "10-30-20",
-                    "MESSAGE": 72
+                    "count": 72,
+                    "date": "10-30-20"
                 },
                 {
-                    "DATE": "12-28-20",
-                    "MESSAGE": 69
+                    "count": 69,
+                    "date": "12-28-20"
                 },
                 {
-                    "DATE": "11-18-20",
-                    "MESSAGE": 68
+                    "count": 68,
+                    "date": "11-18-20"
                 },
                 {
-                    "DATE": "12-10-20",
-                    "MESSAGE": 67
+                    "count": 67,
+                    "date": "12-10-20"
                 },
                 {
-                    "DATE": "1-24-21",
-                    "MESSAGE": 67
+                    "count": 67,
+                    "date": "1-24-21"
                 },
                 {
-                    "DATE": "12-16-20",
-                    "MESSAGE": 61
+                    "count": 61,
+                    "date": "12-16-20"
                 },
                 {
-                    "DATE": "11-2-20",
-                    "MESSAGE": 61
+                    "count": 61,
+                    "date": "11-2-20"
                 },
                 {
-                    "DATE": "12-30-20",
-                    "MESSAGE": 53
+                    "count": 53,
+                    "date": "12-30-20"
                 },
                 {
-                    "DATE": "1-14-21",
-                    "MESSAGE": 44
+                    "count": 44,
+                    "date": "1-14-21"
                 },
                 {
-                    "DATE": "12-1-20",
-                    "MESSAGE": 42
+                    "count": 42,
+                    "date": "12-1-20"
                 },
                 {
-                    "DATE": "12-13-20",
-                    "MESSAGE": 37
+                    "count": 37,
+                    "date": "12-13-20"
                 },
                 {
-                    "DATE": "1-3-21",
-                    "MESSAGE": 34
+                    "count": 34,
+                    "date": "1-3-21"
                 },
                 {
-                    "DATE": "12-18-20",
-                    "MESSAGE": 29
+                    "count": 29,
+                    "date": "12-18-20"
                 }
             ],
             "Yash Dewangan": [
                 {
-                    "DATE": "11-19-20",
-                    "MESSAGE": 497
+                    "count": 497,
+                    "date": "11-19-20"
                 },
                 {
-                    "DATE": "12-4-20",
-                    "MESSAGE": 272
+                    "count": 272,
+                    "date": "12-4-20"
                 },
                 {
-                    "DATE": "11-11-20",
-                    "MESSAGE": 254
+                    "count": 254,
+                    "date": "11-11-20"
                 },
                 {
-                    "DATE": "10-28-20",
-                    "MESSAGE": 229
+                    "count": 229,
+                    "date": "10-28-20"
                 },
                 {
-                    "DATE": "10-29-20",
-                    "MESSAGE": 209
+                    "count": 209,
+                    "date": "10-29-20"
                 },
                 {
-                    "DATE": "11-8-20",
-                    "MESSAGE": 200
+                    "count": 200,
+                    "date": "11-8-20"
                 },
                 {
-                    "DATE": "12-8-20",
-                    "MESSAGE": 197
+                    "count": 197,
+                    "date": "12-8-20"
                 },
                 {
-                    "DATE": "12-20-20",
-                    "MESSAGE": 196
+                    "count": 196,
+                    "date": "12-20-20"
                 },
                 {
-                    "DATE": "12-3-20",
-                    "MESSAGE": 196
+                    "count": 196,
+                    "date": "12-3-20"
                 },
                 {
-                    "DATE": "1-20-21",
-                    "MESSAGE": 195
+                    "count": 195,
+                    "date": "1-20-21"
                 },
                 {
-                    "DATE": "11-21-20",
-                    "MESSAGE": 185
+                    "count": 185,
+                    "date": "11-21-20"
                 },
                 {
-                    "DATE": "11-1-20",
-                    "MESSAGE": 184
+                    "count": 184,
+                    "date": "11-1-20"
                 },
                 {
-                    "DATE": "12-19-20",
-                    "MESSAGE": 167
+                    "count": 167,
+                    "date": "12-19-20"
                 },
                 {
-                    "DATE": "12-23-20",
-                    "MESSAGE": 166
+                    "count": 166,
+                    "date": "12-23-20"
                 },
                 {
-                    "DATE": "11-26-20",
-                    "MESSAGE": 165
+                    "count": 165,
+                    "date": "11-26-20"
                 },
                 {
-                    "DATE": "10-27-20",
-                    "MESSAGE": 164
+                    "count": 164,
+                    "date": "10-27-20"
                 },
                 {
-                    "DATE": "11-5-20",
-                    "MESSAGE": 158
+                    "count": 158,
+                    "date": "11-5-20"
                 },
                 {
-                    "DATE": "12-15-20",
-                    "MESSAGE": 155
+                    "count": 155,
+                    "date": "12-15-20"
                 },
                 {
-                    "DATE": "11-20-20",
-                    "MESSAGE": 153
+                    "count": 153,
+                    "date": "11-20-20"
                 },
                 {
-                    "DATE": "11-7-20",
-                    "MESSAGE": 151
+                    "count": 151,
+                    "date": "11-7-20"
                 },
                 {
-                    "DATE": "12-5-20",
-                    "MESSAGE": 146
+                    "count": 146,
+                    "date": "12-5-20"
                 },
                 {
-                    "DATE": "1-24-21",
-                    "MESSAGE": 142
+                    "count": 142,
+                    "date": "1-24-21"
                 },
                 {
-                    "DATE": "11-29-20",
-                    "MESSAGE": 141
+                    "count": 141,
+                    "date": "11-29-20"
                 },
                 {
-                    "DATE": "1-2-21",
-                    "MESSAGE": 140
+                    "count": 140,
+                    "date": "1-2-21"
                 },
                 {
-                    "DATE": "11-13-20",
-                    "MESSAGE": 135
+                    "count": 135,
+                    "date": "11-13-20"
                 },
                 {
-                    "DATE": "1-23-21",
-                    "MESSAGE": 132
+                    "count": 132,
+                    "date": "1-23-21"
                 },
                 {
-                    "DATE": "10-31-20",
-                    "MESSAGE": 130
+                    "count": 130,
+                    "date": "10-31-20"
                 },
                 {
-                    "DATE": "1-11-21",
-                    "MESSAGE": 130
+                    "count": 130,
+                    "date": "1-11-21"
                 },
                 {
-                    "DATE": "1-6-21",
-                    "MESSAGE": 130
+                    "count": 130,
+                    "date": "1-6-21"
                 },
                 {
-                    "DATE": "12-2-20",
-                    "MESSAGE": 129
+                    "count": 129,
+                    "date": "12-2-20"
                 },
                 {
-                    "DATE": "12-14-20",
-                    "MESSAGE": 124
+                    "count": 124,
+                    "date": "12-14-20"
                 },
                 {
-                    "DATE": "1-15-21",
-                    "MESSAGE": 123
+                    "count": 123,
+                    "date": "1-15-21"
                 },
                 {
-                    "DATE": "11-6-20",
-                    "MESSAGE": 121
+                    "count": 121,
+                    "date": "11-6-20"
                 },
                 {
-                    "DATE": "12-7-20",
-                    "MESSAGE": 119
+                    "count": 119,
+                    "date": "12-7-20"
                 },
                 {
-                    "DATE": "11-25-20",
-                    "MESSAGE": 115
+                    "count": 115,
+                    "date": "11-25-20"
                 },
                 {
-                    "DATE": "12-27-20",
-                    "MESSAGE": 114
+                    "count": 114,
+                    "date": "12-27-20"
                 },
                 {
-                    "DATE": "12-12-20",
-                    "MESSAGE": 112
+                    "count": 112,
+                    "date": "12-12-20"
                 },
                 {
-                    "DATE": "12-24-20",
-                    "MESSAGE": 112
+                    "count": 112,
+                    "date": "12-24-20"
                 },
                 {
-                    "DATE": "12-17-20",
-                    "MESSAGE": 111
+                    "count": 111,
+                    "date": "12-17-20"
                 },
                 {
-                    "DATE": "11-28-20",
-                    "MESSAGE": 108
+                    "count": 108,
+                    "date": "11-28-20"
                 },
                 {
-                    "DATE": "1-10-21",
-                    "MESSAGE": 108
+                    "count": 108,
+                    "date": "1-10-21"
                 },
                 {
-                    "DATE": "11-10-20",
-                    "MESSAGE": 108
+                    "count": 108,
+                    "date": "11-10-20"
                 },
                 {
-                    "DATE": "11-17-20",
-                    "MESSAGE": 107
+                    "count": 107,
+                    "date": "11-17-20"
                 },
                 {
-                    "DATE": "1-5-21",
-                    "MESSAGE": 107
+                    "count": 107,
+                    "date": "1-5-21"
                 },
                 {
-                    "DATE": "1-13-21",
-                    "MESSAGE": 105
+                    "count": 105,
+                    "date": "1-13-21"
                 },
                 {
-                    "DATE": "12-26-20",
-                    "MESSAGE": 102
+                    "count": 102,
+                    "date": "12-26-20"
                 },
                 {
-                    "DATE": "12-21-20",
-                    "MESSAGE": 101
+                    "count": 101,
+                    "date": "12-21-20"
                 },
                 {
-                    "DATE": "1-7-21",
-                    "MESSAGE": 99
+                    "count": 99,
+                    "date": "1-7-21"
                 },
                 {
-                    "DATE": "1-1-21",
-                    "MESSAGE": 96
+                    "count": 96,
+                    "date": "1-1-21"
                 },
                 {
-                    "DATE": "11-12-20",
-                    "MESSAGE": 95
+                    "count": 95,
+                    "date": "11-12-20"
                 },
                 {
-                    "DATE": "1-19-21",
-                    "MESSAGE": 94
+                    "count": 94,
+                    "date": "1-19-21"
                 },
                 {
-                    "DATE": "1-22-21",
-                    "MESSAGE": 94
+                    "count": 94,
+                    "date": "1-22-21"
                 },
                 {
-                    "DATE": "11-23-20",
-                    "MESSAGE": 94
+                    "count": 94,
+                    "date": "11-23-20"
                 },
                 {
-                    "DATE": "11-27-20",
-                    "MESSAGE": 94
+                    "count": 94,
+                    "date": "11-27-20"
                 },
                 {
-                    "DATE": "11-15-20",
-                    "MESSAGE": 93
+                    "count": 93,
+                    "date": "11-15-20"
                 },
                 {
-                    "DATE": "12-28-20",
-                    "MESSAGE": 91
+                    "count": 91,
+                    "date": "12-28-20"
                 },
                 {
-                    "DATE": "11-4-20",
-                    "MESSAGE": 91
+                    "count": 91,
+                    "date": "11-4-20"
                 },
                 {
-                    "DATE": "1-8-21",
-                    "MESSAGE": 89
+                    "count": 89,
+                    "date": "1-8-21"
                 },
                 {
-                    "DATE": "1-12-21",
-                    "MESSAGE": 89
+                    "count": 89,
+                    "date": "1-12-21"
                 },
                 {
-                    "DATE": "1-16-21",
-                    "MESSAGE": 86
+                    "count": 86,
+                    "date": "1-16-21"
                 },
                 {
-                    "DATE": "12-6-20",
-                    "MESSAGE": 81
+                    "count": 81,
+                    "date": "12-6-20"
                 },
                 {
-                    "DATE": "1-18-21",
-                    "MESSAGE": 81
+                    "count": 81,
+                    "date": "1-18-21"
                 },
                 {
-                    "DATE": "12-9-20",
-                    "MESSAGE": 80
+                    "count": 80,
+                    "date": "12-9-20"
                 },
                 {
-                    "DATE": "10-30-20",
-                    "MESSAGE": 78
+                    "count": 78,
+                    "date": "10-30-20"
                 },
                 {
-                    "DATE": "11-24-20",
-                    "MESSAGE": 77
+                    "count": 77,
+                    "date": "11-24-20"
                 },
                 {
-                    "DATE": "1-3-21",
-                    "MESSAGE": 77
+                    "count": 77,
+                    "date": "1-3-21"
                 },
                 {
-                    "DATE": "12-11-20",
-                    "MESSAGE": 77
+                    "count": 77,
+                    "date": "12-11-20"
                 },
                 {
-                    "DATE": "12-31-20",
-                    "MESSAGE": 76
+                    "count": 76,
+                    "date": "12-31-20"
                 },
                 {
-                    "DATE": "1-9-21",
-                    "MESSAGE": 75
+                    "count": 75,
+                    "date": "1-9-21"
                 },
                 {
-                    "DATE": "11-14-20",
-                    "MESSAGE": 74
+                    "count": 74,
+                    "date": "11-14-20"
                 },
                 {
-                    "DATE": "1-21-21",
-                    "MESSAGE": 70
+                    "count": 70,
+                    "date": "1-21-21"
                 },
                 {
-                    "DATE": "1-25-21",
-                    "MESSAGE": 69
+                    "count": 69,
+                    "date": "1-25-21"
                 },
                 {
-                    "DATE": "11-9-20",
-                    "MESSAGE": 68
+                    "count": 68,
+                    "date": "11-9-20"
                 },
                 {
-                    "DATE": "1-17-21",
-                    "MESSAGE": 63
+                    "count": 63,
+                    "date": "1-17-21"
                 },
                 {
-                    "DATE": "12-25-20",
-                    "MESSAGE": 58
+                    "count": 58,
+                    "date": "12-25-20"
                 },
                 {
-                    "DATE": "11-30-20",
-                    "MESSAGE": 55
+                    "count": 55,
+                    "date": "11-30-20"
                 },
                 {
-                    "DATE": "11-16-20",
-                    "MESSAGE": 53
+                    "count": 53,
+                    "date": "11-16-20"
                 },
                 {
-                    "DATE": "12-1-20",
-                    "MESSAGE": 53
+                    "count": 53,
+                    "date": "12-1-20"
                 },
                 {
-                    "DATE": "12-29-20",
-                    "MESSAGE": 51
+                    "count": 51,
+                    "date": "12-29-20"
                 },
                 {
-                    "DATE": "1-4-21",
-                    "MESSAGE": 51
+                    "count": 51,
+                    "date": "1-4-21"
                 },
                 {
-                    "DATE": "12-16-20",
-                    "MESSAGE": 49
+                    "count": 49,
+                    "date": "12-16-20"
                 },
                 {
-                    "DATE": "12-18-20",
-                    "MESSAGE": 48
+                    "count": 48,
+                    "date": "12-18-20"
                 },
                 {
-                    "DATE": "11-22-20",
-                    "MESSAGE": 44
+                    "count": 44,
+                    "date": "11-22-20"
                 },
                 {
-                    "DATE": "12-22-20",
-                    "MESSAGE": 40
+                    "count": 40,
+                    "date": "12-22-20"
                 },
                 {
-                    "DATE": "12-30-20",
-                    "MESSAGE": 38
+                    "count": 38,
+                    "date": "12-30-20"
                 },
                 {
-                    "DATE": "11-2-20",
-                    "MESSAGE": 34
+                    "count": 34,
+                    "date": "11-2-20"
                 },
                 {
-                    "DATE": "11-3-20",
-                    "MESSAGE": 34
+                    "count": 34,
+                    "date": "11-3-20"
                 },
                 {
-                    "DATE": "11-18-20",
-                    "MESSAGE": 33
+                    "count": 33,
+                    "date": "11-18-20"
                 },
                 {
-                    "DATE": "12-13-20",
-                    "MESSAGE": 24
+                    "count": 24,
+                    "date": "12-13-20"
                 },
                 {
-                    "DATE": "1-14-21",
-                    "MESSAGE": 19
+                    "count": 19,
+                    "date": "1-14-21"
                 },
                 {
-                    "DATE": "12-10-20",
-                    "MESSAGE": 1
+                    "count": 1,
+                    "date": "12-10-20"
                 }
             ]
         },
