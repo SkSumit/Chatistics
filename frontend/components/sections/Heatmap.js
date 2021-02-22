@@ -2,6 +2,7 @@ import React, { useContext,useState } from "react";
 import { FileContext } from "../../pages/index";
 import Section from "../common/Section";
 import CalendarHeatmap from "react-calendar-heatmap";
+import ReactTooltip from 'react-tooltip';
 import "react-calendar-heatmap/dist/styles.css";
 
 
@@ -31,14 +32,20 @@ export default function Heatmap() {
               if (!value) {
                 return "bg-color-github-empty";
               }
-              return getClass((value.count / context.file.stats.summary.total_message) * 100);
+              return getClass((value.count / context.file.stats.summary.totalMessageExchanged) * 200);
             }}
             tooltipDataAttrs={(value) => {
+              if(value.date == null){
+                return {
+                  "data-tip": `No texts sent on this day`
+                }
+              }
               return {
-                "data-tip": `${value.date} has count: ${value.count}`,
+                "data-tip": `${value.count} texts sent on ${value.date}`,
               };
             }}
           />
+            <ReactTooltip />
         </div>
       </div>
     </Section>

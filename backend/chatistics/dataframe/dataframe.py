@@ -43,6 +43,7 @@ def dataframe(content):
         df["TIME"] = time
         df["USERNAME"] = username
         df["MESSAGE"] = messages
+        df['DATETIME'] = pd.to_datetime(df['DATE'])
         return df
     except:
         raise Exception("Not a Whats App txt file")    

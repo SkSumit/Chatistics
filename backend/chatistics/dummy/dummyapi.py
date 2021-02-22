@@ -1,481 +1,505 @@
 def dummyapi():
 
     api ={
+    "example": false,
+    "filename": "WhatsApp Chat with 3 Bois.txt",
     "stats": {
-        "analysis": {
-            "basedOnDays": {
-                "All": [
+        "basedOnDays": {
+            "All": [
+                [
                     {
                         "DAY": "Wednesday",
-                        "MESSAGE": 6453
+                        "MESSAGE": 6291
                     },
                     {
                         "DAY": "Tuesday",
-                        "MESSAGE": 4990
+                        "MESSAGE": 5057
                     },
                     {
                         "DAY": "Thursday",
-                        "MESSAGE": 7072
+                        "MESSAGE": 7203
                     },
                     {
                         "DAY": "Sunday",
-                        "MESSAGE": 4725
-                    },
-                    {
-                        "DAY": "Saturday",
-                        "MESSAGE": 6626
-                    },
-                    {
-                        "DAY": "Monday",
                         "MESSAGE": 4606
                     },
                     {
-                        "DAY": "Friday",
-                        "MESSAGE": 5474
-                    }
-                ],
-                "Atharva Kulkarni": [
-                    {
-                        "DAY": "Friday",
-                        "MESSAGE": 2038
+                        "DAY": "Saturday",
+                        "MESSAGE": 6579
                     },
                     {
                         "DAY": "Monday",
-                        "MESSAGE": 1850
+                        "MESSAGE": 4863
+                    },
+                    {
+                        "DAY": "Friday",
+                        "MESSAGE": 5351
+                    }
+                ],
+                {
+                    "averageTexts": 464.5348837209302,
+                    "mostActiveDay": "Friday"
+                }
+            ],
+            "Kulkarni New": [
+                [
+                    {
+                        "DAY": "Thursday",
+                        "MESSAGE": 2737
                     },
                     {
                         "DAY": "Saturday",
-                        "MESSAGE": 2686
-                    },
-                    {
-                        "DAY": "Sunday",
-                        "MESSAGE": 1649
-                    },
-                    {
-                        "DAY": "Thursday",
-                        "MESSAGE": 2762
-                    },
-                    {
-                        "DAY": "Tuesday",
-                        "MESSAGE": 1989
+                        "MESSAGE": 2640
                     },
                     {
                         "DAY": "Wednesday",
-                        "MESSAGE": 2407
-                    }
-                ],
-                "Sumit Kolpekwar": [
+                        "MESSAGE": 2285
+                    },
+                    {
+                        "DAY": "Tuesday",
+                        "MESSAGE": 1951
+                    },
                     {
                         "DAY": "Friday",
-                        "MESSAGE": 1998
+                        "MESSAGE": 1950
                     },
                     {
                         "DAY": "Monday",
-                        "MESSAGE": 1686
-                    },
-                    {
-                        "DAY": "Saturday",
-                        "MESSAGE": 2332
+                        "MESSAGE": 1854
                     },
                     {
                         "DAY": "Sunday",
                         "MESSAGE": 1609
-                    },
+                    }
+                ],
+                {
+                    "averageTexts": 174.72093023255815,
+                    "mostActiveDay": "Thursday"
+                }
+            ],
+            "Sumit Skn": [
+                [
                     {
                         "DAY": "Thursday",
-                        "MESSAGE": 2502
-                    },
-                    {
-                        "DAY": "Tuesday",
-                        "MESSAGE": 1725
+                        "MESSAGE": 2564
                     },
                     {
                         "DAY": "Wednesday",
-                        "MESSAGE": 2432
-                    }
-                ],
-                "Yash Dewangan": [
-                    {
-                        "DAY": "Friday",
-                        "MESSAGE": 1438
-                    },
-                    {
-                        "DAY": "Monday",
-                        "MESSAGE": 1070
+                        "MESSAGE": 2526
                     },
                     {
                         "DAY": "Saturday",
-                        "MESSAGE": 1608
+                        "MESSAGE": 2385
                     },
                     {
-                        "DAY": "Sunday",
-                        "MESSAGE": 1467
+                        "DAY": "Friday",
+                        "MESSAGE": 1941
                     },
                     {
-                        "DAY": "Thursday",
-                        "MESSAGE": 1808
+                        "DAY": "Monday",
+                        "MESSAGE": 1891
                     },
                     {
                         "DAY": "Tuesday",
-                        "MESSAGE": 1276
+                        "MESSAGE": 1835
+                    },
+                    {
+                        "DAY": "Sunday",
+                        "MESSAGE": 1607
+                    }
+                ],
+                {
+                    "averageTexts": 171.5,
+                    "mostActiveDay": "Thursday"
+                }
+            ],
+            "yashdev.py ヤシュ・デワンガン": [
+                [
+                    {
+                        "DAY": "Thursday",
+                        "MESSAGE": 1902
+                    },
+                    {
+                        "DAY": "Saturday",
+                        "MESSAGE": 1554
                     },
                     {
                         "DAY": "Wednesday",
-                        "MESSAGE": 1614
+                        "MESSAGE": 1480
+                    },
+                    {
+                        "DAY": "Friday",
+                        "MESSAGE": 1460
+                    },
+                    {
+                        "DAY": "Sunday",
+                        "MESSAGE": 1390
+                    },
+                    {
+                        "DAY": "Tuesday",
+                        "MESSAGE": 1271
+                    },
+                    {
+                        "DAY": "Monday",
+                        "MESSAGE": 1118
                     }
-                ]
-            }
+                ],
+                {
+                    "averageTexts": 118.31395348837209,
+                    "mostActiveDay": "Thursday"
+                }
+            ]
         },
         "emoji": {
             "All": {
-                "Emoji_stats": {
-                    "Different_Emojis_used": 397,
-                    "Number_of_emojis": 5195
+                "emojiStat": {
+                    "totalEmojis": 4560,
+                    "totalUniqueEmojis": 391
                 },
-                "Emoji_usage": [
+                "emojiUsage": [
                     {
-                        "EMOJI": "😭",
-                        "VALUE": 416
+                        "emoji": "😭",
+                        "value": 484
                     },
                     {
-                        "EMOJI": "😳",
-                        "VALUE": 403
+                        "emoji": "😳",
+                        "value": 378
                     },
                     {
-                        "EMOJI": "😂",
-                        "VALUE": 377
+                        "emoji": "😂",
+                        "value": 332
                     },
                     {
-                        "EMOJI": "👀",
-                        "VALUE": 301
+                        "emoji": "👀",
+                        "value": 189
                     },
                     {
-                        "EMOJI": "😜",
-                        "VALUE": 207
+                        "emoji": "😜",
+                        "value": 187
                     },
                     {
-                        "EMOJI": "🤣",
-                        "VALUE": 172
+                        "emoji": "🤣",
+                        "value": 174
                     },
                     {
-                        "EMOJI": "🥳",
-                        "VALUE": 102
+                        "emoji": "🌚",
+                        "value": 76
                     },
                     {
-                        "EMOJI": "➖",
-                        "VALUE": 86
+                        "emoji": "➖",
+                        "value": 74
                     },
                     {
-                        "EMOJI": "🥺",
-                        "VALUE": 74
+                        "emoji": "🥳",
+                        "value": 71
                     },
                     {
-                        "EMOJI": "❤",
-                        "VALUE": 63
+                        "emoji": "🥺",
+                        "value": 65
                     },
                     {
-                        "EMOJI": "😫",
-                        "VALUE": 63
+                        "emoji": "😤",
+                        "value": 52
                     },
                     {
-                        "EMOJI": "😤",
-                        "VALUE": 60
+                        "emoji": "🤮",
+                        "value": 50
                     },
                     {
-                        "EMOJI": "🇮",
-                        "VALUE": 59
+                        "emoji": "❤",
+                        "value": 47
                     },
                     {
-                        "EMOJI": "😔",
-                        "VALUE": 57
+                        "emoji": "🤤",
+                        "value": 46
                     },
                     {
-                        "EMOJI": "🤤",
-                        "VALUE": 56
+                        "emoji": "🏻",
+                        "value": 45
                     },
                     {
-                        "EMOJI": "🇳",
-                        "VALUE": 55
+                        "emoji": "😫",
+                        "value": 45
                     },
                     {
-                        "EMOJI": "🥵",
-                        "VALUE": 53
+                        "emoji": "🥵",
+                        "value": 43
                     },
                     {
-                        "EMOJI": "🤮",
-                        "VALUE": 52
+                        "emoji": "😢",
+                        "value": 42
                     },
                     {
-                        "EMOJI": "💀",
-                        "VALUE": 46
+                        "emoji": "🇮",
+                        "value": 42
                     },
                     {
-                        "EMOJI": "🙏",
-                        "VALUE": 42
+                        "emoji": "🇳",
+                        "value": 38
                     }
                 ]
             },
-            "Atharva Kulkarni": {
-                "Emoji_stats": {
-                    "Different_Emojis_used": 135,
-                    "Number_of_emojis": 1927
+            "Kulkarni New": {
+                "emojiStat": {
+                    "totalEmojis": 1831,
+                    "totalUniqueEmojis": 128
                 },
-                "Emoji_usage": [
+                "emojiUsage": [
                     {
-                        "EMOJI": "😂",
-                        "VALUE": 265
+                        "emoji": "😂",
+                        "value": 275
                     },
                     {
-                        "EMOJI": "😜",
-                        "VALUE": 199
+                        "emoji": "😜",
+                        "value": 183
                     },
                     {
-                        "EMOJI": "😭",
-                        "VALUE": 108
+                        "emoji": "😭",
+                        "value": 105
                     },
                     {
-                        "EMOJI": "🤣",
-                        "VALUE": 107
+                        "emoji": "🤣",
+                        "value": 96
                     },
                     {
-                        "EMOJI": "🥳",
-                        "VALUE": 91
+                        "emoji": "🥳",
+                        "value": 65
                     },
                     {
-                        "EMOJI": "🇮",
-                        "VALUE": 50
+                        "emoji": "😳",
+                        "value": 50
                     },
                     {
-                        "EMOJI": "🇳",
-                        "VALUE": 50
+                        "emoji": "🥺",
+                        "value": 46
                     },
                     {
-                        "EMOJI": "🥺",
-                        "VALUE": 48
+                        "emoji": "🤤",
+                        "value": 42
                     },
                     {
-                        "EMOJI": "🤤",
-                        "VALUE": 46
+                        "emoji": "🇮",
+                        "value": 38
                     },
                     {
-                        "EMOJI": "😳",
-                        "VALUE": 44
+                        "emoji": "🇳",
+                        "value": 38
                     },
                     {
-                        "EMOJI": "👀",
-                        "VALUE": 43
+                        "emoji": "😢",
+                        "value": 37
                     },
                     {
-                        "EMOJI": "😔",
-                        "VALUE": 39
+                        "emoji": "😔",
+                        "value": 36
                     },
                     {
-                        "EMOJI": "🥵",
-                        "VALUE": 37
+                        "emoji": "🥵",
+                        "value": 33
                     },
                     {
-                        "EMOJI": "❤",
-                        "VALUE": 33
+                        "emoji": "😊",
+                        "value": 30
                     },
                     {
-                        "EMOJI": "😍",
-                        "VALUE": 31
+                        "emoji": "😨",
+                        "value": 30
                     },
                     {
-                        "EMOJI": "😊",
-                        "VALUE": 31
+                        "emoji": "👀",
+                        "value": 28
                     },
                     {
-                        "EMOJI": "😨",
-                        "VALUE": 30
+                        "emoji": "😍",
+                        "value": 27
                     },
                     {
-                        "EMOJI": "🙏",
-                        "VALUE": 28
+                        "emoji": "🙏",
+                        "value": 26
                     },
                     {
-                        "EMOJI": "😢",
-                        "VALUE": 26
+                        "emoji": "💀",
+                        "value": 25
                     },
                     {
-                        "EMOJI": "🤑",
-                        "VALUE": 26
+                        "emoji": "😘",
+                        "value": 24
                     }
                 ]
             },
-            "Sumit Kolpekwar": {
-                "Emoji_stats": {
-                    "Different_Emojis_used": 302,
-                    "Number_of_emojis": 2234
+            "Sumit Skn": {
+                "emojiStat": {
+                    "totalEmojis": 2162,
+                    "totalUniqueEmojis": 302
                 },
-                "Emoji_usage": [
+                "emojiUsage": [
                     {
-                        "EMOJI": "😳",
-                        "VALUE": 351
+                        "emoji": "😳",
+                        "value": 328
                     },
                     {
-                        "EMOJI": "👀",
-                        "VALUE": 209
+                        "emoji": "😭",
+                        "value": 223
                     },
                     {
-                        "EMOJI": "😭",
-                        "VALUE": 156
+                        "emoji": "👀",
+                        "value": 118
                     },
                     {
-                        "EMOJI": "😂",
-                        "VALUE": 103
+                        "emoji": "🌚",
+                        "value": 62
                     },
                     {
-                        "EMOJI": "😫",
-                        "VALUE": 42
+                        "emoji": "😂",
+                        "value": 56
                     },
                     {
-                        "EMOJI": "😤",
-                        "VALUE": 40
+                        "emoji": "🏻",
+                        "value": 43
                     },
                     {
-                        "EMOJI": "🌚",
-                        "VALUE": 32
+                        "emoji": "😤",
+                        "value": 38
                     },
                     {
-                        "EMOJI": "🏻",
-                        "VALUE": 32
+                        "emoji": "😏",
+                        "value": 31
                     },
                     {
-                        "EMOJI": "😏",
-                        "VALUE": 31
+                        "emoji": "😫",
+                        "value": 30
                     },
                     {
-                        "EMOJI": "🤭",
-                        "VALUE": 30
+                        "emoji": "🌝",
+                        "value": 28
                     },
                     {
-                        "EMOJI": "🤮",
-                        "VALUE": 27
+                        "emoji": "❤",
+                        "value": 24
                     },
                     {
-                        "EMOJI": "❤",
-                        "VALUE": 23
+                        "emoji": "😩",
+                        "value": 23
                     },
                     {
-                        "EMOJI": "🌝",
-                        "VALUE": 22
+                        "emoji": "🤮",
+                        "value": 23
                     },
                     {
-                        "EMOJI": "🇦",
-                        "VALUE": 22
+                        "emoji": "🥰",
+                        "value": 22
                     },
                     {
-                        "EMOJI": "🥺",
-                        "VALUE": 20
+                        "emoji": "🇦",
+                        "value": 22
                     },
                     {
-                        "EMOJI": "🙄",
-                        "VALUE": 20
+                        "emoji": "🙄",
+                        "value": 20
                     },
                     {
-                        "EMOJI": "💀",
-                        "VALUE": 20
+                        "emoji": "🇱",
+                        "value": 20
                     },
                     {
-                        "EMOJI": "🇱",
-                        "VALUE": 20
+                        "emoji": "🥺",
+                        "value": 19
                     },
                     {
-                        "EMOJI": "🇨",
-                        "VALUE": 18
+                        "emoji": "🇨",
+                        "value": 18
                     },
                     {
-                        "EMOJI": "👌",
-                        "VALUE": 17
+                        "emoji": "👌",
+                        "value": 17
                     }
                 ]
             },
-            "Yash Dewangan": {
-                "Emoji_stats": {
-                    "Different_Emojis_used": 380,
-                    "Number_of_emojis": 1034
+            "yashdev.py ヤシュ・デワンガン": {
+                "emojiStat": {
+                    "totalEmojis": 567,
+                    "totalUniqueEmojis": 58
                 },
-                "Emoji_usage": [
+                "emojiUsage": [
                     {
-                        "EMOJI": "😭",
-                        "VALUE": 152
+                        "emoji": "😭",
+                        "value": 156
                     },
                     {
-                        "EMOJI": "➖",
-                        "VALUE": 85
+                        "emoji": "➖",
+                        "value": 74
                     },
                     {
-                        "EMOJI": "🤣",
-                        "VALUE": 57
+                        "emoji": "🤣",
+                        "value": 63
                     },
                     {
-                        "EMOJI": "👀",
-                        "VALUE": 49
+                        "emoji": "👀",
+                        "value": 43
                     },
                     {
-                        "EMOJI": "📢",
-                        "VALUE": 32
+                        "emoji": "📢",
+                        "value": 28
                     },
                     {
-                        "EMOJI": "🤪",
-                        "VALUE": 27
+                        "emoji": "👇",
+                        "value": 24
                     },
                     {
-                        "EMOJI": "❗",
-                        "VALUE": 19
+                        "emoji": "🤪",
+                        "value": 24
                     },
                     {
-                        "EMOJI": "💓",
-                        "VALUE": 17
+                        "emoji": "💓",
+                        "value": 16
                     },
                     {
-                        "EMOJI": "▪",
-                        "VALUE": 17
+                        "emoji": "❗",
+                        "value": 15
                     },
                     {
-                        "EMOJI": "🥵",
-                        "VALUE": 16
+                        "emoji": "🤮",
+                        "value": 13
                     },
                     {
-                        "EMOJI": "👇",
-                        "VALUE": 15
+                        "emoji": "▪",
+                        "value": 11
                     },
                     {
-                        "EMOJI": "😔",
-                        "VALUE": 11
+                        "emoji": "🥵",
+                        "value": 10
                     },
                     {
-                        "EMOJI": "🤤",
-                        "VALUE": 10
+                        "emoji": "🎃",
+                        "value": 9
                     },
                     {
-                        "EMOJI": "🎃",
-                        "VALUE": 10
+                        "emoji": "✅",
+                        "value": 6
                     },
                     {
-                        "EMOJI": "🤮",
-                        "VALUE": 10
+                        "emoji": "😢",
+                        "value": 5
                     },
                     {
-                        "EMOJI": "🙏",
-                        "VALUE": 9
+                        "emoji": "🙏",
+                        "value": 5
                     },
                     {
-                        "EMOJI": "😂",
-                        "VALUE": 9
+                        "emoji": "😊",
+                        "value": 5
                     },
                     {
-                        "EMOJI": "😢",
-                        "VALUE": 8
+                        "emoji": "🤤",
+                        "value": 4
                     },
                     {
-                        "EMOJI": "😊",
-                        "VALUE": 8
+                        "emoji": "👆",
+                        "value": 4
                     },
                     {
-                        "EMOJI": "✅",
-                        "VALUE": 8
+                        "emoji": "🙂",
+                        "value": 3
                     }
                 ]
             }
@@ -487,8 +511,16 @@ def dummyapi():
                     "date": "11-19-20"
                 },
                 {
-                    "count": 1080,
+                    "count": 1081,
                     "date": "12-4-20"
+                },
+                {
+                    "count": 997,
+                    "date": "10-27-20"
+                },
+                {
+                    "count": 900,
+                    "date": "10-19-20"
                 },
                 {
                     "count": 863,
@@ -499,12 +531,20 @@ def dummyapi():
                     "date": "11-11-20"
                 },
                 {
+                    "count": 805,
+                    "date": "10-21-20"
+                },
+                {
                     "count": 802,
                     "date": "11-5-20"
                 },
                 {
-                    "count": 785,
+                    "count": 786,
                     "date": "12-3-20"
+                },
+                {
+                    "count": 768,
+                    "date": "10-23-20"
                 },
                 {
                     "count": 762,
@@ -519,23 +559,19 @@ def dummyapi():
                     "date": "12-19-20"
                 },
                 {
-                    "count": 745,
+                    "count": 744,
                     "date": "10-29-20"
+                },
+                {
+                    "count": 741,
+                    "date": "11-21-20"
                 },
                 {
                     "count": 736,
                     "date": "11-26-20"
                 },
                 {
-                    "count": 731,
-                    "date": "11-21-20"
-                },
-                {
-                    "count": 697,
-                    "date": "12-21-20"
-                },
-                {
-                    "count": 694,
+                    "count": 693,
                     "date": "11-28-20"
                 },
                 {
@@ -544,7 +580,11 @@ def dummyapi():
                 },
                 {
                     "count": 658,
-                    "date": "10-27-20"
+                    "date": "10-22-20"
+                },
+                {
+                    "count": 650,
+                    "date": "10-26-20"
                 },
                 {
                     "count": 643,
@@ -555,23 +595,15 @@ def dummyapi():
                     "date": "11-8-20"
                 },
                 {
-                    "count": 618,
-                    "date": "1-15-21"
-                },
-                {
-                    "count": 595,
+                    "count": 596,
                     "date": "11-20-20"
-                },
-                {
-                    "count": 573,
-                    "date": "1-20-21"
                 },
                 {
                     "count": 567,
                     "date": "12-15-20"
                 },
                 {
-                    "count": 564,
+                    "count": 565,
                     "date": "1-2-21"
                 },
                 {
@@ -591,11 +623,23 @@ def dummyapi():
                     "date": "12-2-20"
                 },
                 {
+                    "count": 535,
+                    "date": "10-20-20"
+                },
+                {
+                    "count": 518,
+                    "date": "12-21-20"
+                },
+                {
                     "count": 497,
                     "date": "12-5-20"
                 },
                 {
-                    "count": 474,
+                    "count": 494,
+                    "date": "10-24-20"
+                },
+                {
+                    "count": 475,
                     "date": "12-31-20"
                 },
                 {
@@ -605,10 +649,6 @@ def dummyapi():
                 {
                     "count": 466,
                     "date": "11-1-20"
-                },
-                {
-                    "count": 466,
-                    "date": "1-11-21"
                 },
                 {
                     "count": 459,
@@ -623,8 +663,12 @@ def dummyapi():
                     "date": "11-10-20"
                 },
                 {
-                    "count": 449,
+                    "count": 450,
                     "date": "12-14-20"
+                },
+                {
+                    "count": 444,
+                    "date": "10-18-20"
                 },
                 {
                     "count": 443,
@@ -643,32 +687,20 @@ def dummyapi():
                     "date": "11-29-20"
                 },
                 {
-                    "count": 400,
-                    "date": "1-8-21"
+                    "count": 399,
+                    "date": "12-27-20"
                 },
                 {
                     "count": 399,
-                    "date": "12-27-20"
+                    "date": "1-8-21"
                 },
                 {
                     "count": 399,
                     "date": "1-7-21"
                 },
                 {
-                    "count": 395,
+                    "count": 397,
                     "date": "11-13-20"
-                },
-                {
-                    "count": 395,
-                    "date": "1-23-21"
-                },
-                {
-                    "count": 394,
-                    "date": "1-13-21"
-                },
-                {
-                    "count": 390,
-                    "date": "1-21-21"
                 },
                 {
                     "count": 388,
@@ -687,24 +719,8 @@ def dummyapi():
                     "date": "12-24-20"
                 },
                 {
-                    "count": 367,
+                    "count": 368,
                     "date": "11-23-20"
-                },
-                {
-                    "count": 360,
-                    "date": "1-19-21"
-                },
-                {
-                    "count": 354,
-                    "date": "1-10-21"
-                },
-                {
-                    "count": 350,
-                    "date": "1-18-21"
-                },
-                {
-                    "count": 342,
-                    "date": "1-24-21"
                 },
                 {
                     "count": 337,
@@ -719,10 +735,6 @@ def dummyapi():
                     "date": "12-11-20"
                 },
                 {
-                    "count": 335,
-                    "date": "12-22-20"
-                },
-                {
                     "count": 329,
                     "date": "12-26-20"
                 },
@@ -735,28 +747,12 @@ def dummyapi():
                     "date": "12-29-20"
                 },
                 {
-                    "count": 311,
-                    "date": "1-16-21"
-                },
-                {
                     "count": 303,
                     "date": "12-6-20"
                 },
                 {
-                    "count": 303,
-                    "date": "1-17-21"
-                },
-                {
-                    "count": 300,
-                    "date": "1-25-21"
-                },
-                {
-                    "count": 281,
-                    "date": "1-12-21"
-                },
-                {
-                    "count": 276,
-                    "date": "1-22-21"
+                    "count": 271,
+                    "date": "10-25-20"
                 },
                 {
                     "count": 265,
@@ -767,7 +763,7 @@ def dummyapi():
                     "date": "12-25-20"
                 },
                 {
-                    "count": 259,
+                    "count": 261,
                     "date": "11-14-20"
                 },
                 {
@@ -791,7 +787,7 @@ def dummyapi():
                     "date": "10-30-20"
                 },
                 {
-                    "count": 232,
+                    "count": 231,
                     "date": "11-12-20"
                 },
                 {
@@ -823,8 +819,20 @@ def dummyapi():
                     "date": "11-18-20"
                 },
                 {
+                    "count": 169,
+                    "date": "12-22-20"
+                },
+                {
+                    "count": 165,
+                    "date": "1-10-21"
+                },
+                {
                     "count": 158,
                     "date": "12-1-20"
+                },
+                {
+                    "count": 153,
+                    "date": "10-17-20"
                 },
                 {
                     "count": 142,
@@ -839,15 +847,11 @@ def dummyapi():
                     "date": "12-10-20"
                 },
                 {
-                    "count": 137,
-                    "date": "1-14-21"
-                },
-                {
                     "count": 120,
                     "date": "12-13-20"
                 }
             ],
-            "Atharva Kulkarni": [
+            "Kulkarni New": [
                 {
                     "count": 439,
                     "date": "12-4-20"
@@ -855,6 +859,14 @@ def dummyapi():
                 {
                     "count": 434,
                     "date": "11-19-20"
+                },
+                {
+                    "count": 417,
+                    "date": "10-27-20"
+                },
+                {
+                    "count": 372,
+                    "date": "10-19-20"
                 },
                 {
                     "count": 332,
@@ -865,16 +877,16 @@ def dummyapi():
                     "date": "12-3-20"
                 },
                 {
-                    "count": 310,
+                    "count": 311,
+                    "date": "10-21-20"
+                },
+                {
+                    "count": 309,
                     "date": "11-28-20"
                 },
                 {
                     "count": 308,
                     "date": "11-7-20"
-                },
-                {
-                    "count": 305,
-                    "date": "12-21-20"
                 },
                 {
                     "count": 304,
@@ -885,7 +897,7 @@ def dummyapi():
                     "date": "11-26-20"
                 },
                 {
-                    "count": 283,
+                    "count": 282,
                     "date": "10-29-20"
                 },
                 {
@@ -893,20 +905,16 @@ def dummyapi():
                     "date": "11-5-20"
                 },
                 {
-                    "count": 280,
-                    "date": "1-15-21"
-                },
-                {
-                    "count": 273,
-                    "date": "10-27-20"
-                },
-                {
                     "count": 271,
                     "date": "11-21-20"
                 },
                 {
-                    "count": 262,
-                    "date": "1-20-21"
+                    "count": 270,
+                    "date": "10-23-20"
+                },
+                {
+                    "count": 254,
+                    "date": "10-22-20"
                 },
                 {
                     "count": 253,
@@ -917,7 +925,7 @@ def dummyapi():
                     "date": "10-31-20"
                 },
                 {
-                    "count": 248,
+                    "count": 249,
                     "date": "1-2-21"
                 },
                 {
@@ -930,27 +938,31 @@ def dummyapi():
                 },
                 {
                     "count": 242,
-                    "date": "10-28-20"
-                },
-                {
-                    "count": 242,
                     "date": "12-15-20"
                 },
                 {
-                    "count": 228,
+                    "count": 242,
+                    "date": "10-28-20"
+                },
+                {
+                    "count": 229,
                     "date": "12-31-20"
+                },
+                {
+                    "count": 229,
+                    "date": "12-21-20"
+                },
+                {
+                    "count": 218,
+                    "date": "10-26-20"
                 },
                 {
                     "count": 211,
                     "date": "11-8-20"
                 },
                 {
-                    "count": 211,
-                    "date": "1-11-21"
-                },
-                {
-                    "count": 205,
-                    "date": "1-21-21"
+                    "count": 204,
+                    "date": "10-20-20"
                 },
                 {
                     "count": 203,
@@ -962,11 +974,11 @@ def dummyapi():
                 },
                 {
                     "count": 195,
-                    "date": "11-25-20"
+                    "date": "1-5-21"
                 },
                 {
                     "count": 195,
-                    "date": "1-5-21"
+                    "date": "11-25-20"
                 },
                 {
                     "count": 191,
@@ -978,11 +990,15 @@ def dummyapi():
                 },
                 {
                     "count": 186,
-                    "date": "12-2-20"
+                    "date": "12-24-20"
                 },
                 {
                     "count": 186,
-                    "date": "12-24-20"
+                    "date": "12-2-20"
+                },
+                {
+                    "count": 185,
+                    "date": "10-24-20"
                 },
                 {
                     "count": 180,
@@ -993,24 +1009,8 @@ def dummyapi():
                     "date": "12-12-20"
                 },
                 {
-                    "count": 178,
-                    "date": "1-23-21"
-                },
-                {
-                    "count": 175,
-                    "date": "1-19-21"
-                },
-                {
                     "count": 172,
                     "date": "12-5-20"
-                },
-                {
-                    "count": 171,
-                    "date": "1-13-21"
-                },
-                {
-                    "count": 171,
-                    "date": "1-18-21"
                 },
                 {
                     "count": 169,
@@ -1029,12 +1029,8 @@ def dummyapi():
                     "date": "1-7-21"
                 },
                 {
-                    "count": 157,
+                    "count": 158,
                     "date": "12-14-20"
-                },
-                {
-                    "count": 157,
-                    "date": "12-22-20"
                 },
                 {
                     "count": 154,
@@ -1058,15 +1054,11 @@ def dummyapi():
                 },
                 {
                     "count": 134,
-                    "date": "12-6-20"
-                },
-                {
-                    "count": 134,
                     "date": "1-1-21"
                 },
                 {
-                    "count": 133,
-                    "date": "1-24-21"
+                    "count": 134,
+                    "date": "12-6-20"
                 },
                 {
                     "count": 131,
@@ -1077,8 +1069,8 @@ def dummyapi():
                     "date": "12-25-20"
                 },
                 {
-                    "count": 129,
-                    "date": "1-25-21"
+                    "count": 128,
+                    "date": "10-18-20"
                 },
                 {
                     "count": 126,
@@ -1093,16 +1085,12 @@ def dummyapi():
                     "date": "11-23-20"
                 },
                 {
-                    "count": 121,
-                    "date": "1-16-21"
-                },
-                {
-                    "count": 120,
-                    "date": "1-12-21"
-                },
-                {
                     "count": 117,
                     "date": "1-9-21"
+                },
+                {
+                    "count": 113,
+                    "date": "10-25-20"
                 },
                 {
                     "count": 111,
@@ -1111,10 +1099,6 @@ def dummyapi():
                 {
                     "count": 107,
                     "date": "1-4-21"
-                },
-                {
-                    "count": 107,
-                    "date": "1-17-21"
                 },
                 {
                     "count": 104,
@@ -1142,35 +1126,31 @@ def dummyapi():
                 },
                 {
                     "count": 85,
-                    "date": "11-24-20"
+                    "date": "1-3-21"
                 },
                 {
                     "count": 85,
-                    "date": "1-3-21"
+                    "date": "11-24-20"
                 },
                 {
                     "count": 83,
                     "date": "10-30-20"
                 },
                 {
-                    "count": 78,
-                    "date": "1-22-21"
-                },
-                {
                     "count": 77,
                     "date": "11-18-20"
                 },
                 {
-                    "count": 74,
-                    "date": "1-10-21"
-                },
-                {
-                    "count": 74,
-                    "date": "1-14-21"
-                },
-                {
                     "count": 69,
                     "date": "12-10-20"
+                },
+                {
+                    "count": 68,
+                    "date": "10-17-20"
+                },
+                {
+                    "count": 66,
+                    "date": "12-22-20"
                 },
                 {
                     "count": 65,
@@ -1211,9 +1191,13 @@ def dummyapi():
                 {
                     "count": 43,
                     "date": "11-2-20"
+                },
+                {
+                    "count": 33,
+                    "date": "1-10-21"
                 }
             ],
-            "Sumit Kolpekwar": [
+            "Sumit Skn": [
                 {
                     "count": 557,
                     "date": "11-19-20"
@@ -1227,12 +1211,24 @@ def dummyapi():
                     "date": "11-11-20"
                 },
                 {
-                    "count": 369,
+                    "count": 370,
                     "date": "12-4-20"
+                },
+                {
+                    "count": 368,
+                    "date": "10-27-20"
                 },
                 {
                     "count": 364,
                     "date": "11-5-20"
+                },
+                {
+                    "count": 361,
+                    "date": "10-19-20"
+                },
+                {
+                    "count": 328,
+                    "date": "10-21-20"
                 },
                 {
                     "count": 312,
@@ -1251,8 +1247,8 @@ def dummyapi():
                     "date": "11-20-20"
                 },
                 {
-                    "count": 291,
-                    "date": "12-21-20"
+                    "count": 285,
+                    "date": "11-21-20"
                 },
                 {
                     "count": 284,
@@ -1263,12 +1259,16 @@ def dummyapi():
                     "date": "11-28-20"
                 },
                 {
-                    "count": 275,
-                    "date": "11-21-20"
+                    "count": 272,
+                    "date": "10-26-20"
                 },
                 {
                     "count": 267,
                     "date": "12-3-20"
+                },
+                {
+                    "count": 261,
+                    "date": "10-23-20"
                 },
                 {
                     "count": 253,
@@ -1291,16 +1291,28 @@ def dummyapi():
                     "date": "12-2-20"
                 },
                 {
-                    "count": 221,
-                    "date": "10-27-20"
+                    "count": 222,
+                    "date": "10-22-20"
                 },
                 {
-                    "count": 215,
-                    "date": "1-15-21"
+                    "count": 201,
+                    "date": "10-20-20"
+                },
+                {
+                    "count": 188,
+                    "date": "12-21-20"
                 },
                 {
                     "count": 188,
                     "date": "12-9-20"
+                },
+                {
+                    "count": 187,
+                    "date": "10-18-20"
+                },
+                {
+                    "count": 185,
+                    "date": "10-24-20"
                 },
                 {
                     "count": 184,
@@ -1316,11 +1328,11 @@ def dummyapi():
                 },
                 {
                     "count": 177,
-                    "date": "11-27-20"
+                    "date": "1-6-21"
                 },
                 {
                     "count": 177,
-                    "date": "1-6-21"
+                    "date": "11-27-20"
                 },
                 {
                     "count": 176,
@@ -1333,10 +1345,6 @@ def dummyapi():
                 {
                     "count": 173,
                     "date": "11-9-20"
-                },
-                {
-                    "count": 172,
-                    "date": "1-10-21"
                 },
                 {
                     "count": 170,
@@ -1360,11 +1368,11 @@ def dummyapi():
                 },
                 {
                     "count": 161,
-                    "date": "11-13-20"
+                    "date": "12-12-20"
                 },
                 {
                     "count": 161,
-                    "date": "12-12-20"
+                    "date": "11-13-20"
                 },
                 {
                     "count": 151,
@@ -1387,16 +1395,8 @@ def dummyapi():
                     "date": "11-30-20"
                 },
                 {
-                    "count": 138,
-                    "date": "12-22-20"
-                },
-                {
                     "count": 133,
                     "date": "12-7-20"
-                },
-                {
-                    "count": 133,
-                    "date": "1-17-21"
                 },
                 {
                     "count": 132,
@@ -1419,40 +1419,12 @@ def dummyapi():
                     "date": "1-5-21"
                 },
                 {
-                    "count": 125,
-                    "date": "1-11-21"
-                },
-                {
-                    "count": 118,
-                    "date": "1-13-21"
-                },
-                {
                     "count": 116,
                     "date": "12-26-20"
                 },
                 {
-                    "count": 116,
-                    "date": "1-20-21"
-                },
-                {
-                    "count": 115,
-                    "date": "1-21-21"
-                },
-                {
                     "count": 105,
                     "date": "12-23-20"
-                },
-                {
-                    "count": 104,
-                    "date": "1-16-21"
-                },
-                {
-                    "count": 104,
-                    "date": "1-22-21"
-                },
-                {
-                    "count": 102,
-                    "date": "1-25-21"
                 },
                 {
                     "count": 98,
@@ -1463,10 +1435,6 @@ def dummyapi():
                     "date": "1-4-21"
                 },
                 {
-                    "count": 98,
-                    "date": "1-18-21"
-                },
-                {
                     "count": 97,
                     "date": "11-14-20"
                 },
@@ -1475,12 +1443,16 @@ def dummyapi():
                     "date": "11-22-20"
                 },
                 {
+                    "count": 94,
+                    "date": "10-25-20"
+                },
+                {
                     "count": 91,
                     "date": "11-15-20"
                 },
                 {
-                    "count": 91,
-                    "date": "1-19-21"
+                    "count": 89,
+                    "date": "1-10-21"
                 },
                 {
                     "count": 88,
@@ -1491,10 +1463,6 @@ def dummyapi():
                     "date": "12-6-20"
                 },
                 {
-                    "count": 85,
-                    "date": "1-23-21"
-                },
-                {
                     "count": 84,
                     "date": "11-3-20"
                 },
@@ -1503,7 +1471,7 @@ def dummyapi():
                     "date": "12-17-20"
                 },
                 {
-                    "count": 81,
+                    "count": 80,
                     "date": "11-12-20"
                 },
                 {
@@ -1527,10 +1495,6 @@ def dummyapi():
                     "date": "10-30-20"
                 },
                 {
-                    "count": 72,
-                    "date": "1-12-21"
-                },
-                {
                     "count": 69,
                     "date": "12-28-20"
                 },
@@ -1543,8 +1507,8 @@ def dummyapi():
                     "date": "12-10-20"
                 },
                 {
-                    "count": 67,
-                    "date": "1-24-21"
+                    "count": 63,
+                    "date": "12-22-20"
                 },
                 {
                     "count": 61,
@@ -1559,8 +1523,8 @@ def dummyapi():
                     "date": "12-30-20"
                 },
                 {
-                    "count": 44,
-                    "date": "1-14-21"
+                    "count": 47,
+                    "date": "10-17-20"
                 },
                 {
                     "count": 42,
@@ -1579,7 +1543,7 @@ def dummyapi():
                     "date": "12-18-20"
                 }
             ],
-            "Yash Dewangan": [
+            "yashdev.py ヤシュ・デワンガン": [
                 {
                     "count": 497,
                     "date": "11-19-20"
@@ -1593,8 +1557,16 @@ def dummyapi():
                     "date": "11-11-20"
                 },
                 {
+                    "count": 237,
+                    "date": "10-23-20"
+                },
+                {
                     "count": 229,
                     "date": "10-28-20"
+                },
+                {
+                    "count": 212,
+                    "date": "10-27-20"
                 },
                 {
                     "count": 209,
@@ -1606,19 +1578,15 @@ def dummyapi():
                 },
                 {
                     "count": 197,
+                    "date": "12-3-20"
+                },
+                {
+                    "count": 197,
                     "date": "12-8-20"
                 },
                 {
                     "count": 196,
-                    "date": "12-3-20"
-                },
-                {
-                    "count": 196,
                     "date": "12-20-20"
-                },
-                {
-                    "count": 195,
-                    "date": "1-20-21"
                 },
                 {
                     "count": 185,
@@ -1629,8 +1597,20 @@ def dummyapi():
                     "date": "11-1-20"
                 },
                 {
+                    "count": 182,
+                    "date": "10-22-20"
+                },
+                {
                     "count": 167,
                     "date": "12-19-20"
+                },
+                {
+                    "count": 167,
+                    "date": "10-19-20"
+                },
+                {
+                    "count": 166,
+                    "date": "10-21-20"
                 },
                 {
                     "count": 166,
@@ -1641,8 +1621,8 @@ def dummyapi():
                     "date": "11-26-20"
                 },
                 {
-                    "count": 164,
-                    "date": "10-27-20"
+                    "count": 160,
+                    "date": "10-26-20"
                 },
                 {
                     "count": 158,
@@ -1653,7 +1633,7 @@ def dummyapi():
                     "date": "12-15-20"
                 },
                 {
-                    "count": 153,
+                    "count": 154,
                     "date": "11-20-20"
                 },
                 {
@@ -1665,10 +1645,6 @@ def dummyapi():
                     "date": "12-5-20"
                 },
                 {
-                    "count": 142,
-                    "date": "1-24-21"
-                },
-                {
                     "count": 141,
                     "date": "11-29-20"
                 },
@@ -1677,12 +1653,12 @@ def dummyapi():
                     "date": "1-2-21"
                 },
                 {
-                    "count": 135,
+                    "count": 137,
                     "date": "11-13-20"
                 },
                 {
-                    "count": 132,
-                    "date": "1-23-21"
+                    "count": 130,
+                    "date": "10-20-20"
                 },
                 {
                     "count": 130,
@@ -1693,20 +1669,20 @@ def dummyapi():
                     "date": "1-6-21"
                 },
                 {
-                    "count": 130,
-                    "date": "1-11-21"
+                    "count": 129,
+                    "date": "12-2-20"
                 },
                 {
                     "count": 129,
-                    "date": "12-2-20"
+                    "date": "10-18-20"
                 },
                 {
                     "count": 124,
                     "date": "12-14-20"
                 },
                 {
-                    "count": 123,
-                    "date": "1-15-21"
+                    "count": 124,
+                    "date": "10-24-20"
                 },
                 {
                     "count": 121,
@@ -1726,11 +1702,11 @@ def dummyapi():
                 },
                 {
                     "count": 112,
-                    "date": "12-12-20"
+                    "date": "12-24-20"
                 },
                 {
                     "count": 112,
-                    "date": "12-24-20"
+                    "date": "12-12-20"
                 },
                 {
                     "count": 111,
@@ -1745,20 +1721,12 @@ def dummyapi():
                     "date": "11-28-20"
                 },
                 {
-                    "count": 108,
-                    "date": "1-10-21"
-                },
-                {
-                    "count": 107,
-                    "date": "11-17-20"
-                },
-                {
                     "count": 107,
                     "date": "1-5-21"
                 },
                 {
-                    "count": 105,
-                    "date": "1-13-21"
+                    "count": 107,
+                    "date": "11-17-20"
                 },
                 {
                     "count": 102,
@@ -1781,7 +1749,7 @@ def dummyapi():
                     "date": "11-12-20"
                 },
                 {
-                    "count": 94,
+                    "count": 95,
                     "date": "11-23-20"
                 },
                 {
@@ -1789,44 +1757,24 @@ def dummyapi():
                     "date": "11-27-20"
                 },
                 {
-                    "count": 94,
-                    "date": "1-19-21"
-                },
-                {
-                    "count": 94,
-                    "date": "1-22-21"
-                },
-                {
                     "count": 93,
                     "date": "11-15-20"
-                },
-                {
-                    "count": 91,
-                    "date": "11-4-20"
                 },
                 {
                     "count": 91,
                     "date": "12-28-20"
                 },
                 {
-                    "count": 89,
+                    "count": 91,
+                    "date": "11-4-20"
+                },
+                {
+                    "count": 88,
                     "date": "1-8-21"
-                },
-                {
-                    "count": 89,
-                    "date": "1-12-21"
-                },
-                {
-                    "count": 86,
-                    "date": "1-16-21"
                 },
                 {
                     "count": 81,
                     "date": "12-6-20"
-                },
-                {
-                    "count": 81,
-                    "date": "1-18-21"
                 },
                 {
                     "count": 80,
@@ -1838,7 +1786,7 @@ def dummyapi():
                 },
                 {
                     "count": 77,
-                    "date": "11-24-20"
+                    "date": "1-3-21"
                 },
                 {
                     "count": 77,
@@ -1846,7 +1794,11 @@ def dummyapi():
                 },
                 {
                     "count": 77,
-                    "date": "1-3-21"
+                    "date": "11-24-20"
+                },
+                {
+                    "count": 76,
+                    "date": "11-14-20"
                 },
                 {
                     "count": 76,
@@ -1857,24 +1809,12 @@ def dummyapi():
                     "date": "1-9-21"
                 },
                 {
-                    "count": 74,
-                    "date": "11-14-20"
-                },
-                {
-                    "count": 70,
-                    "date": "1-21-21"
-                },
-                {
-                    "count": 69,
-                    "date": "1-25-21"
-                },
-                {
                     "count": 68,
                     "date": "11-9-20"
                 },
                 {
-                    "count": 63,
-                    "date": "1-17-21"
+                    "count": 64,
+                    "date": "10-25-20"
                 },
                 {
                     "count": 58,
@@ -1913,8 +1853,16 @@ def dummyapi():
                     "date": "11-22-20"
                 },
                 {
+                    "count": 43,
+                    "date": "1-10-21"
+                },
+                {
                     "count": 40,
                     "date": "12-22-20"
+                },
+                {
+                    "count": 38,
+                    "date": "10-17-20"
                 },
                 {
                     "count": 38,
@@ -1922,11 +1870,11 @@ def dummyapi():
                 },
                 {
                     "count": 34,
-                    "date": "11-2-20"
+                    "date": "11-3-20"
                 },
                 {
                     "count": 34,
-                    "date": "11-3-20"
+                    "date": "11-2-20"
                 },
                 {
                     "count": 33,
@@ -1937,792 +1885,1080 @@ def dummyapi():
                     "date": "12-13-20"
                 },
                 {
-                    "count": 19,
-                    "date": "1-14-21"
-                },
-                {
                     "count": 1,
                     "date": "12-10-20"
                 }
             ]
         },
         "summary": {
-            "total_days": 91,
-            "total_letters": 694432,
-            "total_message": 39946,
-            "total_words": 140587
+            "totalDays": 86,
+            "totalMessageExchanged": 39950,
+            "totalWords": 144731
         },
+        "timeline": [
+            {
+                "count": 153,
+                "date": "Sat, 17 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 444,
+                "date": "Sun, 18 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 900,
+                "date": "Mon, 19 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 535,
+                "date": "Tue, 20 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 805,
+                "date": "Wed, 21 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 658,
+                "date": "Thu, 22 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 768,
+                "date": "Fri, 23 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 494,
+                "date": "Sat, 24 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 271,
+                "date": "Sun, 25 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 650,
+                "date": "Mon, 26 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 997,
+                "date": "Tue, 27 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 863,
+                "date": "Wed, 28 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 744,
+                "date": "Thu, 29 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 233,
+                "date": "Fri, 30 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 543,
+                "date": "Sat, 31 Oct 2020 00:00:00 GMT"
+            },
+            {
+                "count": 466,
+                "date": "Sun, 01 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 138,
+                "date": "Mon, 02 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 183,
+                "date": "Tue, 03 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 643,
+                "date": "Wed, 04 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 802,
+                "date": "Thu, 05 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 374,
+                "date": "Fri, 06 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 762,
+                "date": "Sat, 07 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 637,
+                "date": "Sun, 08 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 388,
+                "date": "Mon, 09 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 451,
+                "date": "Tue, 10 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 844,
+                "date": "Wed, 11 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 231,
+                "date": "Thu, 12 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 397,
+                "date": "Fri, 13 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 261,
+                "date": "Sat, 14 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 244,
+                "date": "Sun, 15 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 194,
+                "date": "Mon, 16 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 247,
+                "date": "Tue, 17 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 178,
+                "date": "Wed, 18 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 1488,
+                "date": "Thu, 19 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 596,
+                "date": "Fri, 20 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 741,
+                "date": "Sat, 21 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 265,
+                "date": "Sun, 22 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 368,
+                "date": "Mon, 23 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 250,
+                "date": "Tue, 24 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 552,
+                "date": "Wed, 25 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 736,
+                "date": "Thu, 26 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 434,
+                "date": "Fri, 27 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 693,
+                "date": "Sat, 28 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 427,
+                "date": "Sun, 29 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 335,
+                "date": "Mon, 30 Nov 2020 00:00:00 GMT"
+            },
+            {
+                "count": 158,
+                "date": "Tue, 01 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 540,
+                "date": "Wed, 02 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 786,
+                "date": "Thu, 03 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 1081,
+                "date": "Fri, 04 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 497,
+                "date": "Sat, 05 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 303,
+                "date": "Sun, 06 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 443,
+                "date": "Mon, 07 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 755,
+                "date": "Tue, 08 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 471,
+                "date": "Wed, 09 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 137,
+                "date": "Thu, 10 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 335,
+                "date": "Fri, 11 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 452,
+                "date": "Sat, 12 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 120,
+                "date": "Sun, 13 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 450,
+                "date": "Mon, 14 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 567,
+                "date": "Tue, 15 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 207,
+                "date": "Wed, 16 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 375,
+                "date": "Thu, 17 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 142,
+                "date": "Fri, 18 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 752,
+                "date": "Sat, 19 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 669,
+                "date": "Sun, 20 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 518,
+                "date": "Mon, 21 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 169,
+                "date": "Tue, 22 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 459,
+                "date": "Wed, 23 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 372,
+                "date": "Thu, 24 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 264,
+                "date": "Fri, 25 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 329,
+                "date": "Sat, 26 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 399,
+                "date": "Sun, 27 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 223,
+                "date": "Mon, 28 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 317,
+                "date": "Tue, 29 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 179,
+                "date": "Wed, 30 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 475,
+                "date": "Thu, 31 Dec 2020 00:00:00 GMT"
+            },
+            {
+                "count": 328,
+                "date": "Fri, 01 Jan 2021 00:00:00 GMT"
+            },
+            {
+                "count": 565,
+                "date": "Sat, 02 Jan 2021 00:00:00 GMT"
+            },
+            {
+                "count": 196,
+                "date": "Sun, 03 Jan 2021 00:00:00 GMT"
+            },
+            {
+                "count": 256,
+                "date": "Mon, 04 Jan 2021 00:00:00 GMT"
+            },
+            {
+                "count": 428,
+                "date": "Tue, 05 Jan 2021 00:00:00 GMT"
+            },
+            {
+                "count": 550,
+                "date": "Wed, 06 Jan 2021 00:00:00 GMT"
+            },
+            {
+                "count": 399,
+                "date": "Thu, 07 Jan 2021 00:00:00 GMT"
+            },
+            {
+                "count": 399,
+                "date": "Fri, 08 Jan 2021 00:00:00 GMT"
+            },
+            {
+                "count": 337,
+                "date": "Sat, 09 Jan 2021 00:00:00 GMT"
+            },
+            {
+                "count": 165,
+                "date": "Sun, 10 Jan 2021 00:00:00 GMT"
+            }
+        ],
         "userspecific": {
-            "Atharva Kulkarni": {
-                "Avg_msg_per_day": 169.02197802197801,
-                "Deleted_msgs": 152,
-                "Dt_max_convo": "12/4/20",
-                "Dt_min_convo": "11/2/20",
-                "Dy_max_convo": "Thursday",
-                "Dy_min_convo": "Sunday",
-                "No_of_Days_had_Convo": 91,
-                "No_of_media": 4070,
-                "No_of_msgs": 39946,
-                "Text_per_hour": 58319.625,
-                "averageMessage": 169.02197802197801,
-                "no_of_link": 249,
-                "totalMessageExchanged": 15381,
-                "total_num_letter": 251121,
-                "total_num_words": 49210
+            "Kulkarni New": {
+                "averageMessagePerDay": 174.72093023255815,
+                "averageWordsPerMessage": 4.18734194063623,
+                "leastActiveDate": "1-10-21",
+                "leastActiveDay": "Sunday",
+                "mostActiveDate": "12-4-20",
+                "mostActiveDay": "Thursday",
+                "totalDays": 86,
+                "totalEmojis": 1831,
+                "totalLinks": 238,
+                "totalMedia": 2211,
+                "totalMessages": 15026,
+                "totalWords": 62919
             },
-            "Sumit Kolpekwar": {
-                "Avg_msg_per_day": 156.96703296703296,
-                "Deleted_msgs": 152,
-                "Dt_max_convo": "11/19/20",
-                "Dt_min_convo": "12/18/20",
-                "Dy_max_convo": "Thursday",
-                "Dy_min_convo": "Sunday",
-                "No_of_Days_had_Convo": 91,
-                "No_of_media": 4070,
-                "No_of_msgs": 39946,
-                "Text_per_hour": 54160.166666666664,
-                "averageMessage": 156.96703296703296,
-                "no_of_link": 206,
-                "totalMessageExchanged": 14284,
-                "total_num_letter": 217191,
-                "total_num_words": 47334
+            "Sumit Skn": {
+                "averageMessagePerDay": 171.5,
+                "averageWordsPerMessage": 3.280018984337921,
+                "leastActiveDate": "12-18-20",
+                "leastActiveDay": "Sunday",
+                "mostActiveDate": "11-19-20",
+                "mostActiveDay": "Thursday",
+                "totalDays": 86,
+                "totalEmojis": 2162,
+                "totalLinks": 179,
+                "totalMedia": 872,
+                "totalMessages": 14749,
+                "totalWords": 48377
             },
-            "Yash Dewangan": {
-                "Avg_msg_per_day": 112.97802197802197,
-                "Deleted_msgs": 152,
-                "Dt_max_convo": "11/19/20",
-                "Dt_min_convo": "12/10/20",
-                "Dy_max_convo": "Thursday",
-                "Dy_min_convo": "Monday",
-                "No_of_Days_had_Convo": 91,
-                "No_of_media": 4070,
-                "No_of_msgs": 39946,
-                "Text_per_hour": 38982.125,
-                "averageMessage": 112.97802197802197,
-                "no_of_link": 179,
-                "totalMessageExchanged": 10281,
-                "total_num_letter": 226120,
-                "total_num_words": 44043
+            "yashdev.py ヤシュ・デワンガン": {
+                "averageMessagePerDay": 118.31395348837209,
+                "averageWordsPerMessage": 3.285995085995086,
+                "leastActiveDate": "12-10-20",
+                "leastActiveDay": "Monday",
+                "mostActiveDate": "11-19-20",
+                "mostActiveDay": "Thursday",
+                "totalDays": 86,
+                "totalEmojis": 567,
+                "totalLinks": 180,
+                "totalMedia": 1075,
+                "totalMessages": 10175,
+                "totalWords": 33435
             }
         },
         "wordcloud": {
             "All": {
-                "word_stat": {
-                    "Avg_word_per_text": 3.519426225404296,
-                    "Total_Words": 140587,
-                    "Total_letters": 694432,
-                    "Total_lettrs_per_word": 4.939517878608975,
-                    "Total_links": 634
+                "wordStat": {
+                    "leastUsedWord": "Vsbsvs",
+                    "mostUsedWord": "h"
                 },
-                "word_usage": [
+                "wordUsage": [
                     {
                         "text": "h",
-                        "value": 3697
+                        "value": 8783
+                    },
+                    {
+                        "text": "chutya",
+                        "value": 5013
+                    },
+                    {
+                        "text": "HOD",
+                        "value": 5009
                     },
                     {
                         "text": "hain",
-                        "value": 1417
+                        "value": 1347
                     },
                     {
                         "text": "ka",
-                        "value": 1149
-                    },
-                    {
-                        "text": "{",
-                        "value": 1037
-                    },
-                    {
-                        "text": "},",
-                        "value": 940
+                        "value": 1129
                     },
                     {
                         "text": "kya",
-                        "value": 868
+                        "value": 906
                     },
                     {
                         "text": "rha",
-                        "value": 812
-                    },
-                    {
-                        "text": "to",
-                        "value": 796
-                    },
-                    {
-                        "text": "toh",
-                        "value": 747
-                    },
-                    {
-                        "text": "bhi",
-                        "value": 739
+                        "value": 818
                     },
                     {
                         "text": "na",
-                        "value": 733
+                        "value": 756
+                    },
+                    {
+                        "text": "to",
+                        "value": 755
                     },
                     {
                         "text": "tha",
-                        "value": 702
+                        "value": 735
                     },
                     {
-                        "text": "\"count\"",
-                        "value": 696
+                        "text": "toh",
+                        "value": 730
                     },
                     {
-                        "text": "\"date\"",
-                        "value": 696
-                    },
-                    {
-                        "text": "ko",
-                        "value": 664
-                    },
-                    {
-                        "text": "and",
-                        "value": 645
-                    },
-                    {
-                        "text": "the",
-                        "value": 639
-                    },
-                    {
-                        "text": "nahi",
-                        "value": 633
-                    },
-                    {
-                        "text": "se",
-                        "value": 630
+                        "text": "bhi",
+                        "value": 726
                     },
                     {
                         "text": "Bc",
-                        "value": 614
+                        "value": 685
+                    },
+                    {
+                        "text": "ko",
+                        "value": 661
+                    },
+                    {
+                        "text": "and",
+                        "value": 628
+                    },
+                    {
+                        "text": "nahi",
+                        "value": 617
+                    },
+                    {
+                        "text": "se",
+                        "value": 616
+                    },
+                    {
+                        "text": "Yash",
+                        "value": 605
                     },
                     {
                         "text": "https",
-                        "value": 602
+                        "value": 570
+                    },
+                    {
+                        "text": "the",
+                        "value": 569
                     },
                     {
                         "text": "kar",
-                        "value": 578
-                    },
-                    {
-                        "text": "I",
                         "value": 566
                     },
                     {
-                        "text": "is",
-                        "value": 562
+                        "text": "I",
+                        "value": 528
                     },
                     {
                         "text": "@917020037195",
-                        "value": 534
-                    },
-                    {
-                        "text": "you",
-                        "value": 494
-                    },
-                    {
-                        "text": "main",
-                        "value": 487
-                    },
-                    {
-                        "text": "Yes",
-                        "value": 478
-                    },
-                    {
-                        "text": "@918602842290",
-                        "value": 477
-                    },
-                    {
-                        "text": "ke",
-                        "value": 469
-                    },
-                    {
-                        "text": "ho",
-                        "value": 462
-                    },
-                    {
-                        "text": "hi",
-                        "value": 446
-                    },
-                    {
-                        "text": "But",
-                        "value": 415
-                    },
-                    {
-                        "text": "nhhi",
-                        "value": 407
-                    },
-                    {
-                        "text": "'NO_OF_Emoji'",
-                        "value": 393
-                    },
-                    {
-                        "text": "{'Emoji'",
-                        "value": 392
-                    },
-                    {
-                        "text": "kia",
-                        "value": 390
-                    },
-                    {
-                        "text": "a",
-                        "value": 388
-                    },
-                    {
-                        "text": "And",
-                        "value": 385
-                    },
-                    {
-                        "text": "me",
-                        "value": 383
-                    },
-                    {
-                        "text": "in",
-                        "value": 381
-                    },
-                    {
-                        "text": "Haa",
-                        "value": 372
-                    },
-                    {
-                        "text": "for",
-                        "value": 364
-                    },
-                    {
-                        "text": "Nice",
-                        "value": 364
-                    },
-                    {
-                        "text": "@918446224700",
-                        "value": 358
-                    },
-                    {
-                        "text": "like",
-                        "value": 356
-                    },
-                    {
-                        "text": "hu",
-                        "value": 351
-                    },
-                    {
-                        "text": "of",
-                        "value": 345
-                    },
-                    {
-                        "text": "Kya",
-                        "value": 333
-                    },
-                    {
-                        "text": "mai",
-                        "value": 327
-                    }
-                ]
-            },
-            "Atharva Kulkarni": {
-                "word_stat": {
-                    "Avg_word_per_text": 1.2319130826615932,
-                    "Total_Words": 49210,
-                    "Total_letters": 251121,
-                    "Total_lettrs_per_word": 5.1030481609428975,
-                    "Total_links": 249
-                },
-                "word_usage": [
-                    {
-                        "text": "h",
-                        "value": 2042
-                    },
-                    {
-                        "text": "ka",
-                        "value": 384
-                    },
-                    {
-                        "text": "kya",
-                        "value": 342
-                    },
-                    {
-                        "text": "to",
-                        "value": 302
-                    },
-                    {
-                        "text": "na",
-                        "value": 300
-                    },
-                    {
-                        "text": "and",
-                        "value": 286
-                    },
-                    {
-                        "text": "toh",
-                        "value": 281
-                    },
-                    {
-                        "text": "rha",
-                        "value": 278
-                    },
-                    {
-                        "text": "ko",
-                        "value": 272
-                    },
-                    {
-                        "text": "nahi",
-                        "value": 270
-                    },
-                    {
-                        "text": "bhi",
-                        "value": 269
-                    },
-                    {
-                        "text": "the",
-                        "value": 268
-                    },
-                    {
-                        "text": "me",
-                        "value": 252
-                    },
-                    {
-                        "text": "I",
-                        "value": 247
-                    },
-                    {
-                        "text": "https",
-                        "value": 241
-                    },
-                    {
-                        "text": "k",
-                        "value": 235
-                    },
-                    {
-                        "text": "Bc",
-                        "value": 231
-                    },
-                    {
-                        "text": "tha",
-                        "value": 228
-                    },
-                    {
-                        "text": "se",
-                        "value": 217
-                    },
-                    {
-                        "text": "was",
-                        "value": 208
-                    },
-                    {
-                        "text": "m",
-                        "value": 197
+                        "value": 508
                     },
                     {
                         "text": "is",
-                        "value": 196
+                        "value": 506
                     },
                     {
-                        "text": "kr",
-                        "value": 182
-                    },
-                    {
-                        "text": "@918446224700",
-                        "value": 180
-                    },
-                    {
-                        "text": "Yes",
-                        "value": 176
-                    },
-                    {
-                        "text": "hi",
-                        "value": 171
+                        "text": "ke",
+                        "value": 496
                     },
                     {
                         "text": "ho",
-                        "value": 171
+                        "value": 476
                     },
                     {
-                        "text": "kia",
-                        "value": 169
+                        "text": "hi",
+                        "value": 474
                     },
                     {
-                        "text": "And",
-                        "value": 167
+                        "text": "you",
+                        "value": 468
                     },
                     {
-                        "text": "ki",
-                        "value": 164
+                        "text": "main",
+                        "value": 466
                     },
                     {
-                        "text": "in",
-                        "value": 163
+                        "text": "Yes",
+                        "value": 459
                     },
                     {
                         "text": "@918602842290",
+                        "value": 435
+                    },
+                    {
+                        "text": "But",
+                        "value": 419
+                    },
+                    {
+                        "text": "Haa",
+                        "value": 412
+                    },
+                    {
+                        "text": "nhhi",
+                        "value": 409
+                    },
+                    {
+                        "text": "And",
+                        "value": 408
+                    },
+                    {
+                        "text": "me",
+                        "value": 395
+                    },
+                    {
+                        "text": "kia",
+                        "value": 391
+                    },
+                    {
+                        "text": "Nice",
+                        "value": 376
+                    },
+                    {
+                        "text": "@918446224700",
+                        "value": 376
+                    },
+                    {
+                        "text": "like",
+                        "value": 371
+                    },
+                    {
+                        "text": "mai",
+                        "value": 359
+                    },
+                    {
+                        "text": "in",
+                        "value": 351
+                    },
+                    {
+                        "text": "a",
+                        "value": 351
+                    },
+                    {
+                        "text": "Kya",
+                        "value": 343
+                    },
+                    {
+                        "text": "k",
+                        "value": 341
+                    },
+                    {
+                        "text": "karna",
+                        "value": 324
+                    },
+                    {
+                        "text": "for",
+                        "value": 320
+                    },
+                    {
+                        "text": "ki",
+                        "value": 319
+                    },
+                    {
+                        "text": "hu",
+                        "value": 314
+                    },
+                    {
+                        "text": "was",
+                        "value": 303
+                    }
+                ]
+            },
+            "Kulkarni New": {
+                "wordStat": {
+                    "leastUsedWord": "Yourok",
+                    "mostUsedWord": "h"
+                },
+                "wordUsage": [
+                    {
+                        "text": "h",
+                        "value": 7048
+                    },
+                    {
+                        "text": "chutya",
+                        "value": 5013
+                    },
+                    {
+                        "text": "HOD",
+                        "value": 5001
+                    },
+                    {
+                        "text": "Yash",
+                        "value": 541
+                    },
+                    {
+                        "text": "ka",
+                        "value": 364
+                    },
+                    {
+                        "text": "kya",
+                        "value": 355
+                    },
+                    {
+                        "text": "k",
+                        "value": 328
+                    },
+                    {
+                        "text": "na",
+                        "value": 304
+                    },
+                    {
+                        "text": "rha",
+                        "value": 286
+                    },
+                    {
+                        "text": "to",
+                        "value": 285
+                    },
+                    {
+                        "text": "ko",
+                        "value": 270
+                    },
+                    {
+                        "text": "me",
+                        "value": 269
+                    },
+                    {
+                        "text": "toh",
+                        "value": 261
+                    },
+                    {
+                        "text": "Bc",
+                        "value": 258
+                    },
+                    {
+                        "text": "bhi",
+                        "value": 255
+                    },
+                    {
+                        "text": "and",
+                        "value": 250
+                    },
+                    {
+                        "text": "tha",
+                        "value": 235
+                    },
+                    {
+                        "text": "https",
+                        "value": 232
+                    },
+                    {
+                        "text": "nahi",
+                        "value": 229
+                    },
+                    {
+                        "text": "the",
+                        "value": 229
+                    },
+                    {
+                        "text": "I",
+                        "value": 223
+                    },
+                    {
+                        "text": "@918446224700",
+                        "value": 208
+                    },
+                    {
+                        "text": "was",
+                        "value": 202
+                    },
+                    {
+                        "text": "se",
+                        "value": 200
+                    },
+                    {
+                        "text": "kr",
+                        "value": 192
+                    },
+                    {
+                        "text": "ho",
+                        "value": 178
+                    },
+                    {
+                        "text": "Yes",
+                        "value": 175
+                    },
+                    {
+                        "text": "is",
+                        "value": 171
+                    },
+                    {
+                        "text": "ki",
+                        "value": 170
+                    },
+                    {
+                        "text": "nhi",
+                        "value": 162
+                    },
+                    {
+                        "text": "hi",
+                        "value": 159
+                    },
+                    {
+                        "text": "m",
+                        "value": 155
+                    },
+                    {
+                        "text": "And",
                         "value": 153
                     },
                     {
                         "text": "This",
-                        "value": 152
+                        "value": 151
                     },
                     {
-                        "text": "But",
+                        "text": "kia",
+                        "value": 150
+                    },
+                    {
+                        "text": "@918602842290",
+                        "value": 145
+                    },
+                    {
+                        "text": "bc",
                         "value": 142
                     },
                     {
-                        "text": "a",
-                        "value": 139
-                    },
-                    {
-                        "text": "you",
+                        "text": "like",
                         "value": 136
                     },
                     {
-                        "text": "of",
-                        "value": 133
+                        "text": "But",
+                        "value": 135
                     },
                     {
-                        "text": "nhi",
+                        "text": "ye",
+                        "value": 132
+                    },
+                    {
+                        "text": "in",
                         "value": 130
                     },
                     {
-                        "text": "like",
-                        "value": 128
-                    },
-                    {
-                        "text": "message",
+                        "text": "vo",
                         "value": 126
                     },
                     {
-                        "text": "vo",
-                        "value": 125
-                    },
-                    {
-                        "text": "?",
+                        "text": "message",
                         "value": 124
                     },
                     {
                         "text": "deleted",
-                        "value": 124
-                    },
-                    {
-                        "text": "Kya",
                         "value": 123
                     },
                     {
-                        "text": "ye",
-                        "value": 121
+                        "text": "a",
+                        "value": 123
+                    },
+                    {
+                        "text": "?",
+                        "value": 122
                     },
                     {
                         "text": "hua",
-                        "value": 119
-                    },
-                    {
-                        "text": "for",
-                        "value": 119
-                    },
-                    {
-                        "text": "pe",
-                        "value": 118
-                    },
-                    {
-                        "text": "hu",
                         "value": 116
                     },
                     {
-                        "text": "bc",
-                        "value": 112
-                    }
-                ]
-            },
-            "Sumit Kolpekwar": {
-                "word_stat": {
-                    "Avg_word_per_text": 1.1849496820707957,
-                    "Total_Words": 47334,
-                    "Total_letters": 217191,
-                    "Total_lettrs_per_word": 4.588477627075675,
-                    "Total_links": 206
-                },
-                "word_usage": [
-                    {
-                        "text": "h",
-                        "value": 1649
-                    },
-                    {
-                        "text": "nahi",
-                        "value": 363
-                    },
-                    {
-                        "text": "ka",
-                        "value": 362
-                    },
-                    {
-                        "text": "kya",
-                        "value": 340
-                    },
-                    {
-                        "text": "to",
-                        "value": 335
-                    },
-                    {
-                        "text": "@917020037195",
-                        "value": 332
-                    },
-                    {
-                        "text": "mai",
-                        "value": 325
-                    },
-                    {
-                        "text": "@918602842290",
-                        "value": 324
+                        "text": "Kya",
+                        "value": 114
                     },
                     {
                         "text": "you",
-                        "value": 320
+                        "value": 112
                     },
                     {
-                        "text": "na",
-                        "value": 307
+                        "text": "sab",
+                        "value": 111
+                    }
+                ]
+            },
+            "Sumit Skn": {
+                "wordStat": {
+                    "leastUsedWord": "Vsbsvs",
+                    "mostUsedWord": "h"
+                },
+                "wordUsage": [
+                    {
+                        "text": "h",
+                        "value": 1730
                     },
                     {
-                        "text": "Yes",
-                        "value": 297
+                        "text": "nahi",
+                        "value": 388
+                    },
+                    {
+                        "text": "ka",
+                        "value": 376
+                    },
+                    {
+                        "text": "kya",
+                        "value": 369
+                    },
+                    {
+                        "text": "mai",
+                        "value": 357
+                    },
+                    {
+                        "text": "to",
+                        "value": 330
+                    },
+                    {
+                        "text": "you",
+                        "value": 323
                     },
                     {
                         "text": "and",
-                        "value": 295
+                        "value": 320
+                    },
+                    {
+                        "text": "@917020037195",
+                        "value": 315
+                    },
+                    {
+                        "text": "na",
+                        "value": 315
                     },
                     {
                         "text": "Bc",
-                        "value": 262
+                        "value": 291
                     },
                     {
-                        "text": "is",
-                        "value": 262
+                        "text": "@918602842290",
+                        "value": 290
                     },
                     {
                         "text": "tha",
-                        "value": 260
+                        "value": 284
+                    },
+                    {
+                        "text": "Yes",
+                        "value": 279
                     },
                     {
                         "text": "rha",
-                        "value": 240
-                    },
-                    {
-                        "text": "I",
-                        "value": 238
-                    },
-                    {
-                        "text": "kia",
-                        "value": 221
-                    },
-                    {
-                        "text": "Nice",
-                        "value": 221
+                        "value": 253
                     },
                     {
                         "text": "And",
-                        "value": 215
+                        "value": 252
                     },
                     {
-                        "text": "XD",
-                        "value": 215
+                        "text": "is",
+                        "value": 248
+                    },
+                    {
+                        "text": "kia",
+                        "value": 241
+                    },
+                    {
+                        "text": "I",
+                        "value": 229
+                    },
+                    {
+                        "text": "Nice",
+                        "value": 219
                     },
                     {
                         "text": "toh",
-                        "value": 211
+                        "value": 217
                     },
                     {
                         "text": "the",
-                        "value": 208
-                    },
-                    {
-                        "text": "bhi",
-                        "value": 200
-                    },
-                    {
-                        "text": "https",
-                        "value": 196
-                    },
-                    {
-                        "text": "a",
-                        "value": 186
+                        "value": 209
                     },
                     {
                         "text": "Haa",
-                        "value": 182
+                        "value": 205
+                    },
+                    {
+                        "text": "XD",
+                        "value": 200
+                    },
+                    {
+                        "text": "bhi",
+                        "value": 198
                     },
                     {
                         "text": "in",
-                        "value": 173
+                        "value": 189
                     },
                     {
                         "text": "But",
-                        "value": 171
-                    },
-                    {
-                        "text": "se",
-                        "value": 171
-                    },
-                    {
-                        "text": "like",
-                        "value": 165
-                    },
-                    {
-                        "text": "for",
-                        "value": 161
+                        "value": 180
                     },
                     {
                         "text": "ke",
-                        "value": 161
+                        "value": 179
                     },
                     {
-                        "text": "What",
-                        "value": 157
+                        "text": "a",
+                        "value": 176
+                    },
+                    {
+                        "text": "like",
+                        "value": 174
+                    },
+                    {
+                        "text": "se",
+                        "value": 174
+                    },
+                    {
+                        "text": "https",
+                        "value": 170
                     },
                     {
                         "text": "Kya",
-                        "value": 156
+                        "value": 167
                     },
                     {
                         "text": "ko",
+                        "value": 155
+                    },
+                    {
+                        "text": "What",
+                        "value": 153
+                    },
+                    {
+                        "text": "kar",
+                        "value": 150
+                    },
+                    {
+                        "text": "for",
+                        "value": 148
+                    },
+                    {
+                        "text": "karna",
                         "value": 148
                     },
                     {
                         "text": "be",
-                        "value": 147
-                    },
-                    {
-                        "text": "i",
-                        "value": 146
-                    },
-                    {
-                        "text": "can",
-                        "value": 142
-                    },
-                    {
-                        "text": "this",
-                        "value": 140
-                    },
-                    {
-                        "text": "+1",
-                        "value": 139
-                    },
-                    {
-                        "text": "kar",
-                        "value": 139
+                        "value": 143
                     },
                     {
                         "text": "Yeh",
-                        "value": 134
+                        "value": 140
                     },
                     {
-                        "text": "it",
-                        "value": 127
+                        "text": "i",
+                        "value": 137
                     },
                     {
-                        "text": "I'm",
+                        "text": "hi",
+                        "value": 136
+                    },
+                    {
+                        "text": "can",
+                        "value": 133
+                    },
+                    {
+                        "text": "this",
+                        "value": 130
+                    },
+                    {
+                        "text": "Nahi",
+                        "value": 129
+                    },
+                    {
+                        "text": "+1",
+                        "value": 128
+                    },
+                    {
+                        "text": "pe",
                         "value": 126
                     },
                     {
                         "text": "that",
+                        "value": 126
+                    },
+                    {
+                        "text": "I'm",
                         "value": 125
                     },
                     {
-                        "text": "of",
-                        "value": 125
-                    },
-                    {
-                        "text": "Nahi",
+                        "text": "Abhi",
                         "value": 123
-                    },
-                    {
-                        "text": "pe",
-                        "value": 120
-                    },
-                    {
-                        "text": "we",
-                        "value": 120
                     }
                 ]
             },
-            "Yash Dewangan": {
-                "word_stat": {
-                    "Avg_word_per_text": 1.102563460671907,
-                    "Total_Words": 44043,
-                    "Total_letters": 226120,
-                    "Total_lettrs_per_word": 5.134073519060918,
-                    "Total_links": 179
+            "yashdev.py ヤシュ・デワンガン": {
+                "wordStat": {
+                    "leastUsedWord": "Gamersback.vcf",
+                    "mostUsedWord": "hain"
                 },
-                "word_usage": [
+                "wordUsage": [
                     {
                         "text": "hain",
-                        "value": 1406
-                    },
-                    {
-                        "text": "{",
-                        "value": 994
-                    },
-                    {
-                        "text": "},",
-                        "value": 933
-                    },
-                    {
-                        "text": "\"count\"",
-                        "value": 696
-                    },
-                    {
-                        "text": "\"date\"",
-                        "value": 696
+                        "value": 1337
                     },
                     {
                         "text": "main",
-                        "value": 469
+                        "value": 449
                     },
                     {
                         "text": "nhhi",
-                        "value": 406
+                        "value": 408
                     },
                     {
                         "text": "ka",
-                        "value": 403
+                        "value": 389
                     },
                     {
                         "text": "kar",
-                        "value": 400
-                    },
-                    {
-                        "text": "'NO_OF_Emoji'",
-                        "value": 393
-                    },
-                    {
-                        "text": "{'Emoji'",
-                        "value": 392
-                    },
-                    {
-                        "text": "'FREQUENCY'",
-                        "value": 297
+                        "value": 373
                     },
                     {
                         "text": "rha",
-                        "value": 294
+                        "value": 279
                     },
                     {
                         "text": "bhi",
-                        "value": 270
-                    },
-                    {
-                        "text": "{'DATE'",
-                        "value": 260
+                        "value": 273
                     },
                     {
                         "text": "toh",
-                        "value": 255
-                    },
-                    {
-                        "text": "ko",
-                        "value": 244
+                        "value": 252
                     },
                     {
                         "text": "se",
                         "value": 242
                     },
                     {
+                        "text": "ko",
+                        "value": 236
+                    },
+                    {
                         "text": "ho",
-                        "value": 220
+                        "value": 224
                     },
                     {
                         "text": "ke",
@@ -2730,123 +2966,155 @@ def dummyapi():
                     },
                     {
                         "text": "tha",
-                        "value": 214
+                        "value": 216
+                    },
+                    {
+                        "text": "Haa",
+                        "value": 196
                     },
                     {
                         "text": "@917020037195",
-                        "value": 202
+                        "value": 193
                     },
                     {
                         "text": "kya",
-                        "value": 186
+                        "value": 182
                     },
                     {
-                        "text": "00",
+                        "text": "hi",
                         "value": 179
                     },
                     {
                         "text": "@918446224700",
-                        "value": 178
-                    },
-                    {
-                        "text": "Haa",
-                        "value": 176
-                    },
-                    {
-                        "text": "hu",
-                        "value": 166
+                        "value": 168
                     },
                     {
                         "text": "https",
-                        "value": 165
+                        "value": 168
                     },
                     {
-                        "text": "the",
-                        "value": 163
-                    },
-                    {
-                        "text": "hi",
-                        "value": 160
-                    },
-                    {
-                        "text": "to",
-                        "value": 159
+                        "text": "hu",
+                        "value": 147
                     },
                     {
                         "text": "bhai",
-                        "value": 154
+                        "value": 142
                     },
                     {
-                        "text": "n",
-                        "value": 149
-                    },
-                    {
-                        "text": "2},",
-                        "value": 148
-                    },
-                    {
-                        "text": "ye",
-                        "value": 133
+                        "text": "to",
+                        "value": 140
                     },
                     {
                         "text": "na",
-                        "value": 126
+                        "value": 137
                     },
                     {
                         "text": "Bc",
+                        "value": 136
+                    },
+                    {
+                        "text": "Xd",
+                        "value": 136
+                    },
+                    {
+                        "text": "the",
+                        "value": 131
+                    },
+                    {
+                        "text": "n",
                         "value": 121
                     },
                     {
-                        "text": "abhi",
+                        "text": "ye",
                         "value": 117
                     },
                     {
                         "text": "hogga",
-                        "value": 112
-                    },
-                    {
-                        "text": "Xd",
-                        "value": 109
+                        "value": 107
                     },
                     {
                         "text": "gaya",
-                        "value": 108
-                    },
-                    {
-                        "text": "karna",
-                        "value": 108
-                    },
-                    {
-                        "text": "is",
-                        "value": 104
+                        "value": 106
                     },
                     {
                         "text": "But",
-                        "value": 102
-                    },
-                    {
-                        "text": "\"FREQUENCY\"",
-                        "value": 100
-                    },
-                    {
-                        "text": "\"WORD\"",
-                        "value": 100
-                    },
-                    {
-                        "text": "karta",
-                        "value": 95
-                    },
-                    {
-                        "text": "N",
-                        "value": 95
+                        "value": 104
                     },
                     {
                         "text": "Bhai",
+                        "value": 93
+                    },
+                    {
+                        "text": "abhi",
                         "value": 92
                     },
                     {
-                        "text": "de",
+                        "text": "karna",
                         "value": 91
+                    },
+                    {
+                        "text": "Abhi",
+                        "value": 89
+                    },
+                    {
+                        "text": "aa",
+                        "value": 88
+                    },
+                    {
+                        "text": "is",
+                        "value": 87
+                    },
+                    {
+                        "text": "de",
+                        "value": 86
+                    },
+                    {
+                        "text": "Nice",
+                        "value": 86
+                    },
+                    {
+                        "text": "karta",
+                        "value": 85
+                    },
+                    {
+                        "text": "kam",
+                        "value": 84
+                    },
+                    {
+                        "text": "le",
+                        "value": 84
+                    },
+                    {
+                        "text": "ki",
+                        "value": 83
+                    },
+                    {
+                        "text": "kiya",
+                        "value": 83
+                    },
+                    {
+                        "text": "u",
+                        "value": 82
+                    },
+                    {
+                        "text": "N",
+                        "value": 82
+                    },
+                    {
+                        "text": "vo",
+                        "value": 80
+                    },
+                    {
+                        "text": "Main",
+                        "value": 80
+                    },
+                    {
+                        "text": "ja",
+                        "value": 80
+                    },
+                    {
+                        "text": "kuch",
+                        "value": 77
                     }
                 ]
             }
@@ -2854,13 +3122,13 @@ def dummyapi():
     },
     "usernames": [
         {
-            "username": "Atharva Kulkarni"
+            "username": "Kulkarni New"
         },
         {
-            "username": "Sumit Kolpekwar"
+            "username": "Sumit Skn"
         },
         {
-            "username": "Yash Dewangan"
+            "username": "yashdev.py ヤシュ・デワンガン"
         }
     ]
 }
