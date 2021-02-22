@@ -15,7 +15,7 @@ import WordcloudSection from "../components/sections/WordcloudSection";
 import SpecificUserSection from "../components/sections/SpecificUserSection";
 import ErrorModal from "../components/modals/ErrorModal";
 import Footer from "../components/sections/Footer";
-import { Navbar } from "../components/navbar";
+import { Navbar } from "../components/Navbar";
 
 export const FileContext = createContext(null);
 

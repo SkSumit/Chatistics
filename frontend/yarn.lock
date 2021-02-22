@@ -3179,14 +3179,6 @@ react-smooth@^1.0.5:
     raf "^3.4.0"
     react-transition-group "^2.5.0"
 
-react-to-pdf@^0.0.13:
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/react-to-pdf/-/react-to-pdf-0.0.13.tgz#48d75def52dbd1c495473a99b7e2daa95c002202"
-  integrity sha512-L5POP38FOKTqWOePt9GtBaQr8epfRpnJjdxsAU2VyjU39rFmwHlgYAF/1bYNaDNJVeQp/OBTXLbN3wcMO0HI2A==
-  dependencies:
-    html2canvas "^1.0.0-alpha.12"
-    jspdf "^1.4.1"
-
 react-tooltip@^4.2.14:
   version "4.2.14"
   resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.2.14.tgz#8e06b5926fdf6672e78d8ccadaa16bef40d131d7"
