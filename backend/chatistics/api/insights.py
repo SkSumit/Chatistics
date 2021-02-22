@@ -137,8 +137,8 @@ class getData:
         for i in data['USERNAME'].unique():
             basedonDay.add(i, [data[data['USERNAME'] == i][['DAY', 'MESSAGE']].to_dict(orient='records'), {
                            "mostActiveDay": configvars.userdata.get(i)['mostActiveDay'], "averageTexts":configvars.userdata.get(i)['averageMessagePerDay']}])
-        basedonDay.add("All", [dataall.to_dict(orient='records'), {"averageTexts": 169.02197802197801,
-                                                                   "mostActiveDay": "Thursday"}])
+        basedonDay.add("All", [dataall.to_dict(orient='records'), {"averageTexts": sum(dataall['MESSAGE'])/configvars.no_of_days,
+                                                                   "mostActiveDay": dataall['DAY'][0]}])
         return basedonDay
 
     def heatmap(data):
@@ -155,6 +155,13 @@ class getData:
         heatmap.add("All",heatmapall.to_dict(orient='records'))
         return heatmap
 
+    def timeline(data):
+        data['DATETIME'] = pd.to_datetime(data['DATE'])
+        timeline=data.groupby("DATETIME",as_index=False)['MESSAGE']
+        timelinedf=timeline.count()
+        timelinedf.columns=['date','count']
+        return timelinedf.to_dict(orient='records')    
+
     def analysis(self, data, filename):
         configvars.totalwords = 0
         configvars.no_of_days = 0
@@ -167,14 +174,13 @@ class getData:
         configvars.userdata.update(getData.userspecific(data))
         analysis = {
             "stats": {
-
-                "basedOnDays": getData.basedonday(data),
-
                 "emoji": configvars.emojidata,
                 "wordcloud": configvars.worddata,
                 "heatmap": getData.heatmap(data),
                 "summary": getData.summary(data),
-                "userspecific": configvars.userdata
+                "basedOnDays": getData.basedonday(data),
+                "userspecific": configvars.userdata,
+                "timeline":getData.timeline(data)
             },
             "usernames" : getData.usernameonlydict(data),
             "filename" : filename,
