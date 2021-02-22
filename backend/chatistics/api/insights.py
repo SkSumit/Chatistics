@@ -114,15 +114,17 @@ class getData:
             
     def basedonday(data):
         basedonDay = dict.my_dictionary()
-        datauser = data.groupby(["USERNAME","DAY"], as_index=False)["MESSAGE"]
-        dataall = data.groupby(['DAY'] , as_index=False)['MESSAGE']
-        data=datauser.count()
+        datauser = data.groupby(["USERNAME", "DAY"], as_index=False)["MESSAGE"]
+        dataall = data.groupby(['DAY'], as_index=False)['MESSAGE']
+        data = datauser.count()
         dataall = dataall.count()
-        dataall.sort_values(by=['DAY','MESSAGE'],ascending=False,inplace=True)
-        data.sort_values(by='MESSAGE',ascending=False,inplace=True)
+        dataall.sort_values(by=['DAY', 'MESSAGE'],ascending=False, inplace=True)
+        data.sort_values(by='MESSAGE', ascending=False, inplace=True)
         for i in data['USERNAME'].unique():
-            basedonDay.add(i,[data[data['USERNAME']==i][['DAY','MESSAGE']].to_dict(orient='records'),{"Dy_max_convo":configvars.userdata.get(i)['Dy_max_convo'],"Avg_msg_per_day":configvars.userdata.get(i)['Avg_msg_per_day']}])
-        basedonDay.add("All",dataall.to_dict(orient='records'))    
+            basedonDay.add(i, [data[data['USERNAME'] == i][['DAY', 'MESSAGE']].to_dict(orient='records'), {
+                           "mostActiveDay": configvars.userdata.get(i)['mostActiveDay'], "averageTexts":configvars.userdata.get(i)['averageMessagePerDay']}])
+        basedonDay.add("All", [dataall.to_dict(orient='records'), {"averageTexts": 169.02197802197801,
+                                                                   "mostActiveDay": "Thursday"}])
         return basedonDay
 
     def heatmap(data):
@@ -130,10 +132,12 @@ class getData:
         heatmapuser=data.groupby(["USERNAME","DATE"], as_index=False)['MESSAGE']
         heatmapall=data.groupby(["DATE"],as_index=False)['MESSAGE']
         heatmapuser=heatmapuser.count().sort_values(by=['MESSAGE'],ascending=False)
+        heatmapuser.columns = ['USERNAME' , 'date' , 'count']
         configvars.no_of_days = len(heatmapall)
         heatmapall=heatmapall.count().sort_values(by='MESSAGE',ascending=False)
+        heatmapall.columns = ['date' , 'count']
         for i in heatmapuser['USERNAME'].unique():
-            heatmap.add(i,heatmapuser[heatmapuser['USERNAME'] == i][['DATE','MESSAGE']].to_dict(orient='records'))
+            heatmap.add(i,heatmapuser[heatmapuser['USERNAME'] == i][['date','count']].to_dict(orient='records'))
         heatmap.add("All",heatmapall.to_dict(orient='records'))
         return heatmap
         
