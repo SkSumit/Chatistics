@@ -38,7 +38,7 @@ export default function DownloadBtn() {
         <div className="container is-flex is-justify-content-center">
           <button
             onClick={() => download()}
-            class={`button is-primary is-large  ${
+            className={`button is-primary is-large  ${
               loading ? "is-loading" : ""
             } `}
             disabled={loading}

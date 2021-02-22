@@ -14,7 +14,7 @@ export const Navbar = () => {
       <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-end container">
           <div className="navbar-item">
-            <a>
+            <a href="https://github.com/SkSumit/Chatistics" target="_blank">
               <FontAwesomeIcon icon={faGithub} className="title is-3 has-text-white" />
             </a>
           </div>
