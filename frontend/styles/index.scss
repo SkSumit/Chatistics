@@ -12,7 +12,9 @@ $text-light: white;
 $title-color: #000;
 $subtitle-color: #000;
 
-
+a{
+  color: #fff !important;
+}
 .bg-light-green {
   background-color: #dcf8c6 !important;
 }
@@ -107,4 +109,3 @@ $subtitle-color: #000;
 @import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass"
 
-// @import "../node_modules/bulma/bulma.sass";
