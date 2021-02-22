@@ -27,10 +27,10 @@ class getData:
             for word in data:
                 if word in emoji.UNICODE_EMOJI:  # emoji search
                     emoji_list.append(word)
-        Emoji_stats = {"Emoji_stats": {'Different_Emojis_used': len(
-            Counter(emoji_list).most_common()), 'Number_of_emojis': len(emoji_list)}}
-        Emoji_data = {"Emoji_usage": pd.DataFrame((Counter(emoji_list).most_common()[
-                                                  :20]), columns=['EMOJI', 'VALUE']).to_dict(orient='records')}
+        Emoji_stats = {"emojiStat": {'totalUniqueEmojis': len(
+            Counter(emoji_list).most_common()), 'totalEmojis': len(emoji_list)}}
+        Emoji_data = {"emojiUsage": pd.DataFrame((Counter(emoji_list).most_common()[
+                                                  :20]), columns=['emoji', 'value']).to_dict(orient='records')}
         Emoji_stats.update(Emoji_data)
         emojidict.add(name, Emoji_stats)
         configvars.emojidata.update(emojidict)
@@ -63,7 +63,7 @@ class getData:
             'averageMessagePerDay':     len(A['MESSAGE'])/len(A['DATE'].unique()),
             'averageWordsPerMessage':     wordlen/Z,
             #        'Avg_msg_per_hour'        :     len(A['MESSAGE'])/(len(A['DATE'].unique())*24)
-            'totalEmojis':     configvars.emojidata.get(username)['Emoji_stats']['Number_of_emojis']
+            'totalEmojis':     configvars.emojidata.get(username)['emojiStat']['totalEmojis']
 
         }
         return userSpecificInfo
@@ -177,6 +177,7 @@ class getData:
                 "userspecific": configvars.userdata
             },
             "usernames" : getData.usernameonlydict(data),
-            "filename" : filename
+            "filename" : filename,
+            "example":False
         }
         return analysis

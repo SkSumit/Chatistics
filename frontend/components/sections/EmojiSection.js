@@ -31,19 +31,19 @@ export default function EmojiSection() {
         <>
           <StatsBox
             title={"Most Used Emojis"}
-            stats={context.file.stats.emoji[selectedOption.username].Emoji_usage.map((item, index) => {
-              return index >= 5 ? null : `${item.EMOJI}`;
+            stats={context.file.stats.emoji[selectedOption.username].emojiUsage.map((item, index) => {
+              return index >= 5 ? null : `${item.emoji}`;
             })}
             icon={faCommentDots}
           />
           <StatsBox
             title={"Number of Emoji Used"}
-            stats={context.file.stats.emoji[selectedOption.username].Emoji_stats.Number_of_emojis}
+            stats={context.file.stats.emoji[selectedOption.username].emojiStat.totalEmojis}
             icon={faCalendarWeek}
           />
           <StatsBox
             title={"Number of Unqiue Emojis "}
-            stats={context.file.stats.emoji[selectedOption.username].Emoji_stats.Different_Emojis_used}
+            stats={context.file.stats.emoji[selectedOption.username].emojiStat.totalUniqueEmojis}
             icon={faAngleDoubleUp}
           />
         </>

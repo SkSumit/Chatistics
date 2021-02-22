@@ -14,7 +14,6 @@ export default function SpecificUserSection() {
         <div className="tile is-vertical is-parent">
           {chunk(Object.keys(context.file.stats.userspecific), 3).map(
             (row, index) => {
-              console.log(row);
               return (
                 <div className="tile is-parent " key={index}>
                   {row.map((item, index) => (

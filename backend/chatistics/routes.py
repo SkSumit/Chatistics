@@ -30,7 +30,7 @@ def hello():
 @cross_origin()
 def index():
     if request.method == 'POST':
-        try:
+        # try:
             if not request.files or request.files['file'].filename == '':
                 raise Exception("Select a file")
             file = request.files['file']
@@ -45,8 +45,8 @@ def index():
             whatsapp = insights.getData()
             new_insights = whatsapp.analysis(df, fileName)
             return jsonify(new_insights)
-        except Exception as e:
-            return error(str(e.args), 415)
+        # except Exception as e:
+        #     return error(str(e.args), 415)
 
 
 @main.route('/api/v1/dummy')

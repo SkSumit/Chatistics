@@ -15,8 +15,10 @@ import WordcloudSection from "../components/sections/WordcloudSection";
 import SpecificUserSection from "../components/sections/SpecificUserSection";
 import ErrorModal from "../components/modals/ErrorModal";
 import Footer from "../components/sections/Footer";
+import { Navbar } from "../components/navbar";
 
 export const FileContext = createContext(null);
+
 
 export default function Home({ data }) {
   console.log(data, "data");
@@ -24,7 +26,7 @@ export default function Home({ data }) {
   const [loader, setLoader] = useState(false);
   const [initLoader, setInitLoader] = useState(true);
   const [axiosError, setAxiosError] = useState(null);
-
+  const [showDownloadBtn, setShowDownloadBtn] = useState(false);
   useEffect(() => {
     setInitLoader(false);
   }, []);
@@ -87,11 +89,14 @@ export default function Home({ data }) {
         <meta property="twitter:image" content="" />
       </Head>
 
+      <Navbar />
       <Hero />
       <Input
         setFile={setFile}
         setLoader={setLoader}
         setAxiosError={setAxiosError}
+        showDownloadBtn={showDownloadBtn}
+        setShowDownloadBtn={setShowDownloadBtn}
       />
       <FileContext.Provider value={{ file }}>
         <Summary />
