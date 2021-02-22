@@ -1,7 +1,7 @@
 def dummyapi():
 
     api ={
-    "example": false,
+    "example": True,
     "filename": "WhatsApp Chat with 3 Bois.txt",
     "stats": {
         "basedOnDays": {
