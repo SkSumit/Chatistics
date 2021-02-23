@@ -62,7 +62,7 @@ class getData:
             'leastActiveDay':     str(A['DAY'].value_counts().idxmin()),
             'averageMessagePerDay':     len(A['MESSAGE'])/len(A['DATE'].unique()),
             'averageWordsPerMessage':     wordlen/Z,
-            #        'Avg_msg_per_hour'        :     len(A['MESSAGE'])/(len(A['DATE'].unique())*24)
+            #'Avg_msg_per_hour'        :     len(A['MESSAGE'])/(len(A['DATE'].unique())*24)
             'totalEmojis':     configvars.emojidata.get(username)['emojiStat']['totalEmojis']
 
         }
@@ -136,7 +136,7 @@ class getData:
         data.sort_values(by='MESSAGE', ascending=False, inplace=True)
         for i in data['USERNAME'].unique():
             basedonDay.add(i, [data[data['USERNAME'] == i][['DAY', 'MESSAGE']].to_dict(orient='records'), {
-                           "mostActiveDay": configvars.userdata.get(i)['mostActiveDay'], "averageTexts":configvars.userdata.get(i)['averageMessagePerDay']}])
+                           "mostActiveDay": configvars.userdata.get(i)['mostActiveDay'], "averageTexts":configvars.userdata.get(i)['totalMessages']/configvars.no_of_days}])
         basedonDay.add("All", [dataall.to_dict(orient='records'), {"averageTexts": sum(dataall['MESSAGE'])/configvars.no_of_days,
                                                                    "mostActiveDay": dataall['DAY'][0]}])
         return basedonDay
@@ -156,11 +156,18 @@ class getData:
         return heatmap
 
     def timeline(data):
+        timeline = dict.my_dictionary()
         data['DATETIME'] = pd.to_datetime(data['DATE'])
-        timeline=data.groupby("DATETIME",as_index=False)['MESSAGE']
-        timelinedf=timeline.count()
-        timelinedf.columns=['date','count']
-        return timelinedf.to_dict(orient='records')    
+        timelineuser=data.groupby(["USERNAME","DATETIME"], as_index=False)['MESSAGE']
+        timelineall=data.groupby(["DATETIME"],as_index=False)['MESSAGE']
+        timelineuserdf=timelineuser.count()
+        timelinealldf=timelineall.count()
+        timelineuserdf.columns=['USERNAME','date','count']
+        timelinealldf.columns=['date','count']
+        for i in timelineuserdf['USERNAME'].unique():
+            timeline.add(i,timelineuserdf[timelineuserdf['USERNAME'] == i][['date','count']].to_dict(orient='records'))
+        timeline.add("All",timelinealldf.to_dict(orient='records'))    
+        return timeline    
 
     def analysis(self, data, filename):
         configvars.totalwords = 0
