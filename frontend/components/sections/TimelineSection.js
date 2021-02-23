@@ -17,11 +17,11 @@ export default function TimelineSection() {
           Who doesn't like a <span className="underline">timeline?</span>
         </h1>
       }
-      graph={<Timeline data={data} />}
+      graph={<Timeline  />}
       rightColumnContent={
         <StatsBox
-          title={`Most Active Day With  ${highestValue.Value}  Text Exchanged`}
-          stats={highestValue.Date}
+          title={`Most Active Day With  highestValue.Value  Text Exchanged`}
+          stats='{highestValue.Date}'
           icon={
             faFireAlt  
           }
