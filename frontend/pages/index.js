@@ -102,7 +102,7 @@ export default function Home({ data, analytics }) {
       />
       <FileContext.Provider value={{ file }}>
         <Summary />
-        {/* <TimelineSection /> */}
+        <TimelineSection />
         <DaySection />
         {/* <TimeRadarSection /> */}
         <Heatmap />
