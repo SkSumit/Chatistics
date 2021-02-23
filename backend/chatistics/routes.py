@@ -45,7 +45,7 @@ def index():
             whatsapp = insights.getData()
             new_insights = whatsapp.analysis(df, fileName)
 
-            # Inc upload count in firebase db
+            Inc upload count in firebase db
             uploadCount = db.child("uploads").get()
             db.child("uploads").set(uploadCount.val() + 1)
             
