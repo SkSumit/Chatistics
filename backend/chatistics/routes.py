@@ -6,7 +6,7 @@ from chatistics.api import insights
 from chatistics.dummy.dummyapi import dummyapi
 from chatistics.error.error import error
 from chatistics.auth.auth import check_for_token
-# from chatistics.firebase.firebase import db
+from chatistics.firebase.firebase import db
 
 
 import pandas as pd
@@ -30,7 +30,7 @@ def hello():
 @cross_origin()
 def index():
     if request.method == 'POST':
-        # try:
+        try:
             if not request.files or request.files['file'].filename == '':
                 raise Exception("Select a file")
             file = request.files['file']
@@ -44,9 +44,14 @@ def index():
             df = dataframe(content)
             whatsapp = insights.getData()
             new_insights = whatsapp.analysis(df, fileName)
+
+            # Inc upload count in firebase db
+            uploadCount = db.child("uploads").get()
+            db.child("uploads").set(uploadCount.val() + 1)
+            
             return jsonify(new_insights)
-        # except Exception as e:
-        #     return error(str(e.args), 415)
+        except Exception as e:
+            return error(str(e.args), 415)
 
 
 @main.route('/api/v1/dummy')
@@ -66,8 +71,6 @@ def feedback():
         return 'Something Went Wrong', 502
 
 # Endpoint for storing visitor counts
-
-
 @main.route('/api/v1/analytics/visited', methods=['POST'])
 def analytics():
     try:
@@ -78,15 +81,13 @@ def analytics():
         print(e)
         return 'Something Went Wrong', 502
 
-# Endpoint for storing visitor counts
-
-
-@main.route('/api/v1/analytics/uploads', methods=['POST'])
+# Endpoint for getting analytics
+@main.route('/api/v1/analytics', methods=['GET'])
 def uploads():
     try:
-        uploadCount = db.child("uploads").get()
-        db.child("uploads").set(uploadCount.val() + 1)
-        return '', 200
+        uploadCount = db.child("uploads").get().val()
+        visited = db.child("visited").get().val()
+        return jsonify(uploadCount = uploadCount, visited = visited), 200
     except Exception as e:
         print(e)
         return 'Something Went Wrong', 502

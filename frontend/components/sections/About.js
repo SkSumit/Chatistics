@@ -4,11 +4,11 @@ import Hero from "./Hero";
 import { Navbar } from "../Navbar";
 import Section from "../common/Section";
 
-const About = () => {
+const About = ({analytics}) => {
   return (
     <div>
       <Navbar />
-      <Hero />
+      <Hero analytics={analytics}/>
       <Section containerVariant={"bg-white mt-100 px-6  "} id="aboutProject">
         <h1 className="title is-3 ">About Project</h1>
         <h1 className="subtitle is-5 ">

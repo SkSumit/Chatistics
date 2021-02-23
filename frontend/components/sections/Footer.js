@@ -62,11 +62,11 @@ export default function Footer() {
               Privacy
             </Link>
           </h1>
-          <a className="title is-5 ">
+          <h1 className="title is-5 ">
             <Link href="/project#aboutAcknowledgements" scroll={false}>
               Acknowledgements
             </Link>
-          </a>
+          </h1>
         </div>
       </div>
     </Section>

@@ -54,10 +54,9 @@ export default function Input({
       setLoader(true);
       const result = await postFile(formData);
       setFile(result.data);
-      console.log("hey", showDownloadBtn);
+
       setLoader(false);
-      setShowDownloadBtn(true);
-      console.log("hey,", showDownloadBtn);
+      setShowDownloadBtn(true)
     } catch (error) {
       setAxiosError(error);
       setLoader(false);
