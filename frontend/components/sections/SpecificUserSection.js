@@ -2,11 +2,19 @@ import React, { useContext } from "react";
 import chunk from "lodash.chunk";
 import Section from "../common/Section";
 import { FileContext } from "../../pages/index";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFireAlt } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function SpecificUserSection() {
   const context = useContext(FileContext);
+  function objSlice(obj, lastExclusive) {
+    var filteredKeys = Object.keys(obj).slice(0, lastExclusive);
+    var newObj = {};
+    filteredKeys.forEach(function(key){
+        newObj[key] = obj[key];
+    });
+    return newObj;
+}
+console.log(objSlice(context.file.stats.userspecific, 24))
 
   return (
     <Section>

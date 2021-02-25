@@ -40,8 +40,9 @@ export default function Home({ data, analytics }) {
   if (loader) {
     return <LoaderAnalysis />;
   }
+ 
   return (
-    <div>
+    <div id="root">
       <Head>
         <link rel="icon" href="/favicon-96x96.png" />
         <meta

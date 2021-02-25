@@ -9,18 +9,20 @@ export default function DownloadBtn() {
   const download = async () => {
     setLoading(true);
 
-    var element = document.body;
+    var element = document.getElementById('root');
+    
     const getOptions = (filename, element) => {
       let opt = {
         margin: 0,
+        enableLinks:true,
         filename: filename + ".pdf",
         image: { type: "jpeg", quality: 0.7 },
-        html2canvas: { scale: 2, foreignObjectRendering: true },
+        html2canvas: { scale: 1, foreignObjectRendering: true },
         jsPDF: {
           unit: "px",
           format: [
-            element.getBoundingClientRect().height,
-            element.getBoundingClientRect().width,
+            element.clientHeight,
+            element.clientWidth,
           ],
           orientation: "portrait",
           hotfixes: ["px_scaling"],
@@ -31,7 +33,7 @@ export default function DownloadBtn() {
     await html2pdf().from(element).set(getOptions("filename", element)).save();
     setLoading(false);
   };
-
+ 
   return (
     <section className="hero ">
       <div className="hero-body">
