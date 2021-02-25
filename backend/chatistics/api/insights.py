@@ -190,7 +190,7 @@ class getData:
                 "timeline":getData.timeline(data)
             },
             "usernames" : getData.usernameonlydict(data),
-            "filename" : filename,
+            "filename" : filename[:-4],
             "example":False
         }
         return analysis
