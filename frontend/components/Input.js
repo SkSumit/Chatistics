@@ -2,17 +2,25 @@ import React, { useState } from "react";
 import Section from "./common/Section";
 import { postFile } from "../api/api";
 import { fileExtensionValidation } from "../api/apiUtils";
-import DownloadBtn from "./DownloadBtn";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpload } from "@fortawesome/free-solid-svg-icons";
+import dynamic from "next/dynamic";
 
-export default function Input({ setLoader, setAxiosError, setFile }) {
+//Dynamic import to solve jspdf window not defined issue
+const DownloadBtn = dynamic(() => import("./DownloadBtn"), { ssr: false });
+
+export default function Input({
+  setLoader,
+  setAxiosError,
+  setFile,
+  showDownloadBtn,
+  setShowDownloadBtn,
+}) {
   const [uploadFile, setUploadFile] = useState(null);
   const [error, setError] = useState({
     fileError: { error: false, message: "" },
     axiosError: { error: false, message: "" },
   });
-  const [showDownloadBtn, setShowDownloadBtn] = useState(false);
 
   const onFileChange = async (e) => {
     if (e.target.files[0]) {
@@ -47,8 +55,8 @@ export default function Input({ setLoader, setAxiosError, setFile }) {
       const result = await postFile(formData);
       setFile(result.data);
 
-      setShowDownloadBtn(true);
       setLoader(false);
+      setShowDownloadBtn(true)
     } catch (error) {
       setAxiosError(error);
       setLoader(false);

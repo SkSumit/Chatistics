@@ -42,7 +42,7 @@ export const Layout = ({
                   <Select
                   defaultValue={selectedOption}
                   onChange={setSelectedOption}
-                  options={context.file.usernames}
+                  options={[...context.file.usernames,{username:'All'}]}
                   getOptionLabel ={(option)=>option.username}
                   getOptionValue ={(option)=>option.username}
                   isSearchable={true}

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { useState, useEffect, createContext } from "react";
-import { getDefaultStats } from "../api/api";
+import { getAnalytics, getDefaultStats, incVisitorCount } from "../api/api";
 import Hero from "../components/sections/Hero";
 import Summary from "../components/sections/Summary";
 import TimelineSection from "../components/sections/TimelineSection";
@@ -15,16 +15,20 @@ import WordcloudSection from "../components/sections/WordcloudSection";
 import SpecificUserSection from "../components/sections/SpecificUserSection";
 import ErrorModal from "../components/modals/ErrorModal";
 import Footer from "../components/sections/Footer";
+import { Navbar } from "../components/Navbar";
 
 export const FileContext = createContext(null);
 
-export default function Home({ data }) {
+export default function Home({ data, analytics }) {
   console.log(data, "data");
   const [file, setFile] = useState(data);
   const [loader, setLoader] = useState(false);
   const [initLoader, setInitLoader] = useState(true);
   const [axiosError, setAxiosError] = useState(null);
-
+  const [showDownloadBtn, setShowDownloadBtn] = useState(false);
+  if (process.env.NODE_ENV === "production") {
+    incVisitorCount();
+  }
   useEffect(() => {
     setInitLoader(false);
   }, []);
@@ -87,15 +91,18 @@ export default function Home({ data }) {
         <meta property="twitter:image" content="" />
       </Head>
 
-      <Hero />
+      <Navbar />
+      <Hero analytics={analytics} />
       <Input
         setFile={setFile}
         setLoader={setLoader}
         setAxiosError={setAxiosError}
+        showDownloadBtn={showDownloadBtn}
+        setShowDownloadBtn={setShowDownloadBtn}
       />
       <FileContext.Provider value={{ file }}>
         <Summary />
-        {/* <TimelineSection /> */}
+        <TimelineSection />
         <DaySection />
         {/* <TimeRadarSection /> */}
         <Heatmap />
@@ -112,6 +119,7 @@ export default function Home({ data }) {
 
 export async function getStaticProps(context) {
   const data = await getDefaultStats();
+  const analytics = await getAnalytics();
   if (!data || data.isAxiosError) {
     return {
       notFound: true,
@@ -120,6 +128,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       data: data.data,
+      analytics: analytics,
     },
   };
 }

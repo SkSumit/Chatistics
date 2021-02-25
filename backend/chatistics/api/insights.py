@@ -27,10 +27,10 @@ class getData:
             for word in data:
                 if word in emoji.UNICODE_EMOJI:  # emoji search
                     emoji_list.append(word)
-        Emoji_stats = {"Emoji_stats": {'Different_Emojis_used': len(
-            Counter(emoji_list).most_common()), 'Number_of_emojis': len(emoji_list)}}
-        Emoji_data = {"Emoji_usage": pd.DataFrame((Counter(emoji_list).most_common()[
-                                                  :20]), columns=['EMOJI', 'VALUE']).to_dict(orient='records')}
+        Emoji_stats = {"emojiStat": {'totalUniqueEmojis': len(
+            Counter(emoji_list).most_common()), 'totalEmojis': len(emoji_list)}}
+        Emoji_data = {"emojiUsage": pd.DataFrame((Counter(emoji_list).most_common()[
+                                                  :20]), columns=['emoji', 'value']).to_dict(orient='records')}
         Emoji_stats.update(Emoji_data)
         emojidict.add(name, Emoji_stats)
         configvars.emojidata.update(emojidict)
@@ -62,8 +62,8 @@ class getData:
             'leastActiveDay':     str(A['DAY'].value_counts().idxmin()),
             'averageMessagePerDay':     len(A['MESSAGE'])/len(A['DATE'].unique()),
             'averageWordsPerMessage':     wordlen/Z,
-            #        'Avg_msg_per_hour'        :     len(A['MESSAGE'])/(len(A['DATE'].unique())*24)
-            'totalEmojis':     configvars.emojidata.get(username)['Emoji_stats']['Number_of_emojis']
+            #'Avg_msg_per_hour'        :     len(A['MESSAGE'])/(len(A['DATE'].unique())*24)
+            'totalEmojis':     configvars.emojidata.get(username)['emojiStat']['totalEmojis']
 
         }
         return userSpecificInfo
@@ -136,9 +136,9 @@ class getData:
         data.sort_values(by='MESSAGE', ascending=False, inplace=True)
         for i in data['USERNAME'].unique():
             basedonDay.add(i, [data[data['USERNAME'] == i][['DAY', 'MESSAGE']].to_dict(orient='records'), {
-                           "mostActiveDay": configvars.userdata.get(i)['mostActiveDay'], "averageTexts":configvars.userdata.get(i)['averageMessagePerDay']}])
-        basedonDay.add("All", [dataall.to_dict(orient='records'), {"averageTexts": 169.02197802197801,
-                                                                   "mostActiveDay": "Thursday"}])
+                           "mostActiveDay": configvars.userdata.get(i)['mostActiveDay'], "averageTexts":configvars.userdata.get(i)['totalMessages']/configvars.no_of_days}])
+        basedonDay.add("All", [dataall.to_dict(orient='records'), {"averageTexts": sum(dataall['MESSAGE'])/configvars.no_of_days,
+                                                                   "mostActiveDay": dataall['DAY'][0]}])
         return basedonDay
 
     def heatmap(data):
@@ -155,6 +155,20 @@ class getData:
         heatmap.add("All",heatmapall.to_dict(orient='records'))
         return heatmap
 
+    def timeline(data):
+        timeline = dict.my_dictionary()
+        data['DATETIME'] = pd.to_datetime(data['DATE'])
+        timelineuser=data.groupby(["USERNAME","DATETIME"], as_index=False)['MESSAGE']
+        timelineall=data.groupby(["DATETIME"],as_index=False)['MESSAGE']
+        timelineuserdf=timelineuser.count()
+        timelinealldf=timelineall.count()
+        timelineuserdf.columns=['USERNAME','date','count']
+        timelinealldf.columns=['date','count']
+        for i in timelineuserdf['USERNAME'].unique():
+            timeline.add(i,timelineuserdf[timelineuserdf['USERNAME'] == i][['date','count']].to_dict(orient='records'))
+        timeline.add("All",timelinealldf.to_dict(orient='records'))    
+        return timeline    
+
     def analysis(self, data, filename):
         configvars.totalwords = 0
         configvars.no_of_days = 0
@@ -167,16 +181,16 @@ class getData:
         configvars.userdata.update(getData.userspecific(data))
         analysis = {
             "stats": {
-
-                "basedOnDays": getData.basedonday(data),
-
                 "emoji": configvars.emojidata,
                 "wordcloud": configvars.worddata,
                 "heatmap": getData.heatmap(data),
                 "summary": getData.summary(data),
-                "userspecific": configvars.userdata
+                "basedOnDays": getData.basedonday(data),
+                "userspecific": configvars.userdata,
+                "timeline":getData.timeline(data)
             },
             "usernames" : getData.usernameonlydict(data),
-            "filename" : filename
+            "filename" : filename,
+            "example":False
         }
         return analysis

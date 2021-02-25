@@ -6,6 +6,7 @@ export default function Section({
   noBox = false,
 }) {
   return (
+
     <section className={`hero ${variation}`}>
       <div className="hero-body ">
         <div
@@ -17,5 +18,6 @@ export default function Section({
         </div>
       </div>
     </section>
+    
   );
 }

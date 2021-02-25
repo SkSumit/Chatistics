@@ -1,9 +1,13 @@
 import React from "react";
+
 import Section from "../common/Section";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
-export default function Hero() {
+
+export default function Hero({analytics}) {
+  
   return (
     <Section
       variation={"is-medium is-primary pb-3"}
@@ -12,10 +16,13 @@ export default function Hero() {
     >
       <h1 className="title is-1 has-text-centered-desktop">
         <FontAwesomeIcon icon={faWhatsapp} className="mr-2" spin />
-        Chatistics
+        <Link href="/">Chatistics</Link> 
       </h1>
       <h1 className="subtitle is-3 has-text-centered-desktop">
         WhatsApp chat analytics and insights
+      </h1>
+      <h1 className="title is-5 has-text-centered-desktop bg-light-green has-text-black my-3">
+        {analytics.visited} visitors, {analytics.uploadCount} files analysed
       </h1>
     </Section>
   );
