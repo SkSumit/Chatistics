@@ -23,11 +23,14 @@ def dataframe(content):
             days=[]
             years=[]
             month=[]
+            newdate=[]
             for i in df['DATE']:
                 date_to_extract=datetime.strptime(i, "%d-%m-%y")
                 days.append(date_to_extract.strftime("%A"))
                 years.append(date_to_extract.year)
                 month.append(calendar.month_name[date_to_extract.month]+" "+str(date_to_extract.year))
+                newdate.append(str(date_to_extract.month)+"-"+str(date_to_extract.day)+"-"+str(date_to_extract.year))
+            df["DATE"]=newdate    
         except :
             days=[]
             years=[]
@@ -36,7 +39,7 @@ def dataframe(content):
                 date_to_extract=datetime.strptime(i, "%m-%d-%y")
                 days.append(date_to_extract.strftime("%A"))
                 years.append(date_to_extract.year)
-                month.append(calendar.month_name[date_to_extract.month]+" "+str(date_to_extract.year))
+                month.append(calendar.month_name[date_to_extract.month]+" "+str(date_to_extract.year)) 
         df['DAY'] = days
         df['YEAR']= years
         df['MONTH']= month
