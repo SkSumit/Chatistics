@@ -25,11 +25,11 @@ A WhatsApp Chat analyzer and statistics.
     <a ><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://chatistics.vercel.app/">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/SkSumit/Chatistics/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/SkSumit/Chatistics/issues">Request Feature</a>
   </p>
 </p>
 
@@ -67,7 +67,9 @@ A WhatsApp Chat analyzer and statistics.
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Chatistics][product-screenshot]](https://chatistics.vercel.app/)
+[![product-screenshot]](https://chatistics.vercel.app/)
+
+[![product-screenshot1]](https://chatistics.vercel.app/)
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
@@ -87,7 +89,7 @@ Frameworks used in the website
 * [Flask](https://flask.palletsprojects.com/en/1.1.x)
 
 This project was made possible due to
-*
+* [Pandas](https://pandas.pydata.org/)
 
 
 
@@ -219,7 +221,6 @@ Project Link: [Chatistics](https://github.com/SkSumit/Chatistics/tree/main)
 * [Sticky Kit](http://leafo.net/sticky-kit)
 * [JVectorMap](http://jvectormap.com)
 * [Font Awesome](https://fontawesome.com)
-*
 
 
 
@@ -237,4 +238,5 @@ Project Link: [Chatistics](https://github.com/SkSumit/Chatistics/tree/main)
 [license-url]: https://github.com/SkSumit/Chatistics/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/primarypage.png
+[product-screenshot1]: images/wordcloud.png
