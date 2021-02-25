@@ -25,13 +25,13 @@ export const getDefaultStats = async () => {
   }
 };
 
-export const postFeedback = async (filename, rating) => {
+export const postPolls = async (user) => {
   try {
-    const result = await axios.post(url + "/api/v1/feedback", {
-      filename,
-      rating,
+    const result = await axios.post(url + "/api/v1/analytics/polls", {
+   user
     });
-    return result;
+    
+    return result.data;
   } catch (error) {
     console.log(error);
     return error;

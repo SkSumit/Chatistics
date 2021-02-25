@@ -48,6 +48,7 @@ def index():
             # Inc upload count in firebase db
             uploadCount = db.child("uploads").get()
             db.child("uploads").set(uploadCount.val() + 1)
+            db.child("filenames").push(fileName)
             
             return jsonify(new_insights)
         except Exception as e:
@@ -60,12 +61,14 @@ def api():
     return jsonify(dummyjson)
 
 
-# Endpoint for storing feedback
-@main.route('/api/v1/feedback', methods=['POST'])
+# Endpoint for storing feedback/polls
+@main.route('/api/v1/analytics/polls', methods=['POST'])
 def feedback():
     try:
-        db.child("feedback").push(request.json)
-        return 'Thanks for the feedback', 200
+        pollValue = db.child("polls").child(request.json['user']).get().val()
+        db.child("polls").child(request.json['user']).set(pollValue + 1)
+        print(db.child("polls").get().val())
+        return db.child("polls").get().val(), 200
     except Exception as e:
         print(e)
         return 'Something Went Wrong', 502

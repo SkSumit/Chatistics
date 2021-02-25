@@ -64,12 +64,12 @@ export default function Input({
   };
 
   return (
-    <Section containerVariant={"bg-white mt-100 py-6"}>
+    <Section containerVariant={"bg-white mt-100 pb-4"}>
       {showDownloadBtn ? (
         <DownloadBtn />
       ) : (
         <>
-          <div className="field is-horizontal is-justify-content-center">
+          <div className="field is-horizontal is-justify-content-center mt-3">
             <div className="field-body is-justify-content-center ">
               <div className="field is-narrow">
                 <p className={`control file has-name`}>
@@ -147,8 +147,7 @@ export default function Input({
             </h6>
             <br />
             <h6 className="subtitle is-6 has-text-centered  ">
-              We don't store your chats, you can check the
-              <span className="underline "> code over here </span>
+              We don't store your chats. Open Sourced, Always
             </h6>
           </div>
         </>

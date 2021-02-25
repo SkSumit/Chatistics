@@ -10,7 +10,7 @@ export default function Hero({analytics}) {
   
   return (
     <Section
-      variation={"is-medium is-primary pb-3"}
+      variation={"is-medium is-primary pb-5 has-text-centered-desktop "}
       containerVariant={" "}
       noBox={true}
     >
@@ -21,9 +21,9 @@ export default function Hero({analytics}) {
       <h1 className="subtitle is-3 has-text-centered-desktop">
         WhatsApp chat analytics and insights
       </h1>
-      <h1 className="title is-5 has-text-centered-desktop bg-light-green has-text-black my-3">
+      <span className="title is-5 has-text-centered-desktop bg-light-green has-text-black my-6 px-3 py-1">
         {analytics.visited} visitors, {analytics.uploadCount} files analysed
-      </h1>
+      </span>
     </Section>
   );
 }
