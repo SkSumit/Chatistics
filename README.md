@@ -14,7 +14,7 @@ A WhatsApp Chat analyzer and statistics.
 <br />
 <p align="center">
   <a >
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/icons8-whatsapp.gif" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Chatistics</h3>
