@@ -6,7 +6,7 @@ from chatistics.api import insights
 from chatistics.dummy.dummyapi import dummyapi
 from chatistics.error.error import error
 from chatistics.auth.auth import check_for_token
-from chatistics.firebase.firebase import db
+# from chatistics.firebase.firebase import db
 
 
 import pandas as pd
@@ -45,10 +45,9 @@ def index():
             whatsapp = insights.getData()
             new_insights = whatsapp.analysis(df, fileName)
 
-            #Inc upload count in firebase db
-            uploadCount = db.child("uploads").get()
-            db.child("uploads").set(uploadCount.val() + 1)
-            db.child("filenames").push(fileName)
+            # Inc upload count in firebase db
+            # uploadCount = db.child("uploads").get()
+            # db.child("uploads").set(uploadCount.val() + 1)
             
             return jsonify(new_insights)
         except Exception as e:
