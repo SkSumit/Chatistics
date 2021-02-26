@@ -230,7 +230,6 @@ class getData:
                 "emoji": configvars.emojidata,
                 "wordcloud": configvars.worddata,
                 "timeline":getData.timeline(data),
-                # "heatmap": getData.heatmap(data),
                 "radarMap":getData.radarmap(data),
                 "summary": getData.summary(data),
                 "basedOnDays": getData.basedonday(data),
