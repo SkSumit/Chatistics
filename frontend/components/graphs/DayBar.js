@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-export default function DayBar({ selectedOption, setSelectedOption }) {
+export default function DayBar({ selectedOption}) {
   const context = useContext(FileContext);
 
   return (

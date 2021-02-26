@@ -24,7 +24,7 @@ export default function TimelineSection() {
       rightColumnContent={
         <StatsBox
           title={`Most Active Day With  highestValue.Value  Text Exchanged`}
-          stats='{highestValue.Date}'
+          stats={context.file.stats.timeline[selectedOption.username].timelineStat.mostActiveDate}
           icon={
             faFireAlt  
           }

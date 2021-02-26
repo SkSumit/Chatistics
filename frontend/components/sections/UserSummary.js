@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { FileContext } from "../../pages/index";
 import Section from "../common/Section";
 import StatsBox from "../StatsBox";
 import {
@@ -9,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function UserSummary() {
+  const context = useContext(FileContext);
   return (
     <Section containerVariant={"bg-light-green"}>
       <h1 className="subtitle is-3 ">
@@ -16,22 +18,22 @@ export default function UserSummary() {
       </h1>
       <div className="tile is-ancestor">
         <div className="tile is-parent">
-          <StatsBox title={"Total Users in Chats"} stats={3} icon={faUsers} />
+          <StatsBox title={"Total Users in Chats"} stats={context.file.stats.summary.totalUsers} icon={faUsers} />
         </div>
         <div className="tile is-parent">
           <StatsBox
             title={"Most Texts Sent"}
-            stats={"Atharva"}
+            stats={context.file.stats.summary.mostTexts}
             icon={faMedal}
           />
         </div>
         <div className="tile is-parent">
-          <StatsBox title={"Least Texts Sent"} stats={"Yash"} icon={faPoo} />
+          <StatsBox title={"Least Texts Sent"} stats={context.file.stats.summary.leastTexts} icon={faPoo} />
         </div>
         <div className="tile is-parent">
           <StatsBox
-            title={"Highest Streak"}
-            stats={"19 Days"}
+            title={"STATS TBD"}
+            stats={"STATS TBD"}
             icon={faFireAlt}
           />
         </div>
