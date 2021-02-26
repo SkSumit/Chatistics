@@ -230,14 +230,13 @@ class getData:
                 "emoji": configvars.emojidata,
                 "wordcloud": configvars.worddata,
                 "timeline":getData.timeline(data),
-                # "heatmap": getData.heatmap(data),
                 "radarMap":getData.radarmap(data),
                 "summary": getData.summary(data),
                 "basedOnDays": getData.basedonday(data),
                 "userspecific": configvars.userdata,
             },
             "usernames" : getData.usernameonlydict(data),
-            "filename" : filename[:-4],
+            "filename" : filename[19:-4],
             "example":False
         }
         return analysis
