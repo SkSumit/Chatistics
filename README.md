@@ -14,7 +14,7 @@ A WhatsApp Chat analyzer and statistics.
 <br />
 <p align="center">
   <a >
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/icons8-whatsapp.gif" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Chatistics</h3>
@@ -25,11 +25,11 @@ A WhatsApp Chat analyzer and statistics.
     <a ><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://chatistics.vercel.app/">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/SkSumit/Chatistics/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/SkSumit/Chatistics/issues">Request Feature</a>
   </p>
 </p>
 
@@ -52,6 +52,7 @@ A WhatsApp Chat analyzer and statistics.
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
+    <li><a href="#running">Running</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -66,7 +67,9 @@ A WhatsApp Chat analyzer and statistics.
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![product-screenshot]](https://chatistics.vercel.app/)
+
+[![product-screenshot1]](https://chatistics.vercel.app/)
 
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
@@ -81,10 +84,12 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+Frameworks used in the website
+* [Next.js](https://nextjs.org/)
+* [Flask](https://flask.palletsprojects.com/en/1.1.x)
+
+This project was made possible due to
+* [Pandas](https://pandas.pydata.org/)
 
 
 
@@ -96,31 +101,65 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Tools needed to run this project
 * npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
+* python
+* yarn 
+  
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. You need to have API Keys for [Firebase](https://firebase.google.com/)
 2. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
+3. Install packages
+#### Backend
 
+```bash
+cd .\backend\
+pip install virtual env
+env\Scripts\activate
+pip install -r requirements.txt
+```
 
+#### Frontend
+
+```bash
+cd .\frontend\
+yarn install
+```   
+
+4.Create `.env` files, one in `backend` folder. 
+  Add your `firebase` key in the backend .env file.
+  ```PY
+  FIREBASE_API_KEY= '<Your API KEY>',
+  FIREBASE_AUTH_DOMAIN= '<Your API KEY>',
+  FIREBASE_PROJECT_ID= '<Your API KEY>',
+  FIREBASE_STORAGE_BUCKET= '<Your API KEY>',
+  FIREBASE_MESSAGING_SENDER_ID= '<Your API KEY>',
+  FIREBASE_APP_ID= '<Your API KEY>'
+  FIREBASE_MEASUREMENT_ID= '<Your API KEY>'
+  FIREBASE_DATABASE_URL= '<Your API KEY>'
+  ```
 
 <!-- USAGE EXAMPLES -->
+## Running
+
+Backend would be running on PORT 5000
+
+```bash
+python run.py
+```
+ ***Open new terminal to run front-end***
+
+Frontend would be running on PORT 3000
+
+```bash
+yarn run dev
+```
+
+
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
@@ -132,7 +171,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/SkSumit/Chatistics/issues) for a list of proposed features (and known issues).
 
 
 
@@ -152,16 +191,20 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the GNU License. See `LICENSE` for more information.
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Atharva Kulkarni - [@LinkedIn](https://www.linkedin.com/in/atharva-kulkarni-b119b7195/) - mailmenehakulkarni@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Sumit Kolpekwar - [@LinkedIn](https://www.linkedin.com/in/sumitkolpekwar/) - kolsum24@gmail.com
+
+Yash Dewangan - [@LinkedIn](https://www.linkedin.com/in/yash-dewangan-903346132/) - yashdewangan123456@gmail.com
+
+Project Link: [Chatistics](https://github.com/SkSumit/Chatistics/tree/main)
 
 
 
@@ -181,20 +224,19 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/SkSumit/Chatistics/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/SkSumit/Chatistics/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/SkSumit/Chatistics/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/SkSumit/Chatistics/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-url]: https://github.com/SkSumit/Chatistics/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/primarypage.png
+[product-screenshot1]: images/wordcloud.png

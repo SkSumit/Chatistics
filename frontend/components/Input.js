@@ -5,6 +5,7 @@ import { fileExtensionValidation } from "../api/apiUtils";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpload } from "@fortawesome/free-solid-svg-icons";
 import dynamic from "next/dynamic";
+import KnowMoreModal from "./modals/KnowMoreModal";
 
 //Dynamic import to solve jspdf window not defined issue
 const DownloadBtn = dynamic(() => import("./DownloadBtn"), { ssr: false });
@@ -17,6 +18,7 @@ export default function Input({
   setShowDownloadBtn,
 }) {
   const [uploadFile, setUploadFile] = useState(null);
+  const [showModal, setShowModal] = useState(false);
   const [error, setError] = useState({
     fileError: { error: false, message: "" },
     axiosError: { error: false, message: "" },
@@ -64,12 +66,12 @@ export default function Input({
   };
 
   return (
-    <Section containerVariant={"bg-white mt-100 py-6"}>
+    <Section containerVariant={"bg-white mt-100 pb-4"}>
       {showDownloadBtn ? (
         <DownloadBtn />
       ) : (
         <>
-          <div className="field is-horizontal is-justify-content-center">
+          <div className="field is-horizontal is-justify-content-center mt-3">
             <div className="field-body is-justify-content-center ">
               <div className="field is-narrow">
                 <p className={`control file has-name`}>
@@ -106,7 +108,7 @@ export default function Input({
                 <p className="control is-expanded">
                   <button
                     type="submit"
-                    className=" button is-size-5-desktop has-text-primary has-text-weight-semibold is-fullwidth"
+                    className=" button is-size-5-desktop  is-primary has-text-weight-semibold is-fullwidth"
                     onClick={sendFile}
                     disabled={!uploadFile}
                   >
@@ -117,6 +119,7 @@ export default function Input({
                   <button
                     type="submit"
                     className=" button is-size-5-desktop has-text-primary has-text-weight-semibold  is-fullwidth"
+                    onClick={()=>setShowModal(true)}
                   >
                     Know More
                   </button>
@@ -147,12 +150,12 @@ export default function Input({
             </h6>
             <br />
             <h6 className="subtitle is-6 has-text-centered  ">
-              We don't store your chats, you can check the
-              <span className="underline "> code over here </span>
+              We don't store your chats. Open Sourced, Always
             </h6>
           </div>
         </>
       )}
+      <KnowMoreModal showModal={showModal} setShowModal={setShowModal}/>
     </Section>
   );
 }

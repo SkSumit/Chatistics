@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { postPolls } from "../api/api";
 
 export default function Loader() {
   const loadingText = [
@@ -170,11 +171,11 @@ export default function Loader() {
     "Debugging Debugger...",
     "Reading Terms and Conditions for you.",
     "Digested cookies being baked again.",
-    
+
     "Patience! This is difficult, you know...",
     "Discovering new ways of making you wait...",
     "Your time is very important to us. Please wait while we ignore you...",
- 
+
     "Sorry we are busy catching em' all, we're done soon",
     "TODO: Insert elevator music",
     "Still faster than Windows update",
@@ -201,11 +202,19 @@ export default function Loader() {
 }
 
 export const LoaderAnalysis = () => {
+  const [progressBar, setProgressBar] = useState(null);
+  const [pollMax, setPollMax] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  const showProgressBar = async (name) => {
+    setLoading(true);
+    const result = await postPolls(name);
+    setPollMax(result.yash + result.atharva + result.sumit);
+    setProgressBar(result);
+    setLoading(false);
+  };
   return (
-    <section
-      className="hero is-fullheight is-primary "
-      style={{ backgroundColor: "#25d366" }}
-    >
+    <section className="hero is-fullheight is-primary ">
       <div className="hero-body">
         <div className="container has-text-centered">
           <Image
@@ -216,29 +225,103 @@ export const LoaderAnalysis = () => {
             height={200}
           />
 
-          <h1 className="title is-3 mt-3"> Analysing your chats... </h1>
-          <h1 className="subtitle is-5 has-text-white">
-            Taking too long? Choose someone to blame it on!
+          <h1 className="title is-3 mt-3">
+            {" "}
+            Analysing your chats, might take upto a minute
           </h1>
-          <div className="field is-grouped is-grouped-centered">
-            <p className="control">
-              <button className="button is-primary is-inverted is-outlined  ">
-                Yash
-              </button>
-            </p>
-            <p className="control ">
-              <button className="button is-primary is-inverted is-outlined  ">
-                Sumit
-              </button>
-            </p>
-            <p className="control ">
-              <button className="button is-primary is-inverted is-outlined    ">
-                Atharva
-              </button>
-            </p>
-          </div>
+          <h1 className="subtitle is-5 has-text-white">
+            {progressBar
+              ? "It's all their fault"
+              : "Taking too long? Choose someone to blame it on!"}
+          </h1>
+          {progressBar ? (
+            <div className="columns  is-centered">
+              <div className="column is-half ">
+                <ProgressBar
+                  progress={progressBar.yash}
+                  color={"is-warning"}
+                  imageSrc={"/yashdew.jpeg"}
+                  pollMax={pollMax}
+                />
+                <ProgressBar
+                  progress={progressBar.sumit}
+                  color={"is-link"}
+                  imageSrc={"/sumitkolpekwar.jpg"}
+                  pollMax={pollMax}
+                />
+                <ProgressBar
+                  progress={progressBar.atharva}
+                  color={"is-danger"}
+                  imageSrc={"/atharvakulkarni.jpg"}
+                  pollMax={pollMax}
+                />
+              </div>
+            </div>
+          ) : (
+            <div className="field is-grouped is-grouped-centered">
+              <p className="control">
+                <button
+                  className={`button is-primary is-inverted is-outlined  ${
+                    loading ? "is-loading" : ""
+                  } `}
+                  onClick={() => showProgressBar("yash")}
+                >
+                  Yash
+                </button>
+              </p>
+              <p className="control ">
+                <button
+                  className={`button is-primary is-inverted is-outlined  ${
+                    loading ? "is-loading" : ""
+                  } `}
+                  onClick={() => showProgressBar("sumit")}
+                >
+                  Sumit
+                </button>
+              </p>
+              <p className="control ">
+                <button
+                  className={`button is-primary is-inverted is-outlined  ${
+                    loading ? "is-loading" : ""
+                  } `}
+                  onClick={() => showProgressBar("atharva")}
+                >
+                  Atharva
+                </button>
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>
+  );
+};
+
+const ProgressBar = ({ progress, imageSrc, color, pollMax }) => {
+  
+  return (
+    <div class="columns is-vcentered is-mobile">
+      <div class="column is-narrow">
+        <Image
+          className="is-rounded"
+          src={imageSrc}
+          alt="Picture of the author"
+          width={32}
+          height={32}
+        />
+      </div>
+      <div class="column">
+        <progress
+          className={`progress is-medium ${color}`}
+          value={progress}
+          max={pollMax}
+        >
+          {progress}
+        </progress>
+      </div>
+      <div class="column is-narrow">
+        <h1 className={"subtitle is-6"}> {progress} votes </h1>
+      </div>
+    </div>
   );
 };
