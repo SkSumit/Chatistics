@@ -43,7 +43,7 @@ export default function Heatmap() {
           <CalendarHeatmap
             startDate={shiftDate(today, -180)}
             endDate={today}
-            values={context.file.stats.heatmap[selectedOption.username]}
+            values={context.file.stats.timeline[selectedOption.username]}
             horizontal={true}
             showMonthLabels={true}
             classForValue={(value) => {

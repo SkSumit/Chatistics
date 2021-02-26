@@ -6,7 +6,7 @@ import { FileContext } from "../../pages/index";
 export default function SpecificUserSection() {
   const context = useContext(FileContext);
   const [range, setRange] = useState(0);
-  const noOfObjectsinPage = 24;
+  const noOfObjectsinPage = 12;
 
   return (
     <Section>

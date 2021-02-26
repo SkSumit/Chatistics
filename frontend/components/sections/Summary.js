@@ -53,7 +53,7 @@ export default function Summary() {
         </div>
         <div className="tile is-parent">
           <StatsBox
-            title={"Total Letters Used"}
+            title={"Total Media Sent"}
             stats={context.file.stats.summary.totalLetters}
             icon={faHeading}
           />
