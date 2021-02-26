@@ -7,6 +7,7 @@ import {
   faComments,
   faPaperPlane,
   faHeading,
+  faPhotoVideo
 } from "@fortawesome/free-solid-svg-icons";
 export default function Summary() {
   const context = useContext(FileContext);
@@ -54,8 +55,8 @@ export default function Summary() {
         <div className="tile is-parent">
           <StatsBox
             title={"Total Media Sent"}
-            stats={context.file.stats.summary.totalLetters}
-            icon={faHeading}
+            stats={context.file.stats.summary.totalMedia}
+            icon={faPhotoVideo}
           />
         </div>
       </div>

@@ -36,7 +36,7 @@ export default function WordcloudSection() {
       graph={
         <ReactWordcloud
           words={
-            context.file.stats.wordcloud[selectedOption.username]["wordUsage"]
+            context.file.stats.wordcloud[selectedOption.username] == null ? "No Words" : context.file.stats.wordcloud[selectedOption.username]["wordUsage"]
           }
           options={options}
         />

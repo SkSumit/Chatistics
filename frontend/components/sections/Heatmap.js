@@ -20,7 +20,6 @@ export default function Heatmap() {
     }),
   };
 
-  const today = new Date();
   const context = useContext(FileContext);
   const [selectedOption, setSelectedOption] = useState({
     username: "All",
@@ -33,7 +32,7 @@ export default function Heatmap() {
           <Select
             defaultValue={selectedOption}
             onChange={setSelectedOption}
-            options={[...context.file.usernames,{username:'All'}]}
+            options={[...context.file.usernames, { username: "All" }]}
             getOptionLabel={(option) => option.username}
             getOptionValue={(option) => option.username}
             isSearchable={true}
@@ -41,9 +40,23 @@ export default function Heatmap() {
             id={1}
           />
           <CalendarHeatmap
-            startDate={shiftDate(today, -180)}
-            endDate={today}
-            values={context.file.stats.timeline[selectedOption.username]}
+            startDate={
+              context.file.stats.timeline[
+                selectedOption.username
+              ].timelineUsage[0].date
+            }
+            endDate={
+              context.file.stats.timeline[
+                selectedOption.username
+              ].timelineUsage[
+                context.file.stats.timeline[
+                  selectedOption.username
+                ].timelineUsage.length - 1
+              ].date
+            }
+            values={
+              context.file.stats.timeline[selectedOption.username].timelineUsage
+            }
             horizontal={true}
             showMonthLabels={true}
             classForValue={(value) => {
@@ -63,7 +76,9 @@ export default function Heatmap() {
                 };
               }
               return {
-                "data-tip": `${value.count} texts sent on ${value.date}`,
+                "data-tip": `${value.count} texts sent on ${new Date(
+                  value.date
+                ).toLocaleDateString("en-GB")}`,
               };
             }}
           />
@@ -72,12 +87,6 @@ export default function Heatmap() {
       </div>
     </Section>
   );
-}
-
-function shiftDate(date, numDays) {
-  const newDate = new Date(date);
-  newDate.setDate(newDate.getDate() + numDays);
-  return newDate;
 }
 
 function getClass(percentage) {

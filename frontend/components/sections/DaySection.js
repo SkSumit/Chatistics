@@ -50,9 +50,9 @@ export default function DaySection() {
             icon={faCalendarWeek}
           />
           <StatsBox
-            title={"Most Frequently texted Day"}
-            stats={`context.file.stats.analysis.basedOnDays[selectedOption.value]
-                .mostFrequentDay`}
+            title={"Least Texted Day"}
+            stats={context.file.stats.basedOnDays[selectedOption.username][1]
+                .leastActiveDay}
             icon={faAngleDoubleUp}
           />
         </>
