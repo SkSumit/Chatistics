@@ -43,7 +43,6 @@ def index():
             content = preprocess(content)
             df = dataframe(content)
             whatsapp = insights.getData()
-            print(df)
             new_insights = whatsapp.analysis(df, fileName)
 
             # Inc upload count in firebase db
