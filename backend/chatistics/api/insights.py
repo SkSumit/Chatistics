@@ -16,7 +16,11 @@ class getData:
         summary = {
             "totalDays": configvars.no_of_days,
             "totalMessageExchanged": len(data[data['MESSAGE'] != '']),
-            "totalWords": configvars.totalwords
+            "totalWords": configvars.totalwords,
+            "totalMedia": len(data[data['MESSAGE'] == "<Media omitted>"]),
+            "totalUsers": len(data['USERNAME'].unique()),
+            "mostTexts" : data[data['MESSAGE'] != '']['USERNAME'].value_counts().idxmax(),
+            "leastTexts" : data[data['MESSAGE'] != '']['USERNAME'].value_counts().idxmin(),
         }
         return summary
 
@@ -132,13 +136,14 @@ class getData:
         data = datauser.count()
         dataall = dataall.count()
         dataall.sort_values(by=['DAY', 'MESSAGE'],
-                            ascending=False, inplace=True)
+                            ascending=False, inplace=True ,ignore_index=True)
         data.sort_values(by='MESSAGE', ascending=False, inplace=True)
         for i in data['USERNAME'].unique():
             basedonDay.add(i, [data[data['USERNAME'] == i][['DAY', 'MESSAGE']].to_dict(orient='records'), {
-                           "mostActiveDay": configvars.userdata.get(i)['mostActiveDay'], "averageTexts":configvars.userdata.get(i)['totalMessages']/configvars.no_of_days}])
+                           "mostActiveDay": configvars.userdata.get(i)['mostActiveDay'], "averageTexts":configvars.userdata.get(i)['totalMessages']/configvars.no_of_days,"leastActiveDay":configvars.userdata.get(i)['leastActiveDay']}])
         basedonDay.add("All", [dataall.to_dict(orient='records'), {"averageTexts": sum(dataall['MESSAGE'])/configvars.no_of_days,
-                                                                   "mostActiveDay": dataall['DAY'][0]}])
+                                                                   "mostActiveDay": dataall['DAY'].iloc[0],
+                                                                   "leastActiveDay":dataall['DAY'].iloc[-1]}])
         return basedonDay
 
     def heatmap(data):
@@ -163,11 +168,52 @@ class getData:
         timelineuserdf=timelineuser.count()
         timelinealldf=timelineall.count()
         timelineuserdf.columns=['USERNAME','date','count']
+        configvars.no_of_days = len(timelineall)
         timelinealldf.columns=['date','count']
         for i in timelineuserdf['USERNAME'].unique():
-            timeline.add(i,timelineuserdf[timelineuserdf['USERNAME'] == i][['date','count']].to_dict(orient='records'))
-        timeline.add("All",timelinealldf.to_dict(orient='records'))    
-        return timeline    
+            Timeline_stats = {"timelineStat": {"mostActiveDate": configvars.userdata.get(i)['mostActiveDate']}}
+            Timeline_data={"timelineUsage":timelineuserdf[timelineuserdf['USERNAME'] == i][['date','count']].to_dict(orient='records')}
+            Timeline_stats.update(Timeline_data)
+            timeline.add(i , Timeline_stats)
+        Timeline_statsall = {"timelineStat": {"mostActiveDate" : data['DATE'].value_counts().idxmax()}}    
+        Timeline_dataall = {"timelineUsage":timelinealldf.to_dict(orient='records')}
+        Timeline_statsall.update(Timeline_dataall)
+        timeline.add("All",Timeline_statsall)  
+         
+        return timeline
+
+    def radarmap(data):
+        radarmap = dict.my_dictionary()        
+        radarmapuser=data.groupby(["USERNAME","HOURS"],as_index=False)['MESSAGE']
+        radarmapall=data.groupby(["HOURS"],as_index=False)['MESSAGE']
+        radarmapuserdf=radarmapuser.count()
+        radarmapalldf=radarmapall.count()
+        radarmapuserdf.columns=['USERNAME','time','count']
+        radarmapalldf.columns=['time','count']
+        for i in radarmapuserdf['USERNAME'].unique():
+            user=radarmapuserdf[radarmapuserdf['USERNAME'] == i][['time','count']]
+            Radarmap_stats = {"radarmapStat": {"mostActiveHour": str(user.sort_values("count").iloc[-1]['time']) , "leastActiveHour":str(user.sort_values("count").iloc[0]['time']) , "averageTextsPerHour":sum(user['count'])/(configvars.no_of_days * 24)}}
+            lefthours=list(set([*range(0, 23, 1)]) - set(list(radarmapuserdf[radarmapuserdf['USERNAME']==i]['time'])))
+            if lefthours:
+                d = {'time': lefthours}
+                df = pd.DataFrame(data=d)
+                df['count']=0
+                user=user.append(df).sort_values("time",ignore_index=True)
+            Radarmap_Usage = {"radarmapUsage":user.to_dict(orient="records")}
+            Radarmap_Usage.update(Radarmap_stats)
+            radarmap.add(i , Radarmap_Usage)
+        lefthoursall=list(set([*range(0, 23, 1)]) - set(list(radarmapalldf['time'])))
+        if lefthoursall:
+            d = {'time': lefthoursall}
+            df = pd.DataFrame(data=d)
+            df['count']=0
+            radarmapalldf=radarmapalldf.append(df).sort_values("time",ignore_index=True)
+        Radarmap_statsall = {"radarmapStat": {"mostActiveHour": str(radarmapalldf.sort_values("count").iloc[-1]['time']) , "leastActiveHour": str(radarmapalldf.sort_values("count").iloc[0]['time']), "averageTextsPerHour":sum(radarmapalldf['count'])/(configvars.no_of_days * 24)}}    
+        Radarmap_Usageall = {"radarmapUsage":radarmapalldf.to_dict(orient="records")}
+        Radarmap_Usageall.update(Radarmap_statsall)
+        radarmap.add("All",Radarmap_Usageall)
+        return radarmap    
+
 
     def analysis(self, data, filename):
         configvars.totalwords = 0
@@ -183,11 +229,12 @@ class getData:
             "stats": {
                 "emoji": configvars.emojidata,
                 "wordcloud": configvars.worddata,
-                "heatmap": getData.heatmap(data),
+                "timeline":getData.timeline(data),
+                # "heatmap": getData.heatmap(data),
+                "radarMap":getData.radarmap(data),
                 "summary": getData.summary(data),
                 "basedOnDays": getData.basedonday(data),
                 "userspecific": configvars.userdata,
-                "timeline":getData.timeline(data)
             },
             "usernames" : getData.usernameonlydict(data),
             "filename" : filename[19:-4],

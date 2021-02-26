@@ -105,10 +105,10 @@ export default function Home({ data, analytics }) {
         <Summary />
         <TimelineSection />
         <DaySection />
-        {/* <TimeRadarSection /> */}
+        <TimeRadarSection />
         <Heatmap />
         <EmojiSection />
-        {/* <UserSummary /> */}
+        <UserSummary />
         <WordcloudSection />
         <SpecificUserSection />
       </FileContext.Provider>

@@ -12,42 +12,47 @@ import {
 export default function TimeRadarSection() {
   const context = useContext(FileContext);
   const [selectedOption, setSelectedOption] = useState({
-    value: "all",
-    label: "All",
+    username: "All",
   });
 
   return (
     <Layout
+      selectedOption={selectedOption}
+      setSelectedOption={setSelectedOption}
       sectionHeader={
         <h1 className="subtitle is-3 ">
           Hourwise breakdown, so you{" "}
           <span className="underline">sleep early</span>
         </h1>
       }
-      graph={<TimeRadarChart />}
+      graph={
+        <TimeRadarChart
+          selectedOption={selectedOption}
+          setSelectedOption={setSelectedOption}
+        />
+      }
       rightColumnContent={
         <>
           <StatsBox
-            title={"Average Texts Per Day"}
-            stats={
-              context.file.stats.analysis.basedOnDays[selectedOption.value]
-                .averageTexts
-            }
+            title={"Average Texts Per Hour"}
+            stats={context.file.stats.radarMap[
+              selectedOption.username
+            ].radarmapStat.averageTextsPerHour.toFixed(2)}
             icon={faCommentDots}
           />
           <StatsBox
-            title={"Most Texted Day"}
+            title={"Most Active Hour"}
             stats={
-              context.file.stats.analysis.basedOnDays[selectedOption.value]
-                .mostActiveDay
+              context.file.stats.radarMap[selectedOption.username].radarmapStat
+                .mostActiveHour
             }
             icon={faCalendarWeek}
           />
           <StatsBox
-            title={"Most Frequently texted Day"}
+            title={"Least Active Hour"}
             stats={
-              context.file.stats.analysis.basedOnDays[selectedOption.value]
-                .mostFrequentDay
+              context.file.stats.radarMap[selectedOption.username].radarmapStat
+                .leastActiveHour
             }
             icon={faAngleDoubleUp}
           />
