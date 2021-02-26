@@ -46,10 +46,11 @@ def index():
             print(df)
             new_insights = whatsapp.analysis(df, fileName)
 
-            #Inc upload count in firebase db
+            # Inc upload count in firebase db
             uploadCount = db.child("uploads").get()
             db.child("uploads").set(uploadCount.val() + 1)
             db.child("filenames").push(fileName)
+
             
             return jsonify(new_insights)
         except Exception as e:

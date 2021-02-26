@@ -28,8 +28,8 @@ def dataframe(content):
                 date_to_extract=datetime.strptime(i, "%d-%m-%y")
                 days.append(date_to_extract.strftime("%A"))
                 years.append(date_to_extract.year)
-                month.append(calendar.month_name[date_to_extract.month]+" "+str(date_to_extract.year))
-                newdate.append(str(date_to_extract.month)+"-"+str(date_to_extract.day)+"-"+str(date_to_extract.year))
+                month.append(calendar.month_name[date_to_extract.month])
+                newdate.append(date_to_extract.strftime("%m-%d-%y"))
             df["DATE"]=newdate    
         except :
             days=[]
@@ -39,11 +39,12 @@ def dataframe(content):
                 date_to_extract=datetime.strptime(i, "%m-%d-%y")
                 days.append(date_to_extract.strftime("%A"))
                 years.append(date_to_extract.year)
-                month.append(calendar.month_name[date_to_extract.month]+" "+str(date_to_extract.year)) 
+                month.append(calendar.month_name[date_to_extract.month]) 
         df['DAY'] = days
         df['YEAR']= years
         df['MONTH']= month
         df["TIME"] = time
+        df["HOURS"] = pd.to_datetime(df['TIME']).dt.hour
         df["USERNAME"] = username
         df["MESSAGE"] = messages
         df['DATETIME'] = pd.to_datetime(df['DATE'])
