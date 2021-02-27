@@ -9,388 +9,400 @@ def dummyapi():
                 [
                     {
                         "DAY": "Wednesday",
-                        "MESSAGE": 6291
+                        "MESSAGE": 5811
                     },
                     {
                         "DAY": "Tuesday",
-                        "MESSAGE": 5057
+                        "MESSAGE": 5968
                     },
                     {
                         "DAY": "Thursday",
-                        "MESSAGE": 7203
+                        "MESSAGE": 5544
                     },
                     {
                         "DAY": "Sunday",
-                        "MESSAGE": 4606
+                        "MESSAGE": 4907
                     },
                     {
                         "DAY": "Saturday",
-                        "MESSAGE": 6579
+                        "MESSAGE": 5674
                     },
                     {
                         "DAY": "Monday",
-                        "MESSAGE": 4863
+                        "MESSAGE": 5586
                     },
                     {
                         "DAY": "Friday",
-                        "MESSAGE": 5351
+                        "MESSAGE": 6458
                     }
                 ],
                 {
-                    "averageTexts": 464.5348837209302,
+                    "averageTexts": 407.6326530612245,
                     "leastActiveDay": "Friday",
                     "mostActiveDay": "Wednesday"
                 }
             ],
-            "Kulkarni New": [
+            "Atharva Kulkarni": [
                 [
                     {
-                        "DAY": "Thursday",
-                        "MESSAGE": 2737
-                    },
-                    {
-                        "DAY": "Saturday",
-                        "MESSAGE": 2640
-                    },
-                    {
-                        "DAY": "Wednesday",
-                        "MESSAGE": 2285
+                        "DAY": "Friday",
+                        "MESSAGE": 2753
                     },
                     {
                         "DAY": "Tuesday",
-                        "MESSAGE": 1951
+                        "MESSAGE": 2549
                     },
                     {
-                        "DAY": "Friday",
-                        "MESSAGE": 1950
+                        "DAY": "Thursday",
+                        "MESSAGE": 2541
+                    },
+                    {
+                        "DAY": "Wednesday",
+                        "MESSAGE": 2421
                     },
                     {
                         "DAY": "Monday",
-                        "MESSAGE": 1854
+                        "MESSAGE": 2371
+                    },
+                    {
+                        "DAY": "Saturday",
+                        "MESSAGE": 2343
                     },
                     {
                         "DAY": "Sunday",
-                        "MESSAGE": 1609
+                        "MESSAGE": 1928
                     }
                 ],
                 {
-                    "averageTexts": 174.72093023255815,
+                    "averageTexts": 172.51020408163265,
                     "leastActiveDay": "Sunday",
-                    "mostActiveDay": "Thursday"
+                    "mostActiveDay": "Friday"
                 }
             ],
-            "Sumit Skn": [
+            "Sumit Kolpekwar": [
                 [
                     {
-                        "DAY": "Thursday",
-                        "MESSAGE": 2564
-                    },
-                    {
-                        "DAY": "Wednesday",
-                        "MESSAGE": 2526
+                        "DAY": "Friday",
+                        "MESSAGE": 2154
                     },
                     {
                         "DAY": "Saturday",
-                        "MESSAGE": 2385
-                    },
-                    {
-                        "DAY": "Friday",
-                        "MESSAGE": 1941
-                    },
-                    {
-                        "DAY": "Monday",
-                        "MESSAGE": 1891
+                        "MESSAGE": 1937
                     },
                     {
                         "DAY": "Tuesday",
-                        "MESSAGE": 1835
+                        "MESSAGE": 1898
+                    },
+                    {
+                        "DAY": "Wednesday",
+                        "MESSAGE": 1885
+                    },
+                    {
+                        "DAY": "Monday",
+                        "MESSAGE": 1831
+                    },
+                    {
+                        "DAY": "Thursday",
+                        "MESSAGE": 1745
                     },
                     {
                         "DAY": "Sunday",
-                        "MESSAGE": 1607
+                        "MESSAGE": 1592
                     }
                 ],
                 {
-                    "averageTexts": 171.5,
+                    "averageTexts": 133.08163265306123,
                     "leastActiveDay": "Sunday",
-                    "mostActiveDay": "Thursday"
+                    "mostActiveDay": "Friday"
                 }
             ],
             "yashdev.py ヤシュ・デワンガン": [
                 [
                     {
-                        "DAY": "Thursday",
-                        "MESSAGE": 1902
-                    },
-                    {
-                        "DAY": "Saturday",
-                        "MESSAGE": 1554
-                    },
-                    {
-                        "DAY": "Wednesday",
-                        "MESSAGE": 1480
-                    },
-                    {
                         "DAY": "Friday",
-                        "MESSAGE": 1460
-                    },
-                    {
-                        "DAY": "Sunday",
-                        "MESSAGE": 1390
+                        "MESSAGE": 1551
                     },
                     {
                         "DAY": "Tuesday",
-                        "MESSAGE": 1271
+                        "MESSAGE": 1521
+                    },
+                    {
+                        "DAY": "Wednesday",
+                        "MESSAGE": 1505
+                    },
+                    {
+                        "DAY": "Saturday",
+                        "MESSAGE": 1394
+                    },
+                    {
+                        "DAY": "Sunday",
+                        "MESSAGE": 1387
                     },
                     {
                         "DAY": "Monday",
-                        "MESSAGE": 1118
+                        "MESSAGE": 1384
+                    },
+                    {
+                        "DAY": "Thursday",
+                        "MESSAGE": 1258
                     }
                 ],
                 {
-                    "averageTexts": 118.31395348837209,
-                    "leastActiveDay": "Monday",
-                    "mostActiveDay": "Thursday"
+                    "averageTexts": 102.04081632653062,
+                    "leastActiveDay": "Thursday",
+                    "mostActiveDay": "Friday"
                 }
             ]
         },
         "emoji": {
             "All": {
                 "emojiStat": {
-                    "totalEmojis": 4560,
-                    "totalUniqueEmojis": 391
+                    "totalEmojis": 7467,
+                    "totalUniqueEmojis": 459
                 },
                 "emojiUsage": [
                     {
-                        "emoji": "😭",
-                        "value": 484
+                        "emoji": "😄",
+                        "value": 1746
                     },
                     {
                         "emoji": "😳",
-                        "value": 378
+                        "value": 454
+                    },
+                    {
+                        "emoji": "😭",
+                        "value": 364
                     },
                     {
                         "emoji": "😂",
-                        "value": 332
+                        "value": 300
                     },
                     {
                         "emoji": "👀",
-                        "value": 189
-                    },
-                    {
-                        "emoji": "😜",
-                        "value": 187
+                        "value": 277
                     },
                     {
                         "emoji": "🤣",
-                        "value": 174
+                        "value": 152
                     },
                     {
-                        "emoji": "🌚",
-                        "value": 76
+                        "emoji": "😜",
+                        "value": 140
+                    },
+                    {
+                        "emoji": "🥳",
+                        "value": 115
+                    },
+                    {
+                        "emoji": "🇮",
+                        "value": 113
+                    },
+                    {
+                        "emoji": "🇳",
+                        "value": 109
                     },
                     {
                         "emoji": "➖",
-                        "value": 74
+                        "value": 100
                     },
                     {
-                        "emoji": "🥳",
-                        "value": 71
+                        "emoji": "🤪",
+                        "value": 90
                     },
                     {
-                        "emoji": "🥺",
-                        "value": 65
-                    },
-                    {
-                        "emoji": "😤",
-                        "value": 52
-                    },
-                    {
-                        "emoji": "🤮",
-                        "value": 50
-                    },
-                    {
-                        "emoji": "❤",
-                        "value": 47
-                    },
-                    {
-                        "emoji": "🤤",
-                        "value": 46
-                    },
-                    {
-                        "emoji": "🏻",
-                        "value": 45
-                    },
-                    {
-                        "emoji": "😫",
-                        "value": 45
-                    },
-                    {
-                        "emoji": "🥵",
-                        "value": 43
-                    },
-                    {
-                        "emoji": "😢",
-                        "value": 42
-                    },
-                    {
-                        "emoji": "🇮",
-                        "value": 42
-                    },
-                    {
-                        "emoji": "🇳",
-                        "value": 38
-                    }
-                ]
-            },
-            "Kulkarni New": {
-                "emojiStat": {
-                    "totalEmojis": 1831,
-                    "totalUniqueEmojis": 128
-                },
-                "emojiUsage": [
-                    {
-                        "emoji": "😂",
-                        "value": 275
-                    },
-                    {
-                        "emoji": "😜",
-                        "value": 183
-                    },
-                    {
-                        "emoji": "😭",
-                        "value": 105
-                    },
-                    {
-                        "emoji": "🤣",
-                        "value": 96
-                    },
-                    {
-                        "emoji": "🥳",
-                        "value": 65
-                    },
-                    {
-                        "emoji": "😳",
-                        "value": 50
-                    },
-                    {
-                        "emoji": "🥺",
-                        "value": 46
-                    },
-                    {
-                        "emoji": "🤤",
-                        "value": 42
-                    },
-                    {
-                        "emoji": "🇮",
-                        "value": 38
-                    },
-                    {
-                        "emoji": "🇳",
-                        "value": 38
-                    },
-                    {
-                        "emoji": "😢",
-                        "value": 37
+                        "emoji": "🥱",
+                        "value": 87
                     },
                     {
                         "emoji": "😔",
+                        "value": 78
+                    },
+                    {
+                        "emoji": "🥺",
+                        "value": 70
+                    },
+                    {
+                        "emoji": "💙",
+                        "value": 68
+                    },
+                    {
+                        "emoji": "🖤",
+                        "value": 68
+                    },
+                    {
+                        "emoji": "🤭",
+                        "value": 65
+                    },
+                    {
+                        "emoji": "💚",
+                        "value": 64
+                    },
+                    {
+                        "emoji": "❤",
+                        "value": 61
+                    }
+                ]
+            },
+            "Atharva Kulkarni": {
+                "emojiStat": {
+                    "totalEmojis": 4018,
+                    "totalUniqueEmojis": 216
+                },
+                "emojiUsage": [
+                    {
+                        "emoji": "😄",
+                        "value": 1742
+                    },
+                    {
+                        "emoji": "😂",
+                        "value": 156
+                    },
+                    {
+                        "emoji": "😜",
+                        "value": 132
+                    },
+                    {
+                        "emoji": "🤣",
+                        "value": 117
+                    },
+                    {
+                        "emoji": "🇮",
+                        "value": 104
+                    },
+                    {
+                        "emoji": "🇳",
+                        "value": 104
+                    },
+                    {
+                        "emoji": "😭",
+                        "value": 97
+                    },
+                    {
+                        "emoji": "🥳",
+                        "value": 87
+                    },
+                    {
+                        "emoji": "👀",
+                        "value": 56
+                    },
+                    {
+                        "emoji": "😔",
+                        "value": 55
+                    },
+                    {
+                        "emoji": "🥺",
+                        "value": 55
+                    },
+                    {
+                        "emoji": "😍",
+                        "value": 52
+                    },
+                    {
+                        "emoji": "😊",
+                        "value": 46
+                    },
+                    {
+                        "emoji": "🤤",
+                        "value": 42
+                    },
+                    {
+                        "emoji": "😳",
+                        "value": 41
+                    },
+                    {
+                        "emoji": "🤟",
+                        "value": 36
+                    },
+                    {
+                        "emoji": "💙",
                         "value": 36
                     },
                     {
                         "emoji": "🥵",
-                        "value": 33
+                        "value": 35
                     },
                     {
-                        "emoji": "😊",
-                        "value": 30
+                        "emoji": "🖤",
+                        "value": 34
                     },
                     {
-                        "emoji": "😨",
-                        "value": 30
-                    },
-                    {
-                        "emoji": "👀",
-                        "value": 28
-                    },
-                    {
-                        "emoji": "😍",
-                        "value": 27
-                    },
-                    {
-                        "emoji": "🙏",
-                        "value": 26
-                    },
-                    {
-                        "emoji": "💀",
-                        "value": 25
-                    },
-                    {
-                        "emoji": "😘",
-                        "value": 24
+                        "emoji": "💚",
+                        "value": 32
                     }
                 ]
             },
-            "Sumit Skn": {
+            "Sumit Kolpekwar": {
                 "emojiStat": {
-                    "totalEmojis": 2162,
-                    "totalUniqueEmojis": 302
+                    "totalEmojis": 2544,
+                    "totalUniqueEmojis": 306
                 },
                 "emojiUsage": [
                     {
                         "emoji": "😳",
-                        "value": 328
-                    },
-                    {
-                        "emoji": "😭",
-                        "value": 223
+                        "value": 405
                     },
                     {
                         "emoji": "👀",
-                        "value": 118
+                        "value": 202
                     },
                     {
-                        "emoji": "🌚",
-                        "value": 62
+                        "emoji": "😭",
+                        "value": 179
                     },
                     {
                         "emoji": "😂",
-                        "value": 56
+                        "value": 135
                     },
                     {
-                        "emoji": "🏻",
-                        "value": 43
+                        "emoji": "🥱",
+                        "value": 64
                     },
                     {
-                        "emoji": "😤",
-                        "value": 38
+                        "emoji": "🤭",
+                        "value": 53
                     },
                     {
-                        "emoji": "😏",
-                        "value": 31
+                        "emoji": "🤪",
+                        "value": 53
                     },
                     {
                         "emoji": "😫",
-                        "value": 30
+                        "value": 42
                     },
                     {
-                        "emoji": "🌝",
+                        "emoji": "😏",
+                        "value": 37
+                    },
+                    {
+                        "emoji": "😤",
+                        "value": 34
+                    },
+                    {
+                        "emoji": "🖤",
+                        "value": 34
+                    },
+                    {
+                        "emoji": "💚",
+                        "value": 32
+                    },
+                    {
+                        "emoji": "💙",
+                        "value": 32
+                    },
+                    {
+                        "emoji": "💜",
                         "value": 28
+                    },
+                    {
+                        "emoji": "🏻",
+                        "value": 27
                     },
                     {
                         "emoji": "❤",
                         "value": 24
                     },
                     {
-                        "emoji": "😩",
-                        "value": 23
-                    },
-                    {
-                        "emoji": "🤮",
-                        "value": 23
-                    },
-                    {
-                        "emoji": "🥰",
+                        "emoji": "🤍",
                         "value": 22
                     },
                     {
@@ -398,79 +410,67 @@ def dummyapi():
                         "value": 22
                     },
                     {
-                        "emoji": "🙄",
+                        "emoji": "🥳",
+                        "value": 22
+                    },
+                    {
+                        "emoji": "💀",
                         "value": 20
-                    },
-                    {
-                        "emoji": "🇱",
-                        "value": 20
-                    },
-                    {
-                        "emoji": "🥺",
-                        "value": 19
-                    },
-                    {
-                        "emoji": "🇨",
-                        "value": 18
-                    },
-                    {
-                        "emoji": "👌",
-                        "value": 17
                     }
                 ]
             },
             "yashdev.py ヤシュ・デワンガン": {
                 "emojiStat": {
-                    "totalEmojis": 567,
-                    "totalUniqueEmojis": 58
+                    "totalEmojis": 905,
+                    "totalUniqueEmojis": 383
                 },
                 "emojiUsage": [
                     {
                         "emoji": "😭",
-                        "value": 156
+                        "value": 88
                     },
                     {
                         "emoji": "➖",
-                        "value": 74
+                        "value": 87
                     },
                     {
                         "emoji": "🤣",
-                        "value": 63
-                    },
-                    {
-                        "emoji": "👀",
-                        "value": 43
-                    },
-                    {
-                        "emoji": "📢",
-                        "value": 28
-                    },
-                    {
-                        "emoji": "👇",
-                        "value": 24
+                        "value": 34
                     },
                     {
                         "emoji": "🤪",
-                        "value": 24
+                        "value": 28
                     },
                     {
-                        "emoji": "💓",
-                        "value": 16
+                        "emoji": "📢",
+                        "value": 26
                     },
                     {
-                        "emoji": "❗",
-                        "value": 15
-                    },
-                    {
-                        "emoji": "🤮",
-                        "value": 13
-                    },
-                    {
-                        "emoji": "▪",
-                        "value": 11
+                        "emoji": "👀",
+                        "value": 19
                     },
                     {
                         "emoji": "🥵",
+                        "value": 19
+                    },
+                    {
+                        "emoji": "💓",
+                        "value": 17
+                    },
+                    {
+                        "emoji": "👇",
+                        "value": 15
+                    },
+                    {
+                        "emoji": "❗",
+                        "value": 14
+                    },
+                    {
+                        "emoji": "😔",
+                        "value": 11
+                    },
+                    {
+                        "emoji": "🤮",
                         "value": 10
                     },
                     {
@@ -478,373 +478,373 @@ def dummyapi():
                         "value": 9
                     },
                     {
+                        "emoji": "▪",
+                        "value": 9
+                    },
+                    {
+                        "emoji": "😂",
+                        "value": 9
+                    },
+                    {
                         "emoji": "✅",
-                        "value": 6
+                        "value": 8
                     },
                     {
-                        "emoji": "😢",
-                        "value": 5
-                    },
-                    {
-                        "emoji": "🙏",
-                        "value": 5
+                        "emoji": "😳",
+                        "value": 8
                     },
                     {
                         "emoji": "😊",
-                        "value": 5
+                        "value": 7
                     },
                     {
-                        "emoji": "🤤",
-                        "value": 4
+                        "emoji": "❤",
+                        "value": 7
                     },
                     {
-                        "emoji": "👆",
-                        "value": 4
-                    },
-                    {
-                        "emoji": "🙂",
-                        "value": 3
+                        "emoji": "🥱",
+                        "value": 7
                     }
                 ]
             }
         },
         "radarMap": {
             "All": {
-                "radarmap_Stat": {
-                    "averageTextsPerHour": 1664.5833333333333,
-                    "leastActivehour": "3",
-                    "mostActivehour": "13"
+                "radarmapStat": {
+                    "averageTextsPerHour": 16.98469387755102,
+                    "leastActiveHour": "3",
+                    "mostActiveHour": "21"
                 },
-                "radarmap_Usage": [
+                "radarmapUsage": [
                     {
-                        "count": 589,
+                        "count": 1516,
                         "time": 0
                     },
                     {
-                        "count": 73,
+                        "count": 160,
                         "time": 1
                     },
                     {
-                        "count": 2,
+                        "count": 13,
                         "time": 2
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "time": 3
+                    },
+                    {
+                        "count": 1,
+                        "time": 4
+                    },
+                    {
+                        "count": 1,
+                        "time": 5
+                    },
+                    {
+                        "count": 9,
+                        "time": 6
+                    },
+                    {
+                        "count": 81,
+                        "time": 7
+                    },
+                    {
+                        "count": 992,
+                        "time": 8
+                    },
+                    {
+                        "count": 2259,
+                        "time": 9
+                    },
+                    {
+                        "count": 2857,
+                        "time": 10
+                    },
+                    {
+                        "count": 2609,
+                        "time": 11
+                    },
+                    {
+                        "count": 2843,
+                        "time": 12
+                    },
+                    {
+                        "count": 2883,
+                        "time": 13
+                    },
+                    {
+                        "count": 2570,
+                        "time": 14
+                    },
+                    {
+                        "count": 1930,
+                        "time": 15
+                    },
+                    {
+                        "count": 1226,
+                        "time": 16
+                    },
+                    {
+                        "count": 2273,
+                        "time": 17
+                    },
+                    {
+                        "count": 2349,
+                        "time": 18
+                    },
+                    {
+                        "count": 2021,
+                        "time": 19
+                    },
+                    {
+                        "count": 2316,
+                        "time": 20
+                    },
+                    {
+                        "count": 3385,
+                        "time": 21
+                    },
+                    {
+                        "count": 3174,
+                        "time": 22
+                    },
+                    {
+                        "count": 2480,
+                        "time": 23
+                    }
+                ]
+            },
+            "Atharva Kulkarni": {
+                "radarmapStat": {
+                    "averageTextsPerHour": 7.187925170068027,
+                    "leastActiveHour": "4",
+                    "mostActiveHour": "21"
+                },
+                "radarmapUsage": [
+                    {
+                        "count": 725,
+                        "time": 0
+                    },
+                    {
+                        "count": 69,
+                        "time": 1
+                    },
+                    {
+                        "count": 0,
+                        "time": 2
+                    },
+                    {
+                        "count": 0,
+                        "time": 3
+                    },
+                    {
+                        "count": 1,
+                        "time": 4
+                    },
+                    {
+                        "count": 1,
+                        "time": 5
+                    },
+                    {
+                        "count": 5,
+                        "time": 6
+                    },
+                    {
+                        "count": 27,
+                        "time": 7
+                    },
+                    {
+                        "count": 432,
+                        "time": 8
+                    },
+                    {
+                        "count": 1056,
+                        "time": 9
+                    },
+                    {
+                        "count": 1219,
+                        "time": 10
+                    },
+                    {
+                        "count": 1060,
+                        "time": 11
+                    },
+                    {
+                        "count": 1164,
+                        "time": 12
+                    },
+                    {
+                        "count": 1227,
+                        "time": 13
+                    },
+                    {
+                        "count": 1014,
+                        "time": 14
+                    },
+                    {
+                        "count": 794,
+                        "time": 15
+                    },
+                    {
+                        "count": 567,
+                        "time": 16
+                    },
+                    {
+                        "count": 973,
+                        "time": 17
+                    },
+                    {
+                        "count": 1035,
+                        "time": 18
+                    },
+                    {
+                        "count": 880,
+                        "time": 19
+                    },
+                    {
+                        "count": 877,
+                        "time": 20
+                    },
+                    {
+                        "count": 1399,
+                        "time": 21
+                    },
+                    {
+                        "count": 1315,
+                        "time": 22
+                    },
+                    {
+                        "count": 1066,
+                        "time": 23
+                    }
+                ]
+            },
+            "Sumit Kolpekwar": {
+                "radarmapStat": {
+                    "averageTextsPerHour": 5.545068027210885,
+                    "leastActiveHour": "6",
+                    "mostActiveHour": "21"
+                },
+                "radarmapUsage": [
+                    {
+                        "count": 367,
+                        "time": 0
+                    },
+                    {
+                        "count": 33,
+                        "time": 1
+                    },
+                    {
+                        "count": 0,
+                        "time": 2
+                    },
+                    {
+                        "count": 0,
+                        "time": 3
+                    },
+                    {
+                        "count": 0,
+                        "time": 4
+                    },
+                    {
+                        "count": 0,
+                        "time": 5
                     },
                     {
                         "count": 4,
-                        "time": 4
-                    },
-                    {
-                        "count": 17,
-                        "time": 5
-                    },
-                    {
-                        "count": 15,
                         "time": 6
                     },
                     {
-                        "count": 157,
+                        "count": 37,
                         "time": 7
                     },
                     {
-                        "count": 983,
+                        "count": 366,
                         "time": 8
                     },
                     {
-                        "count": 2853,
+                        "count": 826,
                         "time": 9
-                    },
-                    {
-                        "count": 3327,
-                        "time": 10
-                    },
-                    {
-                        "count": 2656,
-                        "time": 11
-                    },
-                    {
-                        "count": 2143,
-                        "time": 12
-                    },
-                    {
-                        "count": 3729,
-                        "time": 13
-                    },
-                    {
-                        "count": 3304,
-                        "time": 14
-                    },
-                    {
-                        "count": 1653,
-                        "time": 15
-                    },
-                    {
-                        "count": 1433,
-                        "time": 16
-                    },
-                    {
-                        "count": 2474,
-                        "time": 17
-                    },
-                    {
-                        "count": 2396,
-                        "time": 18
-                    },
-                    {
-                        "count": 2218,
-                        "time": 19
-                    },
-                    {
-                        "count": 2252,
-                        "time": 20
-                    },
-                    {
-                        "count": 3022,
-                        "time": 21
-                    },
-                    {
-                        "count": 2616,
-                        "time": 22
-                    },
-                    {
-                        "count": 2033,
-                        "time": 23
-                    }
-                ]
-            },
-            "Kulkarni New": {
-                "radarmap_Stat": {
-                    "averageTextsPerHour": 626.0833333333334,
-                    "leastActivehour": "4",
-                    "mostActivehour": "13"
-                },
-                "radarmap_Usage": [
-                    {
-                        "count": 262,
-                        "time": 0
-                    },
-                    {
-                        "count": 36,
-                        "time": 1
-                    },
-                    {
-                        "count": 0,
-                        "time": 2
-                    },
-                    {
-                        "count": 0,
-                        "time": 3
-                    },
-                    {
-                        "count": 1,
-                        "time": 4
-                    },
-                    {
-                        "count": 8,
-                        "time": 5
-                    },
-                    {
-                        "count": 12,
-                        "time": 6
-                    },
-                    {
-                        "count": 83,
-                        "time": 7
-                    },
-                    {
-                        "count": 394,
-                        "time": 8
                     },
                     {
                         "count": 1136,
-                        "time": 9
-                    },
-                    {
-                        "count": 1273,
                         "time": 10
                     },
                     {
-                        "count": 903,
+                        "count": 908,
                         "time": 11
                     },
                     {
-                        "count": 770,
+                        "count": 860,
                         "time": 12
                     },
                     {
-                        "count": 1381,
+                        "count": 972,
                         "time": 13
                     },
                     {
-                        "count": 1091,
+                        "count": 838,
                         "time": 14
                     },
                     {
-                        "count": 648,
+                        "count": 687,
                         "time": 15
                     },
                     {
-                        "count": 576,
+                        "count": 279,
                         "time": 16
                     },
                     {
-                        "count": 868,
+                        "count": 642,
                         "time": 17
                     },
                     {
-                        "count": 1017,
+                        "count": 785,
                         "time": 18
                     },
                     {
-                        "count": 898,
+                        "count": 586,
                         "time": 19
                     },
                     {
-                        "count": 774,
+                        "count": 857,
                         "time": 20
                     },
                     {
-                        "count": 1133,
+                        "count": 1199,
                         "time": 21
                     },
                     {
-                        "count": 1022,
+                        "count": 963,
                         "time": 22
                     },
                     {
-                        "count": 740,
-                        "time": 23
-                    }
-                ]
-            },
-            "Sumit Skn": {
-                "radarmap_Stat": {
-                    "averageTextsPerHour": 614.5416666666666,
-                    "leastActivehour": "1",
-                    "mostActivehour": "13"
-                },
-                "radarmap_Usage": [
-                    {
-                        "count": 157,
-                        "time": 0
-                    },
-                    {
-                        "count": 1,
-                        "time": 1
-                    },
-                    {
-                        "count": 2,
-                        "time": 2
-                    },
-                    {
-                        "count": 0,
-                        "time": 3
-                    },
-                    {
-                        "count": 3,
-                        "time": 4
-                    },
-                    {
-                        "count": 0,
-                        "time": 5
-                    },
-                    {
-                        "count": 2,
-                        "time": 6
-                    },
-                    {
-                        "count": 54,
-                        "time": 7
-                    },
-                    {
-                        "count": 382,
-                        "time": 8
-                    },
-                    {
-                        "count": 1232,
-                        "time": 9
-                    },
-                    {
-                        "count": 1346,
-                        "time": 10
-                    },
-                    {
-                        "count": 1064,
-                        "time": 11
-                    },
-                    {
-                        "count": 773,
-                        "time": 12
-                    },
-                    {
-                        "count": 1422,
-                        "time": 13
-                    },
-                    {
-                        "count": 1294,
-                        "time": 14
-                    },
-                    {
-                        "count": 646,
-                        "time": 15
-                    },
-                    {
-                        "count": 438,
-                        "time": 16
-                    },
-                    {
-                        "count": 934,
-                        "time": 17
-                    },
-                    {
-                        "count": 874,
-                        "time": 18
-                    },
-                    {
-                        "count": 695,
-                        "time": 19
-                    },
-                    {
-                        "count": 863,
-                        "time": 20
-                    },
-                    {
-                        "count": 1079,
-                        "time": 21
-                    },
-                    {
-                        "count": 819,
-                        "time": 22
-                    },
-                    {
-                        "count": 669,
+                        "count": 697,
                         "time": 23
                     }
                 ]
             },
             "yashdev.py ヤシュ・デワンガン": {
-                "radarmap_Stat": {
-                    "averageTextsPerHour": 423.9583333333333,
-                    "leastActivehour": "3",
-                    "mostActivehour": "13"
+                "radarmapStat": {
+                    "averageTextsPerHour": 4.2517006802721085,
+                    "leastActiveHour": "2",
+                    "mostActiveHour": "22"
                 },
-                "radarmap_Usage": [
+                "radarmapUsage": [
                     {
-                        "count": 170,
+                        "count": 424,
                         "time": 0
                     },
                     {
-                        "count": 36,
+                        "count": 58,
                         "time": 1
                     },
                     {
-                        "count": 0,
+                        "count": 13,
                         "time": 2
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "time": 3
                     },
                     {
@@ -852,79 +852,79 @@ def dummyapi():
                         "time": 4
                     },
                     {
-                        "count": 9,
+                        "count": 0,
                         "time": 5
                     },
                     {
-                        "count": 1,
+                        "count": 0,
                         "time": 6
                     },
                     {
-                        "count": 20,
+                        "count": 17,
                         "time": 7
                     },
                     {
-                        "count": 207,
+                        "count": 194,
                         "time": 8
                     },
                     {
-                        "count": 485,
+                        "count": 377,
                         "time": 9
                     },
                     {
-                        "count": 708,
+                        "count": 502,
                         "time": 10
                     },
                     {
-                        "count": 689,
+                        "count": 641,
                         "time": 11
                     },
                     {
-                        "count": 600,
+                        "count": 819,
                         "time": 12
                     },
                     {
-                        "count": 926,
+                        "count": 684,
                         "time": 13
                     },
                     {
-                        "count": 919,
+                        "count": 718,
                         "time": 14
                     },
                     {
-                        "count": 359,
+                        "count": 449,
                         "time": 15
                     },
                     {
-                        "count": 419,
+                        "count": 380,
                         "time": 16
                     },
                     {
-                        "count": 672,
+                        "count": 658,
                         "time": 17
                     },
                     {
-                        "count": 505,
+                        "count": 529,
                         "time": 18
                     },
                     {
-                        "count": 625,
+                        "count": 555,
                         "time": 19
                     },
                     {
-                        "count": 615,
+                        "count": 582,
                         "time": 20
                     },
                     {
-                        "count": 810,
+                        "count": 787,
                         "time": 21
                     },
                     {
-                        "count": 775,
+                        "count": 896,
                         "time": 22
                     },
                     {
-                        "count": 624,
+                        "count": 717,
                         "time": 23
                     }
                 ]
@@ -932,161 +932,21 @@ def dummyapi():
         },
         "summary": {
             "leastTexts": "yashdev.py ヤシュ・デワンガン",
-            "mostTexts": "Kulkarni New",
-            "totalDays": 86,
-            "totalMedia": 4158,
-            "totalMessageExchanged": 39950,
+            "mostTexts": "Atharva Kulkarni",
+            "totalDays": 98,
+            "totalMedia": 3987,
+            "totalMessageExchanged": 39948,
             "totalUsers": 3,
-            "totalWords": 144731
+            "totalWords": 146300
         },
         "timeline": {
             "All": {
                 "timelineStat": {
-                    "mostActiveDate": "11-19-20"
+                    "mostActiveDate": "2-12-21"
                 },
                 "timelineUsage": [
                     {
-                        "count": 153,
-                        "date": "Sat, 17 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 444,
-                        "date": "Sun, 18 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 900,
-                        "date": "Mon, 19 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 535,
-                        "date": "Tue, 20 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 805,
-                        "date": "Wed, 21 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 658,
-                        "date": "Thu, 22 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 768,
-                        "date": "Fri, 23 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 494,
-                        "date": "Sat, 24 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 271,
-                        "date": "Sun, 25 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 650,
-                        "date": "Mon, 26 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 997,
-                        "date": "Tue, 27 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 863,
-                        "date": "Wed, 28 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 744,
-                        "date": "Thu, 29 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 233,
-                        "date": "Fri, 30 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 543,
-                        "date": "Sat, 31 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 466,
-                        "date": "Sun, 01 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 138,
-                        "date": "Mon, 02 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 183,
-                        "date": "Tue, 03 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 643,
-                        "date": "Wed, 04 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 802,
-                        "date": "Thu, 05 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 374,
-                        "date": "Fri, 06 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 762,
-                        "date": "Sat, 07 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 637,
-                        "date": "Sun, 08 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 388,
-                        "date": "Mon, 09 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 451,
-                        "date": "Tue, 10 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 844,
-                        "date": "Wed, 11 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 231,
-                        "date": "Thu, 12 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 397,
-                        "date": "Fri, 13 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 261,
-                        "date": "Sat, 14 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 244,
-                        "date": "Sun, 15 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 194,
-                        "date": "Mon, 16 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 247,
-                        "date": "Tue, 17 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 178,
-                        "date": "Wed, 18 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 1488,
-                        "date": "Thu, 19 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 596,
-                        "date": "Fri, 20 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 741,
+                        "count": 63,
                         "date": "Sat, 21 Nov 2020 00:00:00 GMT"
                     },
                     {
@@ -1286,158 +1146,206 @@ def dummyapi():
                         "date": "Sat, 09 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 165,
+                        "count": 354,
                         "date": "Sun, 10 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 466,
+                        "date": "Mon, 11 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 281,
+                        "date": "Tue, 12 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 394,
+                        "date": "Wed, 13 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 137,
+                        "date": "Thu, 14 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 618,
+                        "date": "Fri, 15 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 310,
+                        "date": "Sat, 16 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 303,
+                        "date": "Sun, 17 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 350,
+                        "date": "Mon, 18 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 360,
+                        "date": "Tue, 19 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 573,
+                        "date": "Wed, 20 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 390,
+                        "date": "Thu, 21 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 276,
+                        "date": "Fri, 22 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 395,
+                        "date": "Sat, 23 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 342,
+                        "date": "Sun, 24 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 540,
+                        "date": "Mon, 25 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 466,
+                        "date": "Tue, 26 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 241,
+                        "date": "Wed, 27 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 308,
+                        "date": "Thu, 28 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 275,
+                        "date": "Fri, 29 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 168,
+                        "date": "Sat, 30 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 356,
+                        "date": "Sun, 31 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 493,
+                        "date": "Mon, 01 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 801,
+                        "date": "Tue, 02 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 450,
+                        "date": "Wed, 03 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 474,
+                        "date": "Thu, 04 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 425,
+                        "date": "Fri, 05 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 388,
+                        "date": "Sat, 06 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 529,
+                        "date": "Sun, 07 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 651,
+                        "date": "Mon, 08 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 523,
+                        "date": "Tue, 09 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 239,
+                        "date": "Wed, 10 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 168,
+                        "date": "Thu, 11 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 1082,
+                        "date": "Fri, 12 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 691,
+                        "date": "Sat, 13 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 496,
+                        "date": "Sun, 14 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 306,
+                        "date": "Mon, 15 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 504,
+                        "date": "Tue, 16 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 292,
+                        "date": "Wed, 17 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 66,
+                        "date": "Thu, 18 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 229,
+                        "date": "Fri, 19 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 34,
+                        "date": "Sat, 20 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 148,
+                        "date": "Sun, 21 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 187,
+                        "date": "Mon, 22 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 389,
+                        "date": "Tue, 23 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 664,
+                        "date": "Wed, 24 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 721,
+                        "date": "Thu, 25 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 570,
+                        "date": "Fri, 26 Feb 2021 00:00:00 GMT"
                     }
                 ]
             },
-            "Kulkarni New": {
+            "Atharva Kulkarni": {
                 "timelineStat": {
                     "mostActiveDate": "12-4-20"
                 },
                 "timelineUsage": [
                     {
-                        "count": 68,
-                        "date": "Sat, 17 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 128,
-                        "date": "Sun, 18 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 372,
-                        "date": "Mon, 19 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 204,
-                        "date": "Tue, 20 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 311,
-                        "date": "Wed, 21 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 254,
-                        "date": "Thu, 22 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 270,
-                        "date": "Fri, 23 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 185,
-                        "date": "Sat, 24 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 113,
-                        "date": "Sun, 25 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 218,
-                        "date": "Mon, 26 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 417,
-                        "date": "Tue, 27 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 242,
-                        "date": "Wed, 28 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 282,
-                        "date": "Thu, 29 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 83,
-                        "date": "Fri, 30 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 251,
-                        "date": "Sat, 31 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 98,
-                        "date": "Sun, 01 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 43,
-                        "date": "Mon, 02 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 65,
-                        "date": "Tue, 03 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 253,
-                        "date": "Wed, 04 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 280,
-                        "date": "Thu, 05 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 123,
-                        "date": "Fri, 06 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 308,
-                        "date": "Sat, 07 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 211,
-                        "date": "Sun, 08 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 147,
-                        "date": "Mon, 09 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 169,
-                        "date": "Tue, 10 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 202,
-                        "date": "Wed, 11 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 56,
-                        "date": "Thu, 12 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 99,
-                        "date": "Fri, 13 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 88,
-                        "date": "Sat, 14 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 60,
-                        "date": "Sun, 15 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 62,
-                        "date": "Mon, 16 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 61,
-                        "date": "Tue, 17 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 77,
-                        "date": "Wed, 18 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 434,
-                        "date": "Thu, 19 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 148,
-                        "date": "Fri, 20 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 271,
+                        "count": 32,
                         "date": "Sat, 21 Nov 2020 00:00:00 GMT"
                     },
                     {
@@ -1637,158 +1545,206 @@ def dummyapi():
                         "date": "Sat, 09 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 33,
+                        "count": 74,
                         "date": "Sun, 10 Jan 2021 00:00:00 GMT"
-                    }
-                ]
-            },
-            "Sumit Skn": {
-                "timelineStat": {
-                    "mostActiveDate": "11-19-20"
-                },
-                "timelineUsage": [
-                    {
-                        "count": 47,
-                        "date": "Sat, 17 Oct 2020 00:00:00 GMT"
                     },
                     {
-                        "count": 187,
-                        "date": "Sun, 18 Oct 2020 00:00:00 GMT"
+                        "count": 211,
+                        "date": "Mon, 11 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 361,
-                        "date": "Mon, 19 Oct 2020 00:00:00 GMT"
+                        "count": 120,
+                        "date": "Tue, 12 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 201,
-                        "date": "Tue, 20 Oct 2020 00:00:00 GMT"
+                        "count": 171,
+                        "date": "Wed, 13 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 328,
-                        "date": "Wed, 21 Oct 2020 00:00:00 GMT"
+                        "count": 74,
+                        "date": "Thu, 14 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 222,
-                        "date": "Thu, 22 Oct 2020 00:00:00 GMT"
+                        "count": 280,
+                        "date": "Fri, 15 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 261,
-                        "date": "Fri, 23 Oct 2020 00:00:00 GMT"
+                        "count": 120,
+                        "date": "Sat, 16 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 185,
-                        "date": "Sat, 24 Oct 2020 00:00:00 GMT"
+                        "count": 107,
+                        "date": "Sun, 17 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 94,
-                        "date": "Sun, 25 Oct 2020 00:00:00 GMT"
+                        "count": 171,
+                        "date": "Mon, 18 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 272,
-                        "date": "Mon, 26 Oct 2020 00:00:00 GMT"
+                        "count": 175,
+                        "date": "Tue, 19 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 368,
-                        "date": "Tue, 27 Oct 2020 00:00:00 GMT"
+                        "count": 262,
+                        "date": "Wed, 20 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 392,
-                        "date": "Wed, 28 Oct 2020 00:00:00 GMT"
+                        "count": 205,
+                        "date": "Thu, 21 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 253,
-                        "date": "Thu, 29 Oct 2020 00:00:00 GMT"
+                        "count": 78,
+                        "date": "Fri, 22 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 72,
-                        "date": "Fri, 30 Oct 2020 00:00:00 GMT"
+                        "count": 178,
+                        "date": "Sat, 23 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 133,
+                        "date": "Sun, 24 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 240,
+                        "date": "Mon, 25 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 235,
+                        "date": "Tue, 26 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 125,
+                        "date": "Wed, 27 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 159,
+                        "date": "Thu, 28 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 152,
+                        "date": "Fri, 29 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 63,
+                        "date": "Sat, 30 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 167,
+                        "date": "Sun, 31 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 219,
+                        "date": "Mon, 01 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 359,
+                        "date": "Tue, 02 Feb 2021 00:00:00 GMT"
                     },
                     {
                         "count": 162,
-                        "date": "Sat, 31 Oct 2020 00:00:00 GMT"
+                        "date": "Wed, 03 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 184,
-                        "date": "Sun, 01 Nov 2020 00:00:00 GMT"
+                        "count": 179,
+                        "date": "Thu, 04 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 61,
-                        "date": "Mon, 02 Nov 2020 00:00:00 GMT"
+                        "count": 190,
+                        "date": "Fri, 05 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 84,
-                        "date": "Tue, 03 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 299,
-                        "date": "Wed, 04 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 364,
-                        "date": "Thu, 05 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 130,
-                        "date": "Fri, 06 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 303,
-                        "date": "Sat, 07 Nov 2020 00:00:00 GMT"
+                        "count": 157,
+                        "date": "Sat, 06 Feb 2021 00:00:00 GMT"
                     },
                     {
                         "count": 226,
-                        "date": "Sun, 08 Nov 2020 00:00:00 GMT"
+                        "date": "Sun, 07 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 173,
-                        "date": "Mon, 09 Nov 2020 00:00:00 GMT"
+                        "count": 306,
+                        "date": "Mon, 08 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 174,
-                        "date": "Tue, 10 Nov 2020 00:00:00 GMT"
+                        "count": 198,
+                        "date": "Tue, 09 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 388,
-                        "date": "Wed, 11 Nov 2020 00:00:00 GMT"
+                        "count": 111,
+                        "date": "Wed, 10 Feb 2021 00:00:00 GMT"
                     },
                     {
                         "count": 80,
-                        "date": "Thu, 12 Nov 2020 00:00:00 GMT"
+                        "date": "Thu, 11 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 161,
-                        "date": "Fri, 13 Nov 2020 00:00:00 GMT"
+                        "count": 435,
+                        "date": "Fri, 12 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 97,
-                        "date": "Sat, 14 Nov 2020 00:00:00 GMT"
+                        "count": 309,
+                        "date": "Sat, 13 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 91,
-                        "date": "Sun, 15 Nov 2020 00:00:00 GMT"
+                        "count": 181,
+                        "date": "Sun, 14 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 133,
+                        "date": "Mon, 15 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 238,
+                        "date": "Tue, 16 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 120,
+                        "date": "Wed, 17 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 36,
+                        "date": "Thu, 18 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 105,
+                        "date": "Fri, 19 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 15,
+                        "date": "Sat, 20 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 74,
+                        "date": "Sun, 21 Feb 2021 00:00:00 GMT"
                     },
                     {
                         "count": 79,
-                        "date": "Mon, 16 Nov 2020 00:00:00 GMT"
+                        "date": "Mon, 22 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 79,
-                        "date": "Tue, 17 Nov 2020 00:00:00 GMT"
+                        "count": 189,
+                        "date": "Tue, 23 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 68,
-                        "date": "Wed, 18 Nov 2020 00:00:00 GMT"
+                        "count": 270,
+                        "date": "Wed, 24 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 557,
-                        "date": "Thu, 19 Nov 2020 00:00:00 GMT"
+                        "count": 377,
+                        "date": "Thu, 25 Feb 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 294,
-                        "date": "Fri, 20 Nov 2020 00:00:00 GMT"
-                    },
+                        "count": 286,
+                        "date": "Fri, 26 Feb 2021 00:00:00 GMT"
+                    }
+                ]
+            },
+            "Sumit Kolpekwar": {
+                "timelineStat": {
+                    "mostActiveDate": "2-12-21"
+                },
+                "timelineUsage": [
                     {
-                        "count": 285,
+                        "count": 11,
                         "date": "Sat, 21 Nov 2020 00:00:00 GMT"
                     },
                     {
@@ -1988,158 +1944,206 @@ def dummyapi():
                         "date": "Sat, 09 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 89,
+                        "count": 172,
                         "date": "Sun, 10 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 125,
+                        "date": "Mon, 11 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 72,
+                        "date": "Tue, 12 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 118,
+                        "date": "Wed, 13 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 44,
+                        "date": "Thu, 14 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 215,
+                        "date": "Fri, 15 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 104,
+                        "date": "Sat, 16 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 133,
+                        "date": "Sun, 17 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 98,
+                        "date": "Mon, 18 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 91,
+                        "date": "Tue, 19 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 116,
+                        "date": "Wed, 20 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 115,
+                        "date": "Thu, 21 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 104,
+                        "date": "Fri, 22 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 85,
+                        "date": "Sat, 23 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 67,
+                        "date": "Sun, 24 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 158,
+                        "date": "Mon, 25 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 156,
+                        "date": "Tue, 26 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 81,
+                        "date": "Wed, 27 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 98,
+                        "date": "Thu, 28 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 68,
+                        "date": "Fri, 29 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 34,
+                        "date": "Sat, 30 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 122,
+                        "date": "Sun, 31 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 156,
+                        "date": "Mon, 01 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 192,
+                        "date": "Tue, 02 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 201,
+                        "date": "Wed, 03 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 181,
+                        "date": "Thu, 04 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 145,
+                        "date": "Fri, 05 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 132,
+                        "date": "Sat, 06 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 173,
+                        "date": "Sun, 07 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 207,
+                        "date": "Mon, 08 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 166,
+                        "date": "Tue, 09 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 43,
+                        "date": "Wed, 10 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 49,
+                        "date": "Thu, 11 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 372,
+                        "date": "Fri, 12 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 259,
+                        "date": "Sat, 13 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 149,
+                        "date": "Sun, 14 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 86,
+                        "date": "Mon, 15 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 179,
+                        "date": "Tue, 16 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 77,
+                        "date": "Wed, 17 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 11,
+                        "date": "Thu, 18 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 52,
+                        "date": "Fri, 19 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 6,
+                        "date": "Sat, 20 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 40,
+                        "date": "Sun, 21 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 56,
+                        "date": "Mon, 22 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 113,
+                        "date": "Tue, 23 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 198,
+                        "date": "Wed, 24 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 159,
+                        "date": "Thu, 25 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 175,
+                        "date": "Fri, 26 Feb 2021 00:00:00 GMT"
                     }
                 ]
             },
             "yashdev.py ヤシュ・デワンガン": {
                 "timelineStat": {
-                    "mostActiveDate": "11-19-20"
+                    "mostActiveDate": "2-12-21"
                 },
                 "timelineUsage": [
                     {
-                        "count": 38,
-                        "date": "Sat, 17 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 129,
-                        "date": "Sun, 18 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 167,
-                        "date": "Mon, 19 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 130,
-                        "date": "Tue, 20 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 166,
-                        "date": "Wed, 21 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 182,
-                        "date": "Thu, 22 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 237,
-                        "date": "Fri, 23 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 124,
-                        "date": "Sat, 24 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 64,
-                        "date": "Sun, 25 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 160,
-                        "date": "Mon, 26 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 212,
-                        "date": "Tue, 27 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 229,
-                        "date": "Wed, 28 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 209,
-                        "date": "Thu, 29 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 78,
-                        "date": "Fri, 30 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 130,
-                        "date": "Sat, 31 Oct 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 184,
-                        "date": "Sun, 01 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 34,
-                        "date": "Mon, 02 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 34,
-                        "date": "Tue, 03 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 91,
-                        "date": "Wed, 04 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 158,
-                        "date": "Thu, 05 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 121,
-                        "date": "Fri, 06 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 151,
-                        "date": "Sat, 07 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 200,
-                        "date": "Sun, 08 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 68,
-                        "date": "Mon, 09 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 108,
-                        "date": "Tue, 10 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 254,
-                        "date": "Wed, 11 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 95,
-                        "date": "Thu, 12 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 137,
-                        "date": "Fri, 13 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 76,
-                        "date": "Sat, 14 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 93,
-                        "date": "Sun, 15 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 53,
-                        "date": "Mon, 16 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 107,
-                        "date": "Tue, 17 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 33,
-                        "date": "Wed, 18 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 497,
-                        "date": "Thu, 19 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 154,
-                        "date": "Fri, 20 Nov 2020 00:00:00 GMT"
-                    },
-                    {
-                        "count": 185,
+                        "count": 20,
                         "date": "Sat, 21 Nov 2020 00:00:00 GMT"
                     },
                     {
@@ -2339,886 +2343,1074 @@ def dummyapi():
                         "date": "Sat, 09 Jan 2021 00:00:00 GMT"
                     },
                     {
-                        "count": 43,
+                        "count": 108,
                         "date": "Sun, 10 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 130,
+                        "date": "Mon, 11 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 89,
+                        "date": "Tue, 12 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 105,
+                        "date": "Wed, 13 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 19,
+                        "date": "Thu, 14 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 123,
+                        "date": "Fri, 15 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 86,
+                        "date": "Sat, 16 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 63,
+                        "date": "Sun, 17 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 81,
+                        "date": "Mon, 18 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 94,
+                        "date": "Tue, 19 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 195,
+                        "date": "Wed, 20 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 70,
+                        "date": "Thu, 21 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 94,
+                        "date": "Fri, 22 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 132,
+                        "date": "Sat, 23 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 142,
+                        "date": "Sun, 24 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 142,
+                        "date": "Mon, 25 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 75,
+                        "date": "Tue, 26 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 35,
+                        "date": "Wed, 27 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 51,
+                        "date": "Thu, 28 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 55,
+                        "date": "Fri, 29 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 71,
+                        "date": "Sat, 30 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 67,
+                        "date": "Sun, 31 Jan 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 118,
+                        "date": "Mon, 01 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 250,
+                        "date": "Tue, 02 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 87,
+                        "date": "Wed, 03 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 114,
+                        "date": "Thu, 04 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 90,
+                        "date": "Fri, 05 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 99,
+                        "date": "Sat, 06 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 130,
+                        "date": "Sun, 07 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 138,
+                        "date": "Mon, 08 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 159,
+                        "date": "Tue, 09 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 85,
+                        "date": "Wed, 10 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 39,
+                        "date": "Thu, 11 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 275,
+                        "date": "Fri, 12 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 123,
+                        "date": "Sat, 13 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 166,
+                        "date": "Sun, 14 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 87,
+                        "date": "Mon, 15 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 87,
+                        "date": "Tue, 16 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 95,
+                        "date": "Wed, 17 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 19,
+                        "date": "Thu, 18 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 72,
+                        "date": "Fri, 19 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 13,
+                        "date": "Sat, 20 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 34,
+                        "date": "Sun, 21 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 52,
+                        "date": "Mon, 22 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 87,
+                        "date": "Tue, 23 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 196,
+                        "date": "Wed, 24 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 185,
+                        "date": "Thu, 25 Feb 2021 00:00:00 GMT"
+                    },
+                    {
+                        "count": 109,
+                        "date": "Fri, 26 Feb 2021 00:00:00 GMT"
                     }
                 ]
             }
         },
         "userspecific": {
-            "Kulkarni New": {
-                "averageMessagePerDay": 174.72093023255815,
-                "averageWordsPerMessage": 4.18734194063623,
-                "leastActiveDate": "1-10-21",
+            "Atharva Kulkarni": {
+                "averageMessagePerDay": 172.51020408163265,
+                "averageWordsPerMessage": 3.489293741866793,
+                "leastActiveDate": "2-20-21",
                 "leastActiveDay": "Sunday",
                 "mostActiveDate": "12-4-20",
-                "mostActiveDay": "Thursday",
-                "totalDays": 86,
-                "totalEmojis": 1831,
-                "totalLinks": 238,
-                "totalMedia": 2211,
-                "totalMessages": 15026,
-                "totalWords": 62919
+                "mostActiveDay": "Friday",
+                "totalDays": 98,
+                "totalEmojis": 4018,
+                "totalLinks": 292,
+                "totalMedia": 2205,
+                "totalMessages": 16906,
+                "totalWords": 58990
             },
-            "Sumit Skn": {
-                "averageMessagePerDay": 171.5,
-                "averageWordsPerMessage": 3.280018984337921,
-                "leastActiveDate": "12-18-20",
+            "Sumit Kolpekwar": {
+                "averageMessagePerDay": 133.08163265306123,
+                "averageWordsPerMessage": 3.327633798497163,
+                "leastActiveDate": "2-20-21",
                 "leastActiveDay": "Sunday",
-                "mostActiveDate": "11-19-20",
-                "mostActiveDay": "Thursday",
-                "totalDays": 86,
-                "totalEmojis": 2162,
-                "totalLinks": 179,
-                "totalMedia": 872,
-                "totalMessages": 14749,
-                "totalWords": 48377
+                "mostActiveDate": "2-12-21",
+                "mostActiveDay": "Friday",
+                "totalDays": 98,
+                "totalEmojis": 2544,
+                "totalLinks": 211,
+                "totalMedia": 634,
+                "totalMessages": 13042,
+                "totalWords": 43399
             },
             "yashdev.py ヤシュ・デワンガン": {
-                "averageMessagePerDay": 118.31395348837209,
-                "averageWordsPerMessage": 3.285995085995086,
+                "averageMessagePerDay": 102.04081632653062,
+                "averageWordsPerMessage": 4.3911,
                 "leastActiveDate": "12-10-20",
-                "leastActiveDay": "Monday",
-                "mostActiveDate": "11-19-20",
-                "mostActiveDay": "Thursday",
-                "totalDays": 86,
-                "totalEmojis": 567,
-                "totalLinks": 180,
-                "totalMedia": 1075,
-                "totalMessages": 10175,
-                "totalWords": 33435
+                "leastActiveDay": "Thursday",
+                "mostActiveDate": "2-12-21",
+                "mostActiveDay": "Friday",
+                "totalDays": 98,
+                "totalEmojis": 905,
+                "totalLinks": 203,
+                "totalMedia": 1148,
+                "totalMessages": 10000,
+                "totalWords": 43911
             }
         },
         "wordcloud": {
             "All": {
                 "wordStat": {
-                    "leastUsedWord": "Vsbsvs",
+                    "leastUsedWord": "//hackclub.zoom.us/j/92929745349?pwd=UWJoQ3ozZFBqZGo5SE51dVJJUzhQZz09",
                     "mostUsedWord": "h"
                 },
                 "wordUsage": [
                     {
                         "text": "h",
-                        "value": 8783
-                    },
-                    {
-                        "text": "chutya",
-                        "value": 5013
-                    },
-                    {
-                        "text": "HOD",
-                        "value": 5009
+                        "value": 3692
                     },
                     {
                         "text": "hain",
-                        "value": 1347
+                        "value": 1438
+                    },
+                    {
+                        "text": "{",
+                        "value": 1397
+                    },
+                    {
+                        "text": "},",
+                        "value": 1254
                     },
                     {
                         "text": "ka",
-                        "value": 1129
+                        "value": 1155
+                    },
+                    {
+                        "text": "00",
+                        "value": 993
+                    },
+                    {
+                        "text": "\"count\"",
+                        "value": 964
+                    },
+                    {
+                        "text": "\"date\"",
+                        "value": 963
                     },
                     {
                         "text": "kya",
-                        "value": 906
+                        "value": 897
                     },
                     {
                         "text": "rha",
-                        "value": 818
-                    },
-                    {
-                        "text": "na",
-                        "value": 756
+                        "value": 850
                     },
                     {
                         "text": "to",
-                        "value": 755
-                    },
-                    {
-                        "text": "tha",
-                        "value": 735
+                        "value": 764
                     },
                     {
                         "text": "toh",
-                        "value": 730
+                        "value": 761
+                    },
+                    {
+                        "text": "na",
+                        "value": 727
                     },
                     {
                         "text": "bhi",
-                        "value": 726
-                    },
-                    {
-                        "text": "Bc",
-                        "value": 685
-                    },
-                    {
-                        "text": "ko",
-                        "value": 661
-                    },
-                    {
-                        "text": "and",
-                        "value": 628
-                    },
-                    {
-                        "text": "nahi",
-                        "value": 617
-                    },
-                    {
-                        "text": "se",
-                        "value": 616
-                    },
-                    {
-                        "text": "Yash",
-                        "value": 605
+                        "value": 712
                     },
                     {
                         "text": "https",
-                        "value": 570
+                        "value": 663
+                    },
+                    {
+                        "text": "se",
+                        "value": 648
+                    },
+                    {
+                        "text": "ko",
+                        "value": 648
+                    },
+                    {
+                        "text": "tha",
+                        "value": 624
+                    },
+                    {
+                        "text": "nahi",
+                        "value": 611
+                    },
+                    {
+                        "text": "@917020037195",
+                        "value": 593
+                    },
+                    {
+                        "text": "and",
+                        "value": 587
                     },
                     {
                         "text": "the",
                         "value": 569
                     },
                     {
-                        "text": "kar",
-                        "value": 566
+                        "text": "is",
+                        "value": 568
                     },
                     {
                         "text": "I",
-                        "value": 528
+                        "value": 557
                     },
                     {
-                        "text": "@917020037195",
-                        "value": 508
-                    },
-                    {
-                        "text": "is",
-                        "value": 506
-                    },
-                    {
-                        "text": "ke",
-                        "value": 496
-                    },
-                    {
-                        "text": "ho",
-                        "value": 476
-                    },
-                    {
-                        "text": "hi",
-                        "value": 474
+                        "text": "kar",
+                        "value": 544
                     },
                     {
                         "text": "you",
-                        "value": 468
+                        "value": 541
                     },
                     {
-                        "text": "main",
-                        "value": 466
-                    },
-                    {
-                        "text": "Yes",
-                        "value": 459
+                        "text": "Bc",
+                        "value": 521
                     },
                     {
                         "text": "@918602842290",
-                        "value": 435
+                        "value": 508
+                    },
+                    {
+                        "text": "Yes",
+                        "value": 500
+                    },
+                    {
+                        "text": "ho",
+                        "value": 479
+                    },
+                    {
+                        "text": "main",
+                        "value": 474
+                    },
+                    {
+                        "text": "hi",
+                        "value": 460
                     },
                     {
                         "text": "But",
-                        "value": 419
-                    },
-                    {
-                        "text": "Haa",
                         "value": 412
                     },
                     {
+                        "text": "m",
+                        "value": 407
+                    },
+                    {
                         "text": "nhhi",
-                        "value": 409
-                    },
-                    {
-                        "text": "And",
-                        "value": 408
-                    },
-                    {
-                        "text": "me",
-                        "value": 395
-                    },
-                    {
-                        "text": "kia",
-                        "value": 391
-                    },
-                    {
-                        "text": "Nice",
-                        "value": 376
-                    },
-                    {
-                        "text": "@918446224700",
-                        "value": 376
-                    },
-                    {
-                        "text": "like",
-                        "value": 371
-                    },
-                    {
-                        "text": "mai",
-                        "value": 359
-                    },
-                    {
-                        "text": "in",
-                        "value": 351
-                    },
-                    {
-                        "text": "a",
-                        "value": 351
-                    },
-                    {
-                        "text": "Kya",
-                        "value": 343
-                    },
-                    {
-                        "text": "k",
-                        "value": 341
-                    },
-                    {
-                        "text": "karna",
-                        "value": 324
+                        "value": 406
                     },
                     {
                         "text": "for",
-                        "value": 320
+                        "value": 398
                     },
                     {
-                        "text": "ki",
-                        "value": 319
+                        "text": "'NO_OF_Emoji'",
+                        "value": 393
+                    },
+                    {
+                        "text": "{'Emoji'",
+                        "value": 392
+                    },
+                    {
+                        "text": "a",
+                        "value": 385
+                    },
+                    {
+                        "text": "ke",
+                        "value": 384
                     },
                     {
                         "text": "hu",
-                        "value": 314
+                        "value": 383
                     },
                     {
-                        "text": "was",
+                        "text": "kia",
+                        "value": 363
+                    },
+                    {
+                        "text": "@918446224700",
+                        "value": 353
+                    },
+                    {
+                        "text": "in",
+                        "value": 346
+                    },
+                    {
+                        "text": "of",
+                        "value": 335
+                    },
+                    {
+                        "text": "And",
+                        "value": 328
+                    },
+                    {
+                        "text": "like",
+                        "value": 323
+                    },
+                    {
+                        "text": "Kya",
+                        "value": 323
+                    },
+                    {
+                        "text": "Nice",
+                        "value": 308
+                    },
+                    {
+                        "text": "ki",
                         "value": 303
                     }
                 ]
             },
-            "Kulkarni New": {
+            "Atharva Kulkarni": {
                 "wordStat": {
-                    "leastUsedWord": "Yourok",
+                    "leastUsedWord": "respond",
                     "mostUsedWord": "h"
                 },
                 "wordUsage": [
                     {
                         "text": "h",
-                        "value": 7048
+                        "value": 2222
                     },
                     {
-                        "text": "chutya",
-                        "value": 5013
-                    },
-                    {
-                        "text": "HOD",
-                        "value": 5001
-                    },
-                    {
-                        "text": "Yash",
-                        "value": 541
+                        "text": "00",
+                        "value": 801
                     },
                     {
                         "text": "ka",
-                        "value": 364
+                        "value": 412
                     },
                     {
                         "text": "kya",
-                        "value": 355
-                    },
-                    {
-                        "text": "k",
-                        "value": 328
-                    },
-                    {
-                        "text": "na",
-                        "value": 304
-                    },
-                    {
-                        "text": "rha",
-                        "value": 286
-                    },
-                    {
-                        "text": "to",
-                        "value": 285
-                    },
-                    {
-                        "text": "ko",
-                        "value": 270
-                    },
-                    {
-                        "text": "me",
-                        "value": 269
-                    },
-                    {
-                        "text": "toh",
-                        "value": 261
-                    },
-                    {
-                        "text": "Bc",
-                        "value": 258
-                    },
-                    {
-                        "text": "bhi",
-                        "value": 255
-                    },
-                    {
-                        "text": "and",
-                        "value": 250
-                    },
-                    {
-                        "text": "tha",
-                        "value": 235
-                    },
-                    {
-                        "text": "https",
-                        "value": 232
-                    },
-                    {
-                        "text": "nahi",
-                        "value": 229
-                    },
-                    {
-                        "text": "the",
-                        "value": 229
-                    },
-                    {
-                        "text": "I",
-                        "value": 223
-                    },
-                    {
-                        "text": "@918446224700",
-                        "value": 208
-                    },
-                    {
-                        "text": "was",
-                        "value": 202
-                    },
-                    {
-                        "text": "se",
-                        "value": 200
-                    },
-                    {
-                        "text": "kr",
-                        "value": 192
-                    },
-                    {
-                        "text": "ho",
-                        "value": 178
-                    },
-                    {
-                        "text": "Yes",
-                        "value": 175
-                    },
-                    {
-                        "text": "is",
-                        "value": 171
-                    },
-                    {
-                        "text": "ki",
-                        "value": 170
-                    },
-                    {
-                        "text": "nhi",
-                        "value": 162
-                    },
-                    {
-                        "text": "hi",
-                        "value": 159
+                        "value": 383
                     },
                     {
                         "text": "m",
-                        "value": 155
+                        "value": 371
                     },
                     {
-                        "text": "And",
-                        "value": 153
+                        "text": "na",
+                        "value": 341
                     },
                     {
-                        "text": "This",
-                        "value": 151
+                        "text": "{",
+                        "value": 341
+                    },
+                    {
+                        "text": "toh",
+                        "value": 325
+                    },
+                    {
+                        "text": "},",
+                        "value": 320
+                    },
+                    {
+                        "text": "rha",
+                        "value": 309
+                    },
+                    {
+                        "text": "to",
+                        "value": 301
+                    },
+                    {
+                        "text": "and",
+                        "value": 299
+                    },
+                    {
+                        "text": "ko",
+                        "value": 297
+                    },
+                    {
+                        "text": "bhi",
+                        "value": 293
+                    },
+                    {
+                        "text": "nahi",
+                        "value": 285
+                    },
+                    {
+                        "text": "https",
+                        "value": 282
+                    },
+                    {
+                        "text": "se",
+                        "value": 274
+                    },
+                    {
+                        "text": "\"count\"",
+                        "value": 267
+                    },
+                    {
+                        "text": "\"date\"",
+                        "value": 267
+                    },
+                    {
+                        "text": "GMT\"",
+                        "value": 265
+                    },
+                    {
+                        "text": "2020",
+                        "value": 247
+                    },
+                    {
+                        "text": "I",
+                        "value": 245
+                    },
+                    {
+                        "text": "k",
+                        "value": 239
+                    },
+                    {
+                        "text": "tha",
+                        "value": 233
+                    },
+                    {
+                        "text": "the",
+                        "value": 230
+                    },
+                    {
+                        "text": "Bc",
+                        "value": 222
+                    },
+                    {
+                        "text": "was",
+                        "value": 214
+                    },
+                    {
+                        "text": "is",
+                        "value": 206
+                    },
+                    {
+                        "text": "hi",
+                        "value": 196
+                    },
+                    {
+                        "text": "3",
+                        "value": 193
+                    },
+                    {
+                        "text": "kr",
+                        "value": 189
                     },
                     {
                         "text": "kia",
+                        "value": 186
+                    },
+                    {
+                        "text": "And",
+                        "value": 181
+                    },
+                    {
+                        "text": "ki",
+                        "value": 181
+                    },
+                    {
+                        "text": "me",
+                        "value": 181
+                    },
+                    {
+                        "text": "But",
+                        "value": 174
+                    },
+                    {
+                        "text": "Yes",
+                        "value": 174
+                    },
+                    {
+                        "text": "ho",
+                        "value": 171
+                    },
+                    {
+                        "text": "@918446224700",
+                        "value": 171
+                    },
+                    {
+                        "text": "vo",
+                        "value": 160
+                    },
+                    {
+                        "text": "nhi",
+                        "value": 158
+                    },
+                    {
+                        "text": "hu",
+                        "value": 156
+                    },
+                    {
+                        "text": "This",
+                        "value": 154
+                    },
+                    {
+                        "text": "in",
+                        "value": 154
+                    },
+                    {
+                        "text": "Join",
+                        "value": 151
+                    },
+                    {
+                        "text": "pm]",
                         "value": 150
                     },
                     {
                         "text": "@918602842290",
-                        "value": 145
+                        "value": 149
                     },
                     {
-                        "text": "bc",
-                        "value": 142
+                        "text": "}",
+                        "value": 149
                     },
                     {
-                        "text": "like",
-                        "value": 136
+                        "text": "DAA",
+                        "value": 147
                     },
                     {
-                        "text": "But",
-                        "value": 135
-                    },
-                    {
-                        "text": "ye",
-                        "value": 132
-                    },
-                    {
-                        "text": "in",
-                        "value": 130
-                    },
-                    {
-                        "text": "vo",
-                        "value": 126
-                    },
-                    {
-                        "text": "message",
-                        "value": 124
-                    },
-                    {
-                        "text": "deleted",
-                        "value": 123
-                    },
-                    {
-                        "text": "a",
-                        "value": 123
-                    },
-                    {
-                        "text": "?",
-                        "value": 122
-                    },
-                    {
-                        "text": "hua",
-                        "value": 116
-                    },
-                    {
-                        "text": "Kya",
-                        "value": 114
-                    },
-                    {
-                        "text": "you",
-                        "value": 112
-                    },
-                    {
-                        "text": "sab",
-                        "value": 111
+                        "text": "Accha",
+                        "value": 146
                     }
                 ]
             },
-            "Sumit Skn": {
+            "Sumit Kolpekwar": {
                 "wordStat": {
-                    "leastUsedWord": "Vsbsvs",
+                    "leastUsedWord": "//hackclub.zoom.us/j/92929745349?pwd=UWJoQ3ozZFBqZGo5SE51dVJJUzhQZz09",
                     "mostUsedWord": "h"
                 },
                 "wordUsage": [
                     {
                         "text": "h",
-                        "value": 1730
-                    },
-                    {
-                        "text": "nahi",
-                        "value": 388
-                    },
-                    {
-                        "text": "ka",
-                        "value": 376
-                    },
-                    {
-                        "text": "kya",
-                        "value": 369
-                    },
-                    {
-                        "text": "mai",
-                        "value": 357
-                    },
-                    {
-                        "text": "to",
-                        "value": 330
-                    },
-                    {
-                        "text": "you",
-                        "value": 323
-                    },
-                    {
-                        "text": "and",
-                        "value": 320
+                        "value": 1465
                     },
                     {
                         "text": "@917020037195",
-                        "value": 315
-                    },
-                    {
-                        "text": "na",
-                        "value": 315
-                    },
-                    {
-                        "text": "Bc",
-                        "value": 291
+                        "value": 382
                     },
                     {
                         "text": "@918602842290",
-                        "value": 290
+                        "value": 359
                     },
                     {
-                        "text": "tha",
-                        "value": 284
+                        "text": "you",
+                        "value": 355
+                    },
+                    {
+                        "text": "ka",
+                        "value": 335
+                    },
+                    {
+                        "text": "nahi",
+                        "value": 326
+                    },
+                    {
+                        "text": "kya",
+                        "value": 326
                     },
                     {
                         "text": "Yes",
+                        "value": 323
+                    },
+                    {
+                        "text": "to",
+                        "value": 318
+                    },
+                    {
+                        "text": "na",
+                        "value": 283
+                    },
+                    {
+                        "text": "mai",
                         "value": 279
                     },
                     {
-                        "text": "rha",
-                        "value": 253
-                    },
-                    {
-                        "text": "And",
-                        "value": 252
-                    },
-                    {
                         "text": "is",
-                        "value": 248
-                    },
-                    {
-                        "text": "kia",
-                        "value": 241
+                        "value": 245
                     },
                     {
                         "text": "I",
-                        "value": 229
+                        "value": 235
                     },
                     {
-                        "text": "Nice",
-                        "value": 219
+                        "text": "and",
+                        "value": 231
                     },
                     {
-                        "text": "toh",
-                        "value": 217
+                        "text": "rha",
+                        "value": 221
+                    },
+                    {
+                        "text": "tha",
+                        "value": 207
+                    },
+                    {
+                        "text": "Bc",
+                        "value": 201
                     },
                     {
                         "text": "the",
-                        "value": 209
-                    },
-                    {
-                        "text": "Haa",
-                        "value": 205
-                    },
-                    {
-                        "text": "XD",
                         "value": 200
                     },
                     {
-                        "text": "bhi",
-                        "value": 198
+                        "text": "https",
+                        "value": 199
                     },
                     {
-                        "text": "in",
-                        "value": 189
+                        "text": "XD",
+                        "value": 185
                     },
                     {
-                        "text": "But",
-                        "value": 180
+                        "text": "toh",
+                        "value": 183
                     },
                     {
-                        "text": "ke",
-                        "value": 179
+                        "text": "Nice",
+                        "value": 181
                     },
                     {
-                        "text": "a",
+                        "text": "kia",
                         "value": 176
                     },
                     {
-                        "text": "like",
-                        "value": 174
+                        "text": "What",
+                        "value": 173
                     },
                     {
-                        "text": "se",
-                        "value": 174
+                        "text": "a",
+                        "value": 172
                     },
                     {
-                        "text": "https",
+                        "text": "for",
+                        "value": 171
+                    },
+                    {
+                        "text": "bhi",
                         "value": 170
                     },
                     {
                         "text": "Kya",
-                        "value": 167
+                        "value": 152
+                    },
+                    {
+                        "text": "But",
+                        "value": 147
+                    },
+                    {
+                        "text": "And",
+                        "value": 145
+                    },
+                    {
+                        "text": "in",
+                        "value": 144
                     },
                     {
                         "text": "ko",
-                        "value": 155
-                    },
-                    {
-                        "text": "What",
-                        "value": 153
-                    },
-                    {
-                        "text": "kar",
-                        "value": 150
-                    },
-                    {
-                        "text": "for",
-                        "value": 148
-                    },
-                    {
-                        "text": "karna",
-                        "value": 148
-                    },
-                    {
-                        "text": "be",
-                        "value": 143
-                    },
-                    {
-                        "text": "Yeh",
-                        "value": 140
-                    },
-                    {
-                        "text": "i",
                         "value": 137
                     },
                     {
-                        "text": "hi",
-                        "value": 136
+                        "text": "i",
+                        "value": 135
                     },
                     {
-                        "text": "can",
-                        "value": 133
-                    },
-                    {
-                        "text": "this",
-                        "value": 130
-                    },
-                    {
-                        "text": "Nahi",
-                        "value": 129
+                        "text": "of",
+                        "value": 134
                     },
                     {
                         "text": "+1",
+                        "value": 134
+                    },
+                    {
+                        "text": "se",
+                        "value": 132
+                    },
+                    {
+                        "text": "ke",
+                        "value": 131
+                    },
+                    {
+                        "text": "US",
                         "value": 128
                     },
                     {
-                        "text": "pe",
-                        "value": 126
+                        "text": "like",
+                        "value": 127
                     },
                     {
-                        "text": "that",
-                        "value": 126
+                        "text": "be",
+                        "value": 127
+                    },
+                    {
+                        "text": "it",
+                        "value": 124
                     },
                     {
                         "text": "I'm",
-                        "value": 125
+                        "value": 122
                     },
                     {
-                        "text": "Abhi",
-                        "value": 123
+                        "text": "on",
+                        "value": 118
+                    },
+                    {
+                        "text": "No",
+                        "value": 118
+                    },
+                    {
+                        "text": "Haa",
+                        "value": 111
+                    },
+                    {
+                        "text": "that",
+                        "value": 111
+                    },
+                    {
+                        "text": "can",
+                        "value": 111
+                    },
+                    {
+                        "text": "pe",
+                        "value": 110
+                    },
+                    {
+                        "text": "Wtf",
+                        "value": 103
+                    },
+                    {
+                        "text": "this",
+                        "value": 102
                     }
                 ]
             },
             "yashdev.py ヤシュ・デワンガン": {
                 "wordStat": {
-                    "leastUsedWord": "Gamersback.vcf",
+                    "leastUsedWord": "haib?",
                     "mostUsedWord": "hain"
                 },
                 "wordUsage": [
                     {
                         "text": "hain",
-                        "value": 1337
+                        "value": 1429
+                    },
+                    {
+                        "text": "{",
+                        "value": 1025
+                    },
+                    {
+                        "text": "},",
+                        "value": 933
+                    },
+                    {
+                        "text": "\"count\"",
+                        "value": 697
+                    },
+                    {
+                        "text": "\"date\"",
+                        "value": 696
                     },
                     {
                         "text": "main",
-                        "value": 449
-                    },
-                    {
-                        "text": "nhhi",
-                        "value": 408
-                    },
-                    {
-                        "text": "ka",
-                        "value": 389
+                        "value": 459
                     },
                     {
                         "text": "kar",
-                        "value": 373
+                        "value": 416
+                    },
+                    {
+                        "text": "ka",
+                        "value": 408
+                    },
+                    {
+                        "text": "nhhi",
+                        "value": 405
+                    },
+                    {
+                        "text": "'NO_OF_Emoji'",
+                        "value": 393
+                    },
+                    {
+                        "text": "{'Emoji'",
+                        "value": 392
                     },
                     {
                         "text": "rha",
-                        "value": 279
+                        "value": 320
                     },
                     {
-                        "text": "bhi",
-                        "value": 273
+                        "text": "'FREQUENCY'",
+                        "value": 297
+                    },
+                    {
+                        "text": "{'DATE'",
+                        "value": 260
                     },
                     {
                         "text": "toh",
-                        "value": 252
+                        "value": 253
+                    },
+                    {
+                        "text": "bhi",
+                        "value": 249
                     },
                     {
                         "text": "se",
                         "value": 242
                     },
                     {
-                        "text": "ko",
-                        "value": 236
-                    },
-                    {
                         "text": "ho",
-                        "value": 224
+                        "value": 234
                     },
                     {
-                        "text": "ke",
-                        "value": 218
-                    },
-                    {
-                        "text": "tha",
-                        "value": 216
-                    },
-                    {
-                        "text": "Haa",
-                        "value": 196
+                        "text": "ko",
+                        "value": 214
                     },
                     {
                         "text": "@917020037195",
-                        "value": 193
+                        "value": 211
+                    },
+                    {
+                        "text": "ke",
+                        "value": 189
                     },
                     {
                         "text": "kya",
-                        "value": 182
+                        "value": 188
                     },
                     {
-                        "text": "hi",
-                        "value": 179
+                        "text": "00",
+                        "value": 185
                     },
                     {
-                        "text": "@918446224700",
-                        "value": 168
+                        "text": "tha",
+                        "value": 184
                     },
                     {
                         "text": "https",
-                        "value": 168
+                        "value": 182
                     },
                     {
-                        "text": "hu",
-                        "value": 147
+                        "text": "@918446224700",
+                        "value": 182
                     },
                     {
                         "text": "bhai",
-                        "value": 142
-                    },
-                    {
-                        "text": "to",
-                        "value": 140
-                    },
-                    {
-                        "text": "na",
-                        "value": 137
-                    },
-                    {
-                        "text": "Bc",
-                        "value": 136
-                    },
-                    {
-                        "text": "Xd",
-                        "value": 136
-                    },
-                    {
-                        "text": "the",
-                        "value": 131
+                        "value": 179
                     },
                     {
                         "text": "n",
-                        "value": 121
+                        "value": 171
+                    },
+                    {
+                        "text": "hi",
+                        "value": 171
+                    },
+                    {
+                        "text": "hu",
+                        "value": 168
                     },
                     {
                         "text": "ye",
-                        "value": 117
+                        "value": 151
                     },
                     {
-                        "text": "hogga",
-                        "value": 107
+                        "text": "Haa",
+                        "value": 150
                     },
                     {
-                        "text": "gaya",
-                        "value": 106
+                        "text": "2},",
+                        "value": 148
                     },
                     {
-                        "text": "But",
-                        "value": 104
+                        "text": "to",
+                        "value": 145
                     },
                     {
-                        "text": "Bhai",
-                        "value": 93
+                        "text": "the",
+                        "value": 139
                     },
                     {
                         "text": "abhi",
-                        "value": 92
+                        "value": 125
                     },
                     {
-                        "text": "karna",
-                        "value": 91
-                    },
-                    {
-                        "text": "Abhi",
-                        "value": 89
-                    },
-                    {
-                        "text": "aa",
-                        "value": 88
+                        "text": "gaya",
+                        "value": 122
                     },
                     {
                         "text": "is",
-                        "value": 87
+                        "value": 117
                     },
                     {
-                        "text": "de",
-                        "value": 86
-                    },
-                    {
-                        "text": "Nice",
-                        "value": 86
+                        "text": "kya?",
+                        "value": 115
                     },
                     {
                         "text": "karta",
-                        "value": 85
+                        "value": 115
                     },
                     {
-                        "text": "kam",
-                        "value": 84
+                        "text": "hogga",
+                        "value": 111
                     },
                     {
-                        "text": "le",
-                        "value": 84
-                    },
-                    {
-                        "text": "ki",
-                        "value": 83
+                        "text": "aa",
+                        "value": 108
                     },
                     {
                         "text": "kiya",
-                        "value": 83
+                        "value": 107
                     },
                     {
-                        "text": "u",
-                        "value": 82
-                    },
-                    {
-                        "text": "N",
-                        "value": 82
+                        "text": "karna",
+                        "value": 106
                     },
                     {
                         "text": "vo",
-                        "value": 80
+                        "value": 105
                     },
                     {
-                        "text": "Main",
-                        "value": 80
+                        "text": "hain?",
+                        "value": 105
                     },
                     {
-                        "text": "ja",
-                        "value": 80
+                        "text": "na",
+                        "value": 103
                     },
                     {
-                        "text": "kuch",
-                        "value": 77
+                        "text": "ek",
+                        "value": 103
+                    },
+                    {
+                        "text": "Bhai",
+                        "value": 100
+                    },
+                    {
+                        "text": "\"FREQUENCY\"",
+                        "value": 100
                     }
                 ]
             }
@@ -3226,10 +3418,10 @@ def dummyapi():
     },
     "usernames": [
         {
-            "username": "Kulkarni New"
+            "username": "Atharva Kulkarni"
         },
         {
-            "username": "Sumit Skn"
+            "username": "Sumit Kolpekwar"
         },
         {
             "username": "yashdev.py ヤシュ・デワンガン"

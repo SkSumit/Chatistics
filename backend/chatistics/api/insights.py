@@ -178,7 +178,8 @@ class getData:
         Timeline_statsall = {"timelineStat": {"mostActiveDate" : data['DATE'].value_counts().idxmax() , "Value":str(data['DATE'].value_counts()[0])}}    
         Timeline_dataall = {"timelineUsage":timelinealldf.to_dict(orient='records')}
         Timeline_statsall.update(Timeline_dataall)
-        timeline.add("All",Timeline_statsall)    
+        timeline.add("All",Timeline_statsall)  
+         
         return timeline
 
     def radarmap(data):
@@ -191,14 +192,14 @@ class getData:
         radarmapalldf.columns=['time','count']
         for i in radarmapuserdf['USERNAME'].unique():
             user=radarmapuserdf[radarmapuserdf['USERNAME'] == i][['time','count']]
-            Radarmap_stats = {"radarmap_Stat": {"mostActivehour": str(user.sort_values("count").iloc[-1]['time']) , "leastActivehour":str(user.sort_values("count").iloc[0]['time']) , "averageTextsPerHour":sum(user['count'])/24}}
+            Radarmap_stats = {"radarmapStat": {"mostActiveHour": str(user.sort_values("count").iloc[-1]['time']) , "leastActiveHour":str(user.sort_values("count").iloc[0]['time']) , "averageTextsPerHour":sum(user['count'])/(configvars.no_of_days * 24)}}
             lefthours=list(set([*range(0, 23, 1)]) - set(list(radarmapuserdf[radarmapuserdf['USERNAME']==i]['time'])))
             if lefthours:
                 d = {'time': lefthours}
                 df = pd.DataFrame(data=d)
                 df['count']=0
                 user=user.append(df).sort_values("time",ignore_index=True)
-            Radarmap_Usage = {"radarmap_Usage":user.to_dict(orient="records")}
+            Radarmap_Usage = {"radarmapUsage":user.to_dict(orient="records")}
             Radarmap_Usage.update(Radarmap_stats)
             radarmap.add(i , Radarmap_Usage)
         lefthoursall=list(set([*range(0, 23, 1)]) - set(list(radarmapalldf['time'])))
@@ -207,8 +208,8 @@ class getData:
             df = pd.DataFrame(data=d)
             df['count']=0
             radarmapalldf=radarmapalldf.append(df).sort_values("time",ignore_index=True)
-        Radarmap_statsall = {"radarmap_Stat": {"mostActivehour": str(radarmapalldf.sort_values("count").iloc[-1]['time']) , "leastActivehour": str(radarmapalldf.sort_values("count").iloc[0]['time']), "averageTextsPerHour":sum(radarmapalldf['count'])/24}}    
-        Radarmap_Usageall = {"radarmap_Usage":radarmapalldf.to_dict(orient="records")}
+        Radarmap_statsall = {"radarmapStat": {"mostActiveHour": str(radarmapalldf.sort_values("count").iloc[-1]['time']) , "leastActiveHour": str(radarmapalldf.sort_values("count").iloc[0]['time']), "averageTextsPerHour":sum(radarmapalldf['count'])/(configvars.no_of_days * 24)}}    
+        Radarmap_Usageall = {"radarmapUsage":radarmapalldf.to_dict(orient="records")}
         Radarmap_Usageall.update(Radarmap_statsall)
         radarmap.add("All",Radarmap_Usageall)
         return radarmap    
@@ -229,14 +230,13 @@ class getData:
                 "emoji": configvars.emojidata,
                 "wordcloud": configvars.worddata,
                 "timeline":getData.timeline(data),
-                # "heatmap": getData.heatmap(data),
                 "radarMap":getData.radarmap(data),
                 "summary": getData.summary(data),
                 "basedOnDays": getData.basedonday(data),
                 "userspecific": configvars.userdata,
             },
             "usernames" : getData.usernameonlydict(data),
-            "filename" : filename[:-4],
+            "filename" : filename[19:-4],
             "example":False
         }
         return analysis

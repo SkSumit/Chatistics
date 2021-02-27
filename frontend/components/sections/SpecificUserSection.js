@@ -6,8 +6,8 @@ import { FileContext } from "../../pages/index";
 export default function SpecificUserSection() {
   const context = useContext(FileContext);
   const [range, setRange] = useState(0);
-  const noOfObjectsinPage = 24;
-
+  const noOfObjectsinPage = 12;
+  console.log(context.file.stats)
   return (
     <Section>
       <div className="tile is-ancestor">
@@ -83,7 +83,7 @@ export default function SpecificUserSection() {
           Math.round(
             Object.keys(context.file.stats.userspecific).length /
               noOfObjectsinPage
-          )
+          )+1
         )
           .fill()
           .map((item, index) => {
