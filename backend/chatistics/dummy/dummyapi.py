@@ -942,7 +942,7 @@ def dummyapi():
         "timeline": {
             "All": {
                 "timelineStat": {
-                    "Value": "1488",
+                    "value": "1488",
                     "mostActiveDate": "11-19-20"
                 },
                 "timelineUsage": [
@@ -1294,7 +1294,7 @@ def dummyapi():
             },
             "Kulkarni New": {
                 "timelineStat": {
-                    "Value": "439",
+                    "value": "439",
                     "mostActiveDate": "12-4-20"
                 },
                 "timelineUsage": [
@@ -1646,7 +1646,7 @@ def dummyapi():
             },
             "Sumit Skn": {
                 "timelineStat": {
-                    "Value": "557",
+                    "value": "557",
                     "mostActiveDate": "11-19-20"
                 },
                 "timelineUsage": [
@@ -1998,7 +1998,7 @@ def dummyapi():
             },
             "yashdev.py ヤシュ・デワンガン": {
                 "timelineStat": {
-                    "Value": "497",
+                    "value": "497",
                     "mostActiveDate": "11-19-20"
                 },
                 "timelineUsage": [
