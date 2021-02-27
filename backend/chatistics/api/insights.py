@@ -171,11 +171,11 @@ class getData:
         configvars.no_of_days = len(timelineall)
         timelinealldf.columns=['date','count']
         for i in timelineuserdf['USERNAME'].unique():
-            Timeline_stats = {"timelineStat": {"mostActiveDate": configvars.userdata.get(i)['mostActiveDate']}}
+            Timeline_stats = {"timelineStat": {"mostActiveDate": configvars.userdata.get(i)['mostActiveDate'] , "Value":str(data[data['USERNAME']==i]['DATE'].value_counts()[0])}}
             Timeline_data={"timelineUsage":timelineuserdf[timelineuserdf['USERNAME'] == i][['date','count']].to_dict(orient='records')}
             Timeline_stats.update(Timeline_data)
             timeline.add(i , Timeline_stats)
-        Timeline_statsall = {"timelineStat": {"mostActiveDate" : data['DATE'].value_counts().idxmax()}}    
+        Timeline_statsall = {"timelineStat": {"mostActiveDate" : data['DATE'].value_counts().idxmax() , "Value":str(data['DATE'].value_counts()[0])}}    
         Timeline_dataall = {"timelineUsage":timelinealldf.to_dict(orient='records')}
         Timeline_statsall.update(Timeline_dataall)
         timeline.add("All",Timeline_statsall)    

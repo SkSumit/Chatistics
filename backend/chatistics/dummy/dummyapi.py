@@ -1,7 +1,6 @@
 def dummyapi():
 
     api ={
-    {
     "example": True,
     "filename": "WhatsApp Chat with 3 Bois",
     "stats": {
