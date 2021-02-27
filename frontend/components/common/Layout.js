@@ -10,7 +10,8 @@ export const Layout = ({
   rightColumn = true,
   showSelect = true,
   selectedOption, 
-  setSelectedOption
+  setSelectedOption,
+ 
 
 }) => {
 

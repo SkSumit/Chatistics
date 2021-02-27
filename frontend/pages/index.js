@@ -20,7 +20,6 @@ import { Navbar } from "../components/Navbar";
 export const FileContext = createContext(null);
 
 export default function Home({ data, analytics }) {
-  console.log(data, "data");
   const [file, setFile] = useState(data);
   const [loader, setLoader] = useState(false);
   const [initLoader, setInitLoader] = useState(true);

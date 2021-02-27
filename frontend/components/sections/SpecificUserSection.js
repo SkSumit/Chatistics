@@ -7,7 +7,6 @@ export default function SpecificUserSection() {
   const context = useContext(FileContext);
   const [range, setRange] = useState(0);
   const noOfObjectsinPage = 12;
-  console.log(context.file.stats)
   return (
     <Section>
       <div className="tile is-ancestor">

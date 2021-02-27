@@ -5,9 +5,12 @@ import StatsBox from "../StatsBox";
 import Layout from "../common/Layout";
 import {
   faCommentDots,
-  faCalendarWeek,
-  faAngleDoubleUp,
+ 
+  faHourglass,
+  faHourglassHalf,
 } from "@fortawesome/free-solid-svg-icons";
+
+
 
 export default function TimeRadarSection() {
   const context = useContext(FileContext);
@@ -46,7 +49,7 @@ export default function TimeRadarSection() {
               context.file.stats.radarMap[selectedOption.username].radarmapStat
                 .mostActiveHour
             }
-            icon={faCalendarWeek}
+            icon={faHourglass}
           />
           <StatsBox
             title={"Least Active Hour"}
@@ -54,7 +57,7 @@ export default function TimeRadarSection() {
               context.file.stats.radarMap[selectedOption.username].radarmapStat
                 .leastActiveHour
             }
-            icon={faAngleDoubleUp}
+            icon={  faHourglassHalf}
           />
         </>
       }
