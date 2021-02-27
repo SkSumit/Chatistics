@@ -24,8 +24,6 @@ export default function Heatmap() {
     username: "All",
   });
 
-  const startDate =
-    context.file.stats.timeline[selectedOption.username].timelineUsage[0].date;
 
   return (
     <Section>
@@ -42,14 +40,8 @@ export default function Heatmap() {
             id={1}
           />
           <CalendarHeatmap
-            startDate={startDate}
-            endDate={
-              new Date(
-                new Date(startDate).setMonth(
-                  new Date(startDate).getMonth() + 6
-                )
-              )
-            }
+            startDate={new Date().setMonth(new Date().getMonth() - 6)}
+            endDate={new Date()}
             values={
               context.file.stats.timeline[selectedOption.username].timelineUsage
             }
