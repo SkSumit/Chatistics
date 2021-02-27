@@ -6,7 +6,7 @@ import Layout from "../common/Layout";
 import {
   faCommentDots,
   faCalendarWeek,
-  faAngleDoubleUp,
+  faCommentSlash
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function DaySection() {
@@ -14,7 +14,7 @@ export default function DaySection() {
   const [selectedOption, setSelectedOption] = useState({
     username: "All",
   });
-
+  // console.log(Object.keys(context.file.stats.basedOnDays))
   return (
     <Layout
       selectedOption={selectedOption}
@@ -53,7 +53,7 @@ export default function DaySection() {
             title={"Least Texted Day"}
             stats={context.file.stats.basedOnDays[selectedOption.username][1]
                 .leastActiveDay}
-            icon={faAngleDoubleUp}
+            icon={faCommentSlash}
           />
         </>
       }

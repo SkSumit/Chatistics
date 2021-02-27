@@ -51,7 +51,6 @@ export const incVisitorCount = async () => {
 export const getAnalytics = async () => {
   try {
     const result = await axios.get(url + "/api/v1/analytics");
-    console.log(result.data)
     return result.data;
   } catch (error) {
     console.log(error);

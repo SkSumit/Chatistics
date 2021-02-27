@@ -7,8 +7,8 @@ import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
 import {
   faCommentDots,
-  faCalendarWeek,
-  faAngleDoubleUp,
+  faCommentSlash,
+  faIcons,
 } from "@fortawesome/free-solid-svg-icons";
 
 const options = {
@@ -54,12 +54,12 @@ export default function WordcloudSection() {
           <StatsBox
             title={"Least Used Word"}
             stats={"a"}
-            icon={faCalendarWeek}
+            icon={faCommentSlash}
           />
           <StatsBox
             title={"Average No of Emoji Per Text"}
             stats={2.6}
-            icon={faAngleDoubleUp}
+            icon={ faIcons}
           />
         </>
       }

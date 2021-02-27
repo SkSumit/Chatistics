@@ -5,8 +5,8 @@ import StatsBox from "../StatsBox";
 import Layout from "../common/Layout";
 import {
   faCommentDots,
-  faCalendarWeek,
-  faAngleDoubleUp,
+  faIcons,
+  faFingerprint
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function EmojiSection() {
@@ -39,12 +39,12 @@ export default function EmojiSection() {
           <StatsBox
             title={"Number of Emoji Used"}
             stats={context.file.stats.emoji[selectedOption.username].emojiStat.totalEmojis}
-            icon={faCalendarWeek}
+            icon={  faIcons}
           />
           <StatsBox
             title={"Number of Unqiue Emojis "}
             stats={context.file.stats.emoji[selectedOption.username].emojiStat.totalUniqueEmojis}
-            icon={faAngleDoubleUp}
+            icon={faFingerprint}
           />
         </>
       }

@@ -11,10 +11,10 @@ import {
 
 export default function DayBar({ selectedOption}) {
   const context = useContext(FileContext);
-
+  const days = sortedDays(context.file.stats.basedOnDays[selectedOption.username][0])
   return (
     <>
-      <ResponsiveContainer width="100%" height={400}>
+      <ResponsiveContainer  height={400}>
         <BarChart
           height={400}
           data={context.file.stats.basedOnDays[selectedOption.username][0]}
@@ -33,4 +33,24 @@ export default function DayBar({ selectedOption}) {
       </ResponsiveContainer>
     </>
   );
+}
+
+
+
+
+const sortedDays = (days) =>{
+  const sorter = {
+    "monday": 1,
+    "tuesday": 2,
+    "wednesday": 3,
+    "thursday": 4,
+    "friday": 5,
+    "saturday": 6,
+    "sunday": 7
+  }
+  days.sort(function sortByDay(a, b) {
+    let day1 = a.DAY.toLowerCase();
+    let day2 = b.DAY.toLowerCase();
+    return sorter[day1] - sorter[day2];
+  })
 }
