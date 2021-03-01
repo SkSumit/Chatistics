@@ -42,6 +42,7 @@ def index():
             content = parsefile(file.filename)
             content = preprocess(content)
             df = dataframe(content)
+            # print(df)
             whatsapp = insights.getData()
             new_insights = whatsapp.analysis(df, fileName)
 

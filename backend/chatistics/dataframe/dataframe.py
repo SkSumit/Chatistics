@@ -6,7 +6,7 @@ import calendar
 
 def dataframe(content):
     try:
-        column_names = ["DATE","TIME","USERNAME","MESSAGE","DAY","YEAR"]
+        column_names = ["DATE","TIME","USERNAME","MESSAGE","DAY"]
         date, time, username, messages = ([] for i in range(4))
         df = pd.DataFrame(columns = column_names)
         CORPUS=list(content)
@@ -27,10 +27,9 @@ def dataframe(content):
             for i in df['DATE']:
                 date_to_extract=datetime.strptime(i, "%d-%m-%y")
                 days.append(date_to_extract.strftime("%A"))
-                years.append(date_to_extract.year)
-                month.append(calendar.month_name[date_to_extract.month])
                 newdate.append(date_to_extract.strftime("%m-%d-%y"))
-            df["DATE"]=newdate    
+            df["DATE"]=newdate
+            df['DATETIME'] = pd.to_datetime(df['DATEnew'])
         except :
             days=[]
             years=[]
@@ -38,17 +37,13 @@ def dataframe(content):
             for i in df['DATE']:
                 date_to_extract=datetime.strptime(i, "%m-%d-%y")
                 days.append(date_to_extract.strftime("%A"))
-                years.append(date_to_extract.year)
-                month.append(calendar.month_name[date_to_extract.month]) 
+            df['DATETIME'] = pd.to_datetime(df['DATE'])    
         df['DAY'] = days
-        df['YEAR']= years
-        df['MONTH']= month
         df["TIME"] = time
         df["HOURS"] = pd.to_datetime(df['TIME']).dt.hour
         df["USERNAME"] = username
         df["MESSAGE"] = messages
-        df['DATETIME'] = pd.to_datetime(df['DATE'])
         return df
     except:
-        raise Exception("Not a Whats App txt file")    
+        raise Exception("Not a Whats App txt file")     
         
