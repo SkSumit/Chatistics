@@ -3,46 +3,37 @@ import re
 from datetime import datetime
 import calendar
 
+def guessdateformat(date):
+    date1=[]
+    month=[]
+    for i in list(date):
+        temp = re.findall(r'\d+', i)
+        date1.append(int(temp[0]))
+        month.append(int(temp[1]))
+    date1 = list(set(date1))
+    month = list(set(month))
+    if month[-1] >= 13:
+        dayFirst = False
+    elif date1[-1] >= 13:
+        dayFirst = True
+    else:
+        dayFirst = True
+    return dayFirst        #low chat dates of m/d/y format will get converted to d/m/y
 
-def dataframe(content):
+def dataframe(date , time , username , messages):
     try:
-        column_names = ["DATE","TIME","USERNAME","MESSAGE","DAY"]
-        date, time, username, messages = ([] for i in range(4))
+        column_names = ["DATE","TIME","USERNAME","MESSAGE"]
         df = pd.DataFrame(columns = column_names)
-        CORPUS=list(content)
-        for i in range(len(CORPUS)):
-            date.append(re.sub('/','-',str(content[i].split(",")[0])))
-            time.append(str((content[i].split(",")[1].split("-"))[0][1:-1]))
-            username.append(str((content[i].split(",")[1].split("-")[1].split(":")[0][1:])))
-            if len(content[i].split(":")[2:]) > 1:
-                messages.append(" ".join(content[i].split(":")[2:])[1:])
-            else:
-                messages.append("^".join(content[i].split(":")[2:])[1:])  
-        df["DATE"] = date       
-        try:
-            days=[]
-            years=[]
-            month=[]
-            newdate=[]
-            for i in df['DATE']:
-                date_to_extract=datetime.strptime(i, "%d-%m-%y")
-                days.append(date_to_extract.strftime("%A"))
-                newdate.append(date_to_extract.strftime("%m-%d-%y"))
-            df["DATE"]=newdate
-            df['DATETIME'] = pd.to_datetime(df['DATEnew'])
-        except :
-            days=[]
-            years=[]
-            month=[]
-            for i in df['DATE']:
-                date_to_extract=datetime.strptime(i, "%m-%d-%y")
-                days.append(date_to_extract.strftime("%A"))
-            df['DATETIME'] = pd.to_datetime(df['DATE'])    
-        df['DAY'] = days
+        dayFirst=guessdateformat(date)
+        df['DATE'] = date
         df["TIME"] = time
-        df["HOURS"] = pd.to_datetime(df['TIME']).dt.hour
         df["USERNAME"] = username
         df["MESSAGE"] = messages
+        index_name = df[df['MESSAGE']==""].index
+        df.drop(index_name, inplace = True)
+        df['DATETIME']=pd.to_datetime(df['DATE'],dayfirst=dayFirst)
+        df['DAY'] = df['DATETIME'].dt.day_name()
+        df['HOURS'] = pd.to_datetime(df['TIME']).dt.hour
         return df
     except:
         raise Exception("Not a Whats App txt file")     

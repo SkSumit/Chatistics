@@ -162,7 +162,6 @@ class getData:
 
     def timeline(data):
         timeline = dict.my_dictionary()
-        data['DATETIME'] = pd.to_datetime(data['DATE'])
         timelineuser=data.groupby(["USERNAME","DATETIME"], as_index=False)['MESSAGE']
         timelineall=data.groupby(["DATETIME"],as_index=False)['MESSAGE']
         timelineuserdf=timelineuser.count()
