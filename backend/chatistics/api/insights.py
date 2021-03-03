@@ -142,8 +142,8 @@ class getData:
             basedonDay.add(i, [data[data['USERNAME'] == i][['DAY', 'MESSAGE']].to_dict(orient='records'), {
                            "mostActiveDay": configvars.userdata.get(i)['mostActiveDay'], "averageTexts":configvars.userdata.get(i)['totalMessages']/configvars.no_of_days,"leastActiveDay":configvars.userdata.get(i)['leastActiveDay']}])
         basedonDay.add("All", [dataall.to_dict(orient='records'), {"averageTexts": sum(dataall['MESSAGE'])/configvars.no_of_days,
-                                                                   "mostActiveDay": dataall['DAY'].iloc[0],
-                                                                   "leastActiveDay":dataall['DAY'].iloc[-1]}])
+                                                                   "mostActiveDay": dataall['DAY'][dataall['MESSAGE'].idxmax()],
+                                                                   "leastActiveDay":dataall['DAY'][dataall['MESSAGE'].idxmin()]}])
         return basedonDay
 
     def heatmap(data):
