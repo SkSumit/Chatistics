@@ -22,7 +22,7 @@ export default function Hero({analytics}) {
         WhatsApp chat analytics and insights
       </h1>
       <span className="title is-5 has-text-centered-desktop bg-light-green has-text-black my-6 px-3 py-1">
-        {analytics.visited} visitors, {analytics.uploadCount} files analysed
+       {analytics ?  `${analytics.visited} visitors, ${analytics.uploadCount} files analysed` : 'fetching analytics...'}  
       </span>
     </Section>
   );

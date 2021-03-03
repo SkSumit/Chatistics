@@ -14,7 +14,7 @@ export default function DaySection() {
   const [selectedOption, setSelectedOption] = useState({
     username: "All",
   });
-  // console.log(Object.keys(context.file.stats.basedOnDays))
+ 
   return (
     <Layout
       selectedOption={selectedOption}
