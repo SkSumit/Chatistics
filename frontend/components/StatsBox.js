@@ -12,7 +12,7 @@ export default function StatsBox({
     <div className={`tile ${bgClass} ${noBox ? " " : "box"}  is-child`}>
       <FontAwesomeIcon icon={icon} size='2x' className="has-text-black"/>
       <p className="title is-3 py-5 has-text-black" >
-        {stats}
+        {stats} 
       </p>
       <p className="subtitle is-6 has-text-black" >
         {title}

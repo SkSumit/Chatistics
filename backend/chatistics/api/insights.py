@@ -19,8 +19,8 @@ class getData:
             "totalWords": configvars.totalwords,
             "totalMedia": len(data[data['MESSAGE'] == "<Media omitted>"]),
             "totalUsers": len(data['USERNAME'].unique()),
-            "mostTexts" : data[data['MESSAGE'] != '']['USERNAME'].value_counts().idxmax(),
-            "leastTexts" : data[data['MESSAGE'] != '']['USERNAME'].value_counts().idxmin(),
+            "mostTexts": data[data['MESSAGE'] != '']['USERNAME'].value_counts().idxmax(),
+            "leastTexts": data[data['MESSAGE'] != '']['USERNAME'].value_counts().idxmin(),
         }
         return summary
 
@@ -66,7 +66,7 @@ class getData:
             'leastActiveDay':     str(A['DAY'].value_counts().idxmin()),
             'averageMessagePerDay':     len(A['MESSAGE'])/len(A['DATE'].unique()),
             'averageWordsPerMessage':     wordlen/Z,
-            #'Avg_msg_per_hour'        :     len(A['MESSAGE'])/(len(A['DATE'].unique())*24)
+            # 'Avg_msg_per_hour'        :     len(A['MESSAGE'])/(len(A['DATE'].unique())*24)
             'totalEmojis':     configvars.emojidata.get(username)['emojiStat']['totalEmojis']
 
         }
@@ -136,83 +136,99 @@ class getData:
         data = datauser.count()
         dataall = dataall.count()
         dataall.sort_values(by=['DAY', 'MESSAGE'],
-                            ascending=False, inplace=True ,ignore_index=True)
+                            ascending=False, inplace=True, ignore_index=True)
         data.sort_values(by='MESSAGE', ascending=False, inplace=True)
         for i in data['USERNAME'].unique():
             basedonDay.add(i, [data[data['USERNAME'] == i][['DAY', 'MESSAGE']].to_dict(orient='records'), {
-                           "mostActiveDay": configvars.userdata.get(i)['mostActiveDay'], "averageTexts":configvars.userdata.get(i)['totalMessages']/configvars.no_of_days,"leastActiveDay":configvars.userdata.get(i)['leastActiveDay']}])
+                           "mostActiveDay": configvars.userdata.get(i)['mostActiveDay'], "averageTexts":configvars.userdata.get(i)['totalMessages']/configvars.no_of_days, "leastActiveDay":configvars.userdata.get(i)['leastActiveDay']}])
         basedonDay.add("All", [dataall.to_dict(orient='records'), {"averageTexts": sum(dataall['MESSAGE'])/configvars.no_of_days,
-                                                                   "mostActiveDay": dataall['DAY'].iloc[0],
-                                                                   "leastActiveDay":dataall['DAY'].iloc[-1]}])
+                                                                   "mostActiveDay":dataall['DAY'][dataall['MESSAGE'].idxmax()],
+                                                                   "leastActiveDay":dataall['DAY'][dataall['MESSAGE'].idxmin()]}])
+
         return basedonDay
 
     def heatmap(data):
         heatmap = dict.my_dictionary()
-        heatmapuser=data.groupby(["USERNAME","DATE"], as_index=False)['MESSAGE']
-        heatmapall=data.groupby(["DATE"],as_index=False)['MESSAGE']
-        heatmapuser=heatmapuser.count().sort_values(by=['MESSAGE'],ascending=False)
-        heatmapuser.columns = ['USERNAME' , 'date' , 'count']
+        heatmapuser = data.groupby(
+            ["USERNAME", "DATE"], as_index=False)['MESSAGE']
+        heatmapall = data.groupby(["DATE"], as_index=False)['MESSAGE']
+        heatmapuser = heatmapuser.count().sort_values(
+            by=['MESSAGE'], ascending=False)
+        heatmapuser.columns = ['USERNAME', 'date', 'count']
         configvars.no_of_days = len(heatmapall)
-        heatmapall=heatmapall.count().sort_values(by='MESSAGE',ascending=False)
-        heatmapall.columns = ['date' , 'count']
+        heatmapall = heatmapall.count().sort_values(by='MESSAGE', ascending=False)
+        heatmapall.columns = ['date', 'count']
         for i in heatmapuser['USERNAME'].unique():
-            heatmap.add(i,heatmapuser[heatmapuser['USERNAME'] == i][['date','count']].to_dict(orient='records'))
-        heatmap.add("All",heatmapall.to_dict(orient='records'))
+            heatmap.add(i, heatmapuser[heatmapuser['USERNAME'] == i][[
+                        'date', 'count']].to_dict(orient='records'))
+        heatmap.add("All", heatmapall.to_dict(orient='records'))
         return heatmap
 
     def timeline(data):
         timeline = dict.my_dictionary()
-        timelineuser=data.groupby(["USERNAME","DATETIME"], as_index=False)['MESSAGE']
-        timelineall=data.groupby(["DATETIME"],as_index=False)['MESSAGE']
-        timelineuserdf=timelineuser.count()
-        timelinealldf=timelineall.count()
-        timelineuserdf.columns=['USERNAME','date','count']
+        timelineuser = data.groupby(
+            ["USERNAME", "DATETIME"], as_index=False)['MESSAGE']
+        timelineall = data.groupby(["DATETIME"], as_index=False)['MESSAGE']
+        timelineuserdf = timelineuser.count()
+        timelinealldf = timelineall.count()
+        timelineuserdf.columns = ['USERNAME', 'date', 'count']
         configvars.no_of_days = len(timelineall)
-        timelinealldf.columns=['date','count']
+        timelinealldf.columns = ['date', 'count']
         for i in timelineuserdf['USERNAME'].unique():
-            Timeline_stats = {"timelineStat": {"mostActiveDate": configvars.userdata.get(i)['mostActiveDate'] , "value":str(data[data['USERNAME']==i]['DATE'].value_counts()[0])}}
-            Timeline_data={"timelineUsage":timelineuserdf[timelineuserdf['USERNAME'] == i][['date','count']].to_dict(orient='records')}
+            Timeline_stats = {"timelineStat": {"mostActiveDate": configvars.userdata.get(
+                i)['mostActiveDate'], "value": str(data[data['USERNAME'] == i]['DATE'].value_counts()[0])}}
+            Timeline_data = {"timelineUsage": timelineuserdf[timelineuserdf['USERNAME'] == i][[
+                'date', 'count']].to_dict(orient='records')}
             Timeline_stats.update(Timeline_data)
-            timeline.add(i , Timeline_stats)
-        Timeline_statsall = {"timelineStat": {"mostActiveDate" : data['DATE'].value_counts().idxmax() , "value":str(data['DATE'].value_counts()[0])}}    
-        Timeline_dataall = {"timelineUsage":timelinealldf.to_dict(orient='records')}
+            timeline.add(i, Timeline_stats)
+        Timeline_statsall = {"timelineStat": {"mostActiveDate": data['DATE'].value_counts(
+        ).idxmax(), "value": str(data['DATE'].value_counts()[0])}}
+        Timeline_dataall = {
+            "timelineUsage": timelinealldf.to_dict(orient='records')}
         Timeline_statsall.update(Timeline_dataall)
-        timeline.add("All",Timeline_statsall)  
-         
+        timeline.add("All", Timeline_statsall)
+
         return timeline
 
     def radarmap(data):
-        radarmap = dict.my_dictionary()        
-        radarmapuser=data.groupby(["USERNAME","HOURS"],as_index=False)['MESSAGE']
-        radarmapall=data.groupby(["HOURS"],as_index=False)['MESSAGE']
-        radarmapuserdf=radarmapuser.count()
-        radarmapalldf=radarmapall.count()
-        radarmapuserdf.columns=['USERNAME','time','count']
-        radarmapalldf.columns=['time','count']
+        radarmap = dict.my_dictionary()
+        radarmapuser = data.groupby(
+            ["USERNAME", "HOURS"], as_index=False)['MESSAGE']
+        radarmapall = data.groupby(["HOURS"], as_index=False)['MESSAGE']
+        radarmapuserdf = radarmapuser.count()
+        radarmapalldf = radarmapall.count()
+        radarmapuserdf.columns = ['USERNAME', 'time', 'count']
+        radarmapalldf.columns = ['time', 'count']
         for i in radarmapuserdf['USERNAME'].unique():
-            user=radarmapuserdf[radarmapuserdf['USERNAME'] == i][['time','count']]
-            Radarmap_stats = {"radarmapStat": {"mostActiveHour": str(user.sort_values("count").iloc[-1]['time']) , "leastActiveHour":str(user.sort_values("count").iloc[0]['time']) , "averageTextsPerHour":sum(user['count'])/(configvars.no_of_days * 24)}}
-            lefthours=list(set([*range(0, 23, 1)]) - set(list(radarmapuserdf[radarmapuserdf['USERNAME']==i]['time'])))
+            user = radarmapuserdf[radarmapuserdf['USERNAME']
+                                  == i][['time', 'count']]
+            Radarmap_stats = {"radarmapStat": {"mostActiveHour": str(user.sort_values("count").iloc[-1]['time']), "leastActiveHour": str(
+                user.sort_values("count").iloc[0]['time']), "averageTextsPerHour": sum(user['count'])/(configvars.no_of_days * 24)}}
+            lefthours = list(set(
+                [*range(0, 23, 1)]) - set(list(radarmapuserdf[radarmapuserdf['USERNAME'] == i]['time'])))
             if lefthours:
                 d = {'time': lefthours}
                 df = pd.DataFrame(data=d)
-                df['count']=0
-                user=user.append(df).sort_values("time",ignore_index=True)
-            Radarmap_Usage = {"radarmapUsage":user.to_dict(orient="records")}
+                df['count'] = 0
+                user = user.append(df).sort_values("time", ignore_index=True)
+            Radarmap_Usage = {"radarmapUsage": user.to_dict(orient="records")}
             Radarmap_Usage.update(Radarmap_stats)
-            radarmap.add(i , Radarmap_Usage)
-        lefthoursall=list(set([*range(0, 23, 1)]) - set(list(radarmapalldf['time'])))
+            radarmap.add(i, Radarmap_Usage)
+        lefthoursall = list(set([*range(0, 23, 1)]) -
+                            set(list(radarmapalldf['time'])))
         if lefthoursall:
             d = {'time': lefthoursall}
             df = pd.DataFrame(data=d)
-            df['count']=0
-            radarmapalldf=radarmapalldf.append(df).sort_values("time",ignore_index=True)
-        Radarmap_statsall = {"radarmapStat": {"mostActiveHour": str(radarmapalldf.sort_values("count").iloc[-1]['time']) , "leastActiveHour": str(radarmapalldf.sort_values("count").iloc[0]['time']), "averageTextsPerHour":sum(radarmapalldf['count'])/(configvars.no_of_days * 24)}}    
-        Radarmap_Usageall = {"radarmapUsage":radarmapalldf.to_dict(orient="records")}
+            df['count'] = 0
+            radarmapalldf = radarmapalldf.append(
+                df).sort_values("time", ignore_index=True)
+        Radarmap_statsall = {"radarmapStat": {"mostActiveHour": str(radarmapalldf.sort_values("count").iloc[-1]['time']), "leastActiveHour": str(
+            radarmapalldf.sort_values("count").iloc[0]['time']), "averageTextsPerHour": sum(radarmapalldf['count'])/(configvars.no_of_days * 24)}}
+        Radarmap_Usageall = {
+            "radarmapUsage": radarmapalldf.to_dict(orient="records")}
         Radarmap_Usageall.update(Radarmap_statsall)
-        radarmap.add("All",Radarmap_Usageall)
-        return radarmap    
-
+        radarmap.add("All", Radarmap_Usageall)
+        return radarmap
 
     def analysis(self, data, filename):
         configvars.totalwords = 0
@@ -228,14 +244,14 @@ class getData:
             "stats": {
                 "emoji": configvars.emojidata,
                 "wordcloud": configvars.worddata,
-                "timeline":getData.timeline(data),
-                "radarMap":getData.radarmap(data),
+                "timeline": getData.timeline(data),
+                "radarMap": getData.radarmap(data),
                 "summary": getData.summary(data),
                 "basedOnDays": getData.basedonday(data),
                 "userspecific": configvars.userdata,
             },
-            "usernames" : getData.usernameonlydict(data),
-            "filename" : filename[19:-4],
-            "example":False
+            "usernames": getData.usernameonlydict(data),
+            "filename": filename[19:-4],
+            "example": False
         }
         return analysis

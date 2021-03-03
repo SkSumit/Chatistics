@@ -34,32 +34,47 @@ export default function WordcloudSection() {
       }
       rightColumn={false}
       graph={
-        <ReactWordcloud
-          words={
-            context.file.stats.wordcloud[selectedOption.username] == null ? "No Words" : context.file.stats.wordcloud[selectedOption.username]["wordUsage"]
-          }
-          options={options}
-        />
+        context.file.stats.wordcloud[selectedOption.username] == null ? (
+          <h1 className="subtitle is-3 has-text-centered">
+          Woops! This user has no words!
+        </h1>
+        ) : (
+          <ReactWordcloud
+            words={
+              context.file.stats.wordcloud[selectedOption.username]["wordUsage"]
+            }
+            options={options}
+          />
+        )
       }
       rightColumnContent={
         <>
           <StatsBox
             title={"Most Used Word"}
             stats={
-              context.file.stats.wordcloud[selectedOption.username]["wordStat"]
-                .mostUsedWord
+              context.file.stats.wordcloud[selectedOption.username] == null
+                ? "No Stats"
+                : context.file.stats.wordcloud[selectedOption.username][
+                    "wordStat"
+                  ].mostUsedWord
             }
             icon={faCommentDots}
           />
           <StatsBox
             title={"Least Used Word"}
-            stats={"a"}
+            stats={
+              context.file.stats.wordcloud[selectedOption.username] == null
+                ? "No Stats"
+                : context.file.stats.wordcloud[selectedOption.username][
+                    "wordStat"
+                  ].leastUsedWord
+            }
             icon={faCommentSlash}
           />
           <StatsBox
             title={"Average No of Emoji Per Text"}
             stats={2.6}
-            icon={ faIcons}
+            icon={faIcons}
           />
         </>
       }

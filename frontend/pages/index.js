@@ -16,20 +16,25 @@ import SpecificUserSection from "../components/sections/SpecificUserSection";
 import ErrorModal from "../components/modals/ErrorModal";
 import Footer from "../components/sections/Footer";
 import { Navbar } from "../components/Navbar";
+import { KnowMore } from "../components/KnowMore";
 
 export const FileContext = createContext(null);
 
-export default function Home({ data, analytics }) {
+export default function Home({ data }) {
   const [file, setFile] = useState(data);
+  const [analytics, setAnalytics] = useState(null);
   const [loader, setLoader] = useState(false);
   const [initLoader, setInitLoader] = useState(true);
   const [axiosError, setAxiosError] = useState(null);
   const [showDownloadBtn, setShowDownloadBtn] = useState(false);
+  
   if (process.env.NODE_ENV === "production") {
     incVisitorCount();
   }
   useEffect(() => {
-    setInitLoader(false);
+    getAnalytics()
+      .then((data) => setAnalytics(data))
+      .then(setInitLoader(false));
   }, []);
 
   if (initLoader) {
@@ -39,7 +44,7 @@ export default function Home({ data, analytics }) {
   if (loader) {
     return <LoaderAnalysis />;
   }
- 
+
   return (
     <div id="root">
       <Head>
@@ -100,6 +105,7 @@ export default function Home({ data, analytics }) {
         showDownloadBtn={showDownloadBtn}
         setShowDownloadBtn={setShowDownloadBtn}
       />
+      <KnowMore showDownloadBtn={showDownloadBtn} />
       <FileContext.Provider value={{ file }}>
         <Summary />
         <TimelineSection />
@@ -119,7 +125,7 @@ export default function Home({ data, analytics }) {
 
 export async function getStaticProps(context) {
   const data = await getDefaultStats();
-  const analytics = await getAnalytics();
+
   if (!data || data.isAxiosError) {
     return {
       notFound: true,
@@ -128,7 +134,6 @@ export async function getStaticProps(context) {
   return {
     props: {
       data: data.data,
-      analytics: analytics,
     },
   };
 }
