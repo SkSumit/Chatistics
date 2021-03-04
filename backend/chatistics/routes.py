@@ -20,9 +20,7 @@ main = Blueprint('main', __name__)
 
 @main.route('/', methods=['GET'])
 def hello():
-    return "Not Logged In"
-
-# Testing Route
+    return 'What ya doing here???  <a href="http://chatistics.vercel.app">Head over to</a>'
 
 
 @main.route('/api/v1/insights', methods=['POST'])

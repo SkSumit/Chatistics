@@ -6,7 +6,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 export default function DownloadBtn({ filename }) {
   const [loading, setLoading] = useState(false);
 
-  const download = async ({ filename }) => {
+  const download = async ( filename ) => {
     setLoading(true);
 
     var element = document.getElementById("root");
@@ -39,7 +39,7 @@ export default function DownloadBtn({ filename }) {
       <div className="hero-body">
         <div className="container is-flex is-justify-content-center">
           <button
-            onClick={() => download()}
+            onClick={() => download(filename)}
             className={`button is-primary is-large  ${
               loading ? "is-loading" : ""
             } `}
