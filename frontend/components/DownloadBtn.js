@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import html2pdf from "html2pdf.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
-export default function DownloadBtn() {
-  const [loading, setLoading] = useState(false);
 
-  const download = async () => {
+export default function DownloadBtn({filename}) {
+  const [loading, setLoading] = useState(false);
+  const context = useContext(FileContext);
+
+  const download = async ({filename}) => {
     setLoading(true);
 
     var element = document.getElementById('root');
@@ -30,7 +32,7 @@ export default function DownloadBtn() {
       };
       return opt;
     };
-    await html2pdf().from(element).set(getOptions("filename", element)).save();
+    await html2pdf().from(element).set(getOptions(`Chatistics with ${filename}`, element)).save();
     setLoading(false);
   };
  
