@@ -1,5 +1,4 @@
 from chatistics.files.upload import parsefile
-from chatistics.dataframe.token import corpus
 from chatistics.dataframe.dataframe import dataframe
 from chatistics.dataframe.preprocessing import preprocess
 from chatistics.api import insights

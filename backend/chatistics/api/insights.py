@@ -19,20 +19,21 @@ class getData:
             "totalWords": configvars.totalwords,
             "totalMedia": len(data[data['MESSAGE'] == "<Media omitted>"]),
             "totalUsers": len(data['USERNAME'].unique()),
-            "mostTexts": data[data['MESSAGE'] != '']['USERNAME'].value_counts().idxmax(),
-            "leastTexts": data[data['MESSAGE'] != '']['USERNAME'].value_counts().idxmin(),
+            "mostTexts" : data[data['MESSAGE'] != '']['USERNAME'].value_counts().idxmax(),
+            "leastTexts" : data[data['MESSAGE'] != '']['USERNAME'].value_counts().idxmin(),
+            "noOfLinks" : len(data[data['MESSAGE'].str.contains("https://")])
         }
         return summary
 
     def emojiall(data, name):
         emojidict = dict.my_dictionary()
         emoji_list = []
-        for data in data['MESSAGE']:
-            for word in data:
+        for data1 in data['MESSAGE']:
+            for word in data1:
                 if word in emoji.UNICODE_EMOJI:  # emoji search
                     emoji_list.append(word)
         Emoji_stats = {"emojiStat": {'totalUniqueEmojis': len(
-            Counter(emoji_list).most_common()), 'totalEmojis': len(emoji_list)}}
+            Counter(emoji_list).most_common()), 'totalEmojis': len(emoji_list) , "emojiPerText": len(emoji_list)/len(data)}}
         Emoji_data = {"emojiUsage": pd.DataFrame((Counter(emoji_list).most_common()[
                                                   :20]), columns=['emoji', 'value']).to_dict(orient='records')}
         Emoji_stats.update(Emoji_data)
@@ -142,9 +143,8 @@ class getData:
             basedonDay.add(i, [data[data['USERNAME'] == i][['DAY', 'MESSAGE']].to_dict(orient='records'), {
                            "mostActiveDay": configvars.userdata.get(i)['mostActiveDay'], "averageTexts":configvars.userdata.get(i)['totalMessages']/configvars.no_of_days, "leastActiveDay":configvars.userdata.get(i)['leastActiveDay']}])
         basedonDay.add("All", [dataall.to_dict(orient='records'), {"averageTexts": sum(dataall['MESSAGE'])/configvars.no_of_days,
-                                                                   "mostActiveDay":dataall['DAY'][dataall['MESSAGE'].idxmax()],
+                                                                   "mostActiveDay": dataall['DAY'][dataall['MESSAGE'].idxmax()],
                                                                    "leastActiveDay":dataall['DAY'][dataall['MESSAGE'].idxmin()]}])
-
         return basedonDay
 
     def heatmap(data):
