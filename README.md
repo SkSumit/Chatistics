@@ -4,7 +4,7 @@ A WhatsApp Chat analyzer and statistics.
 ![GitHub contributors](https://img.shields.io/github/contributors/SkSumit/Chatistics?style=flat-square)
 ![GitHub forks](https://img.shields.io/github/forks/SkSumit/Chatistics?style=flat-square)
 ![GitHub Repo stars](https://img.shields.io/github/stars/SkSumit/Chatistics?style=flat-square)
-![Packagist License](https://img.shields.io/packagist/l/SkSumit/Chatistics?style=flat-square)
+![Packagist License](https://img.shields.io/github/license/SkSumit/Chatistics?style=flat-square)
 
 
 
