@@ -4,7 +4,6 @@ from chatistics.dataframe.preprocessing import preprocess
 from chatistics.api import insights
 from chatistics.dummy.dummyapi import dummyapi
 from chatistics.error.error import error
-from chatistics.auth.auth import check_for_token
 from chatistics.firebase.firebase import db
 
 
