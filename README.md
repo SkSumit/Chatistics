@@ -130,7 +130,7 @@ yarn install
   ```
 
 <!-- USAGE EXAMPLES -->
-## Running
+## 🐎 Running
 
 Backend would be running on PORT 5000
 
@@ -153,14 +153,14 @@ yarn run dev
 
 
 <!-- ROADMAP -->
-## Roadmap
+## 🚧 Roadmap
 
 See the [open issues](https://github.com/SkSumit/Chatistics/issues) for a list of proposed features (and known issues).
 
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+## 🔧 Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -173,14 +173,14 @@ Contributions are what make the open source community such an amazing place to b
 
 
 <!-- LICENSE -->
-## License
+## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
 <!-- CONTACT -->
-## Contact
+## 🤙 Contact
 
 Atharva Kulkarni - [@LinkedIn](https://www.linkedin.com/in/atharva-kulkarni-b119b7195/) - mailmenehakulkarni@gmail.com
 
