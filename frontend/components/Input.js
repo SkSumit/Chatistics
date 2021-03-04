@@ -16,9 +16,10 @@ export default function Input({
   setFile,
   showDownloadBtn,
   setShowDownloadBtn,
+  file
 }) {
   const [uploadFile, setUploadFile] = useState(null);
-  
+
   const [error, setError] = useState({
     fileError: { error: false, message: "" },
     axiosError: { error: false, message: "" },
@@ -68,7 +69,7 @@ export default function Input({
   return (
     <Section containerVariant={"bg-white mt-100 pb-4"}>
       {showDownloadBtn ? (
-        <DownloadBtn />
+        <DownloadBtn filename={file.filename} />
       ) : (
         <>
           <div className="field is-horizontal is-justify-content-center mt-3">

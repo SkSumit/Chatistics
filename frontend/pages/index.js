@@ -99,6 +99,7 @@ export default function Home({ data }) {
       <Navbar />
       <Hero analytics={analytics} />
       <Input
+      file ={file}
         setFile={setFile}
         setLoader={setLoader}
         setAxiosError={setAxiosError}

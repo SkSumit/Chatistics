@@ -1,11 +1,9 @@
 from chatistics.files.upload import parsefile
-from chatistics.dataframe.token import corpus
 from chatistics.dataframe.dataframe import dataframe
 from chatistics.dataframe.preprocessing import preprocess
 from chatistics.api import insights
 from chatistics.dummy.dummyapi import dummyapi
 from chatistics.error.error import error
-from chatistics.auth.auth import check_for_token
 from chatistics.firebase.firebase import db
 
 
@@ -21,9 +19,7 @@ main = Blueprint('main', __name__)
 
 @main.route('/', methods=['GET'])
 def hello():
-    return "Not Logged In"
-
-# Testing Route
+    return 'What ya doing here???  <a href="http://chatistics.vercel.app">Head over to</a>'
 
 
 @main.route('/api/v1/insights', methods=['POST'])
