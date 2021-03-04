@@ -199,7 +199,7 @@ Project Link: [Chatistics](https://github.com/SkSumit/Chatistics/tree/main)
 * [Vercel](https://vercel.com/)
 * [Heroku](https://heroku.com/)
 * [Bulma](http://bulma.io/)
-* [Recharts]http://recharts.org/)
+* [Recharts](http://recharts.org/)
 * [Font Awesome](https://fontawesome.com)
 
 
