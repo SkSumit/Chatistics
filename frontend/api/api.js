@@ -6,7 +6,7 @@ const url =
 
 export const postFile = async (formData) => {
   try {
-    const result = await axios.post(url + "/testing", formData);
+    const result = await axios.post(url + "/api/v1/insights", formData);
     console.log(result)
     return result;
   } catch (error) {
