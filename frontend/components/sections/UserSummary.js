@@ -7,10 +7,12 @@ import {
   faMedal,
   faPoo,
   faFireAlt,
+  faLink
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function UserSummary() {
   const context = useContext(FileContext);
+  console.log(context)
   return (
     <Section containerVariant={"bg-light-green"}>
       <h1 className="subtitle is-3 ">
@@ -32,9 +34,9 @@ export default function UserSummary() {
         </div>
         <div className="tile is-parent">
           <StatsBox
-            title={"STATS TBD"}
-            stats={"STATS TBD"}
-            icon={faFireAlt}
+            title={"Total Links Sent"}
+            stats={context.file.stats.summary.noOfLinks}
+            icon={  faLink}
           />
         </div>
       </div>
