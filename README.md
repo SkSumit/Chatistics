@@ -66,9 +66,8 @@ A WhatsApp Chat analyzer and statistics.
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![product-screenshot]](https://chatistics.vercel.app/)
+![product-gif](/images/Chatistics.gif)
 
-[![product-screenshot1]](https://chatistics.vercel.app/)
 
 #### Chatistics is an open source WhatsApp chat analyzer, which provides fun and meaningful insights. We respect privacy and do not store the chats, we only store filenames for our analytics.
 
@@ -202,8 +201,3 @@ Project Link: [Chatistics](https://github.com/SkSumit/Chatistics/tree/main)
 * [Recharts](http://recharts.org/)
 * [Font Awesome](https://fontawesome.com)
 
-
-
-
-[product-screenshot]: images/primarypage.png
-[product-screenshot1]: images/wordcloud.png
