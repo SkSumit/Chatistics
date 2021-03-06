@@ -47,7 +47,7 @@ def index():
           
             whatsapp = insights.getData()
             new_insights = whatsapp.analysis(df, fileName)
-
+            db.child("Success").push(fileName)
             return jsonify(new_insights)
         except Exception as e:
             os.remove(file.filename)
