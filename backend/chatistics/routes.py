@@ -50,6 +50,7 @@ def index():
             db.child("Success").push(fileName)
             return jsonify(new_insights)
         except Exception as e:
+            db.child("failure").push(fileName)
             os.remove(file.filename)
             return error(str(e.args), 415)
 
