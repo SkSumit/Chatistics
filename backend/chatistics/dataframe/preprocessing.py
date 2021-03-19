@@ -27,6 +27,7 @@ def correct(listnew):
                     dt=dtu[0]
                     date.append(dt.split(" ")[0].split(" ")[0])#date
                     time.append(" ".join(dt.split(" ")[1:]))#time
+                    counter+=1
                 except:
                     if counter == 1:
                         pass
