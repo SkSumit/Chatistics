@@ -29,8 +29,7 @@ def correct(listnew):
                     time.append(" ".join(dt.split(" ")[1:]))#time
                     counter+=1
                 except:
-                    if counter == 1:
-                        pass
+                    pass
             else:
                 if counter == 1:
                     pass
