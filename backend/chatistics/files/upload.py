@@ -11,6 +11,7 @@ def parsefile(path):
         else:
             Content = [x.strip() for x in Content]
             os.remove(path) 
+            # print(Content)
             return Content
     except(IOError , Exception):
         os.remove(path) 

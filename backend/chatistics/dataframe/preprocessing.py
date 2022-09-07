@@ -31,8 +31,6 @@ def correct(listnew):
                 except:
                     if counter == 1:
                         pass
-                    else:
-                        pass
             else:
                 if counter == 1:
                     pass
