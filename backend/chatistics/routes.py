@@ -38,7 +38,7 @@ def index():
 
             # Inc upload count in firebase db
             uploadCount = db.child("uploads").get()
-            db.child("uploads").set(uploadCount.val() + 1)
+            db.child("uploads").set(uploadCount.val())
             db.child("filenames").push(fileName)
 
             content = parsefile(file.filename)
