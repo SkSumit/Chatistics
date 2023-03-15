@@ -73,7 +73,7 @@ export default function WordcloudSection() {
           />
           <StatsBox
             title={"Average No of Emoji Per Text"}
-            stats={2.6}
+            stats={context.file.stats.emoji[selectedOption.username].emojiStat.emojiPerText.toFixed(2)}
             icon={faIcons}
           />
         </>

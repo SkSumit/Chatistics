@@ -7,10 +7,10 @@ const url =
 export const postFile = async (formData) => {
   try {
     const result = await axios.post(url + "/api/v1/insights", formData);
-    console.log(result)
+    // console.log(result)
     return result;
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     throw error;
   }
 };
@@ -20,7 +20,7 @@ export const getDefaultStats = async () => {
     const result = await axios.get(url + "/api/v1/dummy");
     return result;
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     return error;
   }
 };
@@ -33,7 +33,7 @@ export const postPolls = async (user) => {
     
     return result.data;
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     return error;
   }
 };
@@ -43,7 +43,7 @@ export const incVisitorCount = async () => {
     const result = await axios.post(url + "/api/v1/analytics/visited");
     return result.data;
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     return error;
   }
 };
@@ -53,7 +53,7 @@ export const getAnalytics = async () => {
     const result = await axios.get(url + "/api/v1/analytics");
     return result.data;
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     return error;
   }
 }

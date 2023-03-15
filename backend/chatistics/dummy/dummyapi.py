@@ -25,7 +25,7 @@ def dummyapi():
                     },
                     {
                         "DAY": "Saturday",
-                        "MESSAGE": 6579
+                        "MESSAGE": 6578
                     },
                     {
                         "DAY": "Monday",
@@ -37,9 +37,9 @@ def dummyapi():
                     }
                 ],
                 {
-                    "averageTexts": 464.5348837209302,
-                    "leastActiveDay": "Friday",
-                    "mostActiveDay": "Wednesday"
+                    "averageTexts": 464.5232558139535,
+                    "leastActiveDay": "Sunday",
+                    "mostActiveDay": "Thursday"
                 }
             ],
             "Kulkarni New": [
@@ -50,7 +50,7 @@ def dummyapi():
                     },
                     {
                         "DAY": "Saturday",
-                        "MESSAGE": 2640
+                        "MESSAGE": 2639
                     },
                     {
                         "DAY": "Wednesday",
@@ -74,7 +74,7 @@ def dummyapi():
                     }
                 ],
                 {
-                    "averageTexts": 174.72093023255815,
+                    "averageTexts": 174.7093023255814,
                     "leastActiveDay": "Sunday",
                     "mostActiveDay": "Thursday"
                 }
@@ -157,49 +157,46 @@ def dummyapi():
         "emoji": {
             "All": {
                 "emojiStat": {
-                    "totalEmojis": 4560,
-                    "totalUniqueEmojis": 391
+                    "emojiPerText": 0.1058099076322311,
+                    "totalEmojis": 4227,
+                    "totalUniqueEmojis": 371
                 },
                 "emojiUsage": [
                     {
                         "emoji": "😭",
-                        "value": 484
+                        "value": 478
                     },
                     {
                         "emoji": "😳",
-                        "value": 378
+                        "value": 368
                     },
                     {
                         "emoji": "😂",
-                        "value": 332
+                        "value": 311
                     },
                     {
                         "emoji": "👀",
-                        "value": 189
+                        "value": 188
                     },
                     {
                         "emoji": "😜",
-                        "value": 187
+                        "value": 177
                     },
                     {
                         "emoji": "🤣",
-                        "value": 174
+                        "value": 173
                     },
                     {
                         "emoji": "🌚",
                         "value": 76
                     },
                     {
-                        "emoji": "➖",
-                        "value": 74
-                    },
-                    {
                         "emoji": "🥳",
-                        "value": 71
+                        "value": 70
                     },
                     {
                         "emoji": "🥺",
-                        "value": 65
+                        "value": 62
                     },
                     {
                         "emoji": "😤",
@@ -208,10 +205,6 @@ def dummyapi():
                     {
                         "emoji": "🤮",
                         "value": 50
-                    },
-                    {
-                        "emoji": "❤",
-                        "value": 47
                     },
                     {
                         "emoji": "🤤",
@@ -226,6 +219,10 @@ def dummyapi():
                         "value": 45
                     },
                     {
+                        "emoji": "❤",
+                        "value": 44
+                    },
+                    {
                         "emoji": "🥵",
                         "value": 43
                     },
@@ -234,28 +231,33 @@ def dummyapi():
                         "value": 42
                     },
                     {
-                        "emoji": "🇮",
-                        "value": 42
+                        "emoji": "😔",
+                        "value": 37
                     },
                     {
-                        "emoji": "🇳",
-                        "value": 38
+                        "emoji": "🙏",
+                        "value": 36
+                    },
+                    {
+                        "emoji": "😩",
+                        "value": 36
                     }
                 ]
             },
             "Kulkarni New": {
                 "emojiStat": {
-                    "totalEmojis": 1831,
-                    "totalUniqueEmojis": 128
+                    "emojiPerText": 0.11327787021630616,
+                    "totalEmojis": 1702,
+                    "totalUniqueEmojis": 123
                 },
                 "emojiUsage": [
                     {
                         "emoji": "😂",
-                        "value": 275
+                        "value": 254
                     },
                     {
                         "emoji": "😜",
-                        "value": 183
+                        "value": 173
                     },
                     {
                         "emoji": "😭",
@@ -263,7 +265,7 @@ def dummyapi():
                     },
                     {
                         "emoji": "🤣",
-                        "value": 96
+                        "value": 95
                     },
                     {
                         "emoji": "🥳",
@@ -280,14 +282,6 @@ def dummyapi():
                     {
                         "emoji": "🤤",
                         "value": 42
-                    },
-                    {
-                        "emoji": "🇮",
-                        "value": 38
-                    },
-                    {
-                        "emoji": "🇳",
-                        "value": 38
                     },
                     {
                         "emoji": "😢",
@@ -322,32 +316,41 @@ def dummyapi():
                         "value": 26
                     },
                     {
-                        "emoji": "💀",
-                        "value": 25
+                        "emoji": "🤐",
+                        "value": 24
+                    },
+                    {
+                        "emoji": "🤑",
+                        "value": 24
                     },
                     {
                         "emoji": "😘",
-                        "value": 24
+                        "value": 23
+                    },
+                    {
+                        "emoji": "💀",
+                        "value": 20
                     }
                 ]
             },
             "Sumit Skn": {
                 "emojiStat": {
-                    "totalEmojis": 2162,
-                    "totalUniqueEmojis": 302
+                    "emojiPerText": 0.1430605464777273,
+                    "totalEmojis": 2110,
+                    "totalUniqueEmojis": 292
                 },
                 "emojiUsage": [
                     {
                         "emoji": "😳",
-                        "value": 328
+                        "value": 318
                     },
                     {
                         "emoji": "😭",
-                        "value": 223
+                        "value": 217
                     },
                     {
                         "emoji": "👀",
-                        "value": 118
+                        "value": 117
                     },
                     {
                         "emoji": "🌚",
@@ -379,7 +382,7 @@ def dummyapi():
                     },
                     {
                         "emoji": "❤",
-                        "value": 24
+                        "value": 23
                     },
                     {
                         "emoji": "😩",
@@ -406,32 +409,29 @@ def dummyapi():
                         "value": 20
                     },
                     {
-                        "emoji": "🥺",
-                        "value": 19
-                    },
-                    {
                         "emoji": "🇨",
                         "value": 18
                     },
                     {
                         "emoji": "👌",
-                        "value": 17
+                        "value": 16
+                    },
+                    {
+                        "emoji": "🥺",
+                        "value": 16
                     }
                 ]
             },
             "yashdev.py ヤシュ・デワンガン": {
                 "emojiStat": {
-                    "totalEmojis": 567,
-                    "totalUniqueEmojis": 58
+                    "emojiPerText": 0.04078624078624079,
+                    "totalEmojis": 415,
+                    "totalUniqueEmojis": 44
                 },
                 "emojiUsage": [
                     {
                         "emoji": "😭",
                         "value": 156
-                    },
-                    {
-                        "emoji": "➖",
-                        "value": 74
                     },
                     {
                         "emoji": "🤣",
@@ -442,32 +442,20 @@ def dummyapi():
                         "value": 43
                     },
                     {
-                        "emoji": "📢",
-                        "value": 28
-                    },
-                    {
-                        "emoji": "👇",
-                        "value": 24
-                    },
-                    {
                         "emoji": "🤪",
                         "value": 24
+                    },
+                    {
+                        "emoji": "📢",
+                        "value": 20
                     },
                     {
                         "emoji": "💓",
                         "value": 16
                     },
                     {
-                        "emoji": "❗",
-                        "value": 15
-                    },
-                    {
                         "emoji": "🤮",
                         "value": 13
-                    },
-                    {
-                        "emoji": "▪",
-                        "value": 11
                     },
                     {
                         "emoji": "🥵",
@@ -476,10 +464,6 @@ def dummyapi():
                     {
                         "emoji": "🎃",
                         "value": 9
-                    },
-                    {
-                        "emoji": "✅",
-                        "value": 6
                     },
                     {
                         "emoji": "😢",
@@ -504,6 +488,26 @@ def dummyapi():
                     {
                         "emoji": "🙂",
                         "value": 3
+                    },
+                    {
+                        "emoji": "🙄",
+                        "value": 3
+                    },
+                    {
+                        "emoji": "⚡",
+                        "value": 2
+                    },
+                    {
+                        "emoji": "🤗",
+                        "value": 2
+                    },
+                    {
+                        "emoji": "😄",
+                        "value": 2
+                    },
+                    {
+                        "emoji": "🤨",
+                        "value": 2
                     }
                 ]
             }
@@ -511,7 +515,7 @@ def dummyapi():
         "radarMap": {
             "All": {
                 "radarmapStat": {
-                    "averageTextsPerHour": 19.35562015503876,
+                    "averageTextsPerHour": 19.35513565891473,
                     "leastActiveHour": "3",
                     "mostActiveHour": "13"
                 },
@@ -573,11 +577,11 @@ def dummyapi():
                         "time": 13
                     },
                     {
-                        "count": 3304,
+                        "count": 3303,
                         "time": 14
                     },
                     {
-                        "count": 1653,
+                        "count": 1654,
                         "time": 15
                     },
                     {
@@ -585,7 +589,7 @@ def dummyapi():
                         "time": 16
                     },
                     {
-                        "count": 2474,
+                        "count": 2473,
                         "time": 17
                     },
                     {
@@ -616,7 +620,7 @@ def dummyapi():
             },
             "Kulkarni New": {
                 "radarmapStat": {
-                    "averageTextsPerHour": 7.280038759689923,
+                    "averageTextsPerHour": 7.279554263565892,
                     "leastActiveHour": "4",
                     "mostActiveHour": "13"
                 },
@@ -690,7 +694,7 @@ def dummyapi():
                         "time": 16
                     },
                     {
-                        "count": 868,
+                        "count": 867,
                         "time": 17
                     },
                     {
@@ -783,11 +787,11 @@ def dummyapi():
                         "time": 13
                     },
                     {
-                        "count": 1294,
+                        "count": 1293,
                         "time": 14
                     },
                     {
-                        "count": 646,
+                        "count": 647,
                         "time": 15
                     },
                     {
@@ -933,21 +937,22 @@ def dummyapi():
         "summary": {
             "leastTexts": "yashdev.py ヤシュ・デワンガン",
             "mostTexts": "Kulkarni New",
+            "noOfLinks": 481,
             "totalDays": 86,
             "totalMedia": 4158,
-            "totalMessageExchanged": 39950,
+            "totalMessageExchanged": 39949,
             "totalUsers": 3,
-            "totalWords": 144731
+            "totalWords": 120502
         },
         "timeline": {
             "All": {
                 "timelineStat": {
-                    "value": "1488",
-                    "mostActiveDate": "11-19-20"
+                    "mostActiveDate": "11/19/20",
+                    "value": "1488"
                 },
                 "timelineUsage": [
                     {
-                        "count": 153,
+                        "count": 152,
                         "date": "Sat, 17 Oct 2020 00:00:00 GMT"
                     },
                     {
@@ -1294,12 +1299,12 @@ def dummyapi():
             },
             "Kulkarni New": {
                 "timelineStat": {
-                    "value": "439",
-                    "mostActiveDate": "12-4-20"
+                    "mostActiveDate": "12/4/20",
+                    "value": "439"
                 },
                 "timelineUsage": [
                     {
-                        "count": 68,
+                        "count": 67,
                         "date": "Sat, 17 Oct 2020 00:00:00 GMT"
                     },
                     {
@@ -1646,8 +1651,8 @@ def dummyapi():
             },
             "Sumit Skn": {
                 "timelineStat": {
-                    "value": "557",
-                    "mostActiveDate": "11-19-20"
+                    "mostActiveDate": "11/19/20",
+                    "value": "557"
                 },
                 "timelineUsage": [
                     {
@@ -1998,8 +2003,8 @@ def dummyapi():
             },
             "yashdev.py ヤシュ・デワンガン": {
                 "timelineStat": {
-                    "value": "497",
-                    "mostActiveDate": "11-19-20"
+                    "mostActiveDate": "11/19/20",
+                    "value": "497"
                 },
                 "timelineUsage": [
                     {
@@ -2351,46 +2356,46 @@ def dummyapi():
         },
         "userspecific": {
             "Kulkarni New": {
-                "averageMessagePerDay": 174.72093023255815,
-                "averageWordsPerMessage": 4.18734194063623,
-                "leastActiveDate": "1-10-21",
+                "averageMessagePerDay": 174.7093023255814,
+                "averageWordsPerMessage": 2.9528785357737104,
+                "leastActiveDate": "1/10/21",
                 "leastActiveDay": "Sunday",
-                "mostActiveDate": "12-4-20",
+                "mostActiveDate": "12/4/20",
                 "mostActiveDay": "Thursday",
                 "totalDays": 86,
-                "totalEmojis": 1831,
-                "totalLinks": 238,
+                "totalEmojis": 1702,
+                "totalLinks": 226,
                 "totalMedia": 2211,
-                "totalMessages": 15026,
-                "totalWords": 62919
+                "totalMessages": 15025,
+                "totalWords": 44367
             },
             "Sumit Skn": {
-                "averageMessagePerDay": 171.5,
-                "averageWordsPerMessage": 3.280018984337921,
-                "leastActiveDate": "12-18-20",
+                "averageMessagePerDay": 169.5287356321839,
+                "averageWordsPerMessage": 3.044748796528578,
+                "leastActiveDate": "1/10/2021",
                 "leastActiveDay": "Sunday",
-                "mostActiveDate": "11-19-20",
+                "mostActiveDate": "11/19/20",
                 "mostActiveDay": "Thursday",
-                "totalDays": 86,
-                "totalEmojis": 2162,
-                "totalLinks": 179,
+                "totalDays": 87,
+                "totalEmojis": 2110,
+                "totalLinks": 149,
                 "totalMedia": 872,
                 "totalMessages": 14749,
-                "totalWords": 48377
+                "totalWords": 44907
             },
             "yashdev.py ヤシュ・デワンガン": {
                 "averageMessagePerDay": 118.31395348837209,
-                "averageWordsPerMessage": 3.285995085995086,
-                "leastActiveDate": "12-10-20",
+                "averageWordsPerMessage": 3.069090909090909,
+                "leastActiveDate": "12/10/20",
                 "leastActiveDay": "Monday",
-                "mostActiveDate": "11-19-20",
+                "mostActiveDate": "11/19/20",
                 "mostActiveDay": "Thursday",
                 "totalDays": 86,
-                "totalEmojis": 567,
-                "totalLinks": 180,
+                "totalEmojis": 415,
+                "totalLinks": 123,
                 "totalMedia": 1075,
                 "totalMessages": 10175,
-                "totalWords": 33435
+                "totalWords": 31228
             }
         },
         "wordcloud": {
@@ -2402,131 +2407,119 @@ def dummyapi():
                 "wordUsage": [
                     {
                         "text": "h",
-                        "value": 8783
-                    },
-                    {
-                        "text": "chutya",
-                        "value": 5013
-                    },
-                    {
-                        "text": "HOD",
-                        "value": 5009
+                        "value": 3731
                     },
                     {
                         "text": "hain",
-                        "value": 1347
+                        "value": 1346
                     },
                     {
                         "text": "ka",
-                        "value": 1129
+                        "value": 1112
                     },
                     {
                         "text": "kya",
-                        "value": 906
+                        "value": 897
                     },
                     {
                         "text": "rha",
-                        "value": 818
+                        "value": 812
                     },
                     {
                         "text": "na",
-                        "value": 756
-                    },
-                    {
-                        "text": "to",
-                        "value": 755
+                        "value": 750
                     },
                     {
                         "text": "tha",
-                        "value": 735
-                    },
-                    {
-                        "text": "toh",
-                        "value": 730
+                        "value": 733
                     },
                     {
                         "text": "bhi",
-                        "value": 726
+                        "value": 718
+                    },
+                    {
+                        "text": "toh",
+                        "value": 716
                     },
                     {
                         "text": "Bc",
                         "value": 685
                     },
                     {
-                        "text": "ko",
-                        "value": 661
+                        "text": "to",
+                        "value": 666
                     },
                     {
-                        "text": "and",
-                        "value": 628
+                        "text": "ko",
+                        "value": 655
                     },
                     {
                         "text": "nahi",
-                        "value": 617
+                        "value": 611
                     },
                     {
                         "text": "se",
-                        "value": 616
+                        "value": 610
                     },
                     {
                         "text": "Yash",
-                        "value": 605
-                    },
-                    {
-                        "text": "https",
-                        "value": 570
-                    },
-                    {
-                        "text": "the",
-                        "value": 569
+                        "value": 589
                     },
                     {
                         "text": "kar",
-                        "value": 566
+                        "value": 564
+                    },
+                    {
+                        "text": "and",
+                        "value": 537
                     },
                     {
                         "text": "I",
-                        "value": 528
+                        "value": 518
                     },
                     {
                         "text": "@917020037195",
-                        "value": 508
-                    },
-                    {
-                        "text": "is",
-                        "value": 506
+                        "value": 504
                     },
                     {
                         "text": "ke",
-                        "value": 496
+                        "value": 491
                     },
                     {
-                        "text": "ho",
-                        "value": 476
+                        "text": "the",
+                        "value": 473
                     },
                     {
                         "text": "hi",
-                        "value": 474
+                        "value": 472
                     },
                     {
-                        "text": "you",
+                        "text": "ho",
+                        "value": 470
+                    },
+                    {
+                        "text": "is",
                         "value": 468
                     },
                     {
                         "text": "main",
-                        "value": 466
+                        "value": 463
                     },
                     {
                         "text": "Yes",
-                        "value": 459
+                        "value": 457
                     },
                     {
-                        "text": "@918602842290",
-                        "value": 435
+                        "text": "you",
+                        "value": 436
                     },
                     {
                         "text": "But",
-                        "value": 419
+                        "value": 415
+                    },
+                    {
+                        "text": "@918602842290",
+                        "value": 414
                     },
                     {
                         "text": "Haa",
@@ -2538,67 +2531,79 @@ def dummyapi():
                     },
                     {
                         "text": "And",
-                        "value": 408
+                        "value": 399
                     },
                     {
                         "text": "me",
-                        "value": 395
+                        "value": 389
                     },
                     {
                         "text": "kia",
-                        "value": 391
+                        "value": 388
                     },
                     {
                         "text": "Nice",
                         "value": 376
                     },
                     {
-                        "text": "@918446224700",
-                        "value": 376
-                    },
-                    {
                         "text": "like",
-                        "value": 371
+                        "value": 360
                     },
                     {
-                        "text": "mai",
+                        "text": "@918446224700",
                         "value": 359
                     },
                     {
-                        "text": "in",
-                        "value": 351
-                    },
-                    {
-                        "text": "a",
+                        "text": "mai",
                         "value": 351
                     },
                     {
                         "text": "Kya",
-                        "value": 343
-                    },
-                    {
-                        "text": "k",
-                        "value": 341
+                        "value": 342
                     },
                     {
                         "text": "karna",
-                        "value": 324
-                    },
-                    {
-                        "text": "for",
-                        "value": 320
+                        "value": 322
                     },
                     {
                         "text": "ki",
-                        "value": 319
+                        "value": 316
+                    },
+                    {
+                        "text": "in",
+                        "value": 313
                     },
                     {
                         "text": "hu",
-                        "value": 314
+                        "value": 311
+                    },
+                    {
+                        "text": "a",
+                        "value": 307
+                    },
+                    {
+                        "text": "Abhi",
+                        "value": 303
                     },
                     {
                         "text": "was",
-                        "value": 303
+                        "value": 296
+                    },
+                    {
+                        "text": "bc",
+                        "value": 289
+                    },
+                    {
+                        "text": "pe",
+                        "value": 279
+                    },
+                    {
+                        "text": "for",
+                        "value": 271
+                    },
+                    {
+                        "text": "hua",
+                        "value": 265
                     }
                 ]
             },
@@ -2610,15 +2615,7 @@ def dummyapi():
                 "wordUsage": [
                     {
                         "text": "h",
-                        "value": 7048
-                    },
-                    {
-                        "text": "chutya",
-                        "value": 5013
-                    },
-                    {
-                        "text": "HOD",
-                        "value": 5001
+                        "value": 2038
                     },
                     {
                         "text": "Yash",
@@ -2626,15 +2623,11 @@ def dummyapi():
                     },
                     {
                         "text": "ka",
-                        "value": 364
+                        "value": 360
                     },
                     {
                         "text": "kya",
-                        "value": 355
-                    },
-                    {
-                        "text": "k",
-                        "value": 328
+                        "value": 351
                     },
                     {
                         "text": "na",
@@ -2642,19 +2635,15 @@ def dummyapi():
                     },
                     {
                         "text": "rha",
-                        "value": 286
-                    },
-                    {
-                        "text": "to",
-                        "value": 285
+                        "value": 284
                     },
                     {
                         "text": "ko",
-                        "value": 270
+                        "value": 269
                     },
                     {
                         "text": "me",
-                        "value": 269
+                        "value": 268
                     },
                     {
                         "text": "toh",
@@ -2669,60 +2658,64 @@ def dummyapi():
                         "value": 255
                     },
                     {
-                        "text": "and",
-                        "value": 250
+                        "text": "to",
+                        "value": 254
                     },
                     {
                         "text": "tha",
                         "value": 235
                     },
                     {
-                        "text": "https",
-                        "value": 232
+                        "text": "k",
+                        "value": 229
                     },
                     {
                         "text": "nahi",
                         "value": 229
                     },
                     {
-                        "text": "the",
-                        "value": 229
+                        "text": "and",
+                        "value": 224
                     },
                     {
                         "text": "I",
-                        "value": 223
-                    },
-                    {
-                        "text": "@918446224700",
-                        "value": 208
+                        "value": 220
                     },
                     {
                         "text": "was",
-                        "value": 202
+                        "value": 201
                     },
                     {
                         "text": "se",
-                        "value": 200
+                        "value": 199
                     },
                     {
                         "text": "kr",
                         "value": 192
                     },
                     {
+                        "text": "@918446224700",
+                        "value": 191
+                    },
+                    {
+                        "text": "the",
+                        "value": 177
+                    },
+                    {
                         "text": "ho",
-                        "value": 178
+                        "value": 176
                     },
                     {
                         "text": "Yes",
-                        "value": 175
-                    },
-                    {
-                        "text": "is",
-                        "value": 171
+                        "value": 174
                     },
                     {
                         "text": "ki",
                         "value": 170
+                    },
+                    {
+                        "text": "is",
+                        "value": 165
                     },
                     {
                         "text": "nhi",
@@ -2738,10 +2731,6 @@ def dummyapi():
                     },
                     {
                         "text": "And",
-                        "value": 153
-                    },
-                    {
-                        "text": "This",
                         "value": 151
                     },
                     {
@@ -2749,28 +2738,28 @@ def dummyapi():
                         "value": 150
                     },
                     {
-                        "text": "@918602842290",
-                        "value": 145
+                        "text": "This",
+                        "value": 149
                     },
                     {
                         "text": "bc",
-                        "value": 142
-                    },
-                    {
-                        "text": "like",
-                        "value": 136
+                        "value": 140
                     },
                     {
                         "text": "But",
                         "value": 135
                     },
                     {
-                        "text": "ye",
-                        "value": 132
+                        "text": "like",
+                        "value": 135
                     },
                     {
-                        "text": "in",
+                        "text": "ye",
                         "value": 130
+                    },
+                    {
+                        "text": "@918602842290",
+                        "value": 129
                     },
                     {
                         "text": "vo",
@@ -2778,14 +2767,10 @@ def dummyapi():
                     },
                     {
                         "text": "message",
-                        "value": 124
-                    },
-                    {
-                        "text": "deleted",
                         "value": 123
                     },
                     {
-                        "text": "a",
+                        "text": "deleted",
                         "value": 123
                     },
                     {
@@ -2797,16 +2782,36 @@ def dummyapi():
                         "value": 116
                     },
                     {
+                        "text": "in",
+                        "value": 115
+                    },
+                    {
                         "text": "Kya",
-                        "value": 114
+                        "value": 113
                     },
                     {
                         "text": "you",
-                        "value": 112
+                        "value": 111
                     },
                     {
                         "text": "sab",
                         "value": 111
+                    },
+                    {
+                        "text": "a",
+                        "value": 111
+                    },
+                    {
+                        "text": "pe",
+                        "value": 103
+                    },
+                    {
+                        "text": "vala",
+                        "value": 100
+                    },
+                    {
+                        "text": "ke",
+                        "value": 99
                     }
                 ]
             },
@@ -2818,95 +2823,91 @@ def dummyapi():
                 "wordUsage": [
                     {
                         "text": "h",
-                        "value": 1730
+                        "value": 1688
                     },
                     {
                         "text": "nahi",
-                        "value": 388
-                    },
-                    {
-                        "text": "ka",
-                        "value": 376
+                        "value": 382
                     },
                     {
                         "text": "kya",
-                        "value": 369
+                        "value": 364
+                    },
+                    {
+                        "text": "ka",
+                        "value": 363
                     },
                     {
                         "text": "mai",
-                        "value": 357
-                    },
-                    {
-                        "text": "to",
-                        "value": 330
-                    },
-                    {
-                        "text": "you",
-                        "value": 323
-                    },
-                    {
-                        "text": "and",
-                        "value": 320
+                        "value": 349
                     },
                     {
                         "text": "@917020037195",
-                        "value": 315
+                        "value": 311
                     },
                     {
                         "text": "na",
-                        "value": 315
+                        "value": 309
+                    },
+                    {
+                        "text": "you",
+                        "value": 298
+                    },
+                    {
+                        "text": "to",
+                        "value": 295
                     },
                     {
                         "text": "Bc",
                         "value": 291
                     },
                     {
+                        "text": "and",
+                        "value": 286
+                    },
+                    {
                         "text": "@918602842290",
-                        "value": 290
+                        "value": 285
                     },
                     {
                         "text": "tha",
-                        "value": 284
+                        "value": 282
                     },
                     {
                         "text": "Yes",
-                        "value": 279
+                        "value": 278
                     },
                     {
                         "text": "rha",
-                        "value": 253
+                        "value": 249
                     },
                     {
                         "text": "And",
-                        "value": 252
-                    },
-                    {
-                        "text": "is",
-                        "value": 248
+                        "value": 246
                     },
                     {
                         "text": "kia",
-                        "value": 241
+                        "value": 238
+                    },
+                    {
+                        "text": "is",
+                        "value": 224
                     },
                     {
                         "text": "I",
-                        "value": 229
+                        "value": 222
                     },
                     {
                         "text": "Nice",
                         "value": 219
                     },
                     {
-                        "text": "toh",
-                        "value": 217
-                    },
-                    {
-                        "text": "the",
-                        "value": 209
-                    },
-                    {
                         "text": "Haa",
                         "value": 205
+                    },
+                    {
+                        "text": "toh",
+                        "value": 203
                     },
                     {
                         "text": "XD",
@@ -2914,107 +2915,111 @@ def dummyapi():
                     },
                     {
                         "text": "bhi",
-                        "value": 198
+                        "value": 190
                     },
                     {
-                        "text": "in",
-                        "value": 189
+                        "text": "the",
+                        "value": 185
                     },
                     {
                         "text": "But",
-                        "value": 180
-                    },
-                    {
-                        "text": "ke",
-                        "value": 179
-                    },
-                    {
-                        "text": "a",
                         "value": 176
                     },
                     {
-                        "text": "like",
+                        "text": "ke",
                         "value": 174
+                    },
+                    {
+                        "text": "in",
+                        "value": 172
                     },
                     {
                         "text": "se",
-                        "value": 174
-                    },
-                    {
-                        "text": "https",
-                        "value": 170
+                        "value": 169
                     },
                     {
                         "text": "Kya",
                         "value": 167
                     },
                     {
-                        "text": "ko",
-                        "value": 155
+                        "text": "like",
+                        "value": 164
                     },
                     {
-                        "text": "What",
+                        "text": "a",
                         "value": 153
                     },
                     {
-                        "text": "kar",
+                        "text": "What",
+                        "value": 151
+                    },
+                    {
+                        "text": "ko",
                         "value": 150
                     },
                     {
-                        "text": "for",
+                        "text": "kar",
                         "value": 148
                     },
                     {
                         "text": "karna",
-                        "value": 148
-                    },
-                    {
-                        "text": "be",
-                        "value": 143
+                        "value": 147
                     },
                     {
                         "text": "Yeh",
-                        "value": 140
+                        "value": 139
                     },
                     {
-                        "text": "i",
-                        "value": 137
+                        "text": "be",
+                        "value": 138
+                    },
+                    {
+                        "text": "for",
+                        "value": 135
                     },
                     {
                         "text": "hi",
-                        "value": 136
+                        "value": 134
                     },
                     {
-                        "text": "can",
-                        "value": 133
-                    },
-                    {
-                        "text": "this",
-                        "value": 130
+                        "text": "i",
+                        "value": 134
                     },
                     {
                         "text": "Nahi",
-                        "value": 129
-                    },
-                    {
-                        "text": "+1",
                         "value": 128
                     },
                     {
-                        "text": "pe",
+                        "text": "can",
                         "value": 126
-                    },
-                    {
-                        "text": "that",
-                        "value": 126
-                    },
-                    {
-                        "text": "I'm",
-                        "value": 125
                     },
                     {
                         "text": "Abhi",
                         "value": 123
+                    },
+                    {
+                        "text": "this",
+                        "value": 123
+                    },
+                    {
+                        "text": "pe",
+                        "value": 122
+                    },
+                    {
+                        "text": "I'm",
+                        "value": 122
+                    },
+                    {
+                        "text": "bc",
+                        "value": 121
+                    },
+                    {
+                        "text": "Wtf",
+                        "value": 117
+                    },
+                    {
+                        "text": "that",
+                        "value": 117
                     }
                 ]
             },
@@ -3097,20 +3102,12 @@ def dummyapi():
                         "value": 168
                     },
                     {
-                        "text": "https",
-                        "value": 168
-                    },
-                    {
                         "text": "hu",
                         "value": 147
                     },
                     {
                         "text": "bhai",
                         "value": 142
-                    },
-                    {
-                        "text": "to",
-                        "value": 140
                     },
                     {
                         "text": "na",
@@ -3125,16 +3122,20 @@ def dummyapi():
                         "value": 136
                     },
                     {
-                        "text": "the",
-                        "value": 131
-                    },
-                    {
                         "text": "n",
                         "value": 121
                     },
                     {
                         "text": "ye",
                         "value": 117
+                    },
+                    {
+                        "text": "to",
+                        "value": 117
+                    },
+                    {
+                        "text": "the",
+                        "value": 111
                     },
                     {
                         "text": "hogga",
@@ -3167,10 +3168,6 @@ def dummyapi():
                     {
                         "text": "aa",
                         "value": 88
-                    },
-                    {
-                        "text": "is",
-                        "value": 87
                     },
                     {
                         "text": "de",
@@ -3221,7 +3218,15 @@ def dummyapi():
                         "value": 80
                     },
                     {
+                        "text": "is",
+                        "value": 79
+                    },
+                    {
                         "text": "kuch",
+                        "value": 77
+                    },
+                    {
+                        "text": "bahut",
                         "value": 77
                     }
                 ]
