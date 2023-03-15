@@ -41,9 +41,9 @@ def index():
                 raise Exception("Wrong file type")
 
             # Inc upload count in firebase db
-            uploadCount = db.child("uploads").get()
-            db.child("uploads").set(uploadCount.val() + 1)
-            db.child("filenames").push(fileName)
+            # uploadCount = db.child("uploads").get()
+            # db.child("uploads").set(uploadCount.val() + 1)
+            # db.child("filenames").push(fileName)
 
             content = parsefile(file.filename)
             date, time, username, messages = preprocess(content)
@@ -55,6 +55,7 @@ def index():
             return jsonify(new_insights)
         except Exception as e:
             os.remove(file.filename)
+            print(e)
             return error(str(e.args), 415)
 
 
@@ -68,10 +69,10 @@ def api():
 @main.route('/api/v1/analytics/polls', methods=['POST'])
 def feedback():
     try:
-        pollValue = db.child("polls").child(request.json['user']).get().val()
-        db.child("polls").child(request.json['user']).set(pollValue + 1)
-        print(db.child("polls").get().val())
-        return db.child("polls").get().val(), 200
+        # pollValue = db.child("polls").child(request.json['user']).get().val()
+        # db.child("polls").child(request.json['user']).set(pollValue + 1)
+        # print(db.child("polls").get().val())
+        return "", 200
     except Exception as e:
         print(e)
         return 'Something Went Wrong', 502
@@ -82,8 +83,8 @@ def feedback():
 @main.route('/api/v1/analytics/visited', methods=['POST'])
 def analytics():
     try:
-        visited = db.child("visited").get()
-        db.child("visited").set(visited.val() + 1)
+        # visited = db.child("visited").get()
+        # db.child("visited").set(visited.val() + 1)
         return '', 200
     except Exception as e:
         print(e)
@@ -95,9 +96,11 @@ def analytics():
 @main.route('/api/v1/analytics', methods=['GET'])
 def uploads():
     try:
-        uploadCount = db.child("uploads").get().val()
-        visited = db.child("visited").get().val()
-        return jsonify(uploadCount=uploadCount, visited=visited), 200
+        # uploadCount = db.child("uploads").get().val()
+        # print("uploadCount", uploadCount)
+        # visited = db.child("visited").get().val()
+        # print("visited", visited)
+        return {}, 200
     except Exception as e:
         print(e)
         return 'Something Went Wrong', 502
