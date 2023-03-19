@@ -4,7 +4,7 @@ from chatistics.dataframe.preprocessing import preprocess
 from chatistics.api import insights
 from chatistics.dummy.dummyapi import dummyapi
 from chatistics.error.error import error
-from chatistics.firebase.firebase import db
+# from chatistics.firebase.firebase import db
 
 
 import pandas as pd
@@ -37,9 +37,9 @@ def index():
                 raise Exception("Wrong file type")
 
             # Inc upload count in firebase db
-            uploadCount = db.child("uploads").get()
-            db.child("uploads").set(uploadCount.val())
-            db.child("filenames").push(fileName)
+            # uploadCount = db.child("uploads").get()
+            # db.child("uploads").set(uploadCount.val())
+            # db.child("filenames").push(fileName)
 
             content = parsefile(file.filename)
             date, time, username, messages = preprocess(content)
@@ -47,10 +47,10 @@ def index():
           
             whatsapp = insights.getData()
             new_insights = whatsapp.analysis(df, fileName)
-            db.child("Success").push(fileName)
+            # db.child("Success").push(fileName)
             return jsonify(new_insights)
         except Exception as e:
-            db.child("failure").push(fileName)
+            # db.child("failure").push(fileName)
             os.remove(file.filename)
             return error(str(e.args), 415)
 
@@ -65,10 +65,11 @@ def api():
 @main.route('/api/v1/analytics/polls', methods=['POST'])
 def feedback():
     try:
-        pollValue = db.child("polls").child(request.json['user']).get().val()
-        db.child("polls").child(request.json['user']).set(pollValue + 1)
-        print(db.child("polls").get().val())
-        return db.child("polls").get().val(), 200
+        # pollValue = db.child("polls").child(request.json['user']).get().val()
+        # db.child("polls").child(request.json['user']).set(pollValue + 1)
+        # print(db.child("polls").get().val())
+        #return db.child("polls").get().val(), 200
+        return "<will fix!>",200
     except Exception as e:
         print(e)
         return 'Something Went Wrong', 502
@@ -79,8 +80,8 @@ def feedback():
 @main.route('/api/v1/analytics/visited', methods=['POST'])
 def analytics():
     try:
-        visited = db.child("visited").get()
-        db.child("visited").set(visited.val() + 1)
+        # visited = db.child("visited").get()
+        # db.child("visited").set(visited.val() + 1)
         return '', 200
     except Exception as e:
         print(e)
@@ -92,9 +93,10 @@ def analytics():
 @main.route('/api/v1/analytics', methods=['GET'])
 def uploads():
     try:
-        uploadCount = db.child("uploads").get().val()
-        visited = db.child("visited").get().val()
-        return jsonify(uploadCount=uploadCount, visited=visited), 200
+        # uploadCount = db.child("uploads").get().val()
+        # visited = db.child("visited").get().val()
+        # return jsonify(uploadCount=uploadCount, visited=visited), 200
+        return {},200
     except Exception as e:
         print(e)
         return 'Something Went Wrong', 502

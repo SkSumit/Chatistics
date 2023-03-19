@@ -12,7 +12,6 @@ import {
 
 export default function UserSummary() {
   const context = useContext(FileContext);
-  console.log(context)
   return (
     <Section containerVariant={"bg-light-green"}>
       <h1 className="subtitle is-3 ">
