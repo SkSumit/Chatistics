@@ -12,18 +12,19 @@ def guessdateformat(date):
         month.append(int(temp[1]))
     date1 = list(set(date1))
     month = list(set(month))
+    dayFirst = False
     if month[-1] >= 13:
         dayFirst = False
     elif date1[-1] >= 13:
-        dayFirst = True
-    else:
         dayFirst = True
     return dayFirst        #low chat dates of m/d/y format will get converted to d/m/y
 
 def dataframe(date , time , username , messages):
     try:
+        print("Date ",date)
         column_names = ["DATE","TIME","USERNAME","MESSAGE"]
         df = pd.DataFrame(columns = column_names)
+        print(df)
         dayFirst=guessdateformat(date)
         df['DATE'] = date
         df["TIME"] = time

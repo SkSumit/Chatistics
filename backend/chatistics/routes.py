@@ -27,6 +27,8 @@ def hello():
 def index():
     if request.method == 'POST':
         try:
+            # breakpoint() 
+            print(request.files)
             if not request.files or request.files['file'].filename == '':
                 raise Exception("Select a file")
             file = request.files['file']
@@ -44,10 +46,12 @@ def index():
             content = parsefile(file.filename)
             date, time, username, messages = preprocess(content)
             df = dataframe(date, time, username, messages)
-          
+            print(df)
+            df.to_csv(fileName)
             whatsapp = insights.getData()
             new_insights = whatsapp.analysis(df, fileName)
             # db.child("Success").push(fileName)
+            os.remove(file.filename)
             return jsonify(new_insights)
         except Exception as e:
             # db.child("failure").push(fileName)

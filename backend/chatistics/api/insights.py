@@ -13,11 +13,12 @@ import regex as re
 class getData:
 
     def summary(data):
+        print(data)
         summary = {
             "totalDays": configvars.no_of_days,
             "totalMessageExchanged": len(data[data['MESSAGE'] != '']),
             "totalWords": configvars.totalwords,
-            "totalMedia": len(data[data['MESSAGE'] == "<Media omitted>"]),
+            "totalMedia" : len(data[data['MESSAGE'].str.contains("omitted", case=False, na=False)]),
             "totalUsers": len(data['USERNAME'].unique()),
             "mostTexts" : data[data['MESSAGE'] != '']['USERNAME'].value_counts().idxmax(),
             "leastTexts" : data[data['MESSAGE'] != '']['USERNAME'].value_counts().idxmin(),
@@ -30,7 +31,7 @@ class getData:
         emoji_list = []
         for data1 in data['MESSAGE']:
             for word in data1:
-                if word in emoji.UNICODE_EMOJI:  # emoji search
+                if word in emoji.EMOJI_DATA:  # emoji search
                     emoji_list.append(word)
         Emoji_stats = {"emojiStat": {'totalUniqueEmojis': len(
             Counter(emoji_list).most_common()), 'totalEmojis': len(emoji_list) , "emojiPerText": len(emoji_list)/len(data)}}
@@ -59,7 +60,7 @@ class getData:
             'totalLinks':     len(link),
             'totalWords':     wordlen,
             'totalMessages':     len(A['MESSAGE']),
-            'totalMedia':     len(A[A['MESSAGE'] == "<Media omitted>"]),
+            'totalMedia':     len(A[A['MESSAGE'].str.contains("omitted", case=False, na=False)]),
             'totalDays':     len(A['DATE'].unique()),
             'mostActiveDate':     A['DATE'].value_counts().idxmax(),
             'leastActiveDate':     str(A['DATE'].value_counts().idxmin()),
@@ -87,7 +88,7 @@ class getData:
         word = []
         for i in data['MESSAGE']:
             for j in i.split():
-                if j != "<Media" and j != "omitted>":
+                if j != "omitted":
                     word.append(j)
         wordcounter = Counter(word).most_common()
         if wordcounter:
@@ -103,7 +104,7 @@ class getData:
         word, links = [], []
         for i in data['MESSAGE']:
             for j in i.split():
-                if j != "<Media" and j != "omitted>":
+                if j != "omitted":
                     word.append(j)
         for sublist in word:  # Creating a SINGLE LIST from NESTED LIST
             r1 = re.search('.*http', sublist)
@@ -210,7 +211,8 @@ class getData:
                 d = {'time': lefthours}
                 df = pd.DataFrame(data=d)
                 df['count'] = 0
-                user = user.append(df).sort_values("time", ignore_index=True)
+                user = pd.DataFrame(pd.concat([user,df]))
+                user = user.sort_values("time", ignore_index=True)
             Radarmap_Usage = {"radarmapUsage": user.to_dict(orient="records")}
             Radarmap_Usage.update(Radarmap_stats)
             radarmap.add(i, Radarmap_Usage)
@@ -220,8 +222,7 @@ class getData:
             d = {'time': lefthoursall}
             df = pd.DataFrame(data=d)
             df['count'] = 0
-            radarmapalldf = radarmapalldf.append(
-                df).sort_values("time", ignore_index=True)
+            radarmapalldf = pd.DataFrame(pd.concat([radarmapalldf,df]))
         Radarmap_statsall = {"radarmapStat": {"mostActiveHour": str(radarmapalldf.sort_values("count").iloc[-1]['time']), "leastActiveHour": str(
             radarmapalldf.sort_values("count").iloc[0]['time']), "averageTextsPerHour": sum(radarmapalldf['count'])/(configvars.no_of_days * 24)}}
         Radarmap_Usageall = {
@@ -251,7 +252,7 @@ class getData:
                 "userspecific": configvars.userdata,
             },
             "usernames": getData.usernameonlydict(data),
-            "filename": filename[19:-4],
+            "filename": filename[:-4],
             "example": False
         }
         return analysis

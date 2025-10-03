@@ -6,6 +6,7 @@
 .pnp.js
 /jupyter
 /.ipynb_checkpoints
+/.vscode
 # testing
 /coverage
 

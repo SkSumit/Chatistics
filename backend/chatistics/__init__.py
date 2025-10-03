@@ -9,7 +9,7 @@ def create_app():
     CORS(app)
     limiter = Limiter(
         app,
-        key_func=get_remote_address,
+        # key_func=get_remote_address,
         default_limits=["200 per day", "50 per hour"]
     )
 

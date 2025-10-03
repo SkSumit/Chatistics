@@ -21,9 +21,9 @@ export default function Hero({analytics}) {
       <h1 className="subtitle is-3 has-text-centered-desktop">
         WhatsApp chat analytics and insights
       </h1>
-      <span className="title is-5 has-text-centered-desktop bg-light-green has-text-black my-6 px-3 py-1">
+      {/* <span className="title is-5 has-text-centered-desktop bg-light-green has-text-black my-6 px-3 py-1">
        {analytics ?  `${analytics.visited} visitors, ${analytics.uploadCount} files analysed` : 'fetching analytics...'}  
-      </span>
+      </span> */}
     </Section>
   );
 }

@@ -4,13 +4,14 @@ def sep(i):
     return i.split(": ")
 
 def replace(str1):
-    listtorep = ["[","-",","]
+    listtorep = ["[","-",",","\u200e"]
     for i in listtorep:
         str1 = str1.replace(i,"")
     str1 = str1.replace("]"," ")
     return str1.split("  ")
 
 def correct(listnew):
+    print("ListNew : ",listnew)
     date, time, username, messages = ([] for i in range(4))
     counter = 1
     try:
@@ -43,7 +44,7 @@ def preprocess(content):
         CORPUS = list(content)
         stopwords = [".*\ufeff",".*joined using this group's invite link",".*this group's settings to allow",".*changed to",".*that you are trying to send a payment",".*Messages and calls are end",".* Tap for more info.",".*security code changed.",".*messages and calls are end-to-end encrypted",".*changed their phone number",".*changed this group's icon",".*turned on disappearing messages",".*turned on disappearing messages",".*turned off disappearing messages",".*added you",".*left",".*new added you"
         ,'.*changed the subject from','.*changed the group description','.*deleted this group','.*added','.*settings to allow all participants to send messages'
-        ,'.*settings to allow only admins to send messages to this group','.*deleted the group description','.*removed','.*no longer an admin','.*now an admin','.*chat is with a business account','.*to this chat and calls are now secured with',".*created group"]
+        ,'.*settings to allow only admins to send messages to this group','.*deleted the group description','.*removed','.*no longer an admin','.*now an admin','.*chat is with a business account','.*to this chat and calls are now secured with',".*created group",".*Messages and calls are end-to-end encrypted.",".*You changed the group name to",".*You were added",".*You changed the group description",".*You:",".*end-to-end encrypted"]
         r=re.compile('|'.join(stopwords))
         for i in list(filter(r.match, CORPUS)):
             CORPUS.remove(i)   
