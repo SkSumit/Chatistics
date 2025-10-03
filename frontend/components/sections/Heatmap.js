@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { FileContext } from "../../pages/index";
 import Section from "../common/Section";
 import CalendarHeatmap from "react-calendar-heatmap";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 import "react-calendar-heatmap/dist/styles.css";
 import Select from "react-select";
 
@@ -23,7 +23,6 @@ export default function Heatmap() {
   const [selectedOption, setSelectedOption] = useState({
     username: "All",
   });
-
 
   return (
     <Section>
@@ -60,17 +59,19 @@ export default function Heatmap() {
             tooltipDataAttrs={(value) => {
               if (value.date == null) {
                 return {
-                  "data-tip": `No texts sent on this day`,
+                  "data-tooltip-id": "heatmap-tip",
+                  "data-tooltip-content": "No texts sent on this day",
                 };
               }
               return {
-                "data-tip": `${value.count} texts sent on ${new Date(
+                "data-tooltip-id": "heatmap-tip",
+                "data-tooltip-content": `${value.count} texts sent on ${new Date(
                   value.date
                 ).toLocaleDateString("en-GB")}`,
               };
             }}
           />
-          <ReactTooltip />
+          <ReactTooltip id="heatmap-tip" />
         </div>
       </div>
     </Section>
