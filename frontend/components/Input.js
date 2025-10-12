@@ -88,7 +88,7 @@ export default function Input({
                       style={{ color: "#25D366" }}
                     >
                       <span className="file-icon">
-                        <FontAwesomeIcon icon={faUpload} />
+                        <FontAwesomeIcon icon={faUpload} className="" />
                       </span>
                     </span>
                     <span

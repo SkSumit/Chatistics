@@ -6,6 +6,7 @@
 .pnp.js
 /jupyter
 /.ipynb_checkpoints
+/.vscode
 # testing
 /coverage
 
@@ -24,6 +25,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 *.eslintcache
+*.zip
 
 # next.js
 /.next/

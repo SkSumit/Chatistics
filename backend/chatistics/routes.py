@@ -4,9 +4,7 @@ from chatistics.dataframe.preprocessing import preprocess
 from chatistics.api import insights
 from chatistics.dummy.dummyapi import dummyapi
 from chatistics.error.error import error
-# from chatistics.firebase.firebase import db
-
-
+from io import StringIO
 import pandas as pd
 from flask import Flask, jsonify, request, Blueprint
 from flask_cors import CORS, cross_origin
@@ -27,10 +25,10 @@ def hello():
 def index():
     if request.method == 'POST':
         try:
+            # breakpoint() 
             if not request.files or request.files['file'].filename == '':
                 raise Exception("Select a file")
             file = request.files['file']
-            file.save(file.filename)
             fileName = file.filename
             if not file.filename.endswith('.txt'):
                 os.remove(file.filename)
@@ -41,17 +39,19 @@ def index():
             # db.child("uploads").set(uploadCount.val())
             # db.child("filenames").push(fileName)
 
-            content = parsefile(file.filename)
+            content = parsefile(file)
+            if len(content) == 0:
+                raise Exception("File empty")
             date, time, username, messages = preprocess(content)
             df = dataframe(date, time, username, messages)
-          
+            csv_buf = StringIO()
+            df.to_csv(csv_buf, index=False)
+            csv_buf.seek(0)
+
             whatsapp = insights.getData()
             new_insights = whatsapp.analysis(df, fileName)
-            # db.child("Success").push(fileName)
             return jsonify(new_insights)
         except Exception as e:
-            # db.child("failure").push(fileName)
-            os.remove(file.filename)
             return error(str(e.args), 415)
 
 

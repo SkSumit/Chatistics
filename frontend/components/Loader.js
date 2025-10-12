@@ -187,7 +187,7 @@ export default function Loader() {
     <section className="hero is-fullheight is-primary ">
       <div className="hero-body">
         <div className="container has-text-centered">
-          <FontAwesomeIcon icon={faWhatsapp} size="3x" spin />
+          <FontAwesomeIcon icon={faWhatsapp} size="3x" spin className="" />
           <h1 className="subtitle is-3 mt-3" suppressHydrationWarning>
             {
               loadingText[

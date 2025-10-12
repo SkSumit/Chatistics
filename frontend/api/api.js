@@ -1,12 +1,19 @@
 import axios from "axios";
 const url =
   process.env.NODE_ENV === "development"
-    ? "http://localhost:5000"
-    : process.env.NEXT_PUBLIC_API_URL;
+    ? {
+        dummy: "http://127.0.0.1:5000/api/v1/dummy",     
+        analytics: "http://127.0.0.1:5000/api/v1/insights",    
+      }
+    : 
+    {
+        dummy: process.env.NEXT_PUBLIC_API_URL_DUMMY,
+        analytics: process.env.NEXT_PUBLIC_API_URL_ANALYTICS,
+    }
 
 export const postFile = async (formData) => {
   try {
-    const result = await axios.post(url + "/api/v1/insights", formData);
+    const result = await axios.post(url.analytics, formData);
     // console.log(result)
     return result;
   } catch (error) {
@@ -17,7 +24,7 @@ export const postFile = async (formData) => {
 
 export const getDefaultStats = async () => {
   try {
-    const result = await axios.get(url + "/api/v1/dummy");
+    const result = await axios.get(url.dummy);
     return result;
   } catch (error) {
     // console.log(error);
