@@ -1,17 +1,21 @@
-import os
+from io import TextIOWrapper
 
-def parsefile(path):
+def parsefile(file):
     try:
-        with open(path,encoding="utf8") as f:
-            Content = f.readlines()
-        if len(Content) == 0:
-            print(len(Content))
-            os.remove(path)
-            raise Exception("File empty")
+        try:
+            file.stream.seek(0)
+        except Exception:
+            try:
+                file.seek(0)
+            except Exception:
+                pass
+        data = file.read()  # FileStorage.read() proxies to stream.read()
+        if isinstance(data, bytes):
+            text = data.decode("utf-8", errors="replace")
         else:
-            Content = [x.strip() for x in Content]
-            os.remove(path) 
-            return Content
-    except(IOError , Exception):
-        os.remove(path) 
+            text = data
+
+        lines = text.splitlines()
+        return lines
+    except Exception:
         raise Exception("File cannot be parsed at the moment")

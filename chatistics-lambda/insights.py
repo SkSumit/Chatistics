@@ -1,10 +1,6 @@
-# from chatistics.api.user.user import username
-# from chatistics.api.stats.stats import stats
-from chatistics.api.analysis import configvars
-from chatistics.api.analysis import dict
-
+from analysis import configvars
+from analysis import dict
 import pandas as pd
-import datetime
 import emoji
 from collections import Counter
 import regex as re

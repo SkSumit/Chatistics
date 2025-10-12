@@ -1,7 +1,5 @@
 import pandas as pd
 import re
-from datetime import datetime
-import calendar
 
 def guessdateformat(date):
     date1=[]
