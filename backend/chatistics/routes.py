@@ -9,6 +9,7 @@ from chatistics.error.error import error
 
 import pandas as pd
 from flask import Flask, jsonify, request, Blueprint
+from werkzeug.utils import secure_filename
 from flask_cors import CORS, cross_origin
 import os
 
@@ -26,22 +27,24 @@ def hello():
 @cross_origin()
 def index():
     if request.method == 'POST':
+        fileName = ""
         try:
             if not request.files or request.files['file'].filename == '':
                 raise Exception("Select a file")
             file = request.files['file']
-            file.save(file.filename)
-            fileName = file.filename
-            if not file.filename.endswith('.txt'):
-                os.remove(file.filename)
+            # Sanitize the client-supplied name before touching disk,
+            # so a crafted filename cannot escape the working directory.
+            fileName = secure_filename(file.filename)
+            if not fileName.endswith('.txt'):
                 raise Exception("Wrong file type")
+            file.save(fileName)
 
             # Inc upload count in firebase db
             # uploadCount = db.child("uploads").get()
             # db.child("uploads").set(uploadCount.val())
             # db.child("filenames").push(fileName)
 
-            content = parsefile(file.filename)
+            content = parsefile(fileName)
             date, time, username, messages = preprocess(content)
             df = dataframe(date, time, username, messages)
           
@@ -51,7 +54,9 @@ def index():
             return jsonify(new_insights)
         except Exception as e:
             # db.child("failure").push(fileName)
-            os.remove(file.filename)
+            # Only remove the sanitized local file, if it was saved.
+            if fileName and os.path.exists(fileName):
+                os.remove(fileName)
             return error(str(e.args), 415)
 
 
